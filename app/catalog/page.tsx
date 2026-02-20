@@ -28,7 +28,7 @@ function CatalogContent() {
   const searchParams = useSearchParams()
   const collectionSlug = searchParams.get("collection")
 
-  const initialFilters = useMemo(() => {
+  const initialFilters = useMemo((): Record<string, string[]> => {
     if (collectionSlug) {
       const found = collections.find((c) => c.slug === collectionSlug)
       if (found) {
