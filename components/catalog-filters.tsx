@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ChevronDown, X } from "lucide-react"
-import { filterOptions } from "@/lib/mock-data"
+import { filterOptions } from "@/lib/filter-options"
 
 interface FilterSection {
   label: string

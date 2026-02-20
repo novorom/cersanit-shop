@@ -3,7 +3,8 @@
 import { useState, useMemo } from "react"
 import Link from "next/link"
 import { SlidersHorizontal, ChevronRight, Grid3X3, LayoutGrid } from "lucide-react"
-import { products, filterOptions } from "@/lib/mock-data"
+import { products } from "@/lib/mock-data"
+import { filterOptions } from "@/lib/filter-options"
 import { ProductCard } from "@/components/product-card"
 import { CatalogFilters, MobileFilterDrawer } from "@/components/catalog-filters"
 
