@@ -56,7 +56,8 @@ export default function CatalogPage() {
         }
         const field = fieldMap[key]
         if (!field) return true
-        return values.includes((p as Record<string, unknown>)[field] as string)
+        const record = p as unknown as Record<string, unknown>
+        return values.includes(record[field] as string)
       })
     })
 
