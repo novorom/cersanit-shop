@@ -148,6 +148,13 @@ export default function HomePage() {
                 Дизайнерские серии для создания единого стиля
               </p>
             </div>
+            <Link
+              href="/collections"
+              className="hidden sm:flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              Все коллекции
+              <ChevronRight className="h-4 w-4" />
+            </Link>
           </div>
           <div className="flex gap-4 lg:gap-6 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide">
             {collections.map((collection) => (

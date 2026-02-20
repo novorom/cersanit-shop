@@ -6,7 +6,7 @@ import { Search, Heart, ShoppingCart, Menu, X, Phone } from "lucide-react"
 
 const navLinks = [
   { href: "/catalog", label: "Каталог" },
-  { href: "/catalog?collection=all", label: "Коллекции" },
+  { href: "/collections", label: "Коллекции" },
   { href: "#", label: "Доставка" },
   { href: "#", label: "О компании" },
   { href: "#", label: "Контакты" },
