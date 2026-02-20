@@ -1,9 +1,10 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect, Suspense } from "react"
+import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { SlidersHorizontal, ChevronRight, Grid3X3, LayoutGrid } from "lucide-react"
-import { products } from "@/lib/mock-data"
+import { products, collections } from "@/lib/mock-data"
 import { filterOptions } from "@/lib/filter-options"
 import { ProductCard } from "@/components/product-card"
 import { CatalogFilters, MobileFilterDrawer } from "@/components/catalog-filters"
@@ -16,11 +17,42 @@ const sortOptions = [
 ]
 
 export default function CatalogPage() {
-  const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>({})
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-muted/30" />}>
+      <CatalogContent />
+    </Suspense>
+  )
+}
+
+function CatalogContent() {
+  const searchParams = useSearchParams()
+  const collectionSlug = searchParams.get("collection")
+
+  const initialFilters = useMemo(() => {
+    if (collectionSlug) {
+      const found = collections.find((c) => c.slug === collectionSlug)
+      if (found) {
+        return { collections: [found.name] }
+      }
+    }
+    return {}
+  }, [collectionSlug])
+
+  const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>(initialFilters)
   const [priceRange, setPriceRange] = useState<[number, number]>([
     filterOptions.price_range.min,
     filterOptions.price_range.max,
   ])
+
+  // Sync filters when URL changes (e.g. navigating from collections page)
+  useEffect(() => {
+    if (collectionSlug) {
+      const found = collections.find((c) => c.slug === collectionSlug)
+      if (found) {
+        setActiveFilters({ collections: [found.name] })
+      }
+    }
+  }, [collectionSlug])
   const [sort, setSort] = useState("popular")
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
   const [gridCols, setGridCols] = useState<3 | 4>(3)
