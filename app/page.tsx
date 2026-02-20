@@ -5,7 +5,7 @@ import { categories, collections, products } from "@/lib/mock-data"
 import { ProductCard } from "@/components/product-card"
 
 export default function HomePage() {
-  const popularProducts = products.filter((p) => p.is_bestseller).slice(0, 4)
+  const popularProducts = products.filter((p) => p.is_bestseller).slice(0, 8)
 
   return (
     <div className="flex flex-col">
