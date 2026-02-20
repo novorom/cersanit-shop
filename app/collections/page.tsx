@@ -7,6 +7,7 @@ import { ChevronDown, ChevronRight, SlidersHorizontal, X } from "lucide-react"
 import { collections, products } from "@/lib/mock-data"
 
 /* ---------- derived data ---------- */
+console.log("[v0] Collections data:", collections.length, "collections found")
 const collectionsWithMeta = collections.map((c) => {
   const collProducts = products.filter((p) => p.collection === c.name)
   const types = [...new Set(collProducts.map((p) => p.product_type))]
@@ -16,6 +17,7 @@ const collectionsWithMeta = collections.map((c) => {
   const isBestseller = collProducts.some((p) => p.is_bestseller)
   return { ...c, types, formats, colors, isNew, isBestseller, realCount: collProducts.length }
 })
+console.log("[v0] Collections with metadata:", collectionsWithMeta.length, "processed")
 
 const allTypes = [...new Set(collectionsWithMeta.flatMap((c) => c.types))].sort()
 const allFormats = [...new Set(products.map((p) => p.format))].sort()
