@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { Search, Heart, ShoppingCart, Menu, X, Phone } from "lucide-react"
 import { Logo } from "./logo"
@@ -15,19 +14,8 @@ const navLinks = [
 ]
 
 export function SiteHeader() {
-  const router = useRouter()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
-  const [searchQuery, setSearchQuery] = useState("")
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (searchQuery.trim()) {
-      router.push(`/catalog?search=${encodeURIComponent(searchQuery.trim())}`)
-      setSearchQuery("")
-      setSearchOpen(false)
-    }
-  }
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
@@ -68,18 +56,14 @@ export function SiteHeader() {
         {/* Search + Icons */}
         <div className="flex items-center gap-2">
           {/* Search */}
-          <form onSubmit={handleSearch} className={`${searchOpen ? "flex" : "hidden"} lg:flex items-center relative`}>
+          <div className={`${searchOpen ? "flex" : "hidden"} lg:flex items-center relative`}>
             <input
               type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Поиск плитки..."
               className="h-9 w-48 xl:w-64 rounded-lg border border-input bg-muted/50 px-3 pr-9 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/20 focus:border-primary transition-all"
             />
-            <button type="submit" className="absolute right-2.5" aria-label="Найти">
-              <Search className="h-4 w-4 text-muted-foreground" />
-            </button>
-          </form>
+            <Search className="absolute right-2.5 h-4 w-4 text-muted-foreground" />
+          </div>
           <button
             onClick={() => setSearchOpen(!searchOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-accent transition-colors"
