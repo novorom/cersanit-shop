@@ -17,12 +17,12 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
   return (
     <div className="flex flex-col gap-3">
       {/* Main image */}
-      <div className="relative aspect-square rounded-xl overflow-hidden bg-muted border border-border">
+      <div className="relative aspect-square rounded-xl overflow-hidden bg-white border border-border">
         <Image
           src={galleryImages[activeIndex]}
           alt={`${name} - изображение ${activeIndex + 1}`}
           fill
-          className="object-cover"
+          className="object-contain p-4"
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
         />
@@ -35,7 +35,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
             <button
               key={i}
               onClick={() => setActiveIndex(i)}
-              className={`relative h-16 w-16 rounded-lg overflow-hidden border-2 shrink-0 transition-colors ${
+              className={`relative h-16 w-16 rounded-lg overflow-hidden border-2 shrink-0 transition-colors bg-white ${
                 i === activeIndex
                   ? "border-primary"
                   : "border-border hover:border-primary/50"
@@ -46,7 +46,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
                 src={img}
                 alt={`${name} - миниатюра ${i + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain p-1"
                 sizes="64px"
               />
             </button>
