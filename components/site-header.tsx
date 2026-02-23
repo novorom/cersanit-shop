@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Search, Heart, ShoppingCart, Menu, X, Phone } from "lucide-react"
+import { Logo } from "./logo"
 
 const navLinks = [
   { href: "/catalog", label: "Каталог" },
@@ -37,14 +37,7 @@ export function SiteHeader() {
       <div className="mx-auto max-w-7xl px-4 flex items-center justify-between h-16 gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Image
-            src="/images/logo-cersanit.png"
-            alt="Дом Плитки Cersanit"
-            width={300}
-            height={90}
-            className="h-12 md:h-14 w-auto"
-            priority
-          />
+          <Logo className="h-11 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
