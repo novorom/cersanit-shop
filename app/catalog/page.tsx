@@ -28,6 +28,7 @@ function CatalogContent() {
   const searchParams = useSearchParams()
   const collectionSlug = searchParams.get("collection")
   const productType = searchParams.get("product_type")
+  const searchQuery = searchParams.get("search")
 
   const initialFilters = useMemo((): Record<string, string[]> => {
     const filters: Record<string, string[]> = {}
@@ -93,6 +94,17 @@ function CatalogContent() {
   const filteredProducts = useMemo(() => {
     let result = [...products]
 
+    // Apply search query
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase()
+      result = result.filter(
+        (p) =>
+          p.name.toLowerCase().includes(query) ||
+          p.article.toLowerCase().includes(query) ||
+          p.collection.toLowerCase().includes(query)
+      )
+    }
+
     // Apply filters
     Object.entries(activeFilters).forEach(([key, values]) => {
       if (values.length === 0) return
@@ -133,7 +145,7 @@ function CatalogContent() {
     }
 
     return result
-  }, [activeFilters, priceRange, sort])
+  }, [searchQuery, activeFilters, priceRange, sort])
 
   const totalActiveFilters = Object.values(activeFilters).flat().length
 
