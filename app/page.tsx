@@ -129,8 +129,8 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {popularProducts.map((product, index) => (
+              <ProductCard key={product.id} product={product} priority={index < 4} />
             ))}
           </div>
         </div>
