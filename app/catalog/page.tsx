@@ -27,16 +27,24 @@ export default function CatalogPage() {
 function CatalogContent() {
   const searchParams = useSearchParams()
   const collectionSlug = searchParams.get("collection")
+  const productType = searchParams.get("product_type")
 
   const initialFilters = useMemo((): Record<string, string[]> => {
+    const filters: Record<string, string[]> = {}
+    
     if (collectionSlug) {
       const found = collections.find((c) => c.slug === collectionSlug)
       if (found) {
-        return { collections: [found.name] }
+        filters.collections = [found.name]
       }
     }
-    return {}
-  }, [collectionSlug])
+    
+    if (productType) {
+      filters.product_types = [productType]
+    }
+    
+    return filters
+  }, [collectionSlug, productType])
 
   const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>(initialFilters)
   const [priceRange, setPriceRange] = useState<[number, number]>([
@@ -44,15 +52,25 @@ function CatalogContent() {
     filterOptions.price_range.max,
   ])
 
-  // Sync filters when URL changes (e.g. navigating from collections page)
+  // Sync filters when URL changes (e.g. navigating from collections page or categories)
   useEffect(() => {
+    const filters: Record<string, string[]> = {}
+    
     if (collectionSlug) {
       const found = collections.find((c) => c.slug === collectionSlug)
       if (found) {
-        setActiveFilters({ collections: [found.name] })
+        filters.collections = [found.name]
       }
     }
-  }, [collectionSlug])
+    
+    if (productType) {
+      filters.product_types = [productType]
+    }
+    
+    if (Object.keys(filters).length > 0) {
+      setActiveFilters(filters)
+    }
+  }, [collectionSlug, productType])
   const [sort, setSort] = useState("popular")
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
   const [gridCols, setGridCols] = useState<3 | 4>(3)

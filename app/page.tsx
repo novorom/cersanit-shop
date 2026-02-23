@@ -76,7 +76,7 @@ export default function HomePage() {
             {categories.map((category) => (
               <Link
                 key={category.id}
-                href={`/catalog?type=${category.slug}`}
+                href={`/catalog?product_type=${encodeURIComponent(category.name)}`}
                 className="group relative rounded-xl overflow-hidden aspect-[4/3] lg:aspect-[3/4]"
               >
                 <Image
@@ -116,9 +116,7 @@ export default function HomePage() {
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground text-balance">
                 Популярные товары
               </h2>
-              <p className="mt-2 text-muted-foreground">
-                Лучшие предложения по отзывам покупателей
-              </p>
+              <p className="mt-2 text-muted-foreground">Лучшие предложения по отзывам покупателей</p>
             </div>
             <Link
               href="/catalog"
@@ -129,8 +127,8 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {popularProducts.map((product, index) => (
+              <ProductCard key={product.id} product={product} priority={index < 4} />
             ))}
           </div>
         </div>

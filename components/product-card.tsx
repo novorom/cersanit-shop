@@ -8,9 +8,10 @@ import type { Product } from "@/lib/mock-data"
 
 interface ProductCardProps {
   product: Product
+  priority?: boolean
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, priority = false }: ProductCardProps) {
   const [isFavorite, setIsFavorite] = useState(false)
 
   const totalStock = product.stock_yanino + product.stock_factory
@@ -22,13 +23,14 @@ export function ProductCard({ product }: ProductCardProps) {
       className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-lg transition-all duration-300"
     >
       {/* Image */}
-      <div className="relative aspect-square overflow-hidden bg-muted">
+      <div className="relative aspect-square overflow-hidden bg-white">
         <Image
           src={product.main_image}
           alt={product.name}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-contain p-3 transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          priority={priority}
         />
 
         {/* Badges */}
