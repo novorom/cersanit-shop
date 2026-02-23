@@ -116,9 +116,7 @@ export default function HomePage() {
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground text-balance">
                 Популярные товары
               </h2>
-              <p className="mt-2 text-muted-foreground">
-                Лучшие предложения по отзывам покупателей
-              </p>
+              <p className="mt-2 text-muted-foreground">Лучшие предложения по отзывам покупателей</p>
             </div>
             <Link
               href="/catalog"
