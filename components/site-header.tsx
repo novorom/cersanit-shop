@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Search, Heart, ShoppingCart, Menu, X, Phone } from "lucide-react"
 
 const navLinks = [
@@ -36,15 +37,14 @@ export function SiteHeader() {
       <div className="mx-auto max-w-7xl px-4 flex items-center justify-between h-16 gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">C</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-lg font-bold tracking-tight text-foreground">Cersanit</span>
-              <span className="text-[10px] text-muted-foreground tracking-widest uppercase">Shop</span>
-            </div>
-          </div>
+          <Image
+            src="/images/logo-cersanit.png"
+            alt="Дом Плитки Cersanit"
+            width={200}
+            height={60}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
