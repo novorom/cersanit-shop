@@ -76,7 +76,7 @@ export default function HomePage() {
             {categories.map((category) => (
               <Link
                 key={category.id}
-                href={`/catalog?type=${category.slug}`}
+                href={`/catalog?product_type=${encodeURIComponent(category.name)}`}
                 className="group relative rounded-xl overflow-hidden aspect-[4/3] lg:aspect-[3/4]"
               >
                 <Image
