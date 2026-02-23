@@ -40,9 +40,9 @@ export function SiteHeader() {
           <Image
             src="/images/logo-cersanit.png"
             alt="Дом Плитки Cersanit"
-            width={200}
-            height={60}
-            className="h-10 w-auto"
+            width={300}
+            height={90}
+            className="h-12 md:h-14 w-auto"
             priority
           />
         </Link>
