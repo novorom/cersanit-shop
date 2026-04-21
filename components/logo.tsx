@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Дом Плитки Cersanit"
+      aria-label="Гипермаркет Плитки Lincer"
     >
       {/* House with tiles icon */}
       <g>
@@ -58,10 +58,10 @@ export function Logo({ className = "" }: { className?: string }) {
         fill="#64748b"
         letterSpacing="1"
       >
-        ДОМ ПЛИТКИ
+        ГИПЕРМАРКЕТ ПЛИТКИ
       </text>
 
-      {/* Text: CERSANIT - bold blue */}
+      {/* Text: LINCER - bold blue */}
       <text
         x="50"
         y="48"
@@ -70,7 +70,7 @@ export function Logo({ className = "" }: { className?: string }) {
         fill="#1e3a8a"
         letterSpacing="0.5"
       >
-        CERSANIT
+        LINCER
       </text>
     </svg>
   )

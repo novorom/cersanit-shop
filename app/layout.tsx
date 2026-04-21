@@ -8,22 +8,22 @@ import { ProductsProvider } from "@/lib/products-context"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 
 export const metadata: Metadata = {
   title: {
-    default: "Дом Плитки Cersanit СПб — официальный дилер, склад в Янино",
-    template: "%s | Дом Плитки Cersanit СПб",
+    default: "Дом Плитки LINCER СПб — мультибрендовый дилер, склад в Янино",
+    template: "%s | Дом Плитки LINCER СПб",
   },
   description:
-    "Официальный дилер Cersanit в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². 200+ моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
+    "Официальный мультибрендовый дилер (Lincer, Cersanit, Kerama Marazzi) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
   metadataBase: new URL(SITE_URL),
-  applicationName: "Дом Плитки Cersanit СПб",
+  applicationName: "Дом Плитки LINCER СПб",
   keywords: [
-    "плитка Cersanit СПб",
+    "плитка LINCER СПб",
     "купить керамогранит Санкт-Петербург",
-    "плитка Церсанит Янино",
-    "официальный дилер Cersanit",
+    "плитка Янино",
+    "мультибрендовый дилер плитки",
     "керамическая плитка под дерево СПб",
     "плитка для ванной СПб",
   ],
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "Дом Плитки Cersanit СПб — официальный дилер, склад в Янино",
+    title: "Дом Плитки LINCER СПб — склад в Янино",
     description:
-      "Керамическая плитка и керамогранит Cersanit с доставкой по Санкт-Петербургу. 200+ моделей в наличии. Официальный дилер.",
+      "Керамическая плитка и керамогранит LINCER с доставкой по Санкт-Петербургу. Более 2000 моделей в наличии.",
     url: SITE_URL,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
     images: [
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Дом Плитки Cersanit — официальный дилер в Санкт-Петербурге",
+        alt: "Дом Плитки LINCER — гипермаркет плитки в Санкт-Петербурге",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Дом Плитки Cersanit СПб",
-    description: "Официальный дилер Cersanit в СПб. Склад в Янино. 200+ товаров в наличии.",
+    title: "Дом Плитки LINCER СПб",
+    description: "Оптовый дилер в СПб. Склад в Янино. 2000+ товаров в наличии.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
   other: {
@@ -73,15 +73,15 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeGoodsStore",
   "@id": `${SITE_URL}/#business`,
-  name: "Дом Плитки CERSANIT",
-  alternateName: "Cersanit-SPb",
+  name: "LINCER",
+  alternateName: "Lincer-SPb",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.jpg`,
   description:
-    "Официальный дилер керамической плитки и керамогранита Cersanit в Санкт-Петербурге. Склад в Янино-1. Доставка по СПб и ЛО от 1 дня.",
+    "Мультибрендовый гипермаркет керамической плитки и керамогранита в Санкт-Петербурге. Склад в Янино-1. Доставка по СПб и ЛО от 1 дня.",
   telephone: "+7-905-205-09-00",
-  email: "info@cersanit-spb.ru",
+  email: "info@lincer.ru",
   priceRange: "₽₽",
   currenciesAccepted: "RUB",
   paymentAccepted: "Наличные, банковская карта, безналичный расчёт",

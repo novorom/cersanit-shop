@@ -9248,10 +9248,1977 @@ export function getProduct(slug: string): Product | undefined {
   return products.find(p => p.slug === slug)
 }
 
-export function getProductsByCollection(collection: string): Product[] {
-  return products.filter(p => p.collection === collection)
+export function getProductsByCollection(collection: string): Product[
+  {
+  "id": "lincer-1776803120541",
+  "sku": "scarlett_white_pg_01_450kh450_1_y_sort",
+  "name": "10400000986 Scarlett white PG 01 матовый керамогранит 45*45, Gracia Ceramica",
+  "slug": "10400000986-scarlett-white-pg-01-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1213,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120544",
+  "sku": "ml4a093_milton_milton_300_seryy_stupen_29_8x29_8_cersanit",
+  "name": "Ступень ML4A093 Milton (Милтон) 300 серая 29,8х29,8, Cersanit",
+  "slug": "-ml4a093-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1405,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120545",
+  "sku": "makhkama_bezhevyy_svetlyy_lappatirovannyy_obreznoy_60x60x0_9",
+  "name": "Керамогранит KM6060G0432R Махкама бежевый светлый лаппатированный обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-km6060g0432r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2979,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120546",
+  "sku": "fs4r452_fancy_stone_kg_42_42_cersanit",
+  "name": "Керамогранит FS4R452 Fancy Stone 42х42,Cersanit",
+  "slug": "-fs4r452-fancy-stone-4242cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120547",
+  "sku": "sg701590r_20_80_",
+  "name": "Керамогранит SG701590R Фрегат коричневый темный обрезной 20x80x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg701590r-20x80x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2031,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120548",
+  "sku": "sg526520r_montioni_korichnevyy_matovyy_obreznoy_kg_20_119_5_kerama_marazzi",
+  "name": "Керамогранит SG526520R Монтиони коричневый матовый обрезной 20х119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg526520r-201195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2725,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120549",
+  "sku": "keramogranit_belyy_matovyy_60kh60_dako_dako_e_3042_unicom_yunikom",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-3042 Unicom (Юником)",
+  "slug": "-6060-dako-e-3042-unicom-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120550",
+  "sku": "keramogranit_a17914_avalon_bezhevyy_svetlyy_42kh42_cersanit",
+  "name": "Керамогранит A17914 Avalon бежевый светлый 42х42, Cersanit",
+  "slug": "-a17914-avalon-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120551",
+  "sku": "dd200620r_pro_stoun_antratsit_obreznoy_keramogranit_30x60_kerama_marazzi",
+  "name": "Керамогранит DD200620R Про Стоун антрацит обрезной 30x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd200620r-30x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2507,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120553",
+  "sku": "leyla_sv_kg_01_450kh450_1_y_sort",
+  "name": "10400000842 Лейла св керамогранит 01 глянцевая 45*45, Gracia Ceramica",
+  "slug": "10400000842-01-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1467,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120554",
+  "sku": "e_5010_mr_600x600x9_level_bezhevyy_svetlyy_matovyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-5010 Level",
+  "slug": "-6060-dako-e-5010-level",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a97/400_400_1/pisg0o64tafb6iomi95taeyxfkfxxtl8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a97/400_400_1/pisg0o64tafb6iomi95taeyxfkfxxtl8.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120555",
+  "sku": "keramogranit_belyy_matovyy_60kh60_dako_dako_e_5015_gold_sand_gold_send",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-5015 Gold Sand (Голд Сэнд)",
+  "slug": "-6060-dako-e-5015-gold-sand-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/034/400_400_1/qwrcc3g2een7fl33t6gurg25btgm8xbg.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/034/400_400_1/qwrcc3g2een7fl33t6gurg25btgm8xbg.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120556",
+  "sku": "ab_1143g_armani_silver_polirovannyy_60_60_absolut_gres",
+  "name": "Керамогранит AB 1143G Armani Silver полированный 60х60, Absolut Gres",
+  "slug": "-ab-1143g-armani-silver-6060-absolut-gres",
+  "brand": "Absolut Gres",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1843,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120557",
+  "sku": "camelot_beige_d_pola_03_45_45_gracia_ceramica_v_korobke_po_1_62_m2",
+  "name": "10404001719 Camelot beige PG 03 матовый керамогранит 45*45, Gracia Ceramica",
+  "slug": "10404001719-camelot-beige-pg-03-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1213,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120558",
+  "sku": "granite_natura_oak_beige_granite_naturo_dub_bezhevyy_dub_bezhevyy_kg_120_19_5_strukturnyy_sr_idalgo",
+  "name": "Керамогранит Granite Natura Oak Beige (Натуро) дуб бежевый структурный SR 120х19,5, Idalgo (Идальго)",
+  "slug": "-granite-natura-oak-beige-sr-120195-idalgo-",
+  "brand": "5, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2629,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d66/400_400_1/ws4c31owac9lpjeb8oxv7171ljykc8j3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d66/400_400_1/ws4c31owac9lpjeb8oxv7171ljykc8j3.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120559",
+  "sku": "granite_gerda_granit_gerda_natura_layt_kg_matovyy_mr_120_59_9_keramika_budushchego",
+  "name": "Керамогранит Granite Gerda (Герда) натура лайт матовый MR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-gerda-mr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2350,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/abc/400_400_1/vfghe6ks7uy2ocy3nwwdxyqpzbvowroi.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/abc/400_400_1/vfghe6ks7uy2ocy3nwwdxyqpzbvowroi.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120560",
+  "sku": "se4r453_sevilla_pechvork_relef_kg_42_42_cersanit",
+  "name": "Керамогранит SE4R453 Sevilla пэчворк рельеф 42х42, Cersanit",
+  "slug": "-se4r453-sevilla-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cf4/400_400_1/ess7q619cotdodqk9tdb4novd45vloqw.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cf4/400_400_1/ess7q619cotdodqk9tdb4novd45vloqw.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120561",
+  "sku": "oxford_naturalnyy_03_v2_d_pola_kg_45_45_gracia_ceramica_novyy_razmer",
+  "name": "10404001733 O*ford natural PG 03 матовый керамогранит 45*45, Gracia Ceramica",
+  "slug": "10404001733-oford-natural-pg-03-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1213,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/592/400_400_1/5924cf75fc4fe728cce88c993ddb44d5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/592/400_400_1/5924cf75fc4fe728cce88c993ddb44d5.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120562",
+  "sku": "mu4l012_mercury_bezhevyy_relef_kg_29_7_59_8_cersanit",
+  "name": "Керамогранит MU4L012 Mercury бежевый рельеф 29,7х59,8, Cersanit",
+  "slug": "-mu4l012-mercury-297598-cersanit",
+  "brand": "7х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1485,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/da6/400_400_1/bpq8etxxbfymxpehpn92fcu5fgyzs3pq.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/da6/400_400_1/bpq8etxxbfymxpehpn92fcu5fgyzs3pq.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120563",
+  "sku": "lo4r452_loft_kg_42_42_cersanit",
+  "name": "Керамогранит LO4R452 Loft 42х42, Cersanit",
+  "slug": "-lo4r452-loft-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0c3/400_400_1/yf4590nki5rgkiz7iz74suhx21nmxajo.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0c3/400_400_1/yf4590nki5rgkiz7iz74suhx21nmxajo.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120564",
+  "sku": "dd602620r_pro_matriks_belyy_obreznoy_kg_60_60_kerama_marazzi",
+  "name": "Керамогранит DD602620R Про Матрикс белый обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd602620r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2454,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/03c/400_400_1/n10y8u2j16l09bmodhlx5oi7uv85ruhq.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/03c/400_400_1/n10y8u2j16l09bmodhlx5oi7uv85ruhq.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120565",
+  "sku": "sg701790r_20_80_",
+  "name": "Керамогранит SG701790R Фрегат медовый обрезной 20x80x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg701790r-20x80x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2031,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/91c/vlxypgcqajh6d5wg2nsxy49mgw99m5wf.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/91c/vlxypgcqajh6d5wg2nsxy49mgw99m5wf.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120566",
+  "sku": "a17872_modis_modis_seryy_svetlyy_rektifikat_keramogranit_59_8_59_8_cersanit",
+  "name": "Керамогранит A17872 Modis (Модис) серый светлый ректификат 59,8х59,8, Cersanit",
+  "slug": "-a17872-modis-598598-cersanit",
+  "brand": "8х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1800,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/132/400_400_1/sjkqt76x7s9jhsq92ylvtc02gtj1cl35.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/132/400_400_1/sjkqt76x7s9jhsq92ylvtc02gtj1cl35.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120567",
+  "sku": "ab_1024g_agate_polirovannyy_120_60_absolut_gres",
+  "name": "Керамогранит AB 1024G Agate полированный 60х120, Absolut Gres",
+  "slug": "-ab-1024g-agate-60120-absolut-gres",
+  "brand": "Absolut Gres",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1991,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3fa/400_400_1/1ow011spu4lfbqzkn14alvfrh5g9m0lp.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3fa/400_400_1/1ow011spu4lfbqzkn14alvfrh5g9m0lp.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120568",
+  "sku": "bezhevyy_tekhnogres_d_pola_kg_30_30_8_unitile",
+  "name": "10405000025 Техногрес беж матовая 30*30, Шахтинская плитка",
+  "slug": "10405000025-3030-",
+  "brand": "Шахтинская плитка",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 865,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ede/400_400_1/ede120bf2a659719685f894f003bed06.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ede/400_400_1/ede120bf2a659719685f894f003bed06.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120569",
+  "sku": "granite_onix_granit_oniks_bezhevyy_kg_120_60_legkoe_lappatirovanie_llr_idalgo",
+  "name": "Керамогранит Granite Onix (Оникс) бежевый легкое лаппатирование LLR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-onix-llr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2500,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/57b/400_400_1/kc0nfa7qstbemtv1ed81v3m1ariwpsnw.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/57b/400_400_1/kc0nfa7qstbemtv1ed81v3m1ariwpsnw.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120570",
+  "sku": "a17657_street_strit_bezhevyy_svetlyy_keramogranit_29_8_29_8_cersanit",
+  "name": "Керамогранит A17657 Street (Стрит) бежевый светлый 29,8х29,8, Cersanit",
+  "slug": "-a17657-street-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 987,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec9/400_400_1/2p4u2ao0t4fpd18c7kgyeid1ht7trj0n.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec9/400_400_1/2p4u2ao0t4fpd18c7kgyeid1ht7trj0n.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120571",
+  "sku": "co4l012_coliseum_bezhevyy_kg_29_7_59_8_cersanit",
+  "name": "Керамогранит CO4L012 Coliseum бежевый 29,7х59,8, Cersanit",
+  "slug": "-co4l012-coliseum-297598-cersanit",
+  "brand": "7х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/687/400_400_1/3g31o025ssfmc6gpu4r5dfs7pks0yj4m.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/687/400_400_1/3g31o025ssfmc6gpu4r5dfs7pks0yj4m.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120572",
+  "sku": "keramogranit_belyy_matovyy_60kh60_dako_dako_e_5024_travertine_travertin",
+  "name": "Керамогранит 60х60 под камень для наружных работ Dako (Дако) E-5024 Travertine (Травертин)",
+  "slug": "-6060-dako-e-5024-travertine-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/116/400_400_1/ztj4uh2p010cm70hsxhjmb97ntsrv3nv.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/116/400_400_1/ztj4uh2p010cm70hsxhjmb97ntsrv3nv.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120573",
+  "sku": "10400001119_trevi_bezh_01_keramogranit_40_40_gracia_ceramica",
+  "name": "10400001119 Треви беж 01 керамогранит 40*40, Gracia Ceramica",
+  "slug": "10400001119-01-4040-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1085,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/577/400_400_1/a4bbvsbkfky37pldzupl7oueduelttxf.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/577/400_400_1/a4bbvsbkfky37pldzupl7oueduelttxf.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120574",
+  "sku": "granite_avellano_brown_granite_avellano_korichnevyy_korichnevyy_kg_120_19_5_strukturnyy_sr_idalgo",
+  "name": "Керамогранит Granite Avellano Brown (Авеллано) коричневый структурный SR 120х19,5, Idalgo (Идальго)",
+  "slug": "-granite-avellano-brown-sr-120195-idalgo-",
+  "brand": "5, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2250,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b68/400_400_1/rqe4kwqt6jx5wbq42kwbj6m0tehctmw0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b68/400_400_1/rqe4kwqt6jx5wbq42kwbj6m0tehctmw0.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120575",
+  "sku": "keramogranit_a17946_bonsai_tree_pesochnyy_relef_21_8kh89_8_cersanit",
+  "name": "Керамогранит A17946 Bonsai Tree песочный рельеф 21,8х89,8, Cersanit",
+  "slug": "-a17946-bonsai-tree-218898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2013,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4ed/400_400_1/0zpngsw5kesdikr8an8zgd0mrnzjm0ci.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4ed/400_400_1/0zpngsw5kesdikr8an8zgd0mrnzjm0ci.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120577",
+  "sku": "847743101_global_60_60_azori",
+  "name": "Керамогранит 847743101 Global (Глобал) 60х60, Azori (Азори)",
+  "slug": "-847743101-global-6060-azori-",
+  "brand": "Azori (Азори)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1699,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7da/7da82abb2ee3345cd0c3e566c452d17c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7da/7da82abb2ee3345cd0c3e566c452d17c.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120578",
+  "sku": "garmoniya_kggoluboy_sg924200n_30_30_kerama_maratstsi",
+  "name": "Керамогранит SG924200N Гармония голубой 30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg924200n-30x30x08-kerama-marazzi-",
+  "brand": "8, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1738,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ef2/ef25ce41ab1c0fd9fc538238125aa512.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ef2/ef25ce41ab1c0fd9fc538238125aa512.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120579",
+  "sku": "a17425_valmonte_valmont_seryy_svetlyy_rektifikat_keramogranit_60_120_cersanit",
+  "name": "Керамогранит A17425 Valmonte (Вальмонт) серый светлый ректификат 60х120, Cersanit",
+  "slug": "-a17425-valmonte-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2510,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/275/400_400_1/0r8puoc6vtsd25d7s1ki6kw6888a01m6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/275/400_400_1/0r8puoc6vtsd25d7s1ki6kw6888a01m6.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120580",
+  "sku": "a17779_ultra_ultra_seryy_svetlyy_keramogranit_44_8_89_8_cersanit",
+  "name": "Керамогранит A17779 Ultra (Ультра) серый светлый 44,8х89,8, Cersanit",
+  "slug": "-a17779-ultra-448898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1890,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bb5/400_400_1/pnndnsd7u4h0ci4wl0vl66z5tvi1r3m9.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bb5/400_400_1/pnndnsd7u4h0ci4wl0vl66z5tvi1r3m9.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120581",
+  "sku": "wn4t303_wood_concept_natural_bezhevyy_svetlyy_kg_21_8_89_8_cersanit",
+  "name": "Керамогранит WN4T303 Wood Concept Natural бежевый светлый 21,8х89,8, Cersanit",
+  "slug": "-wn4t303-wood-concept-natural-218898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2013,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ccb/400_400_1/8thbo2wcc84733g3mvqsazt3k1tymbxv.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ccb/400_400_1/8thbo2wcc84733g3mvqsazt3k1tymbxv.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120582",
+  "sku": "10400001115_edem_bel_01_keramogranit_40_40_gracia_ceramica",
+  "name": "10400001115 Эдем бел 01 керамогранит 40*40, Gracia Ceramica",
+  "slug": "10400001115-01-4040-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1205,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7f6/400_400_1/mfumvffy7hj6kiue3326ms2v9dqohoc4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7f6/400_400_1/mfumvffy7hj6kiue3326ms2v9dqohoc4.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120583",
+  "sku": "6_je0600_analog_ra000_belyy_kg_polir_600_600_kitay",
+  "name": "Керамогранит SP6200T Супер белый 60х60, Китай",
+  "slug": "-sp6200t-6060-",
+  "brand": "Китай",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2439,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d2d/400_400_1/d2dfc6d141b35e5de91ddf3525263555.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d2d/400_400_1/d2dfc6d141b35e5de91ddf3525263555.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120584",
+  "sku": "keramogranit_a17900_teakwood_bezhevyy_svetlyy_relef_18_5kh59_8_cersanit",
+  "name": "Керамогранит A17900 Teakwood бежевый светлый рельеф 18,5х59,8, Cersanit",
+  "slug": "-a17900-teakwood-185598-cersanit",
+  "brand": "5х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/661/400_400_1/g5c9zh33039jpfatlse9qrkubqcimvz6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/661/400_400_1/g5c9zh33039jpfatlse9qrkubqcimvz6.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120585",
+  "sku": "keramogranit_seryy_matovyy_60kh60_dako_dako_e_3043_unicom_yunikom",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-3043 Unicom (Юником)",
+  "slug": "-6060-dako-e-3043-unicom-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5e0/400_400_1/xlkbfbre36bn7ae69fl2d9oxg4j73l5y.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5e0/400_400_1/xlkbfbre36bn7ae69fl2d9oxg4j73l5y.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120586",
+  "sku": "milan_natural_pg03_v2_d_pola_kg_45_45_gracia_ceramica_novyy_razmer",
+  "name": "10404001727 Milan natural PG 03 матовый керамогранит 45*45, Gracia Ceramica",
+  "slug": "10404001727-milan-natural-pg-03-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1213,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0f5/400_400_1/0f58188c16681cc98cc06f37bb1623c8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0f5/400_400_1/0f58188c16681cc98cc06f37bb1623c8.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120587",
+  "sku": "nw4m012_northwood_bezhevyy_relef_kg_18_5_59_8_cersanit",
+  "name": "Керамогранит NW4M012 Northwood бежевый рельеф 18,5х59,8, Cersanit",
+  "slug": "-nw4m012-northwood-185598-cersanit",
+  "brand": "5х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/efd/400_400_1/9y3zqtioissvbmw9i6siv9ljxx1rucgt.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/efd/400_400_1/9y3zqtioissvbmw9i6siv9ljxx1rucgt.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120588",
+  "sku": "a17890_limestone_limestone_bezhevyy_relef_rektifikat_keramogranit_59_8_59_8_cersanit",
+  "name": "Керамогранит A17890 Limestone (Лаймстоун) бежевый рельеф ректификат 59,8х59,8, Cersanit",
+  "slug": "-a17890-limestone-598598-cersanit",
+  "brand": "8х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1800,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/21e/400_400_1/g9yjw5nm3xmcao025z6i1cls9g125gy8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/21e/400_400_1/g9yjw5nm3xmcao025z6i1cls9g125gy8.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120589",
+  "sku": "ml4a113_milton_milton_300_korichnevyy_stupen_29_8x29_8_cersanit",
+  "name": "Ступень ML4A113 Milton (Милтон) 300 коричневая 29,8х29,8, Cersanit",
+  "slug": "-ml4a113-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1405,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/507/400_400_1/lxjoic8r1003d32c3f3edl7bx8cahw3b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/507/400_400_1/lxjoic8r1003d32c3f3edl7bx8cahw3b.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120590",
+  "sku": "kasablanka_hp_antratsit_matovyy_obreznoy_60x119_5x0_9",
+  "name": "Керамогранит KM6012G0141R Касабланка HP антрацит матовый обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-km6012g0141r-hp-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2753,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b4/400_400_1/vbnqa9j9rz7psgj0lhelcz70gqotovz0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b4/400_400_1/vbnqa9j9rz7psgj0lhelcz70gqotovz0.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120591",
+  "sku": "mirabo_seryy_temnyy_matovyy_obreznoy_60x119_5x0_9",
+  "name": "Керамогранит KM6012G0721R Мирабо серый темный матовый обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-km6012g0721r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1990,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ad5/400_400_1/ojciu7ia6dwjzdcw4kfgwuqfrisupghi.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ad5/400_400_1/ojciu7ia6dwjzdcw4kfgwuqfrisupghi.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120592",
+  "sku": "dd600220r_pro_stoun_korichnevyy_obreznoy_keramogranit_60x60_kerama_marazzi",
+  "name": "Керамогранит DD600220R Про Стоун коричневый обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd600220r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2496,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/54b/400_400_1/6t8wt2cpfunz3y8qjrzjisofnc8dtgjb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/54b/400_400_1/6t8wt2cpfunz3y8qjrzjisofnc8dtgjb.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120593",
+  "sku": "sg701690r_20_80_",
+  "name": "Керамогранит SG701690R Фрегат венге обрезной 20x80x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg701690r-20x80x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2031,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/b72/1qgf76066go1iqigb2d8t4klrnox55bz.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/b72/1qgf76066go1iqigb2d8t4klrnox55bz.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120594",
+  "sku": "terrasa_seryy_protivoskolzyashchiy_kg_sg158700n_40_2_40_2_kerama_maratstsi",
+  "name": "Керамогранит SG158700N Терраса серый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158700n-402x402x08-kerama-marazzi-",
+  "brand": "2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1617,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8ac/400_400_1/8ac6db6451f8d0bc72d41b9d02396f13.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8ac/400_400_1/8ac6db6451f8d0bc72d41b9d02396f13.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120595",
+  "sku": "keramogranit_granite_villa_alba_kross_belyy_60kh120_legkoe_lappatirovanie_llr_idalgo_idalgo",
+  "name": "Керамогранит Граните Вилла Альба Кросс белый 60х120 легкое лаппатирование LLR, Idalgo (Идальго)",
+  "slug": "-60120-llr-idalgo-",
+  "brand": "Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2500,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/986/400_400_1/1paz8pcmfdkvn4mg4fj5s9953yvu6j7m.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/986/400_400_1/1paz8pcmfdkvn4mg4fj5s9953yvu6j7m.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120596",
+  "sku": "a15987_wood_concept_natural_korichnevyy_svetlyy_kg_21_8_89_8_cersanit",
+  "name": "Керамогранит A15987 Wood Concept Natural коричневый светлый 21,8х89,8, Cersanit",
+  "slug": "-a15987-wood-concept-natural-218898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2013,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aba/400_400_1/vn3oy6uqcyohddh4xbmyr26tiszux3c0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aba/400_400_1/vn3oy6uqcyohddh4xbmyr26tiszux3c0.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120597",
+  "sku": "keramogranit_seryy_matovyy_60kh60_dako_dako_e_3014_liberty",
+  "name": "Керамогранит 60х60 под мрамор для наружных работ Dako (Дако) E-3014 Liberty",
+  "slug": "-6060-dako-e-3014-liberty",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/894/400_400_1/mz1c8ik5wy7r6wmb8cw9qb36c2podw36.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/894/400_400_1/mz1c8ik5wy7r6wmb8cw9qb36c2podw36.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120598",
+  "sku": "sg701490r_20_80_",
+  "name": "Керамогранит SG701490R Фрегат коричневый обрезной 20x80x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg701490r-20x80x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2031,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/2a0/b1x5d4s6gpevd494bm6olq0kspz837q6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/2a0/b1x5d4s6gpevd494bm6olq0kspz837q6.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120599",
+  "sku": "granite_ethno_wood_granit_etno_vud_braun_kg_120_19_5_strukturnyy_sr_idalgo",
+  "name": "Керамогранит Granite Ethno wood (Этно Вуд) браун структурный SR 120х19,5 , Idalgo (Идальго)",
+  "slug": "-granite-ethno-wood-sr-120195-idalgo-",
+  "brand": "5 , Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2250,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/662/400_400_1/2325dt75feen2okmv6vvesit9inbsj22.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/662/400_400_1/2325dt75feen2okmv6vvesit9inbsj22.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120600",
+  "sku": "dd600520r_pro_stoun_temno_seryy_obreznoy_keramogranit_60x60_kerama_marazzi",
+  "name": "Керамогранит DD600520R Про Стоун серый тёмный обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd600520r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2439,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb6/400_400_1/449k9soc3gy7fvpyr8z4rohdtr9wrttq.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb6/400_400_1/449k9soc3gy7fvpyr8z4rohdtr9wrttq.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120601",
+  "sku": "sw4m012_sandwood_bezhevyy_18_5_59_8_cersanit",
+  "name": "Керамогранит SW4M012 Sandwood бежевый 18,5х59,8, Cersanit",
+  "slug": "-sw4m012-sandwood-185598-cersanit",
+  "brand": "5х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/499/400_400_1/ehvvam1g8egtiyb83z33jhsle768kwg8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/499/400_400_1/ehvvam1g8egtiyb83z33jhsle768kwg8.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120602",
+  "sku": "a17126_futura_futura_tonkiy_deep_calacatta_belyy_rektifikat_kg_60x120_cersanit",
+  "name": "Керамогранит A17126 Futura (Футура) тонкий Deep Calacatta белый ректификат 60х120, Cersanit",
+  "slug": "-a17126-futura-deep-calacatta-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2766,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/16a/400_400_1/qp4cifql5x7wrktyq0j65fhdr1b3rxrn.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/16a/400_400_1/qp4cifql5x7wrktyq0j65fhdr1b3rxrn.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120603",
+  "sku": "ml4a116_milton_milton_300_korichnevyy_kg_29_8x29_8_cersanit",
+  "name": "Керамогранит ML4A116 Milton (Милтон) 300 коричневый 29,8х29,8, Cersanit",
+  "slug": "-ml4a116-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1103,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d20/400_400_1/5zyl078ddhqdodxz4odhlcd3wgffn0g2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d20/400_400_1/5zyl078ddhqdodxz4odhlcd3wgffn0g2.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120604",
+  "sku": "ml4a096_milton_milton_300_seryy_kg_29_8x29_8_cersanit",
+  "name": "Керамогранит ML4A096 Milton (Милтон) 300 серый 29,8х29,8, Cersanit",
+  "slug": "-ml4a096-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1103,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1d5/400_400_1/r0p0iba4qnfv3ma8etkk4vv2p7nkt6uq.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1d5/400_400_1/r0p0iba4qnfv3ma8etkk4vv2p7nkt6uq.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120605",
+  "sku": "ab_1054g_wonicy_white_polirovannyy_120_60_absolut_gres",
+  "name": "Керамогранит AB 1054G Wonicy White полированный 60х120, Absolut Gres",
+  "slug": "-ab-1054g-wonicy-white-60120-absolut-gres",
+  "brand": "Absolut Gres",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1413,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cb4/400_400_1/qsq5gsb4qfqa2zdz1388xbbx168p4fr2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cb4/400_400_1/qsq5gsb4qfqa2zdz1388xbbx168p4fr2.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120606",
+  "sku": "sg648220r_onda_seryy_svetlyy_naturalnyy_obreznoy_kg_60_60_kerama_marazzi",
+  "name": "Керамогранит SG648220R Онда серый светлый натуральный обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg648220r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2361,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ebd/400_400_1/66n7i5lmaven6p3gdi3j0c5iu01w2dem.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ebd/400_400_1/66n7i5lmaven6p3gdi3j0c5iu01w2dem.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120607",
+  "sku": "e_3032_mr_600x600x9_vita_seryy_matovyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-3032 Vita",
+  "slug": "-6060-dako-e-3032-vita",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a7d/400_400_1/9ctbyzyu0p4dhi00q34aoetdo9h5sgvx.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a7d/400_400_1/9ctbyzyu0p4dhi00q34aoetdo9h5sgvx.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120608",
+  "sku": "a17127_futura_futura_tonkiy_deep_calacatta_polirovannyy_belyy_rektifikat_kg_60x120_cersanit",
+  "name": "Керамогранит A17127 Futura (Футура) тонкий Deep Calacatta полированный белый ректификат 60х120, Cersanit",
+  "slug": "-a17127-futura-deep-calacatta-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2766,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c64/400_400_1/2km2q5s90qtokb015uky4qxrji407rfg.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c64/400_400_1/2km2q5s90qtokb015uky4qxrji407rfg.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120609",
+  "sku": "sandstone_sugar_beige_pg_01_60_60_gracia_ceramica",
+  "name": "010400001043 Sandstone (Стэндстоун) sugar beige PG 01 керамогранит 60*60, Gracia Ceramica",
+  "slug": "010400001043-sandstone-sugar-beige-pg-01-6060-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1884,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/4f3/rv8au62uhyh9izbt23h5gpwxymez8zel.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/4f3/rv8au62uhyh9izbt23h5gpwxymez8zel.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120610",
+  "sku": "a17882_stonehouse_stonekhouse_seryy_rektifikat_keramogranit_59_8_59_8_cersanit",
+  "name": "Керамогранит A17882 Stonehouse (Стоунхаус) серый ректификат 59,8х59,8, Cersanit",
+  "slug": "-a17882-stonehouse-598598-cersanit",
+  "brand": "8х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1800,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e24/400_400_1/potvc7ow84uuz8zrlj2p25xlnk3vtrmi.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e24/400_400_1/potvc7ow84uuz8zrlj2p25xlnk3vtrmi.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120611",
+  "sku": "ml4a016_milton_milton_300_bezhevyy_kg_29_8x29_8_cersanit",
+  "name": "Керамогранит ML4A016 Milton (Милтон) 300 бежевый 29,8х29,8, Cersanit",
+  "slug": "-ml4a016-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1103,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a47/400_400_1/co8rhr70unljby9p46wvuka1id70vmzm.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a47/400_400_1/co8rhr70unljby9p46wvuka1id70vmzm.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120612",
+  "sku": "ifran_bezhevyy_svetlyy_matovyy_obreznoy_60x60x0_9",
+  "name": "Керамогранит KM6060G0341R Ифран бежевый светлый матовый обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-km6060g0341r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2423,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c2/400_400_1/qdaqt8ydevfiww2qdberww2cnqcz3khx.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c2/400_400_1/qdaqt8ydevfiww2qdberww2cnqcz3khx.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120613",
+  "sku": "dl510120r_pro_vud_temno_bezhevyy_obreznoy_keramogranit_20x119_5_kerama_marazzi",
+  "name": "Керамогранит DL510120R Про Вуд бежевый темный обрезной 20x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dl510120r-20x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 3830,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0f3/400_400_1/i58etjoeufw9c4gagpf581zpzdjes94o.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0f3/400_400_1/i58etjoeufw9c4gagpf581zpzdjes94o.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120614",
+  "sku": "010400000878_nut_beige_pg_01_12_5_50_gracia_eramica",
+  "name": "010400000878 Nut (Нут) beige PG 01 керамогранит 12,5*50, Gracia Ceramica",
+  "slug": "010400000878-nut-beige-pg-01-12550-gracia-ceramica",
+  "brand": "5*50, Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1079,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9d0/400_400_1/9d05fa3cdc7ff5963aba88bc50c422ed.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9d0/400_400_1/9d05fa3cdc7ff5963aba88bc50c422ed.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120615",
+  "sku": "dd504520r_pro_chemento_svetlo_seryy_matovyy_obreznoy_keramogranit_60x119_5_kerama_marazzi",
+  "name": "Керамогранит DD504520R Про Чементо серый светлый матовый обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd504520r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2670,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a1c/400_400_1/ap3vnrgl1w7bvokfcizj2u6gqf7thxel.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a1c/400_400_1/ap3vnrgl1w7bvokfcizj2u6gqf7thxel.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120616",
+  "sku": "dd500320r_pro_stoun_antratsit_obreznoy_kg_60_119_5_kerama_marazzi",
+  "name": "Керамогранит DD500320R Про Стоун антрацит обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd500320r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2746,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0e6/400_400_1/or54us2l2e4r14fj5zjhvp98wwb3mz92.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0e6/400_400_1/or54us2l2e4r14fj5zjhvp98wwb3mz92.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120617",
+  "sku": "in4l092_infinity_seryy_relef_kg_29_7_59_8_cersanit",
+  "name": "Керамогранит IN4L092 Infinity серый рельеф 29,7х59,8, Cersanit",
+  "slug": "-in4l092-infinity-297598-cersanit",
+  "brand": "7х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/46c/400_400_1/9ottq0glqe2ehr0w80x5cbcsjdfbttgc.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/46c/400_400_1/9ottq0glqe2ehr0w80x5cbcsjdfbttgc.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120618",
+  "sku": "granite_sunset_granit_sanset_ardzhento_kg_120_60_matovyy_mr_idalgo",
+  "name": "Керамогранит Granite Sunset (Сансет) ардженто матовый MR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-sunset-mr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2350,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec7/400_400_1/eyppswfiafimbsr1hm57x5l2j2v0tq77.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec7/400_400_1/eyppswfiafimbsr1hm57x5l2j2v0tq77.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120619",
+  "sku": "keramogranit_monokolor_belyy_matovyy_30kh30_idalgo_idalgo",
+  "name": "Керамогранит Моноколор Белый матовый 30х30, Idalgo (Идальго)",
+  "slug": "-3030-idalgo-",
+  "brand": "Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 150,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8d9/400_400_1/7lkibbjkk9lk0khwqgufh8byx32b3pme.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8d9/400_400_1/7lkibbjkk9lk0khwqgufh8byx32b3pme.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120620",
+  "sku": "a15886_lorenzo_belyy_kg_29_7_59_8_cersanit",
+  "name": "Керамогранит A15886 Lorenzo белый 29,7х59,8, Cersanit",
+  "slug": "-a15886-lorenzo-297598-cersanit",
+  "brand": "7х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/634/400_400_1/1vioedekqly1x87oz0pua0di8dcbpyx1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/634/400_400_1/1vioedekqly1x87oz0pua0di8dcbpyx1.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120621",
+  "sku": "keramogranit_bezhevyy_matovyy_60kh60_dako_dako_e_5014_gold_sand_gold_send",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-5014 Gold Sand (Голд Сэнд)",
+  "slug": "-6060-dako-e-5014-gold-sand-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9eb/400_400_1/48s5bbrblgqxbaahcoslilmstmaum0ls.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9eb/400_400_1/48s5bbrblgqxbaahcoslilmstmaum0ls.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120622",
+  "sku": "keramogranit_belyy_pod_mramor_matovyy_60kh60_dako_dako_e_3011_harmony",
+  "name": "Керамогранит 60х60 под мрамор для наружных работ Dako (Дако) E-3011 Harmony",
+  "slug": "-6060-dako-e-3011-harmony",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/835/400_400_1/6eekfovo6l1podp214f1ir7l76qia5e2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/835/400_400_1/6eekfovo6l1podp214f1ir7l76qia5e2.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120623",
+  "sku": "a17434_stilo_stilo_seryy_rektifikat_keramogranit_60_120_cersanit",
+  "name": "Керамогранит A17434 Stilo (Стило) серый ректификат 60х120, Cersanit",
+  "slug": "-a17434-stilo-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2610,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c2/400_400_1/4e25jjnyexfkww22ozml1dvl6fjeo6hc.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c2/400_400_1/4e25jjnyexfkww22ozml1dvl6fjeo6hc.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120624",
+  "sku": "se4r053_sevilla_belyy_d_pola_kg_42_42_cersanit",
+  "name": "Керамогранит SE4R053 Sevilla белый д/пола 42х42, Cersanit",
+  "slug": "-se4r053-sevilla-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/94e/400_400_1/gfwgstsuq7yp4an9w286nbe6i7crlw26.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/94e/400_400_1/gfwgstsuq7yp4an9w286nbe6i7crlw26.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120625",
+  "sku": "sw4m112_sandwood_korichnevyy_kg_59_8_18_5_cersanit",
+  "name": "Керамогранит SW4M112 Sandwood коричневый 18,5х59,8, Cersanit",
+  "slug": "-sw4m112-sandwood-185598-cersanit",
+  "brand": "5х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/426/400_400_1/pzbhsc5svq54pjqlkt8gifj6xbb4c6lh.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/426/400_400_1/pzbhsc5svq54pjqlkt8gifj6xbb4c6lh.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120626",
+  "sku": "qn4r053_queen_belyy_kg_42_42_cersanit",
+  "name": "Керамогранит QN4R053 Queen белый 42х42, Cersanit",
+  "slug": "-qn4r053-queen-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/676/400_400_1/26d3xfqtrf9tk2ahhezd1w42u3fby0oy.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/676/400_400_1/26d3xfqtrf9tk2ahhezd1w42u3fby0oy.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120627",
+  "sku": "keramogranit_belyy_matovyy_60kh60_dako_dako_e_5023_cosmos",
+  "name": "Керамогранит 60х60 под мрамор для наружных работ Dako (Дако) E-5023 Cosmos",
+  "slug": "-6060-dako-e-5023-cosmos",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6be/400_400_1/e8lf46stmf3iizd2tf7mg090smuhwckj.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6be/400_400_1/e8lf46stmf3iizd2tf7mg090smuhwckj.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120628",
+  "sku": "granite_concepta_selicato_dark_granite_kontsepta_selikato_tyemnyy_selikato_temnyy_kg_120_59_9_matovy",
+  "name": "Керамогранит Granite Concepta Selicato Dark (Концепта) селикато темный матовый MR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-concepta-selicato-dark-mr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1900,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dd7/400_400_1/0nrkwivjxzfd8y9c0uauemqxxxcc859a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dd7/400_400_1/0nrkwivjxzfd8y9c0uauemqxxxcc859a.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120629",
+  "sku": "e_5006_mr_600x600x9_season_seryy_matovyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под камень для наружных работ Dako (Дако) E-5006 Season",
+  "slug": "-6060-dako-e-5006-season",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/287/400_400_1/fy1qn9h6zwki303r8sv0jkwvx1p8nper.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/287/400_400_1/fy1qn9h6zwki303r8sv0jkwvx1p8nper.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120630",
+  "sku": "a17892_limestone_limestone_seryy_svetlyy_relef_rektifikat_keramogranit_59_8_59_8_cersanit",
+  "name": "Керамогранит A17892 Limestone (Лаймстоун) серый светлый рельеф ректификат 59,8х59,8, Cersanit",
+  "slug": "-a17892-limestone-598598-cersanit",
+  "brand": "8х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1800,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b3d/400_400_1/pc699oob1ees0jjgfkb1c5mt45gb8a23.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b3d/400_400_1/pc699oob1ees0jjgfkb1c5mt45gb8a23.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120631",
+  "sku": "6_ry_000_a600_slonovaya_kost_kg_polir_60_60",
+  "name": "Керамогранит JA0600BP Ivory бежевый полированный 60х60, Китай",
+  "slug": "-ja0600bp-ivory-6060-",
+  "brand": "Китай",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1550,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/181/400_400_1/18135bbec991b9b8834b10d62414cf6e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/181/400_400_1/18135bbec991b9b8834b10d62414cf6e.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120632",
+  "sku": "granite_pallisandro_granit_pallisandro_nero_kg_120_60_legkoe_lappatirovanie_llr_idalgo",
+  "name": "Керамогранит Granite Pallisandro (Паллисандро) неро легкое лаппатирование LLR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-pallisandro-llr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2500,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/76b/400_400_1/hj3nh51yt88xefbcd128xqtpnwm5a850.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/76b/400_400_1/hj3nh51yt88xefbcd128xqtpnwm5a850.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120633",
+  "sku": "seryy_tekhnogres_d_pola_kg_profi_30_30_7_unitile",
+  "name": "10405001409 Техногрес Профи сер 01 матовая 30*30, Шахтинская плитка",
+  "slug": "10405001409-01-3030-",
+  "brand": "Шахтинская плитка",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 803,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ab9/400_400_1/ab92b19434e7483021d210fc574f71a6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ab9/400_400_1/ab92b19434e7483021d210fc574f71a6.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120634",
+  "sku": "keramogranit_a17902_amberwood_bezhevyy_svetlyy_relef_18_5kh59_8_cersanit",
+  "name": "Керамогранит A17902 Amberwood бежевый светлый рельеф 18,5х59,8, Cersanit",
+  "slug": "-a17902-amberwood-185598-cersanit",
+  "brand": "5х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/585/400_400_1/1kijnrxxos5b7qtqv6d1x66i0q0yi8lb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/585/400_400_1/1kijnrxxos5b7qtqv6d1x66i0q0yi8lb.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120635",
+  "sku": "ne_smotret_sg632620r_terratstso_seryy_obreznoy_kg_60_60_11_kerama_marazzi",
+  "name": "Керамогранит SG632620R Терраццо серый обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg632620r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2070,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/667/400_400_1/18zwy56yw717kr0x66cu6w1iec3ie0t1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/667/400_400_1/18zwy56yw717kr0x66cu6w1iec3ie0t1.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120636",
+  "sku": "vesta_sv_kg_01_450kh450_1_y_sort",
+  "name": "10400000858 Веста св керамогранит 01 глянцевая 45*45, Gracia Ceramica",
+  "slug": "10400000858-01-4545-gracia-ceramica",
+  "brand": "Gracia Ceramica",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1190,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7ce/400_400_1/7ce310b6d5850b932453fe3facb30bd5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7ce/400_400_1/7ce310b6d5850b932453fe3facb30bd5.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120637",
+  "sku": "a17125_futura_futura_tonkiy_grigio_nuovalato_seryy_rektifikat_kg_60x120_cersanit",
+  "name": "Керамогранит A17125 FRC[-2]:R[1]C(Футура) тонкий Grigio Nuovalato серый ректификат 60х120, Cersanit",
+  "slug": "-a17125-frc-2r1c-grigio-nuovalato-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2766,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/45d/400_400_1/x1905wrhyw6edkgklli2tp6njr6di1hb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/45d/400_400_1/x1905wrhyw6edkgklli2tp6njr6di1hb.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120638",
+  "sku": "a17427_cambio_kambio_seryy_relef_rektifikat_keramogranit_60_120_cersanit",
+  "name": "Керамогранит A17427 Cambio (Камбио) серый рельеф ректификат 60х120, Cersanit",
+  "slug": "-a17427-cambio-60120-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2552,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18f/400_400_1/nkeq5011c2a0raxq1ovi35vpjixw8y01.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18f/400_400_1/nkeq5011c2a0raxq1ovi35vpjixw8y01.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120639",
+  "sku": "sg50006122r_oniche_goluboy_lappatirovannyy_obreznoy_keramogranit_60x119_5_kerama_marazzi",
+  "name": "Керамогранит SG50006122R Ониче голубой лаппатированный обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg50006122r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 5509,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fbf/400_400_1/a0nwv9990bp4bspyw52twme36ldzjx2s.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fbf/400_400_1/a0nwv9990bp4bspyw52twme36ldzjx2s.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120640",
+  "sku": "lo4r092_loft_seryy_kg_42_42_cersanit",
+  "name": "Керамогранит LO4R092 Loft серый 42х42, Cersanit",
+  "slug": "-lo4r092-loft-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/46a/400_400_1/2mtwegly4dg5f2id37t9a6um1ogdf2ui.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/46a/400_400_1/2mtwegly4dg5f2id37t9a6um1ogdf2ui.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120641",
+  "sku": "610015000626_empire_calacatta_black_lap_kg_60_60_atlas_concorde_",
+  "name": "Керамогранит 610015000626 Empire Calacatta Black Lap 60х60, Atlas Concorde",
+  "slug": "-610015000626-empire-calacatta-black-lap-6060-atlas-concorde",
+  "brand": "Atlas Concorde",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2883,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/cc6/cc6594aa0c7566deb1ff0fb5e31e6226.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/cc6/cc6594aa0c7566deb1ff0fb5e31e6226.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120642",
+  "sku": "a16004_oriental_seryy_kg_42_42_cersanit",
+  "name": "Керамогранит A16004 Oriental серый 42х42, Cersanit",
+  "slug": "-a16004-oriental-4242-cersanit",
+  "brand": "Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1aa/400_400_1/37gzkpfkiyidon6ct7qfuni9cziqb8md.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1aa/400_400_1/37gzkpfkiyidon6ct7qfuni9cziqb8md.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120643",
+  "sku": "e_5013_mr_600x600x9_extreme_seryy_matovyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-5013 Extreme",
+  "slug": "-6060-dako-e-5013-extreme",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f3f/400_400_1/th2yk69de04hegb4l0uc1i1pdq7pkzul.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f3f/400_400_1/th2yk69de04hegb4l0uc1i1pdq7pkzul.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120644",
+  "sku": "00_00000160_desert_dezert_beige_kg_60_60_azori",
+  "name": "Керамогранит 00-00000160 Desert (Дезерт) Beige 60х60, Azori (Азори)",
+  "slug": "-00-00000160-desert-beige-6060-azori-",
+  "brand": "Azori (Азори)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1699,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d55/400_400_1/5mficw2vywtahjmkx9ujxgg4fgb16xvy.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d55/400_400_1/5mficw2vywtahjmkx9ujxgg4fgb16xvy.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120645",
+  "sku": "e_5022_mr_600x600x9_cosmos_chernyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под мрамор для наружных работ Dako (Дако) E-5022 Cosmos",
+  "slug": "-6060-dako-e-5022-cosmos",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd1/400_400_1/b164lrjvf5e6gthsl41biz34jt290n3i.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd1/400_400_1/b164lrjvf5e6gthsl41biz34jt290n3i.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120646",
+  "sku": "a16425_jackstone_relef_kg_29_8_29_8_cersanit",
+  "name": "Керамогранит A16425 JackStone рельеф 29,8х29,8, Cersanit",
+  "slug": "-a16425-jackstone-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/2a6/tudgyyiq44i0q4w78at2h6msf3bbb3gu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/2a6/tudgyyiq44i0q4w78at2h6msf3bbb3gu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120647",
+  "sku": "a15934_starwood_belyy_relef_kg_18_5_59_8_cersanit",
+  "name": "Керамогранит А15934 Starwood белый рельеф 18,5х59,8,Cersanit",
+  "slug": "-15934-starwood-185598cersanit",
+  "brand": "5х59,8,Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1373,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cc8/400_400_1/3f8gj8yo0jtga2w724l1uz9giignlh38.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cc8/400_400_1/3f8gj8yo0jtga2w724l1uz9giignlh38.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120648",
+  "sku": "e_5020_mr_600x600x9_rock_seryy_svetlyy_matovyy_kg_60_60_dako",
+  "name": "Керамогранит 60х60 под бетон для наружных работ Dako (Дако) E-5020 Rock",
+  "slug": "-6060-dako-e-5020-rock",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd4/400_400_1/1wv538903or1e4sse55tt8x74r805e8o.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd4/400_400_1/1wv538903or1e4sse55tt8x74r805e8o.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120649",
+  "sku": "granite_dolomiti_tacco_light_granite_dolomiti_takko_svetlyy_svetlyy_kg_120_59_9_ctrukturnyy_sr_idalg",
+  "name": "Керамогранит Granite Dolomiti Tacco Light (Доломити) светлый 120х59,9 cтруктурный SR, Idalgo (Идальго)",
+  "slug": "-granite-dolomiti-tacco-light-120599-c-sr-idalgo-",
+  "brand": "9 cтруктурный SR, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2350,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0b7/400_400_1/ret1si8e9q8287l12nael44bxy8wcjuv.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0b7/400_400_1/ret1si8e9q8287l12nael44bxy8wcjuv.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120650",
+  "sku": "granite_lusso_santo_granite_lyusso_santo_santo_kg_120_59_9_legkoe_lappatirovanie_llr_idalgo",
+  "name": "Керамогранит Granite Lusso Santo (Люссо) санто легкое лаппатирование LLR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-lusso-santo-llr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2500,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c7/400_400_1/8f8vzeqvmvabg6nkq65eoyjf7kh7fecu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9c7/400_400_1/8f8vzeqvmvabg6nkq65eoyjf7kh7fecu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120651",
+  "sku": "a17777_ultra_ultra_seryy_keramogranit_44_8_89_8_cersanit",
+  "name": "Керамогранит A17777 Ultra (Ультра) серый 44,8х89,8, Cersanit",
+  "slug": "-a17777-ultra-448898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1890,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b2/400_400_1/3ezjr1knmqlybdiaf8g2b1ghldrnywnu.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b2/400_400_1/3ezjr1knmqlybdiaf8g2b1ghldrnywnu.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120652",
+  "sku": "tubkal_chyernyy_matovyy_obreznoy_60x60x0_9",
+  "name": "Керамогранит KM6060G0331R Тубкаль чёрный матовый обрезной 60x60x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-km6060g0331r-60x60x09-kerama-marazzi-",
+  "brand": "9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2538,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3fe/400_400_1/tml222f3vip1wwmbf1ivajnngtdsbes2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3fe/400_400_1/tml222f3vip1wwmbf1ivajnngtdsbes2.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120653",
+  "sku": "a17781_pamir_pamir_seryy_temnyy_keramogranit_44_8_89_8_cersanit",
+  "name": "Керамогранит A17781 Pamir (Памир) серый темный 44,8х89,8, Cersanit",
+  "slug": "-a17781-pamir-448898-cersanit",
+  "brand": "8х89,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1890,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/70a/400_400_1/wdg2fr33dv6celxadzqvyvlcv8j2v0zk.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/70a/400_400_1/wdg2fr33dv6celxadzqvyvlcv8j2v0zk.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120654",
+  "sku": "ml4a406_milton_milton_300_temno_seryy_kg_29_8x29_8_cersanit",
+  "name": "Керамогранит ML4A406 Milton (Милтон) 300 темно-серый 29,8х29,8, Cersanit",
+  "slug": "-ml4a406-milton-300-298298-cersanit",
+  "brand": "8х29,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1133,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd7/400_400_1/dg0hk6wp1qt4irwr2vobgyu87k9zv1se.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fd7/400_400_1/dg0hk6wp1qt4irwr2vobgyu87k9zv1se.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120655",
+  "sku": "a16431_rento_bezhevyy_relef_29_8_29_8_cersanit",
+  "name": "Керамогранит A16431 Rento бежевый рельеф 29,8х29,8,Cersanit",
+  "slug": "-a16431-rento-298298cersanit",
+  "brand": "8х29,8,Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1271,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f40/400_400_1/mgyzgf04z1s5mbv3de2opurn84l8u6a6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f40/400_400_1/mgyzgf04z1s5mbv3de2opurn84l8u6a6.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120656",
+  "sku": "granite_pallisandro_granit_pallisandro_klassik_kg_120_60_legkoe_lappatirovanie_llr_idalgo",
+  "name": "Керамогранит Granite Pallisandro (Паллисандро) классик легкое лаппатирование LLR 120х59,9, Idalgo (Идальго)",
+  "slug": "-granite-pallisandro-llr-120599-idalgo-",
+  "brand": "9, Idalgo (Идальго)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2500,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/280/400_400_1/fdm1z9svqd2neebjcsbw5rxauolx341m.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/280/400_400_1/fdm1z9svqd2neebjcsbw5rxauolx341m.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120657",
+  "sku": "dd507620r_cheppo_di_gre_svetlo_seryy_matovyy_obreznoy_keramogranit_60x119_5_kerama_marazzi",
+  "name": "Керамогранит DD507620R Чеппо ди Гре серый светлый матовый обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd507620r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2670,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/226/400_400_1/8s83mphtx1kmngsal07e0n8x43efjdkm.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/226/400_400_1/8s83mphtx1kmngsal07e0n8x43efjdkm.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120658",
+  "sku": "dd500420r_pro_stoun_temno_seryy_obreznoy_keramogranit_60x119_5_kerama_marazzi",
+  "name": "Керамогранит DD500420R Про Стоун серый тёмный обрезной 60x119,5x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd500420r-60x1195x09-kerama-marazzi-",
+  "brand": "5x0,9, Kerama Marazzi (Керама Марацци)",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 2698,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c36/400_400_1/gld5dlf9aivylzf6v44pfd0nh9tksxnb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c36/400_400_1/gld5dlf9aivylzf6v44pfd0nh9tksxnb.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120659",
+  "sku": "keramogranit_bezhevyy_matovyy_60kh60_dako_dako_e_5025_travertine_travertin",
+  "name": "Керамогранит 60х60 под камень для наружных работ Dako (Дако) E-5025 Travertine (Травертин)",
+  "slug": "-6060-dako-e-5025-travertine-",
+  "brand": "LINCER",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1820,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8b2/400_400_1/1wlctt6sebom7u7knxma2nafus7hybf4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8b2/400_400_1/1wlctt6sebom7u7knxma2nafus7hybf4.webp"
+  ],
+  "is_new": true
+},
+  {
+  "id": "lincer-1776803120660",
+  "sku": "ob4l112_orion_korichnevyy_29_7_59_8_cersanit",
+  "name": "Керамогранит OB4L112 Orion коричневый 29,7х59,8, Cersanit",
+  "slug": "-ob4l112-orion-297598-cersanit",
+  "brand": "7х59,8, Cersanit",
+  "collection": "Lincer Collection",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "price_retail": 1485,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/75c/400_400_1/u6i30lkkfzn70v3nuu91kcrxe07ltt13.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/75c/400_400_1/u6i30lkkfzn70v3nuu91kcrxe07ltt13.webp"
+  ],
+  "is_new": true
 }
-
-export function getProductById(id: string): Product | undefined {
-  return products.find(p => p.id === id || p.bsu === id)
-}
+];
