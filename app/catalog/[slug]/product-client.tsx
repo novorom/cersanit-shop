@@ -151,14 +151,14 @@ export function ProductPageClient({ slug }: { slug: string }) {
     material: product.material_type,
     offers: {
       "@type": "Offer",
-      url: `https://cersanit-spb.ru/catalog/${product.slug}`,
+      url: `https://lincer.ru/catalog/${product.slug}`,
       priceCurrency: "RUB",
       price: product.price_retail,
       availability:
         totalStock > 0
           ? "https://schema.org/InStock"
           : "https://schema.org/PreOrder",
-      seller: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+      seller: { "@type": "Organization", name: "LINCER" },
       areaServed: { "@type": "City", name: "Санкт-Петербург" },
       deliveryLeadTime: {
         "@type": "QuantitativeValue",
@@ -217,9 +217,9 @@ export function ProductPageClient({ slug }: { slug: string }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Главная", item: "https://cersanit-spb.ru" },
-      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://cersanit-spb.ru/catalog" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://cersanit-spb.ru/catalog/${product.slug}` },
+      { "@type": "ListItem", position: 1, name: "Главная", item: "https://lincer.ru" },
+      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://lincer.ru/catalog" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://lincer.ru/catalog/${product.slug}` },
     ],
   }
 
@@ -561,8 +561,8 @@ export function ProductPageClient({ slug }: { slug: string }) {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {`${product.name} из коллекции ${product.collection} доступна к заказу в нашем магазине в Санкт-Петербурге. `}
                     {totalStock > 0
-                      ? `В наличии на складе Янино${(product.stock_yanino ?? 0) > 0 ? ` — ${product.stock_yanino} м²` : ""}. Самовывоз бесплатно, доставка по СПб и ЛО от 1 рабочего дня. `
-                      : "Доступно под заказ с завода Cersanit. "}
+                      ? `В наличии на складе Янино${(product.stock_yanino ?? 0) > 0 ? ` — ${product.stock_yanino} м²` : ""}. Самовывоз бесплатно, доставка по СПб и ЛО от 1 дня. `
+                      : `Доступно под заказ с завода ${product.brand || 'производителя'}. `}
                     {"Бесплатный расчёт необходимого количества плитки. Оплата наличным и безналичным расчётом. Для юридических лиц — работа по счёту с НДС."}
                   </p>
                 </div>

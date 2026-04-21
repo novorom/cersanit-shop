@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 export const metadata: Metadata = {
-  title: "Как резать керамогранит: инструменты и правила | Дом Плитки СПб",
-  description: "Как правильно резать керамогранит: какой инструмент выбрать, как сделать прямой и фигурный рез, как избежать сколов. Советы от официального дилера Cersanit.",
+  title: "Как резать керамогранит: инструменты и правила | LINCER СПб",
+  description: "Как правильно резать керамогранит: какой инструмент выбрать, как сделать прямой и фигурный рез, как избежать сколов. Советы от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/kak-rezat-keramogranit` },
-  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "LINCER", locale: "ru_RU", type: "article" },
 }
 export default function Article() {
   return (
@@ -15,10 +15,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как резать керамогранит: инструменты и правила",
         description: "Руководство по резке керамогранита: выбор инструмента, прямой и фигурный рез, советы.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-rezat-keramogranit`,
         datePublished: "2025-03-12",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "LINCER" },
       })}} />
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">
@@ -97,7 +97,7 @@ export default function Article() {
             </ul>
           </section>
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
-            <p className="font-semibold text-foreground mb-2">Скачайте инструкцию по укладке Cersanit</p>
+            <p className="font-semibold text-foreground mb-2">Скачайте инструкцию по укладке Lincer</p>
             <p className="text-muted-foreground text-sm mb-4">Официальные документы, сертификаты и программа 3D-визуализации</p>
             <Link href="/downloads" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors">
               Перейти в раздел загрузок →
@@ -108,15 +108,15 @@ export default function Article() {
             <div className="flex flex-col gap-2">
               <Link href="/blog/kak-ukladyvat-plitku" className="text-primary hover:underline text-sm">→ Укладка плитки своими руками</Link>
               <Link href="/blog/formaty-plitki" className="text-primary hover:underline text-sm">→ Форматы плитки: какой размер выбрать</Link>
-              <Link href="/keramogranit-spb" className="text-primary hover:underline text-sm">→ Каталог керамогранита Cersanit</Link>
+              <Link href="/keramogranit-spb" className="text-primary hover:underline text-sm">→ Каталог керамогранита</Link>
             </div>
           </div>
           <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>        </div>

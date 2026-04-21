@@ -22,9 +22,9 @@ class ImportProductPhotos extends Command
         // Проверяем что папка существует
         if (!is_dir($sourceDir)) {
             $this->error("❌ Папка не найдена: {$sourceDir}");
-            $this->info("\n💡 Распакуйте архив cersanit_photos_106_FINAL.tar.gz:");
+            $this->info("\n💡 Распакуйте архив lincer_photos_106_FINAL.tar.gz:");
             $this->info("   mkdir -p /tmp/product_photos");
-            $this->info("   tar -xzf ~/Downloads/cersanit_photos_106_FINAL.tar.gz -C /tmp/product_photos");
+            $this->info("   tar -xzf ~/Downloads/lincer_photos_106_FINAL.tar.gz -C /tmp/product_photos");
             return 1;
         }
 

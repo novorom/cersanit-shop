@@ -7,22 +7,22 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
-class ImportCersanitWithStockCommand extends Command
+class ImportLincerWithStockCommand extends Command
 {
-    protected $signature = 'import:cersanit-full {--fresh : Очистить таблицу перед импортом}';
-    protected $description = 'Полный импорт Cersanit: товары + остатки завода';
+    protected $signature = 'import:lincer-full {--fresh : Очистить таблицу перед импортом}';
+    protected $description = 'Полный импорт Lincer: товары + остатки завода';
 
     public function handle()
     {
-        $this->info('🚀 Импорт товаров Cersanit с остатками завода...');
+        $this->info('🚀 Импорт товаров Lincer с остатками завода...');
         
         // 1. Читаем товары из прайса
-        if (!Storage::exists('cersanit_products.json')) {
-            $this->error('❌ Файл cersanit_products.json не найден!');
+        if (!Storage::exists('lincer_products.json')) {
+            $this->error('❌ Файл lincer_products.json не найден!');
             return 1;
         }
 
-        $products = json_decode(Storage::get('cersanit_products.json'), true);
+        $products = json_decode(Storage::get('lincer_products.json'), true);
         $this->info("📦 Товаров в прайсе: " . count($products));
 
         // 2. Читаем остатки завода
@@ -75,7 +75,7 @@ class ImportCersanitWithStockCommand extends Command
                     'sku' => $data['sku'],
                     'name' => $this->cleanName($data['name']),
                     'slug' => $slug,
-                    'brand' => 'Cersanit',
+                    'brand' => 'Lincer',
                     'collection' => $data['collection'],
                     'format' => $data['size'],
                     'surface' => $surface,
@@ -106,7 +106,7 @@ class ImportCersanitWithStockCommand extends Command
                         'Поверхность' => $surface,
                         'Цвет' => $color,
                         'Единица измерения' => $data['unit'],
-                        'Бренд' => 'Cersanit',
+                        'Бренд' => 'Lincer',
                         'Страна' => 'Польша/Россия',
                         'Остаток Янино' => 'Уточняйте',
                         'Остаток Завод' => $stockFactory > 0 ? number_format($stockFactory, 2) . ' м²' : 'Под заказ',
@@ -221,7 +221,7 @@ class ImportCersanitWithStockCommand extends Command
     private function generateTitle($data)
     {
         return sprintf(
-            '%s %s %s купить в СПб - %s₽ (-20%%) | Cersanit Янино',
+            '%s %s %s купить в СПб - %s₽ (-20%%) | Lincer Янино',
             ucfirst($data['type']),
             $data['collection'],
             $data['size'],
@@ -236,7 +236,7 @@ class ImportCersanitWithStockCommand extends Command
             : "";
         
         return sprintf(
-            '%s %s %s см от официального дилера Cersanit в СПб. %sЦена %s₽ вместо %s₽. Склад Янино, доставка 7 дней. Артикул: %s',
+            '%s %s %s см от официального дилера Lincer в СПб. %sЦена %s₽ вместо %s₽. Склад Янино, доставка 7 дней. Артикул: %s',
             ucfirst($data['type']),
             $data['collection'],
             $data['size'],
@@ -250,7 +250,7 @@ class ImportCersanitWithStockCommand extends Command
     private function generateKeywords($data)
     {
         return implode(', ', [
-            'cersanit',
+            'lincer',
             mb_strtolower($data['collection']),
             $data['type'],
             $data['size'],
@@ -272,7 +272,7 @@ class ImportCersanitWithStockCommand extends Command
             : "\n**На складе в Янино:** уточняйте актуальные остатки";
         
         return <<<DESC
-Коллекция {$data['collection']} от Cersanit – это воплощение современного дизайна и качества. 
+Коллекция {$data['collection']} от Lincer – это воплощение современного дизайна и качества. 
 {$availability}
 
 **Характеристики:**
@@ -284,7 +284,7 @@ class ImportCersanitWithStockCommand extends Command
 **Почему выгодно у нас:**
 - ✅ Цена {$data['price_our']}₽ вместо {$data['price_retail']}₽
 - ✅ Экономия {$data['discount']}₽ на каждом м²
-- ✅ Официальный дилер Cersanit
+- ✅ Официальный дилер Lincer
 - ✅ Склад в Янино (самовывоз сегодня)
 - ✅ Доставка по СПБ от 500₽
 - ✅ С завода за 7 дней

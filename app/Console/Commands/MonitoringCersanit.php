@@ -8,10 +8,10 @@ use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Support\Str;
 
-class MonitoringCersanit extends Command
+class MonitoringLincer extends Command
 {
-    protected $signature = 'monitor:cersanit {--check-collections : Check for new collections}';
-    protected $description = 'Monitor cersanit.ru for new products and collections';
+    protected $signature = 'monitor:lincer {--check-collections : Check for new collections}';
+    protected $description = 'Monitor lincer.ru for new products and collections';
 
     protected $client;
 
@@ -19,7 +19,7 @@ class MonitoringCersanit extends Command
     {
         parent::__construct();
         $this->client = new Client([
-            'base_uri' => 'https://www.cersanit.ru',
+            'base_uri' => 'https://www.lincer.ru',
             'timeout'  => 30,
             'headers' => [
                 'User-Agent' => 'Mozilla/5.0 (compatible; MonitoringBot/1.0)'
@@ -29,7 +29,7 @@ class MonitoringCersanit extends Command
 
     public function handle()
     {
-        $this->info('Starting Cersanit monitoring...');
+        $this->info('Starting Lincer monitoring...');
 
         try {
             // Check for new collections
@@ -53,7 +53,7 @@ class MonitoringCersanit extends Command
     }
 
     /**
-     * Check for new collections on cersanit.ru
+     * Check for new collections on lincer.ru
      */
     protected function checkCollections(): void
     {

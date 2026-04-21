@@ -64,7 +64,7 @@ class SeoController extends Controller
      */
     public function robots(): Response
     {
-        $robots = "# Robots.txt для Cersanit магазина\n\n";
+        $robots = "# Robots.txt для Lincer магазина\n\n";
         
         $robots .= "# Все боты добро пожаловать!\n";
         $robots .= "User-agent: *\n";
@@ -156,8 +156,8 @@ class SeoController extends Controller
             $rss = '<?xml version="1.0" encoding="UTF-8"?>';
             $rss .= '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">';
             $rss .= '<channel>';
-            $rss .= '<title>Cersanit - Плитка и керамогранит в наличии</title>';
-            $rss .= '<description>Актуальный каталог плитки и керамогранита Cersanit с ценами и остатками на складе в Москве</description>';
+            $rss .= '<title>Lincer - Плитка и керамогранит в наличии</title>';
+            $rss .= '<description>Актуальный каталог плитки и керамогранита Lincer с ценами и остатками на складе в Москве</description>';
             $rss .= '<link>' . route('home') . '</link>';
             $rss .= '<atom:link href="' . route('seo.ai-feed') . '" rel="self" type="application/rss+xml"/>';
             $rss .= '<lastBuildDate>' . now()->toRssString() . '</lastBuildDate>';
@@ -242,16 +242,16 @@ class SeoController extends Controller
                         $product->format,
                         $product->brand,
                     ]),
-                    '_cersanit' => $product->getStructuredData(), // Кастомные данные
+                    '_lincer' => $product->getStructuredData(), // Кастомные данные
                 ];
             });
 
             return [
                 'version' => 'https://jsonfeed.org/version/1.1',
-                'title' => 'Cersanit - Каталог плитки и керамогранита',
+                'title' => 'Lincer - Каталог плитки и керамогранита',
                 'home_page_url' => route('home'),
                 'feed_url' => route('seo.json-feed'),
-                'description' => 'Актуальный каталог продукции Cersanit с ценами и наличием',
+                'description' => 'Актуальный каталог продукции Lincer с ценами и наличием',
                 'items' => $items,
             ];
         });
@@ -300,8 +300,8 @@ class SeoController extends Controller
             $rss = '<?xml version="1.0" encoding="UTF-8"?>';
             $rss .= '<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">';
             $rss .= '<channel>';
-            $rss .= '<title>Cersanit Shop - Плитка и керамогранит</title>';
-            $rss .= '<description>Официальный дилер Cersanit. Весь ассортимент в наличии на складе.</description>';
+            $rss .= '<title>Lincer Shop - Плитка и керамогранит</title>';
+            $rss .= '<description>Официальный дилер Lincer. Весь ассортимент в наличии на складе.</description>';
             $rss .= '<link>' . route('home') . '</link>';
 
             foreach ($products as $product) {
@@ -311,7 +311,7 @@ class SeoController extends Controller
                 $rss .= '<g:description>' . htmlspecialchars($product->seo_description ?? $product->name) . '</g:description>';
                 $rss .= '<g:link>' . route('product.show', $product->sku) . '</g:link>';
                 $rss .= '<g:image_link>' . asset($product->main_image) . '</g:image_link>';
-                $rss .= '<g:brand>Cersanit</g:brand>';
+                $rss .= '<g:brand>Lincer</g:brand>';
                 $rss .= '<g:condition>new</g:condition>';
                 $rss .= '<g:availability>in_stock</g:availability>';
                 $rss .= '<g:price>' . $product->price_retail . ' RUB</g:price>';

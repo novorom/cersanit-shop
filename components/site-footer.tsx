@@ -72,7 +72,7 @@ const socialLinks = [
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/cersanit_spb',
+    url: 'https://www.instagram.com/lincer_spb',
     logo: '/images/instagram-logo.png',
   },
   {
@@ -216,7 +216,7 @@ export function SiteFooter() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-background/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-background/40">
-            {"2024-2026 Дом Плитки LINCER. Все права защищены."}
+            {"2024-2026 LINCER LINCER. Все права защищены."}
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-xs text-background/40 hover:text-background/60 transition-colors">

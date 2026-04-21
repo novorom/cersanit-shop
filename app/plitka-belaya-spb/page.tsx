@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Белая плитка Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Белая плитка и керамогранит Cersanit в СПб — 32 позиции в наличии. Calacatta, Tiffany, Silvia — склад Янино, доставка по СПб от 1 дня. Цены от 780 ₽/м².",
+  title: "Белая плитка купить в Санкт-Петербурге | LINCER",
+  description: "Белая плитка и керамогранит в СПб — 32 позиции в наличии. Calacatta, Tiffany, Silvia — склад Янино, доставка по СПб от 1 дня. Цены от 780 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-belaya-spb` },
   openGraph: {
-    title: "Белая плитка Cersanit в Санкт-Петербурге",
+    title: "Белая плитка в Санкт-Петербурге",
     description: "Белая плитка — Calacatta, Tiffany, Silvia. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-belaya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -41,7 +41,7 @@ const faq = [
   },
   {
     question: "Есть ли белая плитка в наличии?",
-    answer: "Да, более 30 позиций белой плитки и керамогранита Cersanit на складе в Янино. Самовывоз в день оплаты, доставка по СПб и ЛО 1-2 рабочих дня.",
+    answer: "Да, более 30 позиций белой плитки и керамогранита на складе в Янино. Самовывоз в день оплаты, доставка по СПб и ЛО 1-2 рабочих дня.",
   },
 ]
 
@@ -86,7 +86,7 @@ export default function PlitkaBelay() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Белая плитка Cersanit в Санкт-Петербурге
+            Белая плитка в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Классика никогда не выходит из моды. Calacatta, Tiffany, Silvia —
@@ -127,7 +127,7 @@ export default function PlitkaBelay() {
             </p>
           </div>
           <div>
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Белые коллекции Cersanit</h2>
+            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Белые коллекции Lincer</h2>
             <p className="text-foreground/80 leading-relaxed">
               <strong>Calacatta</strong> — белый керамогранит с мраморными прожилками, форматы 30x60
               и 60x120. <strong>Tiffany</strong> — классический белый моноколор 42x42, матовая
@@ -138,9 +138,9 @@ export default function PlitkaBelay() {
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить белую плитку в Санкт-Петербурге</h2>
             <p className="text-foreground/80 leading-relaxed">
-              Весь ассортимент белой плитки Cersanit в наличии на складе в Янино-1.
+              Весь ассортимент белой плитки в наличии на складе в Янино-1.
               Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней.
-              Мы — официальный дилер Cersanit, все товары с сертификатами качества.
+              Мы — мультибрендовый гипермаркет, все товары с сертификатами качества.
             </p>
           </div>
         </div>

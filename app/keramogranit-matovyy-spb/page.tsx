@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Матовый керамогранит Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Матовый керамогранит Cersanit в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
+  title: "Матовый керамогранит купить в Санкт-Петербурге | LINCER",
+  description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
   alternates: { canonical: `${SITE_URL}/keramogranit-matovyy-spb` },
   openGraph: {
-    title: "Матовый керамогранит Cersanit в Санкт-Петербурге",
-    description: "Матовый керамогранит Cersanit в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
+    title: "Матовый керамогранит в Санкт-Петербурге",
+    description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
     url: `${SITE_URL}/keramogranit-matovyy-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -26,7 +26,7 @@ const faq = [
   { question: "Матовый или полированный — что лучше для пола?", answer: "Для пола однозначно рекомендуем матовый — он не скользит и не показывает царапины. Полированный хорошо смотрится, но требует осторожности: скользит при намокании. Матовый керамогранит практичнее в ванной, прихожей и на кухне." },
   { question: "Матовый керамогранит сложно мыть?", answer: "Нет, матовый керамогранит легко моется обычными средствами. Матовая поверхность не показывает разводы от воды, в отличие от полированной. Достаточно протирать влажной тряпкой или шваброй." },
   { question: "Какой матовый керамогранит подходит для тёплого пола?", answer: "Для тёплого пола подходит любой керамогранит, в том числе матовый. Керамогранит отлично проводит тепло — лучше, чем ламинат или паркет. Рекомендуем форматы 60x60 или 60x120 — меньше швов, лучше теплоотдача." },
-  { question: "Есть ли матовый керамогранит в наличии?", answer: "Да, более 150 позиций матового керамогранита Cersanit на складе в Янино. Самовывоз в день оплаты, доставка 1-2 дня." },
+  { question: "Есть ли матовый керамогранит в наличии?", answer: "Да, более 150 позиций матового керамогранита на складе в Янино. Самовывоз в день оплаты, доставка 1-2 дня." },
 ]
 
 const BLOG_ARTICLES = [
@@ -68,9 +68,9 @@ export default function LandingPage() {
 
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Матовый керамогранит Cersanit в Санкт-Петербурге</h1>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Матовый керамогранит в Санкт-Петербурге</h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
-            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер Cersanit в Санкт-Петербурге.
+            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер ведущих брендов в Санкт-Петербурге.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">
@@ -99,7 +99,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-4xl px-4 flex flex-col gap-8">
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Матовый керамогранит — практично и стильно</h2>
-            <p className="text-foreground/80 leading-relaxed">Матовая поверхность — самый популярный выбор для пола. Она не скользит, не показывает царапины и отпечатки пальцев. Матовый керамогранит Cersanit подходит для любого стиля — от минимализма до скандинавского интерьера. Поверхность приятная на ощупь, визуально похожа на натуральный камень или дерево.</p>
+            <p className="text-foreground/80 leading-relaxed">Матовая поверхность — самый популярный выбор для пола. Она не скользит, не показывает царапины и отпечатки пальцев. Матовый керамогранит подходит для любого стиля — от минимализма до скандинавского интерьера. Поверхность приятная на ощупь, визуально похожа на натуральный камень или дерево.</p>
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Популярные матовые коллекции</h2>
@@ -107,7 +107,7 @@ export default function LandingPage() {
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить матовый керамогранит в СПб</h2>
-            <p className="text-foreground/80 leading-relaxed">Весь ассортимент матового керамогранита Cersanit на складе в Янино-1. Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней. Официальный дилер Cersanit.</p>
+            <p className="text-foreground/80 leading-relaxed">Весь ассортимент матового керамогранита на складе в Янино-1. Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней. Официальный дилер ведущих брендов.</p>
           </div>
         </div>
       </section>

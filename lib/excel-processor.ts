@@ -178,17 +178,17 @@ export function processPriceFile(
 ): ExcelProcessResult {
   const workbook = read(new Uint8Array(buffer))
   
-  // Find the Церсанит sheet - look for sheet name containing Церсанит, Cersanit, or use first sheet
+  // Find the Линцер sheet - look for sheet name containing Линцер, Lincer, or use first sheet
   let sheet = workbook.Sheets[workbook.SheetNames[0]]
   
-  const cersanitSheetName = workbook.SheetNames.find(
-    (name) => name.toLowerCase().includes("церсанит") || 
-              name.toLowerCase().includes("cersanit") ||
-              name.toLowerCase().includes("cersanite")
+  const lincerSheetName = workbook.SheetNames.find(
+    (name) => name.toLowerCase().includes("линцер") || 
+              name.toLowerCase().includes("lincer") ||
+              name.toLowerCase().includes("lincere")
   )
   
-  if (cersanitSheetName) {
-    sheet = workbook.Sheets[cersanitSheetName]
+  if (lincerSheetName) {
+    sheet = workbook.Sheets[lincerSheetName]
   }
 
   // Read by column indices - Column C (2) = Артикул, Column K (10) = Розничная цена

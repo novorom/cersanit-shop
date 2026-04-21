@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -15,14 +15,14 @@ const STONE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под камень Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Керамогранит под натуральный камень Cersanit в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб от 1 дня. Природная фактура без сложного ухода.",
+  title: "Плитка под камень Lincer купить в Санкт-Петербурге | LINCER",
+  description: "Керамогранит под натуральный камень Lincer в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб от 1 дня. Природная фактура без сложного ухода.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-kamen-spb` },
   openGraph: {
-    title: "Плитка под камень Cersanit в Санкт-Петербурге",
+    title: "Плитка под камень ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией камня — Royal Stone, Slate, Stonehouse, Sandstone. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-kamen-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -92,7 +92,7 @@ export default function PlitkaПодКамень() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Плитка под камень Cersanit в Санкт-Петербурге
+            Плитка под камень ведущих брендов в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Природная фактура гранита, сланца и песчаника без сложного ухода. Royal Stone, Slate,
@@ -133,7 +133,7 @@ export default function PlitkaПодКамень() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">
               Плитка с имитацией природного камня создаёт особую атмосферу в интерьере — основательную,
-              природную, вне времени. Cersanit передаёт фактуру гранита, сланца, песчаника и известняка
+              природную, вне времени. Lincer передаёт фактуру гранита, сланца, песчаника и известняка
               с высокой точностью. При этом керамогранит не требует пропитки, не впитывает жиры и влагу,
               легко моется обычными средствами.
             </p>

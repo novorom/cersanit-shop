@@ -103,7 +103,7 @@ class ImportProducts extends Command
                 $product->name = $name;
                 $product->slug = Str::slug($name . '-' . $sku);
                 $product->description = $description;
-                $product->brand = 'Cersanit';
+                $product->brand = 'Lincer';
                 $product->is_active = true;
 
                 // Set main image if found (take first if multiple separated by semicolon)

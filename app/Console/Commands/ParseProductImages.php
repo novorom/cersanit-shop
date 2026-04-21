@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class ParseProductImages extends Command
 {
     protected $signature = 'parse:images {--limit=10 : Количество товаров для парсинга}';
-    protected $description = 'Парсинг фото товаров с cersanit.ru';
+    protected $description = 'Парсинг фото товаров с lincer.ru';
 
     public function handle()
     {
@@ -66,8 +66,8 @@ class ParseProductImages extends Command
 
     private function parseImages(Product $product): array
     {
-        // Пытаемся найти товар на cersanit.ru по артикулу
-        $searchUrl = "https://cersanit.ru/search/?q={$product->sku}";
+        // Пытаемся найти товар на lincer.ru по артикулу
+        $searchUrl = "https://lincer.ru/search/?q={$product->sku}";
         
         try {
             $response = Http::timeout(10)->get($searchUrl);
@@ -85,7 +85,7 @@ class ParseProductImages extends Command
                 return [];
             }
 
-            $productUrl = "https://cersanit.ru" . $matches[1];
+            $productUrl = "https://lincer.ru" . $matches[1];
             
             // Получаем страницу товара
             $productResponse = Http::timeout(10)->get($productUrl);
@@ -97,7 +97,7 @@ class ParseProductImages extends Command
             $productHtml = $productResponse->body();
             
             // Ищем изображения
-            preg_match_all('/https:\/\/cersanit\.ru\/upload\/[^"\']+\.(jpg|jpeg|png|webp)/i', $productHtml, $imageMatches);
+            preg_match_all('/https:\/\/lincer\.ru\/upload\/[^"\']+\.(jpg|jpeg|png|webp)/i', $productHtml, $imageMatches);
             
             if (empty($imageMatches[0])) {
                 return [];

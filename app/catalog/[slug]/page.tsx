@@ -6,7 +6,7 @@ import { getCollectionSeo } from "@/lib/collection-seo"
 import { ProductPageClient } from "./product-client"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 
 export async function generateStaticParams() {
   return products
@@ -23,7 +23,7 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return { title: "Товар не найден | Дом Плитки CERSANIT" }
+    return { title: "Товар не найден | LINCER" }
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
@@ -51,7 +51,7 @@ export async function generateMetadata({
       title,
       description: description.slice(0, 200),
       url: `${SITE_URL}/catalog/${product.slug}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "LINCER",
       locale: "ru_RU",
       type: "website",
       images: product.main_image
@@ -98,10 +98,10 @@ export default async function ProductPage({
     name: product.name,
     description: collectionSeo?.about
       ? `${collectionSeo.about} ${collectionSeo.application}`
-      : `${product.name} — керамическая плитка и керамогранит Cersanit. Купить в Санкт-Петербурге на складе Янино.`,
+      : `${product.name} — керамическая плитка и керамогранит ${product.brand || 'LINCER'}. Купить в Санкт-Петербурге на складе.`,
     sku: product.sku,
     mpn: product.bsu,
-    brand: { "@type": "Brand", name: "Cersanit" },
+    brand: { "@type": "Brand", name: product.brand || "LINCER" },
     image: product.main_image ? [product.main_image] : [],
     itemCondition: "https://schema.org/NewCondition",
     offers: {
@@ -114,7 +114,7 @@ export default async function ProductPage({
           : "https://schema.org/PreOrder",
       seller: {
         "@type": "Organization",
-        name: "Дом Плитки CERSANIT",
+        name: "LINCER",
         url: SITE_URL,
       },
       url: `${SITE_URL}/catalog/${product.slug}`,
@@ -249,8 +249,8 @@ export default async function ProductPage({
               {product.name} — купить в СПб
             </h2>
             <p className="text-sm text-foreground/75 leading-relaxed">
-              {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от польского
-              производителя Cersanit.
+              {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от 
+              производителя {product.brand || "LINCER"}.
               {product.format ? ` Формат ${product.format} см.` : ""}
               {product.surface ? ` Поверхность ${product.surface.toLowerCase()}.` : ""}
               {product.color ? ` Цвет: ${product.color}.` : ""}

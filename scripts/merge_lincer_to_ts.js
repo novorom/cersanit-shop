@@ -21,23 +21,56 @@ function run() {
   }
   const lincerProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-  const newTsProducts = lincerProducts.map((p, index) => {
-    // Extract actual brand and collection from name if possible, since scraper might have put 'Бренды'
+  // Get existing SKUs to avoid duplicates
+  const existingSkus = new Set();
+  const skuMatches = tsContent.match(/"sku":\s*"([^"]*)"/g) || [];
+  skuMatches.forEach(m => {
+      const sku = m.match(/"sku":\s*"([^"]*)"/)[1];
+      if (sku) existingSkus.add(sku);
+  });
+
+  console.log(`Found ${existingSkus.size} existing SKUs.`);
+
+  const newTsProducts = [];
+  lincerProducts.forEach((p, index) => {
+    if (p.sku && existingSkus.has(p.sku)) return;
+
     let brand = p.brand;
     let name = p.name;
+    let collection = p.collection;
+
     if (brand === 'Бренды') {
-        const match = name.match(/,\s*(.+)$/);
-        if (match) brand = match[1].trim();
-        else brand = 'LINCER';
+        const brandMatch = name.match(/,\s*([^,]+)$/);
+        if (brandMatch) {
+            brand = brandMatch[1].trim();
+        } else {
+            brand = 'LINCER';
+        }
     }
 
-    return {
+    if (collection === 'Бренды' || !collection) {
+        // Try to extract collection from name
+        // Example: "10400000986 Scarlett white..." -> Scarlett
+        const parts = name.split(' ');
+        if (parts.length > 1) {
+            // Take the first word that's not a number
+            for (let part of parts) {
+                if (!/^\d+$/.test(part) && part.length > 2) {
+                    collection = part;
+                    break;
+                }
+            }
+        }
+        if (!collection || collection === 'Бренды') collection = 'Lincer Collection';
+    }
+
+    newTsProducts.push({
       id: "lincer-" + (Date.now() + index),
       sku: p.sku || '',
       name: name,
       slug: generateSlug(name),
       brand: brand,
-      collection: p.collection !== 'Бренды' && p.collection ? p.collection : 'Lincer Collection',
+      collection: collection,
       product_type: name.toLowerCase().includes('ступен') ? 'Ступень' : (name.toLowerCase().includes('вставк') || name.toLowerCase().includes('декор') ? 'Вставка' : 'Керамогранит'),
       format: p.format || 'Не указан',
       color: p.color || 'Ассорти',
@@ -45,12 +78,15 @@ function run() {
       main_image: p.image || '',
       images: p.image ? [p.image] : [],
       is_new: true
-    };
+    });
   });
 
-  // Now, we need to inject this into the ts file.
-  // The file ends with `];` or `}  \n]` or similar.
-  // Instead of complex string manipulation, let's just find the last `]` and insert our items.
+  if (newTsProducts.length === 0) {
+      console.log("No new products to merge.");
+      return;
+  }
+
+  // Find the last ] in the products array
   const lastBracketIndex = tsContent.lastIndexOf(']');
   if (lastBracketIndex === -1) {
     console.error("Could not find array end in ts file");
@@ -59,14 +95,13 @@ function run() {
 
   const itemsString = newTsProducts.map(p => JSON.stringify(p, null, 2)).join(',\n  ');
   
-  // Insert with a comma before it if the array wasn't empty
   const beforeBracket = tsContent.substring(0, lastBracketIndex).trimEnd();
   const needsComma = !beforeBracket.endsWith('[');
   
-  const newContent = tsContent.substring(0, lastBracketIndex) + (needsComma ? ',\n  ' : '\n  ') + itemsString + '\n];\n';
+  const newContent = tsContent.substring(0, lastBracketIndex).trimEnd() + (needsComma ? ',\n  ' : '\n  ') + itemsString + '\n];\n';
 
   fs.writeFileSync(tsPath, newContent, 'utf8');
-  console.log(`Successfully merged ${newTsProducts.length} Lincer products into lib/products-data.ts`);
+  console.log(`Successfully merged ${newTsProducts.length} NEW Lincer products into lib/products-data.ts`);
 }
 
 run();

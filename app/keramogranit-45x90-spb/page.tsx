@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Керамогранит 45x90 Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Керамогранит формата 45x90 Cersanit в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
+  title: "Керамогранит 45x90 Lincer купить в Санкт-Петербурге | LINCER",
+  description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/keramogranit-45x90-spb` },
   openGraph: {
-    title: "Керамогранит 45x90 Cersanit в Санкт-Петербурге",
-    description: "Керамогранит формата 45x90 Cersanit в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
+    title: "Керамогранит 45x90 ведущих брендов в Санкт-Петербурге",
+    description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/keramogranit-45x90-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -68,9 +68,9 @@ export default function LandingPage() {
 
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Керамогранит 45x90 Cersanit в Санкт-Петербурге</h1>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Керамогранит 45x90 ведущих брендов в Санкт-Петербурге</h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
-            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер Cersanit в Санкт-Петербурге.
+            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер ведущих брендов в Санкт-Петербурге.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">

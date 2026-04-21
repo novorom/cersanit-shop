@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 
 export const metadata: Metadata = {
-  title: "Как укладывать плитку своими руками — инструкция Cersanit | Дом Плитки СПб",
-  description: "Официальная инструкция по укладке керамической плитки и керамогранита Cersanit. Подготовка основания, выбор клея, пошаговая укладка, затирка швов.",
+  title: "Как укладывать плитку своими руками — инструкция Lincer | LINCER СПб",
+  description: "Официальная инструкция по укладке керамической плитки и керамогранита. Подготовка основания, выбор клея, пошаговая укладка, затирка швов.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-plitku` },
-  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "LINCER", locale: "ru_RU", type: "article" },
 }
 
 export default function HowToLayTile() {
@@ -16,9 +16,9 @@ export default function HowToLayTile() {
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
-        headline: "Как укладывать плитку своими руками — инструкция Cersanit",
+        headline: "Как укладывать плитку своими руками — инструкция Lincer",
         description: "Официальная инструкция по укладке керамической плитки и керамогранита.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-plitku`,
         datePublished: "2025-01-15",
       })}} />
@@ -35,9 +35,9 @@ export default function HowToLayTile() {
 
       <article className="mx-auto max-w-3xl px-4 py-12 lg:py-16">
         <header className="mb-10">
-          <div className="text-sm text-muted-foreground mb-3">7 минут чтения · Официальная инструкция Cersanit</div>
+          <div className="text-sm text-muted-foreground mb-3">7 минут чтения · Официальная инструкция Lincer</div>
           <h1 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">Как укладывать плитку своими руками</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">Официальная инструкция по укладке керамической плитки и керамогранита Cersanit. Следуйте этим рекомендациям, чтобы получить качественный и долговечный результат.</p>
+          <p className="text-lg text-muted-foreground leading-relaxed">Официальная инструкция по укладке керамической плитки и керамогранита. Следуйте этим рекомендациям, чтобы получить качественный и долговечный результат.</p>
         </header>
 
         <div className="prose prose-lg max-w-none flex flex-col gap-8 text-foreground/80">
@@ -52,7 +52,7 @@ export default function HowToLayTile() {
               <p><strong>Запас материала:</strong> приобретайте плитку с запасом 5–15% к рассчитанному количеству — на подрезку, бой и возможный ремонт в будущем.</p>
               <p><strong>Партия:</strong> проверьте маркировку на каждой коробке — вся плитка должна быть из одной партии. Разные партии могут отличаться по тону.</p>
               <p><strong>Защитный воск:</strong> если на поверхности плитки есть защитный воск — удалите его резиновым или пластиковым шпателем до укладки.</p>
-              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Используйте бесплатную программу CERAMIC 3D WEB — ссылка доступна в разделе «Файлы для скачивания» на сайте cersanit.ru.</p>
+              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Используйте бесплатную программу CERAMIC 3D WEB — ссылка доступна в разделе «Файлы для скачивания» на сайте lincer.ru.</p>
             </div>
           </section>
 
@@ -126,9 +126,9 @@ export default function HowToLayTile() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
-                  <Link href="/catalog/plitka-deco-chernyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg&w=300&output=webp&q=80" alt="Плитка Deco черный рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Deco черный рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">750 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-deco-chernyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/b22/DEL232.jpg&w=300&output=webp&q=80" alt="Плитка Deco черный рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Deco черный рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">750 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

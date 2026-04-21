@@ -49,7 +49,7 @@ export function Logo({ className = "" }: { className?: string }) {
         />
       </g>
 
-      {/* Text: ДОМ ПЛИТКИ */}
+      {/* Text: LINCER */}
       <text
         x="50"
         y="28"

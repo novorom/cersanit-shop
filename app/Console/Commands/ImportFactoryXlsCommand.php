@@ -9,7 +9,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 class ImportFactoryXlsCommand extends Command
 {
     protected $signature = 'import:factory-xls {file}';
-    protected $description = 'Импорт остатков Завода напрямую из оригинального Excel файла Cersanit';
+    protected $description = 'Импорт остатков Завода напрямую из оригинального Excel файла Lincer';
 
     public function handle()
     {
@@ -42,7 +42,7 @@ class ImportFactoryXlsCommand extends Command
         $updatedCount = 0;
 
         foreach ($rows as $index => $row) {
-            // Пропускаем шапку (в файле Церсанита это первые 8-9 строк)
+            // Пропускаем шапку (в файле Линцера это первые 8-9 строк)
             if ($index < 8 || empty($row) || !isset($row[0])) {
                 $bar->advance();
                 continue;

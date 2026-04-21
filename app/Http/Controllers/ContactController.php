@@ -45,7 +45,7 @@ class ContactController extends Controller
             // Отправка email
             Mail::send([], [], function ($message) use ($data, $types) {
                 $message->to('novorom@mail.ru')
-                    ->subject('Новое обращение с сайта Cersanit Янино')
+                    ->subject('Новое обращение с сайта Lincer Янино')
                     ->html($this->buildEmailHtml($data, $types));
             });
 
@@ -91,7 +91,7 @@ class ContactController extends Controller
 <body>
     <div class="container">
         <div class="header">
-            <h2 style="margin: 0;">🏆 Cersanit Янино</h2>
+            <h2 style="margin: 0;">🏆 Lincer Янино</h2>
             <p style="margin: 5px 0 0 0; opacity: 0.9;">Новое обращение с сайта</p>
         </div>
         
@@ -118,7 +118,7 @@ class ContactController extends Controller
         
         <div class="footer">
             <p style="margin: 0;">Ответьте клиенту в течение 30 минут</p>
-            <p style="margin: 5px 0 0 0; opacity: 0.8;">© Cersanit Янино</p>
+            <p style="margin: 5px 0 0 0; opacity: 0.8;">© Lincer Янино</p>
         </div>
     </div>
 </body>

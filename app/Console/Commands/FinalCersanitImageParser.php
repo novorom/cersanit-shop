@@ -6,10 +6,10 @@ use App\Models\Product;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 
-class FinalCersanitImageParser extends Command
+class FinalLincerImageParser extends Command
 {
-    protected $signature = 'parse:cersanit-final {--limit=10}';
-    protected $description = 'Парсинг фото с cersanit.ru';
+    protected $signature = 'parse:lincer-final {--limit=10}';
+    protected $description = 'Парсинг фото с lincer.ru';
 
     public function handle()
     {
@@ -32,7 +32,7 @@ class FinalCersanitImageParser extends Command
 
         foreach ($products as $product) {
             try {
-                $searchUrl = "https://cersanit.ru/search/?q=" . $product->sku;
+                $searchUrl = "https://lincer.ru/search/?q=" . $product->sku;
                 
                 $response = Http::timeout(10)->get($searchUrl);
                 
@@ -45,7 +45,7 @@ class FinalCersanitImageParser extends Command
                 $html = $response->body();
                 
                 if (preg_match('/href="(\/catalog\/2d\/[^"]+)"/', $html, $matches)) {
-                    $productUrl = "https://cersanit.ru" . $matches[1];
+                    $productUrl = "https://lincer.ru" . $matches[1];
                     
                     sleep(1);
                     
@@ -54,7 +54,7 @@ class FinalCersanitImageParser extends Command
                     if ($productResponse->successful()) {
                         $pageHtml = $productResponse->body();
                         
-                        preg_match_all('/"(https:\/\/cersanit\.ru\/upload\/[^"]+\.(jpg|jpeg|png|webp))"/', $pageHtml, $imageMatches);
+                        preg_match_all('/"(https:\/\/lincer\.ru\/upload\/[^"]+\.(jpg|jpeg|png|webp))"/', $pageHtml, $imageMatches);
                         
                         if (!empty($imageMatches[1])) {
                             $images = array_unique($imageMatches[1]);

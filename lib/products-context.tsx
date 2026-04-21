@@ -18,15 +18,15 @@ export function ProductsProvider({ children }: { children: ReactNode }) {
 
   // Load products from localStorage on mount
   useEffect(() => {
-    const savedProducts = localStorage.getItem("admin-products")
-    if (savedProducts) {
-      try {
-        const parsed = JSON.parse(savedProducts)
-        setProducts(parsed)
-      } catch (error) {
-        console.error("[v0] Failed to parse saved products:", error)
-      }
-    }
+    // const savedProducts = localStorage.getItem("admin-products")
+    // if (savedProducts) {
+    //   try {
+    //     const parsed = JSON.parse(savedProducts)
+    //     setProducts(parsed)
+    //   } catch (error) {
+    //     console.error("[v0] Failed to parse saved products:", error)
+    //   }
+    // }
     setIsLoaded(true)
   }, [])
 

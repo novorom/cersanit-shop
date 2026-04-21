@@ -15,9 +15,9 @@ function optimizeImage(url: string | undefined | null, width = 600): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.lincer.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.lincer.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.lincer.ru/upload/uf/b22/DEL232.jpg",
 }
 
 /* ---------- Filter sidebar section ---------- */
@@ -245,7 +245,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
         {/* Title row */}
         <div className="flex items-end justify-between mb-8">
           <div>
-            <h1 className="text-2xl lg:text-3xl font-bold text-foreground">Коллекции Cersanit</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold text-foreground">Наши коллекции</h1>
             <p className="mt-2 text-muted-foreground">
               {filtered.length}{" "}
               {filtered.length === 1 ? "коллекция" : filtered.length < 5 ? "коллекции" : "коллекций"}

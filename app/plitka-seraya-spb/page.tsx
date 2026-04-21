@@ -4,21 +4,21 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 const GRAY_COLORS = ["серый", "светло-серый", "темно-серый"]
 
 export const metadata: Metadata = {
-  title: "Серая плитка Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Серая плитка и керамогранит Cersanit в СПб — 64 позиции в наличии. Soft Concrete, Lofthouse, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+  title: "Серая плитка купить в Санкт-Петербурге | LINCER",
+  description: "Серая плитка и керамогранит в СПб — 64 позиции в наличии. Soft Concrete, Lofthouse, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-seraya-spb` },
   openGraph: {
-    title: "Серая плитка Cersanit в Санкт-Петербурге",
+    title: "Серая плитка в Санкт-Петербурге",
     description: "Серая плитка и керамогранит — Soft Concrete, Lofthouse, Northwood. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-seraya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -39,7 +39,7 @@ const faq = [
   },
   {
     question: "Есть ли серая плитка для пола и стен?",
-    answer: "Да, большинство серых коллекций Cersanit выпускаются в универсальном исполнении — подходят и для пола, и для стен. Для пола выбирайте матовую поверхность, для стен можно использовать сатиновую или глянцевую.",
+    answer: "Да, большинство серых коллекций Lincer выпускаются в универсальном исполнении — подходят и для пола, и для стен. Для пола выбирайте матовую поверхность, для стен можно использовать сатиновую или глянцевую.",
   },
   {
     question: "Как быстро доставите серую плитку в СПб?",
@@ -88,7 +88,7 @@ export default function PlitkaSeraya() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Серая плитка Cersanit в Санкт-Петербурге
+            Серая плитка в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Универсальный цвет для любого интерьера. Soft Concrete, Lofthouse, Northwood —
@@ -126,7 +126,7 @@ export default function PlitkaSeraya() {
             <p className="text-foreground/80 leading-relaxed">
               Серый цвет в отделке — это баланс между строгостью и уютом. Он универсален: подходит
               для ванной, кухни, прихожей и гостиной. Светло-серые оттенки визуально расширяют
-              пространство, тёмно-серые создают глубину и акцент. Cersanit предлагает широкую палитру
+              пространство, тёмно-серые создают глубину и акцент. Lincer предлагает широкую палитру
               серых коллекций — от нежного светло-серого до насыщенного антрацита.
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function PlitkaSeraya() {
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить серую плитку в СПб</h2>
             <p className="text-foreground/80 leading-relaxed">
-              Весь ассортимент серой плитки Cersanit в наличии на складе в Янино-1.
+              Весь ассортимент серой плитки в наличии на складе в Янино-1.
               Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней.
               Бесплатный расчёт количества плитки и помощь в подборе коллекции.
             </p>

@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://cersanit-spb.ru"
-const SHOP_NAME = "Cersanit-SPb"
-const SHOP_COMPANY = "Магазин керамической плитки Cersanit в Санкт-Петербурге"
+const SITE_URL = "https://lincer.ru"
+const SHOP_NAME = "Lincer-SPb"
+const SHOP_COMPANY = "Магазин керамической плитки в Санкт-Петербурге"
 
 export const dynamic = "force-dynamic"
 export const revalidate = 86400
@@ -65,7 +65,7 @@ export async function GET() {
       <currencyId>RUB</currencyId>
       <categoryId>${getCategoryId(p.product_type)}</categoryId>
       <name>${escapeXml(p.name)}</name>
-      <vendor>${escapeXml(p.brand || "Cersanit")}</vendor>
+      <vendor>${escapeXml(p.brand || "Lincer")}</vendor>
       ${p.sku ? `<vendorCode>${escapeXml(p.sku)}</vendorCode>` : ""}
       <description>${escapeXml(description)}</description>
       <sales_notes>Доставка от 1 дня. Склад в Янино (СПб).</sales_notes>

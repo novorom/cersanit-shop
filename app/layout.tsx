@@ -12,13 +12,13 @@ const SITE_URL = "https://lincer.ru"
 
 export const metadata: Metadata = {
   title: {
-    default: "Дом Плитки LINCER СПб — мультибрендовый дилер, склад в Янино",
-    template: "%s | Дом Плитки LINCER СПб",
+    default: "LINCER СПб — мультибрендовый гипермаркет плитки, склад в Янино",
+    template: "%s | LINCER СПб",
   },
   description:
-    "Официальный мультибрендовый дилер (Lincer, Cersanit, Kerama Marazzi) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
+    "Официальный мультибрендовый дилер (Lincer, Lincer, Kerama Marazzi) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
   metadataBase: new URL(SITE_URL),
-  applicationName: "Дом Плитки LINCER СПб",
+  applicationName: "LINCER СПб",
   keywords: [
     "плитка LINCER СПб",
     "купить керамогранит Санкт-Петербург",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "Дом Плитки LINCER СПб — склад в Янино",
+    title: "LINCER СПб — склад в Янино",
     description:
       "Керамическая плитка и керамогранит LINCER с доставкой по Санкт-Петербургу. Более 2000 моделей в наличии.",
     url: SITE_URL,
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Дом Плитки LINCER — гипермаркет плитки в Санкт-Петербурге",
+        alt: "LINCER LINCER — гипермаркет плитки в Санкт-Петербурге",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Дом Плитки LINCER СПб",
+    title: "LINCER СПб",
     description: "Оптовый дилер в СПб. Склад в Янино. 2000+ товаров в наличии.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
@@ -117,8 +117,6 @@ const localBusinessJsonLd = {
   sameAs: [
     "https://yandex.ru/maps/-/CDn892w",
     "https://2gis.ru/spb",
-    "https://zoon.ru/spb/building/internet-magazin_cersanit-spb/",
-    "https://cersanit.ru/dealers/",
   ],
   hasMap: "https://yandex.ru/maps/-/CDn892w",
   areaServed: {

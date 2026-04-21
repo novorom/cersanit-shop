@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка для офиса и коммерческих помещений в СПб | Дом Плитки Cersanit",
-  description: "Плитка для офиса и коммерческих помещений Cersanit в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
+  title: "Плитка для офиса и коммерческих помещений в СПб | LINCER Lincer",
+  description: "Плитка для офиса и коммерческих помещений Lincer в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-ofisa-spb` },
   openGraph: {
     title: "Плитка для офиса и коммерческих помещений в Санкт-Петербурге",
-    description: "Плитка для офиса и коммерческих помещений Cersanit в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
+    description: "Плитка для офиса и коммерческих помещений Lincer в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-dlya-ofisa-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -70,7 +70,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка для офиса и коммерческих помещений в Санкт-Петербурге</h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
-            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер Cersanit в Санкт-Петербурге.
+            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер ведущих брендов в Санкт-Петербурге.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">
@@ -99,7 +99,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-4xl px-4 flex flex-col gap-8">
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Требования к плитке для коммерческих помещений</h2>
-            <p className="text-foreground/80 leading-relaxed">Для офиса, магазина, ресторана или торгового центра нужна плитка с высоким классом износостойкости — 4 или 5. Это означает устойчивость к интенсивному пешеходному трафику. Дополнительные требования: антискользящая поверхность (R10+), лёгкость уборки, устойчивость к химии. Керамогранит Cersanit соответствует всем этим требованиям.</p>
+            <p className="text-foreground/80 leading-relaxed">Для офиса, магазина, ресторана или торгового центра нужна плитка с высоким классом износостойкости — 4 или 5. Это означает устойчивость к интенсивному пешеходному трафику. Дополнительные требования: антискользящая поверхность (R10+), лёгкость уборки, устойчивость к химии. Керамогранит соответствует всем этим требованиям.</p>
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Какие коллекции подходят для офиса</h2>

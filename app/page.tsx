@@ -8,7 +8,7 @@ const HomeContent = dynamic(() => import("@/components/home-content").then(mod =
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://cersanit-spb.ru",
+    canonical: "https://lincer.ru",
   },
 }
 

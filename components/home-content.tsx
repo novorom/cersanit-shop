@@ -11,7 +11,7 @@ const homeFaq = [
   {
     question: "Вы продаете плитку разных брендов?",
     answer:
-      "Да, мы являемся мультибрендовым дилером (Lincer, Kerama Marazzi, Cersanit, Gracia Ceramica, Idalgo и др.). Все товары поставляются напрямую с заводов, имеют сертификаты качества и гарантию производителя.",
+      "Да, мы являемся мультибрендовым дилером (Lincer, Kerama Marazzi, Lincer, Gracia Ceramica, Idalgo и др.). Все товары поставляются напрямую с заводов, имеют сертификаты качества и гарантию производителя.",
   },
   {
     question: "Где находится ваш склад?",
@@ -36,18 +36,18 @@ const homeFaq = [
 ]
 
 const TOP_COLLECTIONS = [
-  { id: 1, name: "Calacatta", slug: "calacatta", image: "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg" },
-  { id: 2, name: "Wood Concept Natural", slug: "wood-concept-natural", image: "https://pvi.cersanit.ru/upload/uf/02e/Interior_WN4T013_1.jpg" },
-  { id: 3, name: "Lofthouse", slug: "lofthouse", image: "https://pvi.cersanit.ru/upload/uf/0db/INT_LOFTHOUSE_5_1.jpg" },
-  { id: 4, name: "Northwood", slug: "northwood", image: "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg" },
-  { id: 5, name: "Woodhouse", slug: "woodhouse", image: "https://pvi.cersanit.ru/upload/uf/f0c/INT_Woodhouse_WS4O112_3_1.jpg" },
-  { id: 6, name: "Royal Stone", slug: "royal-stone", image: "https://pvi.cersanit.ru/upload/uf/cb8/INT_Royal_stone_2_1.jpg" },
-  { id: 7, name: "Wood Concept Prime", slug: "wood-concept-prime", image: "https://pvi.cersanit.ru/upload/uf/8e6/Interior_WP4T523_1.jpg" },
-  { id: 8, name: "Soft Concrete", slug: "soft-concrete", image: "https://pvi.cersanit.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg" },
-  { id: 9, name: "Galaxy", slug: "galaxy", image: "https://pvi.cersanit.ru/upload/uf/279/Int_Galaxy_012_1_1.jpg" },
-  { id: 10, name: "Effecta", slug: "effecta", image: "https://pvi.cersanit.ru/upload/uf/8b9/INT_Effecta_2_1.jpg" },
-  { id: 11, name: "Coliseum", slug: "coliseum", image: "https://pvi.cersanit.ru/upload/uf/93e/INT_Coliseum_012_2_1.jpg" },
-  { id: 12, name: "Infinity", slug: "infinity", image: "https://pvi.cersanit.ru/upload/uf/672/INT_Infinity_092_1_1.jpg" },
+  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
+  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
+  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
+  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
+  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
+  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
+  { id: 7, name: "Dako", slug: "dako", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
+  { id: 8, name: "A17914", slug: "a17914", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
+  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
+  { id: 10, name: "Лейла", slug: "лейла", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
+  { id: 11, name: "Armani", slug: "armani", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
+  { id: 12, name: "Camelot", slug: "camelot", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
 ]
 
 export function HomeContent() {
@@ -60,7 +60,7 @@ export function HomeContent() {
       <section className="relative h-[520px] lg:h-[600px] overflow-hidden">
         <Image
           src="/images/hero-bathroom.jpg"
-          alt="Современный интерьер ванной комнаты с керамической плиткой Cersanit"
+          alt="Современный интерьер ванной комнаты с керамической плиткой Lincer"
           fill
           className="object-cover"
           priority
@@ -277,7 +277,7 @@ export function HomeContent() {
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                LINCER -- специализированный интернет-магазин керамической плитки и керамогранита в Санкт-Петербурге. Мы обеспечиваем жителей СПб и Ленинградской области качественной продукцией от крупнейших производителей (Kerama Marazzi, Cersanit, Idalgo, Gracia Ceramica и др.). Наш склад позволяет поддерживать в наличии тысячи наименований.
+                LINCER -- специализированный интернет-магазин керамической плитки и керамогранита в Санкт-Петербурге. Мы обеспечиваем жителей СПб и Ленинградской области качественной продукцией от крупнейших производителей (Kerama Marazzi, Lincer, Idalgo, Gracia Ceramica и др.). Наш склад позволяет поддерживать в наличии тысячи наименований.
               </p>
               <p>
                 В каталоге представлены все основные категории: керамическая плитка для ванной и кухни, керамогранит под дерево, мрамор и бетон, мозаика на сетке, ступени и плинтуса. Все товары сертифицированы и соответствуют российским стандартам качества.

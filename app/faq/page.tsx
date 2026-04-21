@@ -2,19 +2,19 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Вопросы и ответы о плитке Cersanit | Дом Плитки СПб",
-  description: "Ответы на частые вопросы о плитке и керамограните Cersanit: доставка, оплата, возврат, расчёт количества, укладка. Официальный дилер в Санкт-Петербурге.",
+  title: "Вопросы и ответы о плитке Lincer | LINCER СПб",
+  description: "Ответы на частые вопросы о плитке и керамограните Lincer: доставка, оплата, возврат, расчёт количества, укладка. Официальный дилер в Санкт-Петербурге.",
   alternates: { canonical: `${SITE_URL}/faq` },
   openGraph: {
-    title: "Вопросы и ответы о плитке Cersanit | Дом Плитки СПб",
-    description: "Ответы на частые вопросы: доставка, оплата, возврат, расчёт количества плитки. Официальный дилер Cersanit в Санкт-Петербурге.",
+    title: "Вопросы и ответы о плитке Lincer | LINCER СПб",
+    description: "Ответы на частые вопросы: доставка, оплата, возврат, расчёт количества плитки. Официальный дилер ведущих брендов в Санкт-Петербурге.",
     url: `${SITE_URL}/faq`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
@@ -57,7 +57,7 @@ const faqs = [
   {
     category: "Укладка и уход",
     items: [
-      { q: "Какой клей использовать для плитки Cersanit?", a: "Для настенной плитки подойдёт стандартный плиточный клей С1. Для крупного формата и напольного керамогранита рекомендуем С2. Для влажных помещений — влагостойкий клей." },
+      { q: "Какой клей использовать для плитки?", a: "Для настенной плитки подойдёт стандартный плиточный клей С1. Для крупного формата и напольного керамогранита рекомендуем С2. Для влажных помещений — влагостойкий клей." },
       { q: "Через сколько можно ходить по плитке после укладки?", a: "По керамограниту можно ходить через 24 часа после укладки. Полную нагрузку давать через 72 часа. Затирку швов делать не раньше чем через 24 часа." },
       { q: "Чем мыть керамогранит?", a: "Для повседневного ухода достаточно воды и нейтрального моющего средства. Не используйте кислоты и абразивы. Для удаления известкового налёта — специализированные средства для керамогранита." },
     ]
@@ -80,7 +80,7 @@ export default function FaqPage() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl font-bold">Вопросы и ответы</h1>
-          <p className="mt-4 text-primary-foreground/80 text-lg max-w-2xl">Ответы на самые частые вопросы о плитке Cersanit, доставке, оплате и укладке.</p>
+          <p className="mt-4 text-primary-foreground/80 text-lg max-w-2xl">Ответы на самые частые вопросы о плитке Lincer, доставке, оплате и укладке.</p>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function FaqPage() {
 
           <div className="max-w-3xl mx-auto mt-12 rounded-xl bg-primary text-primary-foreground p-8 text-center">
             <h2 className="text-xl font-bold mb-3">Не нашли ответ?</h2>
-            <p className="text-primary-foreground/80 mb-6">Позвоните нам или напишите — ответим на любой вопрос о плитке Cersanit</p>
+            <p className="text-primary-foreground/80 mb-6">Позвоните нам или напишите — ответим на любой вопрос о плитке Lincer</p>
             <a href={`tel:${PHONE_RAW}`} className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-foreground font-medium hover:bg-white/90 transition-colors">
               {PHONE}
             </a>

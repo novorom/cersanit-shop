@@ -14,12 +14,12 @@ function optimizeImage(url: string | undefined | null, width = 800): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.lincer.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.lincer.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.lincer.ru/upload/uf/b22/DEL232.jpg",
 }
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://lincer.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -43,16 +43,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { collection } = await params
   const collectionName = findCollectionName(collection)
-  if (!collectionName) return { title: "Коллекция не найдена | Дом Плитки" }
+  if (!collectionName) return { title: "Коллекция не найдена | LINCER" }
 
   const seo = getCollectionSeo(collectionName)
   const collectionProducts = getCollectionProducts(collectionName)
   const prices = collectionProducts.map(p => p.price_retail).filter(Boolean)
   const priceFrom = prices.length ? Math.min(...prices) : null
 
-  const title = seo?.title || `Плитка ${collectionName} Cersanit купить в Санкт-Петербурге | Дом Плитки`
+  const brand = collectionProducts[0]?.brand || "LINCER"
+  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | LINCER`
   const description = seo?.description ||
-    `Коллекция ${collectionName} Cersanit — ${collectionProducts.length} товаров в наличии на складе Янино.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
+    `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в наличии на складе.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
 
   const firstImage = collectionProducts[0]?.main_image || collectionProducts[0]?.collection_image
 
@@ -70,7 +71,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
       title,
       description,
       url: `${SITE_URL}/collections/${collection}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "LINCER",
       locale: "ru_RU",
       type: "website",
       images: firstImage ? [{ url: firstImage, alt: collectionName }] : [],
@@ -166,12 +167,12 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const formats = [...new Set(collectionProducts.map(p => p.format).filter(Boolean))]
   const designs = [...new Set(collectionProducts.map(p => p.design).filter(Boolean))]
 
-  // Schema.org ItemList
+  const brand = collectionProducts[0]?.brand || "LINCER"
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Коллекция ${collectionName} Cersanit`,
-    description: seo?.about || `Коллекция ${collectionName} от Cersanit в наличии в Санкт-Петербурге`,
+    name: `Коллекция ${collectionName} ${brand}`,
+    description: seo?.about || `Коллекция ${collectionName} от ${brand} в наличии в Санкт-Петербурге`,
     url: `${SITE_URL}/collections/${collection}`,
     numberOfItems: collectionProducts.length,
     itemListElement: collectionProducts.slice(0, 10).map((p, i) => ({
@@ -210,7 +211,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       {
         "@type": "Question",
         name: `Плитка коллекции ${collectionName} есть в наличии?`,
-        acceptedAnswer: { "@type": "Answer", text: `Да, коллекция ${collectionName} от Cersanit есть в наличии на складе в Янино. Актуальные остатки уточняйте по телефону +7 (905) 205-09-00.` },
+        acceptedAnswer: { "@type": "Answer", text: `Да, коллекция ${collectionName} от ${brand} есть в наличии на складе. Актуальные остатки уточняйте по телефону +7 (905) 205-09-00.` },
       },
       {
         "@type": "Question",
@@ -272,7 +273,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           <h1 className="text-3xl lg:text-4xl font-bold text-white text-balance drop-shadow">
             {seo?.title
               ? seo.title.replace(" купить в СПб", "").replace(" купить в Санкт-Петербурге", "")
-              : `Коллекция ${collectionName} Cersanit`}
+              : `Коллекция ${collectionName} ${brand}`}
           </h1>
           <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-white/80 text-sm">
             <span>{collectionProducts.length} позиций в наличии</span>
@@ -297,7 +298,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           <h2 className="text-2xl font-bold text-foreground mb-2">
             {collectionName} — {collectionProducts.length} позиций
           </h2>
-          <p className="text-muted-foreground mb-8">Все товары в наличии на складе Янино, Ленинградская обл.</p>
+          <p className="text-muted-foreground mb-8">Все товары в наличии на складе в Санкт-Петербурге.</p>
           {collectionProducts.length > 0 ? (
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {collectionProducts.map((product, i) => (
@@ -342,11 +343,11 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
         <div className="py-12 lg:py-16 bg-muted/30">
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">
-              Коллекция {collectionName} Cersanit
+              Коллекция {collectionName} {brand}
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                Коллекция {collectionName} — высококачественная продукция польского производителя Cersanit.
+                Коллекция {collectionName} — высококачественная продукция производителя {brand}.
                 Все товары имеют сертификаты качества и соответствуют российским стандартам.
                 {priceFrom && ` Цены от ${priceFrom.toLocaleString("ru-RU")} до ${priceTo?.toLocaleString("ru-RU")} ₽/м².`}
               </p>

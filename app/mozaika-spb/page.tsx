@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: data.title,
     description: data.description,
     url: `${SITE_URL}/mozaika-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "LINCER",
     locale: "ru_RU",
     type: "website",
   },
