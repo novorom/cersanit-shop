@@ -37,10 +37,9 @@
                 </div>
             @endif
             
-            {{-- Бейджи наличия --}}
             @if($product->stock_yanino > 0)
                 <div class="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
-                    Склад Янино
+                    Основной склад
                 </div>
             @elseif($product->stock_factory > 0)
                 <div class="absolute top-3 left-3 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
@@ -59,12 +58,15 @@
         <div class="p-4">
             <div class="text-sm text-gray-500 mb-1">{{ $product->collection }}</div>
             
-            <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-orange-600 transition-colors">
+            <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                 {{ $product->name }}
             </h3>
             
-            <div class="text-sm text-gray-600 mb-3">
-                {{ $product->format }}
+            <div class="text-sm text-gray-600 mb-3 flex items-center justify-between">
+                <span>{{ $product->format }}</span>
+                @if($product->surface)
+                    <span class="text-xs px-2 py-0.5 bg-gray-100 rounded text-gray-500">{{ $product->surface }}</span>
+                @endif
             </div>
             
             <div class="space-y-1 mb-3">
@@ -72,26 +74,24 @@
                     <span class="text-2xl font-bold text-gray-900">{{ number_format($product->price_retail, 0, ',', ' ') }} ₽</span>
                     <span class="text-sm text-gray-500">/м²</span>
                 </div>
-                @if($product->price_rrp > $product->price_retail)
-                    <div class="flex items-center gap-2">
-                        <span class="text-sm text-gray-400 line-through">{{ number_format($product->price_rrp, 0, ',', ' ') }} ₽</span>
-                        <span class="text-sm font-medium text-green-600">
-                            Выгода {{ number_format($product->price_rrp - $product->price_retail, 0, ',', ' ') }} ₽
-                        </span>
-                    </div>
-                @endif
             </div>
             
             <div class="text-sm space-y-1 mb-4">
                 @if($product->stock_yanino > 0)
-                    <div class="text-green-600 font-medium">✓ Янино: {{ $product->stock_yanino }} м²</div>
+                    <div class="text-green-600 font-medium flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                        Склад: {{ $product->stock_yanino }} м²
+                    </div>
                 @endif
                 @if($product->stock_factory > 0)
-                    <div class="text-blue-600">Завод: {{ $product->stock_factory }} м²</div>
+                    <div class="text-blue-600 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+                        Завод: {{ $product->stock_factory }} м²
+                    </div>
                 @endif
             </div>
             
-            <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-2.5 rounded-lg transition-colors">
+            <button class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-primary/20">
                 Подробнее
             </button>
         </div>

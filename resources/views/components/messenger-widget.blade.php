@@ -25,7 +25,7 @@
 
         <div class="p-2">
             {{-- WhatsApp --}}
-            <a href="https://wa.me/{{ env('CONTACT_WHATSAPP') }}?text=Здравствуйте! Интересует плитка Cersanit." 
+            <a href="https://wa.me/{{ env('CONTACT_WHATSAPP') }}?text=Здравствуйте! Интересует плитка LINCER." 
                target="_blank"
                class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition group">
                 <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition">

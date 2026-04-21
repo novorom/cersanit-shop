@@ -1,7 +1,7 @@
  @extends('layout')
 
-  @section('title', 'Каталог продукции Cersanit')
-  @section('meta_description', 'Керамическая плитка и керамогранит Cersanit по цене производителя. Официальный дилер в Санкт-Петербурге.')
+  @section('title', 'Каталог продукции LINCER')
+  @section('meta_description', 'Керамическая плитка и керамогранит LINCER по оптовым ценам. Прямые поставки со склада.')
 
   @section('content')
   @php
@@ -13,7 +13,7 @@
       <div class="bg-white border-b border-gray-200">
           <div class="container mx-auto px-4 lg:px-6 py-6">
               <div>
-                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Керамическая плитка</h1>
+                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Каталог LINCER</h1>
                   <div class="flex flex-row flex-wrap gap-3">
                       <a href="/collections" class="group flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 border border-blue-200 rounded-xl p-4 transition-all
    hover:shadow-md">
@@ -25,7 +25,7 @@
                           </div>
                           <div>
                               <span class="font-semibold text-gray-900 group-hover:text-blue-700">Коллекции</span>
-                              <p class="text-xs text-gray-500">Все коллекции Cersanit</p>
+                              <p class="text-xs text-gray-500">Все коллекции LINCER</p>
                           </div>
                       </a>
                       <a href="/catalog?category=ceramic-granite" class="group flex items-center gap-3 bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border
@@ -311,4 +311,32 @@
       });
   });
   </script>
+
+  <style>
+    .filter-group {
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+    }
+    .filter-header svg {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .product-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    }
+    .sticky-sidebar {
+        top: 5rem;
+        max-height: calc(100vh - 6rem);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 10px;
+    }
+  </style>
   @endsection

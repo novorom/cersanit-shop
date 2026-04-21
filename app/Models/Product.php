@@ -12,17 +12,16 @@ class Product extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'sku', 'name', 'slug', 'brand', 'collection', 'product_type',
+        'sku', 'external_id', 'name', 'slug', 'brand', 'manufacturer', 'collection', 'product_type', 'unit_type',
         'format', 'surface', 'color', 'material_type', 'application', 'rooms', 'design',
-        'thickness', 'pieces_per_box', 'sqm_per_box', 'country',
+        'thickness', 'pieces_per_box', 'sqm_per_box', 'boxes_per_pallet', 'in_pallet_qty', 'country', 'weight_unit',
         'price_official', 'price_retail', 'price_wholesale', 'currency',
         'stock_yanino', 'stock_factory',
         'description', 'seo_title', 'seo_description', 'seo_keywords',
         'images', 'main_image', 'technical_specs', 'faq', 'related_products',
         'installation_guide', 'views_count', 'sales_count', 'rating', 'reviews_count',
-        'is_active', 'is_new', 'is_bestseller', 'is_discount', 'is_exclusive', 'sort_order', 'parsed_at'
+        'is_active', 'is_exclusive', 'is_new', 'is_bestseller', 'is_discount', 'sort_order', 'parsed_at'
     ];
-
     protected $casts = [
         'images' => 'array',
         'technical_specs' => 'array',

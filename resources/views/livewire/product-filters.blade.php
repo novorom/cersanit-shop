@@ -131,7 +131,7 @@
                             </div>
 
                             <div class="mt-4">
-                                <a href="https://wa.me/79052050900?text=Здравствуйте, интересует {{ $product->name }} (арт: {{ $product->sku }})" target="_blank" class="block w-full bg-green-500 text-white text-center py-2 px-4 rounded hover:bg-green-600 transition text-sm">
+                                <a href="https://wa.me/78124413188?text=Здравствуйте, интересует {{ $product->name }} (арт: {{ $product->sku }})" target="_blank" class="block w-full bg-green-500 text-white text-center py-2 px-4 rounded hover:bg-green-600 transition text-sm">
                                     Уточнить в WhatsApp
                                 </a>
                             </div>
