@@ -9234,21 +9234,6 @@ export const products: Product[] = [
     is_new: true,
     rectified: false,
   },
-];
-
-// ─── Helpers ────────────────────────────────────────────────
-
-export const collections = [...new Set(products.map(p => p.collection))].sort()
-
-export const formats = [...new Set(products.map(p => p.format).filter(Boolean))].sort()
-
-export const colors = [...new Set(products.map(p => p.color).filter(Boolean))].sort()
-
-export function getProduct(slug: string): Product | undefined {
-  return products.find(p => p.slug === slug)
-}
-
-export function getProductsByCollection(collection: string): Product[
   {
   "id": "lincer-1776803120541",
   "sku": "scarlett_white_pg_01_450kh450_1_y_sort",
@@ -12565,3 +12550,19 @@ export function getProductsByCollection(collection: string): Product[
   "is_new": true
 }
 ];
+
+// ─── Helpers ────────────────────────────────────────────────
+
+export const collections = [...new Set(products.map(p => p.collection))].sort()
+
+export const formats = [...new Set(products.map(p => p.format).filter(Boolean))].sort()
+
+export const colors = [...new Set(products.map(p => p.color).filter(Boolean))].sort()
+
+export function getProduct(slug: string): Product | undefined {
+  return products.find(p => p.slug === slug)
+}
+
+export function getProductsByCollection(collection: string): Product[] {
+  return products.filter(p => p.collection === collection)
+}
