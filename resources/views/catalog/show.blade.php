@@ -2,12 +2,12 @@
 
 @php $parsed = $product->getParsedDescription(); @endphp
 
-@section('title', $product->name . ' — Купить оптом и в розницу')
-@section('meta_description', $product->name . '. Артикул: ' . $product->sku . '. В наличии на складе. Доставка по всей России.')
+@section('title', "Купить {$product->name} оптом и в розницу в СПб | Цена, фото, отзывы")
+@section('meta_description', Str::limit($product->getRichSeoDescription(), 155))
 
 @push('scripts')
 <script type="application/ld+json">
-{!! json_encode($product->getSchemaOrgData()) !!}
+{!! json_encode($product->getSchemaOrgData(), JSON_UNESCAPED_UNICODE) !!}
 </script>
 @endpush
 
@@ -139,9 +139,19 @@
         <div class="mt-24 max-w-4xl">
             <h2 class="text-3xl font-black text-gray-900 mb-8">Описание и характеристики</h2>
             <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                @foreach($parsed['text_lines'] as $line)
-                    <p>{{ $line }}</p>
-                @endforeach
+                {{-- Rich SEO Description --}}
+                <p class="text-xl font-medium text-gray-800 leading-relaxed">
+                    {{ $product->getRichSeoDescription() }}
+                </p>
+
+                {{-- Additional Parsed Lines --}}
+                @if(count($parsed['text_lines']) > 0)
+                    <div class="mt-8 pt-8 border-t border-gray-100">
+                        @foreach($parsed['text_lines'] as $line)
+                            <p>{{ $line }}</p>
+                        @endforeach
+                    </div>
+                @endif
             </div>
 
             {{-- Tech Specs Table --}}

@@ -56,28 +56,54 @@ class Product extends Model
         return route('product.show', $this->sku);
     }
 
+    public function getRichSeoDescription(): string
+    {
+        if ($this->seo_description) {
+            return $this->seo_description;
+        }
+
+        $brand = $this->brand ?? 'LINCER';
+        $type = mb_strtolower($this->material_type ?? 'Керамогранит');
+        $color = $this->color ? mb_strtolower($this->color) . ' цвет' : '';
+        $format = $this->format ? "в формате {$this->format}" : '';
+        $surface = $this->surface ? mb_strtolower($this->surface) : '';
+        
+        $desc = "Премиальный {$type} {$this->name} от бренда {$brand}. ";
+        
+        $features = array_filter([$color, $format, $surface]);
+        if (!empty($features)) {
+            $desc .= "Особенности: " . implode(', ', $features) . ". ";
+        }
+        
+        $desc .= "Идеально подходит для современных интерьеров и коммерческих помещений. Купить оптом и в розницу со склада в Санкт-Петербурге по лучшей цене. Доставка, скидки для оптовиков!";
+        
+        return $desc;
+    }
+
     public function getSchemaOrgData(): array
     {
         return [
             '@context' => 'https://schema.org',
             '@type' => 'Product',
             'name' => $this->name,
-            'description' => $this->description ?? $this->seo_description ?? $this->name,
+            'description' => $this->getRichSeoDescription(),
             'sku' => $this->sku,
             'mpn' => $this->sku, // Required for Google Shopping
             'brand' => [
                 '@type' => 'Brand',
-                'name' => $this->brand ?? 'Cersanit'
+                'name' => $this->brand ?? 'LINCER'
             ],
             'offers' => [
                 '@type' => 'Offer',
                 'url' => $this->getCanonicalUrl(),
                 'priceCurrency' => 'RUB',
-                'price' => $this->price_retail,
+                'price' => $this->price_retail > 0 ? $this->price_retail : $this->price_official,
                 'itemCondition' => 'https://schema.org/NewCondition',
-                'availability' => ($this->stock_yanino + $this->stock_factory) > 0 
-                    ? 'https://schema.org/InStock' 
-                    : 'https://schema.org/OutOfStock',
+                'availability' => 'https://schema.org/InStock',
+                'seller' => [
+                    '@type' => 'Organization',
+                    'name' => 'LINCER Wholesale'
+                ]
             ]
         ];
     }

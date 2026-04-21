@@ -7,8 +7,15 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>@yield('title', 'LINCER - Оптовый гипермаркет плитки и керамогранита')</title>
-    <meta name="description" content="@yield('meta_description', 'Широкий ассортимент керамической плитки и керамогранита от ведущих производителей. Оптовые цены, быстрая доставка со склада.')">
+    <meta name="description" content="@yield('meta_description', 'Широкий ассортимент керамической плитки и керамогранита от ведущих производителей. Оптовые цены, быстрая доставка со склада в СПб.')">
     
+    {{-- Open Graph / Social Media --}}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'LINCER - Оптовый гипермаркет плитки и керамогранита')">
+    <meta property="og:description" content="@yield('meta_description', 'Широкий ассортимент керамической плитки и керамогранита от ведущих производителей. Оптовые цены, быстрая доставка со склада в СПб.')">
+    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+
     {{-- SEO & Verifications --}}
     <meta name="yandex-verification" content="1f85757551ab6b60" />
     <meta name="google-site-verification" content="lincer-clone-google-val" />

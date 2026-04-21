@@ -1,7 +1,7 @@
  @extends('layout')
 
-  @section('title', 'Каталог продукции LINCER')
-  @section('meta_description', 'Керамическая плитка и керамогранит LINCER по оптовым ценам. Прямые поставки со склада.')
+  @section('title', $seoTitle ?? 'Каталог продукции LINCER')
+  @section('meta_description', $seoDescription ?? 'Керамическая плитка и керамогранит LINCER по оптовым ценам. Прямые поставки со склада.')
 
   @section('content')
   @php
@@ -13,7 +13,7 @@
       <div class="bg-white border-b border-gray-200">
           <div class="container mx-auto px-4 lg:px-6 py-6">
               <div>
-                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Каталог LINCER</h1>
+                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{{ $seoH1 ?? 'Каталог LINCER' }}</h1>
                   <div class="flex flex-row flex-wrap gap-3">
                       <a href="/collections" class="group flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 border border-blue-200 rounded-xl p-4 transition-all
    hover:shadow-md">
@@ -268,6 +268,14 @@
                   @else
                       {{-- Products Grid --}}
                       @include('catalog.product-grid')
+                  @endif
+                  
+                  {{-- SEO Text Block --}}
+                  @if(!empty($seoText))
+                  <div class="mt-12 bg-white rounded-xl border border-gray-200 p-8 shadow-sm prose prose-blue max-w-none">
+                      <h2 class="text-xl font-bold text-gray-900 mb-4">{{ $seoH1 ?? 'Каталог' }} оптом и в розницу</h2>
+                      <p class="text-gray-600 leading-relaxed">{{ $seoText }}</p>
+                  </div>
                   @endif
               </div>
           </div>
