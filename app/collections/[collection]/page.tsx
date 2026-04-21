@@ -14,12 +14,12 @@ function optimizeImage(url: string | undefined | null, width = 800): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.lincer.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.lincer.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.lincer.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.keramogranit-opt.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.keramogranit-opt.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.keramogranit-opt.ru/upload/uf/b22/DEL232.jpg",
 }
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -43,15 +43,15 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { collection } = await params
   const collectionName = findCollectionName(collection)
-  if (!collectionName) return { title: "Коллекция не найдена | LINCER" }
+  if (!collectionName) return { title: "Коллекция не найдена | Керамогранит Опт" }
 
   const seo = getCollectionSeo(collectionName)
   const collectionProducts = getCollectionProducts(collectionName)
   const prices = collectionProducts.map(p => p.price_retail).filter(Boolean)
   const priceFrom = prices.length ? Math.min(...prices) : null
 
-  const brand = collectionProducts[0]?.brand || "LINCER"
-  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | LINCER`
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
+  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Керамогранит Опт`
   const description = seo?.description ||
     `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в наличии на складе.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
 
@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
       title,
       description,
       url: `${SITE_URL}/collections/${collection}`,
-      siteName: "LINCER",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: firstImage ? [{ url: firstImage, alt: collectionName }] : [],
@@ -167,7 +167,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const formats = [...new Set(collectionProducts.map(p => p.format).filter(Boolean))]
   const designs = [...new Set(collectionProducts.map(p => p.design).filter(Boolean))]
 
-  const brand = collectionProducts[0]?.brand || "LINCER"
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",

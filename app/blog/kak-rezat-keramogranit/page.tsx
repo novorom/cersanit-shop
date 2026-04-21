@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 export const metadata: Metadata = {
-  title: "Как резать керамогранит: инструменты и правила | LINCER СПб",
+  title: "Как резать керамогранит: инструменты и правила | Керамогранит Опт",
   description: "Как правильно резать керамогранит: какой инструмент выбрать, как сделать прямой и фигурный рез, как избежать сколов. Советы от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/kak-rezat-keramogranit` },
-  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function Article() {
   return (
@@ -15,10 +15,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как резать керамогранит: инструменты и правила",
         description: "Руководство по резке керамогранита: выбор инструмента, прямой и фигурный рез, советы.",
-        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-rezat-keramogranit`,
         datePublished: "2025-03-12",
-        author: { "@type": "Organization", name: "LINCER" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">
@@ -114,9 +114,9 @@ export default function Article() {
           <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>        </div>

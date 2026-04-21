@@ -2,7 +2,7 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "LINCER — Оптовый гипермаркет плитки",
+  "name": "Керамогранит Опт — Оптовый гипермаркет плитки",
   "url": "{{ url('/') }}",
   "logo": "{{ asset('images/logo.png') }}",
   "contactPoint": {

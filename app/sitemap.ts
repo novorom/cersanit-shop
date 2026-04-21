@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 // Дата последнего обновления прайса и каталога
 const CATALOG_UPDATED = "2026-04-16"

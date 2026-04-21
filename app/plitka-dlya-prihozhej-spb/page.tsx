@@ -3,15 +3,15 @@ import Link from "next/link"
 import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 const COLS = ["Lofthouse","Soft Concrete","Concretehouse","Wood Concept Natural","Wood Concept Prime","Woodhouse","Royal Stone","Royal stone","Slate","Pamir","Sandstone","Limestone","Northwood","Bonsai Tree","Stilo","Silvia","Desert","JackStone","Stonehouse"]
 export const metadata: Metadata = {
-  title: "Плитка для прихожей Lincer купить в Санкт-Петербурге | LINCER",
+  title: "Плитка для прихожей Lincer купить в Санкт-Петербурге | Керамогранит Опт",
   description: "Износостойкая плитка и керамогранит для прихожей Lincer в СПб. Класс износостойкости PEI IV-V, класс скользкости R10+. Склад Янино, доставка от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-prihozhej-spb` },
-  openGraph: { title: "Плитка для прихожей Lincer в СПб", url: `${SITE_URL}/plitka-dlya-prihozhej-spb`, siteName: "LINCER", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для прихожей Lincer в СПб", url: `${SITE_URL}/plitka-dlya-prihozhej-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
 }
 const faq = [
   { question: "Что важно при выборе плитки для прихожей?", answer: "Три ключевых параметра: износостойкость (PEI IV или V для прихожих с высокой проходимостью), класс скользкости (R10 и выше — не скользит даже с мокрой обувью), и практичный тёмный или средний цвет — не так заметна грязь." },
@@ -30,7 +30,7 @@ export default function PlitkaPrivhozhaya() {
   return (
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:faq.map(f=>({ "@type":"Question",name:f.question,acceptedAnswer:{"@type":"Answer",text:f.answer} }))}) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://lincer.ru"},{"@type":"ListItem","position":2,"name":"Плитка для прихожей","item":"https://lincer.ru/plitka-dlya-prihozhej-spb"}]}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://keramogranit-opt.ru"},{"@type":"ListItem","position":2,"name":"Плитка для прихожей","item":"https://keramogranit-opt.ru/plitka-dlya-prihozhej-spb"}]}` }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/catalog" className="hover:text-primary transition-colors">Каталог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Плитка для прихожей</span></nav></div></div>
       <section className="bg-primary text-primary-foreground py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка для прихожей ведущих брендов в Санкт-Петербурге</h1><p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">Износостойкий керамогранит PEI IV-V, класс скользкости R10+. Выдерживает высокую проходимость, легко моется. {items.length} позиций в наличии в Янино.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">Смотреть товары <ChevronRight className="h-4 w-4" /></Link><a href={`tel:${PHONE_RAW}`} className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-primary-foreground/30 text-primary-foreground font-medium text-sm hover:bg-primary-foreground/10 transition-colors"><Phone className="h-4 w-4" /> {PHONE}</a></div></div></section>
       <section id="products" className="py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">Плитка для прихожей — {items.length} позиций</h2><p className="text-muted-foreground mb-8">Все товары в наличии на складе Янино</p><div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">{items.map((p,i) => <ProductCard key={p.id} product={p} priority={i<4} />)}</div></div></section>

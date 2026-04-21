@@ -49,7 +49,7 @@ export function Logo({ className = "" }: { className?: string }) {
         />
       </g>
 
-      {/* Text: LINCER */}
+      {/* Text: Керамогранит Опт */}
       <text
         x="50"
         y="28"
@@ -61,7 +61,7 @@ export function Logo({ className = "" }: { className?: string }) {
         ГИПЕРМАРКЕТ ПЛИТКИ
       </text>
 
-      {/* Text: LINCER - bold blue */}
+      {/* Text: Керамогранит Опт - bold blue */}
       <text
         x="50"
         y="48"
@@ -70,7 +70,7 @@ export function Logo({ className = "" }: { className?: string }) {
         fill="#1e3a8a"
         letterSpacing="0.5"
       >
-        LINCER
+        Керамогранит Опт
       </text>
     </svg>
   )

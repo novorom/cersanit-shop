@@ -36,18 +36,18 @@ const homeFaq = [
 ]
 
 const TOP_COLLECTIONS = [
-  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
-  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
-  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
-  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
-  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
-  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
-  { id: 7, name: "Dako", slug: "dako", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
-  { id: 8, name: "A17914", slug: "a17914", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
-  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
-  { id: 10, name: "Лейла", slug: "лейла", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
-  { id: 11, name: "Armani", slug: "armani", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
-  { id: 12, name: "Camelot", slug: "camelot", image: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
+  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
+  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
+  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
+  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
+  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
+  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
+  { id: 7, name: "Dako", slug: "dako", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
+  { id: 8, name: "A17914", slug: "a17914", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
+  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
+  { id: 10, name: "Лейла", slug: "лейла", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
+  { id: 11, name: "Armani", slug: "armani", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
+  { id: 12, name: "Camelot", slug: "camelot", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
 ]
 
 export function HomeContent() {
@@ -78,7 +78,7 @@ export function HomeContent() {
               Керамическая плитка и керамогранит в Санкт-Петербурге
             </h1>
             <p className="text-lg text-background/70 leading-relaxed max-w-md">
-              Оптовый гипермаркет LINCER. Более 2000 наименований в наличии на складе. Доставка по СПб и ЛО от 1 дня.
+              Оптовый гипермаркет Керамогранит Опт. Более 2000 наименований в наличии на складе. Доставка по СПб и ЛО от 1 дня.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link
@@ -273,11 +273,11 @@ export function HomeContent() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="max-w-4xl">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 text-balance">
-              Мультибрендовый гипермаркет плитки LINCER в Санкт-Петербурге
+              Мультибрендовый гипермаркет плитки Керамогранит Опт в Санкт-Петербурге
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                LINCER -- специализированный интернет-магазин керамической плитки и керамогранита в Санкт-Петербурге. Мы обеспечиваем жителей СПб и Ленинградской области качественной продукцией от крупнейших производителей (Kerama Marazzi, Lincer, Idalgo, Gracia Ceramica и др.). Наш склад позволяет поддерживать в наличии тысячи наименований.
+                Керамогранит Опт -- специализированный интернет-магазин керамической плитки и керамогранита в Санкт-Петербурге. Мы обеспечиваем жителей СПб и Ленинградской области качественной продукцией от крупнейших производителей (Kerama Marazzi, Lincer, Idalgo, Gracia Ceramica и др.). Наш склад позволяет поддерживать в наличии тысячи наименований.
               </p>
               <p>
                 В каталоге представлены все основные категории: керамическая плитка для ванной и кухни, керамогранит под дерево, мрамор и бетон, мозаика на сетке, ступени и плинтуса. Все товары сертифицированы и соответствуют российским стандартам качества.

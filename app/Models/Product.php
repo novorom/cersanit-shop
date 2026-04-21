@@ -62,7 +62,7 @@ class Product extends Model
             return $this->seo_description;
         }
 
-        $brand = $this->brand ?? 'LINCER';
+        $brand = $this->brand ?? 'Керамогранит Опт';
         $type = mb_strtolower($this->material_type ?? 'Керамогранит');
         $color = $this->color ? mb_strtolower($this->color) . ' цвет' : '';
         $format = $this->format ? "в формате {$this->format}" : '';
@@ -91,7 +91,7 @@ class Product extends Model
             'mpn' => $this->sku, // Required for Google Shopping
             'brand' => [
                 '@type' => 'Brand',
-                'name' => $this->brand ?? 'LINCER'
+                'name' => $this->brand ?? 'Керамогранит Опт'
             ],
             'offers' => [
                 '@type' => 'Offer',
@@ -102,7 +102,7 @@ class Product extends Model
                 'availability' => 'https://schema.org/InStock',
                 'seller' => [
                     '@type' => 'Organization',
-                    'name' => 'LINCER Wholesale'
+                    'name' => 'Керамогранит Опт Wholesale'
                 ]
             ]
         ];

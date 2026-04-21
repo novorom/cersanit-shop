@@ -1,7 +1,7 @@
  @extends('layout')
 
-  @section('title', $seoTitle ?? 'Каталог продукции LINCER')
-  @section('meta_description', $seoDescription ?? 'Керамическая плитка и керамогранит LINCER по оптовым ценам. Прямые поставки со склада.')
+  @section('title', $seoTitle ?? 'Каталог продукции Керамогранит Опт')
+  @section('meta_description', $seoDescription ?? 'Керамическая плитка и керамогранит Керамогранит Опт по оптовым ценам. Прямые поставки со склада.')
 
   @section('content')
   @php
@@ -13,7 +13,7 @@
       <div class="bg-white border-b border-gray-200">
           <div class="container mx-auto px-4 lg:px-6 py-6">
               <div>
-                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{{ $seoH1 ?? 'Каталог LINCER' }}</h1>
+                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">{{ $seoH1 ?? 'Каталог Керамогранит Опт' }}</h1>
                   <div class="flex flex-row flex-wrap gap-3">
                       <a href="/collections" class="group flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 border border-blue-200 rounded-xl p-4 transition-all
    hover:shadow-md">
@@ -25,7 +25,7 @@
                           </div>
                           <div>
                               <span class="font-semibold text-gray-900 group-hover:text-blue-700">Коллекции</span>
-                              <p class="text-xs text-gray-500">Все коллекции LINCER</p>
+                              <p class="text-xs text-gray-500">Все коллекции Керамогранит Опт</p>
                           </div>
                       </a>
                       <a href="/catalog?category=ceramic-granite" class="group flex items-center gap-3 bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 border

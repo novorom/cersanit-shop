@@ -8,19 +8,19 @@ import { ProductsProvider } from "@/lib/products-context"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
   title: {
-    default: "LINCER СПб — мультибрендовый гипермаркет плитки, склад в Янино",
-    template: "%s | LINCER СПб",
+    default: "Керамогранит Опт — мультибрендовый гипермаркет плитки, склад в Янино",
+    template: "%s | Керамогранит Опт",
   },
   description:
-    "Официальный мультибрендовый дилер (Lincer, Lincer, Kerama Marazzi) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
+    "Официальный мультибрендовый дилер (Lincer, Kerama Marazzi, Gracia Ceramica) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
   metadataBase: new URL(SITE_URL),
-  applicationName: "LINCER СПб",
+  applicationName: "Керамогранит Опт",
   keywords: [
-    "плитка LINCER СПб",
+    "плитка Керамогранит Опт",
     "купить керамогранит Санкт-Петербург",
     "плитка Янино",
     "мультибрендовый дилер плитки",
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "LINCER СПб — склад в Янино",
+    title: "Керамогранит Опт — склад в Янино",
     description:
-      "Керамическая плитка и керамогранит LINCER с доставкой по Санкт-Петербургу. Более 2000 моделей в наличии.",
+      "Керамическая плитка и керамогранит Керамогранит Опт с доставкой по Санкт-Петербургу. Более 2000 моделей в наличии.",
     url: SITE_URL,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
     images: [
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "LINCER LINCER — гипермаркет плитки в Санкт-Петербурге",
+        alt: "Керамогранит Опт Керамогранит Опт — гипермаркет плитки в Санкт-Петербурге",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LINCER СПб",
+    title: "Керамогранит Опт",
     description: "Оптовый дилер в СПб. Склад в Янино. 2000+ товаров в наличии.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
@@ -73,7 +73,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeGoodsStore",
   "@id": `${SITE_URL}/#business`,
-  name: "LINCER",
+  name: "Керамогранит Опт",
   alternateName: "Lincer-SPb",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
@@ -81,7 +81,7 @@ const localBusinessJsonLd = {
   description:
     "Мультибрендовый гипермаркет керамической плитки и керамогранита в Санкт-Петербурге. Склад в Янино-1. Доставка по СПб и ЛО от 1 дня.",
   telephone: "+7-905-205-09-00",
-  email: "info@lincer.ru",
+  email: "info@keramogranit-opt.ru",
   priceRange: "₽₽",
   currenciesAccepted: "RUB",
   paymentAccepted: "Наличные, банковская карта, безналичный расчёт",

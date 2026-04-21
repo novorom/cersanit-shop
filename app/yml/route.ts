@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const SHOP_NAME = "Lincer-SPb"
 const SHOP_COMPANY = "Магазин керамической плитки в Санкт-Петербурге"
 

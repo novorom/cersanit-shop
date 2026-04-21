@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Страница не найдена | LINCER",
+  title: "Страница не найдена | Керамогранит Опт",
   description: "Страница не найдена. Перейдите в каталог плитки или на главную страницу магазина.",
 }
 

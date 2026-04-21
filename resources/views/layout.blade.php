@@ -6,13 +6,13 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>@yield('title', 'LINCER - Оптовый гипермаркет плитки и керамогранита')</title>
+    <title>@yield('title', 'Керамогранит Опт - Оптовый гипермаркет плитки и керамогранита')</title>
     <meta name="description" content="@yield('meta_description', 'Широкий ассортимент керамической плитки и керамогранита от ведущих производителей. Оптовые цены, быстрая доставка со склада в СПб.')">
     
     {{-- Open Graph / Social Media --}}
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('title', 'LINCER - Оптовый гипермаркет плитки и керамогранита')">
+    <meta property="og:title" content="@yield('title', 'Керамогранит Опт - Оптовый гипермаркет плитки и керамогранита')">
     <meta property="og:description" content="@yield('meta_description', 'Широкий ассортимент керамической плитки и керамогранита от ведущих производителей. Оптовые цены, быстрая доставка со склада в СПб.')">
     <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
 
@@ -39,7 +39,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center gap-2">
-                        <span class="text-2xl font-bold text-blue-600 tracking-tight">LINCER</span>
+                        <span class="text-2xl font-bold text-blue-600 tracking-tight">Керамогранит Опт</span>
                     </a>
                 </div>
                 
@@ -71,7 +71,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">LINCER</h3>
+                    <h3 class="text-xl font-bold mb-4">Керамогранит Опт</h3>
                     <p class="text-gray-400 text-sm">Ваш надежный поставщик керамической плитки и керамогранита. Прямые поставки от производителей.</p>
                 </div>
                 <div>
@@ -93,13 +93,13 @@
                     <h4 class="font-semibold mb-4 uppercase text-sm tracking-wider">Контакты</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
                         <li>8 (812) 441-31-88</li>
-                        <li>info@lincer.ru</li>
+                        <li>info@keramogranit-opt.ru</li>
                         <li>г. Санкт-Петербург</li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                &copy; {{ date('Y') }} LINCER. Все права защищены.
+                &copy; {{ date('Y') }} Керамогранит Опт. Все права защищены.
             </div>
         </div>
     </footer>

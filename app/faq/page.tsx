@@ -2,19 +2,19 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Вопросы и ответы о плитке Lincer | LINCER СПб",
+  title: "Вопросы и ответы о плитке Lincer | Керамогранит Опт",
   description: "Ответы на частые вопросы о плитке и керамограните Lincer: доставка, оплата, возврат, расчёт количества, укладка. Официальный дилер в Санкт-Петербурге.",
   alternates: { canonical: `${SITE_URL}/faq` },
   openGraph: {
-    title: "Вопросы и ответы о плитке Lincer | LINCER СПб",
+    title: "Вопросы и ответы о плитке Lincer | Керамогранит Опт",
     description: "Ответы на частые вопросы: доставка, оплата, возврат, расчёт количества плитки. Официальный дилер ведущих брендов в Санкт-Петербурге.",
     url: `${SITE_URL}/faq`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
-  title: "Как укладывать плитку своими руками — инструкция Lincer | LINCER СПб",
+  title: "Как укладывать плитку своими руками — инструкция Lincer | Керамогранит Опт",
   description: "Официальная инструкция по укладке керамической плитки и керамогранита. Подготовка основания, выбор клея, пошаговая укладка, затирка швов.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-plitku` },
-  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function HowToLayTile() {
@@ -18,7 +18,7 @@ export default function HowToLayTile() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как укладывать плитку своими руками — инструкция Lincer",
         description: "Официальная инструкция по укладке керамической плитки и керамогранита.",
-        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-plitku`,
         datePublished: "2025-01-15",
       })}} />
@@ -52,7 +52,7 @@ export default function HowToLayTile() {
               <p><strong>Запас материала:</strong> приобретайте плитку с запасом 5–15% к рассчитанному количеству — на подрезку, бой и возможный ремонт в будущем.</p>
               <p><strong>Партия:</strong> проверьте маркировку на каждой коробке — вся плитка должна быть из одной партии. Разные партии могут отличаться по тону.</p>
               <p><strong>Защитный воск:</strong> если на поверхности плитки есть защитный воск — удалите его резиновым или пластиковым шпателем до укладки.</p>
-              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Используйте бесплатную программу CERAMIC 3D WEB — ссылка доступна в разделе «Файлы для скачивания» на сайте lincer.ru.</p>
+              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Используйте бесплатную программу CERAMIC 3D WEB — ссылка доступна в разделе «Файлы для скачивания» на сайте keramogranit-opt.ru.</p>
             </div>
           </section>
 
@@ -126,9 +126,9 @@ export default function HowToLayTile() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
-                  <Link href="/catalog/plitka-deco-chernyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/b22/DEL232.jpg&w=300&output=webp&q=80" alt="Плитка Deco черный рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Deco черный рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">750 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-deco-chernyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/b22/DEL232.jpg&w=300&output=webp&q=80" alt="Плитка Deco черный рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Deco черный рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">750 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

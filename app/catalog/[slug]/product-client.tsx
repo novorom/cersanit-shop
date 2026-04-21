@@ -151,14 +151,14 @@ export function ProductPageClient({ slug }: { slug: string }) {
     material: product.material_type,
     offers: {
       "@type": "Offer",
-      url: `https://lincer.ru/catalog/${product.slug}`,
+      url: `https://keramogranit-opt.ru/catalog/${product.slug}`,
       priceCurrency: "RUB",
       price: product.price_retail,
       availability:
         totalStock > 0
           ? "https://schema.org/InStock"
           : "https://schema.org/PreOrder",
-      seller: { "@type": "Organization", name: "LINCER" },
+      seller: { "@type": "Organization", name: "Керамогранит Опт" },
       areaServed: { "@type": "City", name: "Санкт-Петербург" },
       deliveryLeadTime: {
         "@type": "QuantitativeValue",
@@ -217,9 +217,9 @@ export function ProductPageClient({ slug }: { slug: string }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Главная", item: "https://lincer.ru" },
-      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://lincer.ru/catalog" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://lincer.ru/catalog/${product.slug}` },
+      { "@type": "ListItem", position: 1, name: "Главная", item: "https://keramogranit-opt.ru" },
+      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://keramogranit-opt.ru/catalog" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://keramogranit-opt.ru/catalog/${product.slug}` },
     ],
   }
 

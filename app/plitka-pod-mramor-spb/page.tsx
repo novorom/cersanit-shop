@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -15,14 +15,14 @@ const MARBLE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под мрамор для стен Lincer в СПб — цены со склада | LINCER",
+  title: "Плитка под мрамор для стен Lincer в СПб — цены со склада | Керамогранит Опт",
   description: "Керамогранит под мрамор Lincer в СПб. Calacatta, Deep Calacatta, Lumina Onyx, Travertino — в наличии на складе Янино. Доставка по СПб от 1 дня. Роскошный вид без хлопот.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-mramor-spb` },
   openGraph: {
     title: "Плитка под мрамор ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией мрамора — Calacatta, Deep Calacatta, Lumina Onyx. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-mramor-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

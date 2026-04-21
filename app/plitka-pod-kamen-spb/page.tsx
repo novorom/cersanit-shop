@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -15,14 +15,14 @@ const STONE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под камень Lincer купить в Санкт-Петербурге | LINCER",
+  title: "Плитка под камень Lincer купить в Санкт-Петербурге | Керамогранит Опт",
   description: "Керамогранит под натуральный камень Lincer в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб от 1 дня. Природная фактура без сложного ухода.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-kamen-spb` },
   openGraph: {
     title: "Плитка под камень ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией камня — Royal Stone, Slate, Stonehouse, Sandstone. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-kamen-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

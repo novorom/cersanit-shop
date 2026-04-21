@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
-  title: "Блог о плитке и керамограните Lincer | LINCER СПб",
+  title: "Блог о плитке и керамограните Lincer | Керамогранит Опт",
   description: "Инструкции по укладке плитки и мозаики, советы по затирке швов, сертификаты качества Lincer. Полезные статьи от официального дилера в Санкт-Петербурге.",
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
-    title: "Блог о плитке и керамограните Lincer | LINCER СПб",
+    title: "Блог о плитке и керамограните Lincer | Керамогранит Опт",
     description: "Инструкции по укладке, советы по уходу, сертификаты качества — полезные материалы от официального дилера ведущих брендов в Санкт-Петербурге.",
     url: `${SITE_URL}/blog`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

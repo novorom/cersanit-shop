@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка со склада Янино — самовывоз в СПб | LINCER",
+  title: "Плитка со склада Янино — самовывоз в СПб | Керамогранит Опт",
   description: "Плитка со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
   alternates: { canonical: `${SITE_URL}/plitka-yanino-spb` },
   openGraph: {
     title: "Плитка со склада в Янино — самовывоз",
     description: "Плитка со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
     url: `${SITE_URL}/plitka-yanino-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

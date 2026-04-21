@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 class FinalLincerImageParser extends Command
 {
     protected $signature = 'parse:lincer-final {--limit=10}';
-    protected $description = 'Парсинг фото с lincer.ru';
+    protected $description = 'Парсинг фото с keramogranit-opt.ru';
 
     public function handle()
     {
@@ -32,7 +32,7 @@ class FinalLincerImageParser extends Command
 
         foreach ($products as $product) {
             try {
-                $searchUrl = "https://lincer.ru/search/?q=" . $product->sku;
+                $searchUrl = "https://keramogranit-opt.ru/search/?q=" . $product->sku;
                 
                 $response = Http::timeout(10)->get($searchUrl);
                 
@@ -45,7 +45,7 @@ class FinalLincerImageParser extends Command
                 $html = $response->body();
                 
                 if (preg_match('/href="(\/catalog\/2d\/[^"]+)"/', $html, $matches)) {
-                    $productUrl = "https://lincer.ru" . $matches[1];
+                    $productUrl = "https://keramogranit-opt.ru" . $matches[1];
                     
                     sleep(1);
                     

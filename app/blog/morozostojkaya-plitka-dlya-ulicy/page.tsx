@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
   title: "Морозостойкая плитка для улицы в СПб | Керамогранит",
   description: "Выбираем морозостойкую уличную плитку для Санкт-Петербурга. Керамогранит, характеристики, укладка. Официальный дилер ведущих брендов.",
   alternates: { canonical: `${SITE_URL}/blog/morozostojkaya-plitka-dlya-ulicy` },
-  openGraph: { title: "Морозостойкая плитка для улицы в СПб | Керамогранит", url: `${SITE_URL}/blog/morozostojkaya-plitka-dlya-ulicy`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Морозостойкая плитка для улицы в СПб | Керамогранит", url: `${SITE_URL}/blog/morozostojkaya-plitka-dlya-ulicy`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -17,10 +17,10 @@ export default function Article() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Морозостойкая плитка для улицы: что выбрать в Санкт-Петербурге",
-        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/morozostojkaya-plitka-dlya-ulicy`,
         datePublished: "2026-03-19",
-        author: { "@type": "Organization", name: "LINCER" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Морозостойкая плитка для улицы: что выбрать в Санкт-Петербурге</h1>

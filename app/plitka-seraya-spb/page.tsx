@@ -4,21 +4,21 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 const GRAY_COLORS = ["серый", "светло-серый", "темно-серый"]
 
 export const metadata: Metadata = {
-  title: "Серая плитка купить в Санкт-Петербурге | LINCER",
+  title: "Серая плитка купить в Санкт-Петербурге | Керамогранит Опт",
   description: "Серая плитка и керамогранит в СПб — 64 позиции в наличии. Soft Concrete, Lofthouse, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-seraya-spb` },
   openGraph: {
     title: "Серая плитка в Санкт-Петербурге",
     description: "Серая плитка и керамогранит — Soft Concrete, Lofthouse, Northwood. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-seraya-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ExternalLink, Award, MapPin, Package } from 'lucide-react'
 
-const SITE_URL = 'https://lincer.ru'
+const SITE_URL = 'https://keramogranit-opt.ru'
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -13,14 +13,14 @@ const breadcrumbSchema = {
 }
 
 export const metadata = {
-  title: 'О компании LINCER — мультибрендовый гипермаркет плитки в СПб с 2011 года',
+  title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб с 2011 года',
   description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Официальный дилер Lincer, Kerama Marazzi, Lincer. Склад в Янино-1. Телефон: +7 (905) 205-09-00.',
-  alternates: { canonical: 'https://lincer.ru/about' },
+  alternates: { canonical: 'https://keramogranit-opt.ru/about' },
   openGraph: {
-    title: 'О компании LINCER — мультибрендовый гипермаркет плитки в СПб',
+    title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб',
     description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Склад и шоурум в Янино.',
-    url: 'https://lincer.ru/about',
-    siteName: 'LINCER',
+    url: 'https://keramogranit-opt.ru/about',
+    siteName: 'Керамогранит Опт',
     locale: 'ru_RU',
     type: 'website',
   },
@@ -63,7 +63,7 @@ export default function AboutPage() {
               О нашей компании
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              С 2011 года на рынке керамической плитки и керамогранита. Мы помогаем тысячам клиентов найти идеальное решение для их проектов. Являясь мультибрендовым гипермаркетом LINCER в Санкт-Петербурге, мы обеспечиваем прямые поставки продукции с ведущих заводов (Lincer, Kerama Marazzi, Lincer, Idalgo), гарантируя оригинальное качество и конкурентные цены.
+              С 2011 года на рынке керамической плитки и керамогранита. Мы помогаем тысячам клиентов найти идеальное решение для их проектов. Являясь мультибрендовым гипермаркетом Керамогранит Опт в Санкт-Петербурге, мы обеспечиваем прямые поставки продукции с ведущих заводов (Lincer, Kerama Marazzi, Lincer, Idalgo), гарантируя оригинальное качество и конкурентные цены.
             </p>
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
       {/* Detail Content Section */}
       <section className="py-16 lg:py-24 bg-muted/20">
         <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают гипермаркет LINCER?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают гипермаркет Керамогранит Опт?</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p>
               В нашем интернет-магазине представлен полный каталог продукции ведущих брендов: от классической керамической плитки Lincer и Kerama Marazzi до современных коллекций Lincer и Idalgo. Мы тщательно отбираем коллекции, ориентируясь на актуальные тренды дизайна интерьеров 2025-2026 годов.
@@ -234,7 +234,7 @@ export default function AboutPage() {
                 width="100%"
                 height="400"
                 frameBorder="0"
-                title="Склад гипермаркета LINCER в Янино — Яндекс Карты"
+                title="Склад гипермаркета Керамогранит Опт в Янино — Яндекс Карты"
                 allowFullScreen
                 loading="lazy"
               />

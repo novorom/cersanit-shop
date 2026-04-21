@@ -1,7 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
   title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { 
     title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
     url: `${SITE_URL}/blog/plitka-pod-mramor-v-interere`, 
-    siteName: "LINCER", 
+    siteName: "Керамогранит Опт", 
     locale: "ru_RU", 
     type: "article" 
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"LINCER","url":"https://lincer.ru"},"mainEntityOfPage":"https://lincer.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"LINCER"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"Керамогранит Опт","url":"https://keramogranit-opt.ru"},"mainEntityOfPage":"https://keramogranit-opt.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"Керамогранит Опт"}}` }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Плитка под мрамор в интерьере: как создать роскошь без бюджета</h1>
         
@@ -67,9 +67,9 @@ export default function Article() {
           <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-royal-stone-belyy-42x42" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/77d/RS4R052D_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Royal Stone белый 42x42" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Royal Stone белый 42x42</span><span className="mt-2 block text-base font-bold text-foreground">1122 ₽/м²</span></div></Link>
-                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-royal-stone-belyy-42x42" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/77d/RS4R052D_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Royal Stone белый 42x42" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Royal Stone белый 42x42</span><span className="mt-2 block text-base font-bold text-foreground">1122 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>        </article>

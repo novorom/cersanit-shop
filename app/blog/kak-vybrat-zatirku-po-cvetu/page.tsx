@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
-  title: "Как выбрать цвет затирки для плитки | LINCER СПб",
+  title: "Как выбрать цвет затирки для плитки | Керамогранит Опт",
   description: "Рекомендации по выбору цвета затирки к плитке. Советы дизайнеров, сочетания цветов, затирка швов в СПб.",
   alternates: { canonical: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu` },
-  openGraph: { title: "Как выбрать цвет затирки для плитки | LINCER СПб", url: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как выбрать цвет затирки для плитки | Керамогранит Опт", url: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -17,10 +17,10 @@ export default function Article() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как выбрать цвет затирки для плитки: советы по подбору",
-        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`,
         datePublished: "2026-03-23",
-        author: { "@type": "Organization", name: "LINCER" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <div className="mb-8">

@@ -2,19 +2,19 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
   title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб",
   description: "Морозостойкий керамогранит для балконов и террас Lincer. Нескользкая плитка, которая выдерживает любые погодные условия Санкт-Петербурга.",
   alternates: { canonical: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy` },
-  openGraph: { title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб", url: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб", url: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Керамогранит для балкона и террасы: морозостойкий нескользкий","publisher":{"@type":"Organization","name":"LINCER","url":"https://lincer.ru"},"mainEntityOfPage":"https://lincer.ru/blog/keramogranit-dlya-balkona-i-terraisy","datePublished":"2025-03-10","author":{"@type":"Organization","name":"LINCER"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Керамогранит для балкона и террасы: морозостойкий нескользкий","publisher":{"@type":"Organization","name":"Керамогранит Опт","url":"https://keramogranit-opt.ru"},"mainEntityOfPage":"https://keramogranit-opt.ru/blog/keramogranit-dlya-balkona-i-terraisy","datePublished":"2025-03-10","author":{"@type":"Organization","name":"Керамогранит Опт"}}` }} />
 
                 <div className="mt-6 p-5 rounded-xl bg-muted/30 border border-border">
             <p className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wide">По теме</p>
@@ -37,7 +37,7 @@ export default function Article() {
         <h1 className="text-4xl font-bold mb-4">Керамогранит для балкона и террасы: морозостойкий и нескользкий</h1>
         
         <div className="mb-8 text-sm text-muted-foreground">
-          <p>Опубликовано: декабрь 2024 | Автор: LINCER</p>
+          <p>Опубликовано: декабрь 2024 | Автор: Керамогранит Опт</p>
         </div>
 
         <div className="prose prose-lg max-w-none mb-12">
@@ -82,7 +82,7 @@ export default function Article() {
             Ещё одно преимущество керамогранита — его практичность в уходе. Благодаря низкому водопоглощению и плотной структуре, грязь, мох и листья не въедаются в поверхность плитки. Для уборки балкона или террасы достаточно обычной воды из шланга или влажной тряпки.
           </p>
           <p>
-            Если на поверхности появятся пятна, их легко удалить щёткой и моющим средством, не опасаясь повредить материал. Керамогранит не требует специальной обработки или герметизации, как некоторые натуральные камни. Это значительно экономит время на уход и снижает затраты на содержание. LINCER LINCER в Санкт-Петербурге поможет вам не только купить плитку, но и дать рекомендации по уходу за ней, чтобы она служила долго и выглядела как новая.
+            Если на поверхности появятся пятна, их легко удалить щёткой и моющим средством, не опасаясь повредить материал. Керамогранит не требует специальной обработки или герметизации, как некоторые натуральные камни. Это значительно экономит время на уход и снижает затраты на содержание. Керамогранит Опт Керамогранит Опт в Санкт-Петербурге поможет вам не только купить плитку, но и дать рекомендации по уходу за ней, чтобы она служила долго и выглядела как новая.
           </p>
         </div>
 
@@ -98,9 +98,9 @@ export default function Article() {
                 <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
-                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood бежевый 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood бежевый 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-wood-concept-natural-bezhevyy-22x90" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/4af/15971_1.jpg&w=300&output=webp&q=80" alt="Керамогранит Wood Concept Natural 22x90" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Wood Concept Natural 22x90</span><span className="mt-2 block text-base font-bold text-foreground">1610 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>        </article>

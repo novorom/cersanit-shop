@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
-  title: "Укладка керамогранита ёлочкой и диагональю: пошаговая инструкция | LINCER СПб",
+  title: "Укладка керамогранита ёлочкой и диагональю: пошаговая инструкция | Керамогранит Опт",
   description: "Полная инструкция по укладке керамогранита ёлочкой и диагональю. Советы мастеров Lincer Санкт-Петербурга. Пошаговое руководство для начинающих.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-keramogranit-elochkoy` },
-  openGraph: { title: "Укладка керамогранита ёлочкой и диагональю: пошаговая инструкция | LINCER СПб", url: `${SITE_URL}/blog/kak-ukladyvat-keramogranit-elochkoy`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Укладка керамогранита ёлочкой и диагональю: пошаговая инструкция | Керамогранит Опт", url: `${SITE_URL}/blog/kak-ukladyvat-keramogranit-elochkoy`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -17,10 +17,10 @@ export default function Article() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Укладка керамогранита ёлочкой и диагональю: пошаговая инструкция",
-        publisher: { "@type": "Organization", name: "LINCER", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-keramogranit-elochkoy`,
         datePublished: "2026-04-06",
-        author: { "@type": "Organization", name: "LINCER" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <div className="mb-6 flex items-center gap-2 text-sm text-gray-600">

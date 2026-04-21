@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -17,14 +17,14 @@ const WOOD_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под дерево Lincer купить в Санкт-Петербурге | LINCER",
+  title: "Плитка под дерево Lincer купить в Санкт-Петербурге | Керамогранит Опт",
   description: "Керамическая плитка и керамогранит под дерево Lincer в СПб. Woodhouse, Lofthouse, Wood Concept, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 472 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-pod-derevo-spb` },
   openGraph: {
     title: "Плитка под дерево ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией дерева — Woodhouse, Lofthouse, Wood Concept. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-derevo-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

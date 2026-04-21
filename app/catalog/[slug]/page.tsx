@@ -6,7 +6,7 @@ import { getCollectionSeo } from "@/lib/collection-seo"
 import { ProductPageClient } from "./product-client"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export async function generateStaticParams() {
   return products
@@ -23,7 +23,7 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return { title: "Товар не найден | LINCER" }
+    return { title: "Товар не найден | Керамогранит Опт" }
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
@@ -51,7 +51,7 @@ export async function generateMetadata({
       title,
       description: description.slice(0, 200),
       url: `${SITE_URL}/catalog/${product.slug}`,
-      siteName: "LINCER",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: product.main_image
@@ -98,10 +98,10 @@ export default async function ProductPage({
     name: product.name,
     description: collectionSeo?.about
       ? `${collectionSeo.about} ${collectionSeo.application}`
-      : `${product.name} — керамическая плитка и керамогранит ${product.brand || 'LINCER'}. Купить в Санкт-Петербурге на складе.`,
+      : `${product.name} — керамическая плитка и керамогранит ${product.brand || 'Керамогранит Опт'}. Купить в Санкт-Петербурге на складе.`,
     sku: product.sku,
     mpn: product.bsu,
-    brand: { "@type": "Brand", name: product.brand || "LINCER" },
+    brand: { "@type": "Brand", name: product.brand || "Керамогранит Опт" },
     image: product.main_image ? [product.main_image] : [],
     itemCondition: "https://schema.org/NewCondition",
     offers: {
@@ -114,7 +114,7 @@ export default async function ProductPage({
           : "https://schema.org/PreOrder",
       seller: {
         "@type": "Organization",
-        name: "LINCER",
+        name: "Керамогранит Опт",
         url: SITE_URL,
       },
       url: `${SITE_URL}/catalog/${product.slug}`,
@@ -250,7 +250,7 @@ export default async function ProductPage({
             </h2>
             <p className="text-sm text-foreground/75 leading-relaxed">
               {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от 
-              производителя {product.brand || "LINCER"}.
+              производителя {product.brand || "Керамогранит Опт"}.
               {product.format ? ` Формат ${product.format} см.` : ""}
               {product.surface ? ` Поверхность ${product.surface.toLowerCase()}.` : ""}
               {product.color ? ` Цвет: ${product.color}.` : ""}

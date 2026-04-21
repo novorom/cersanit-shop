@@ -26,7 +26,7 @@ const footerLinks = {
     { label: "Каталог", href: "/catalog" },
     { label: "Плитка в СПб", href: "/spb" },
     { label: "Керамическая плитка СПб", href: "/keramicheskaya-plitka-spb" },
-    { label: "Керамогранит СПб", href: "/keramogranit-spb" },
+    { label: "Керамогранит Опт", href: "/keramogranit-spb" },
     { label: "Плитка для ванной СПб", href: "/plitka-dlya-vannoj-spb" },
     { label: "Мозаика СПб", href: "/mozaika-spb" },
     { label: "Плитка под дерево СПб", href: "/plitka-pod-derevo-spb" },
@@ -216,7 +216,7 @@ export function SiteFooter() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-background/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-background/40">
-            {"2024-2026 LINCER LINCER. Все права защищены."}
+            {"2024-2026 Керамогранит Опт Керамогранит Опт. Все права защищены."}
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-xs text-background/40 hover:text-background/60 transition-colors">

@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка для душевой кабины купить в Санкт-Петербурге | LINCER",
+  title: "Плитка для душевой кабины купить в Санкт-Петербурге | Керамогранит Опт",
   description: "Плитка для душевой кабины Lincer в СПб — нескользкая, влагостойкая. Mosaic, Calacatta, Lofthouse — склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-dushi-spb` },
   openGraph: {
     title: "Плитка для душевой кабины в Санкт-Петербурге",
     description: "Плитка для душевой кабины Lincer в СПб — нескользкая, влагостойкая. Mosaic, Calacatta, Lofthouse — склад Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-dlya-dushi-spb`,
-    siteName: "LINCER",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

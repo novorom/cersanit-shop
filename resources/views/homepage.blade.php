@@ -4,7 +4,7 @@
     {{-- Premium Hero Section --}}
     <section class="relative h-[80vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('images/hero-lincer.png') }}" alt="LINCER Showroom" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+            <img src="{{ asset('images/hero-lincer.png') }}" alt="Керамогранит Опт Showroom" class="w-full h-full object-cover scale-105 animate-slow-zoom">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
         </div>
         
@@ -14,7 +14,7 @@
                     Оптовый гипермаркет №1
                 </span>
                 <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight animate-slide-up">
-                    LINCER <br>
+                    Керамогранит Опт <br>
                     <span class="text-blue-400">Мир плитки</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl animate-slide-up-delayed">
@@ -125,7 +125,7 @@
             <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
                 Получите индивидуальное коммерческое предложение с учетом ваших объемов и специфики объекта.
             </p>
-            <a href="https://wa.me/78124413188?text=Запрос оптового прайса LINCER" class="inline-flex items-center gap-3 bg-green-500 text-white font-black py-5 px-12 rounded-2xl hover:bg-green-600 transition-all shadow-2xl shadow-green-500/20">
+            <a href="https://wa.me/78124413188?text=Запрос оптового прайса Керамогранит Опт" class="inline-flex items-center gap-3 bg-green-500 text-white font-black py-5 px-12 rounded-2xl hover:bg-green-600 transition-all shadow-2xl shadow-green-500/20">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.198.297-.768.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.385-1.475-.882-.788-1.476-1.761-1.645-2.059-.169-.297-.017-.456.13-.606.134-.134.297-.347.446-.52.149-.173.198-.297.297-.496.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.488-.5-.67-.51-.173-.008-.297-.01-.47-.01-.173 0-.445.063-.678.319-.231.247-.882.862-.882 2.107 0 1.246.908 2.452 1.034 2.618.127.166 1.79 2.734 4.342 3.833.607.262 1.082.42 1.453.535.61.177 1.164.152 1.603.093.488-.069 1.512-.619 1.727-1.216.215-.597.215-1.107.151-1.21-.064-.103-.236-.166-.533-.313z"/></svg>
                 Запросить спеццены
             </a>

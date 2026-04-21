@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://lincer.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 export const metadata: Metadata = {
-  title: "Как укладывать керамическую мозаику — инструкция Lincer | LINCER СПб",
+  title: "Как укладывать керамическую мозаику — инструкция Lincer | Керамогранит Опт",
   description: "Инструкция по укладке мозаики Lincer на сетке. Подготовка поверхности, нанесение клея, затирка швов, важные советы для качественного результата.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-mozaiku` },
-  openGraph: { title: "Как укладывать керамическую мозаику", url: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`, siteName: "LINCER", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать керамическую мозаику", url: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function HowToLayMosaic() {
   return (
@@ -14,10 +14,10 @@ export default function HowToLayMosaic() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как укладывать керамическую мозаику — инструкция Lincer",
-        publisher: { "@type": "Organization", name: "LINCER", url: "https://lincer.ru" },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: "https://keramogranit-opt.ru" },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`,
         datePublished: "2025-01-25",
-        author: { "@type": "Organization", name: "LINCER" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/blog" className="hover:text-primary transition-colors">Блог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Укладка мозаики</span></nav></div></div>
 
@@ -97,9 +97,9 @@ export default function HowToLayMosaic() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/mozaika-lofthouse-seryy-28x25" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/1d7/LS6O096.jpg&w=300&output=webp&q=80" alt="Мозаика Lofthouse серый 28x25" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Lofthouse серый 28x25</span><span className="mt-2 block text-base font-bold text-foreground">1680 ₽/м²</span></div></Link>
-                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
-                  <Link href="/catalog/mozaika-woodhouse-korichnevyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.lincer.ru/upload/uf/e89/WS6O116.jpg&w=300&output=webp&q=80" alt="Мозаика Woodhouse коричневый 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Woodhouse коричневый 30x30</span><span className="mt-2 block text-base font-bold text-foreground">626 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-lofthouse-seryy-28x25" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/1d7/LS6O096.jpg&w=300&output=webp&q=80" alt="Мозаика Lofthouse серый 28x25" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Lofthouse серый 28x25</span><span className="mt-2 block text-base font-bold text-foreground">1680 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-royal-stone-mnogotsvetnyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/084/RS2L451.jpg&w=300&output=webp&q=80" alt="Мозаика Royal Stone 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Royal Stone 30x30</span><span className="mt-2 block text-base font-bold text-foreground">1820 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-woodhouse-korichnevyy-30x30" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/e89/WS6O116.jpg&w=300&output=webp&q=80" alt="Мозаика Woodhouse коричневый 30x30" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Woodhouse коричневый 30x30</span><span className="mt-2 block text-base font-bold text-foreground">626 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

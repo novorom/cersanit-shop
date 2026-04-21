@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Коллекции LINCER - Визуальный каталог')
-@section('meta_description', 'Визуальный каталог коллекций керамической плитки и керамогранита LINCER от официального дилера.')
+@section('title', 'Коллекции Керамогранит Опт - Визуальный каталог')
+@section('meta_description', 'Визуальный каталог коллекций керамической плитки и керамогранита Керамогранит Опт от официального дилера.')
 
 @section('content')
 <!-- Hero Section -->
@@ -10,7 +10,7 @@
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-3xl">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                Коллекции LINCER
+                Коллекции Керамогранит Опт
             </h1>
             <p class="text-xl mb-6 text-blue-100">
                 Официальный дилер керамической плитки. Выбирайте дизайн, а не артикул.
@@ -122,7 +122,7 @@
     <!-- Info Section -->
     <div class="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
         <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Почему LINCER?</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Почему Керамогранит Опт?</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
@@ -159,7 +159,7 @@
     <div class="mt-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-8 text-center text-white">
         <h2 class="text-3xl font-bold mb-4">Не нашли нужную коллекцию?</h2>
         <p class="text-lg mb-6">Напишите нам в WhatsApp, поможем подобрать аналог или заказать под индивидуальный проект</p>
-        <a href="https://wa.me/78124413188?text=Здравствуйте, интересуют коллекции LINCER для проекта"
+        <a href="https://wa.me/78124413188?text=Здравствуйте, интересуют коллекции Керамогранит Опт для проекта"
            target="_blank"
            class="inline-flex items-center bg-white text-green-600 font-bold py-3 px-6 rounded-lg hover:bg-green-50 transition">
             <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
