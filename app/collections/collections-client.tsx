@@ -98,12 +98,13 @@ interface CollectionsClientProps {
 export function CollectionsClient({ initialCollections = [] }: CollectionsClientProps) {
   const { products } = useProducts()
 
-  const allCollections = [...new Set(products.map((p) => p.collection))]
-    .filter((c) => c !== "other" && c.toLowerCase() !== "other")
-    .sort()
+  // Visible products: have a slug, non‑negative price, and a real collection (exclude "other")
+  const visibleProducts = products.filter(p => p.slug && (p.price_retail ?? 0) >= 0 && p.collection && p.collection.toLowerCase() !== "other")
+
+  const allCollections = [...new Set(visibleProducts.map(p => p.collection))].sort()
 
   const collections = allCollections.map((collName) => {
-    const collectionProducts = products.filter((p) => p.collection === collName)
+    const collectionProducts = visibleProducts.filter(p => p.collection === collName)
     const firstProduct = collectionProducts[0]
     return {
       id: collName,
@@ -112,7 +113,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
       image: COLLECTION_IMAGE_OVERRIDES[collName.toUpperCase()] || collectionProducts.flatMap(p => (p.interior_images as string[] | undefined) || []).filter(Boolean)[0] || firstProduct?.collection_image || firstProduct?.main_image || "",
       product_count: collectionProducts.length,
     }
-  })
+  }).filter(c => c.product_count > 1) // keep only collections with at least 2 products
 
   const collectionsWithMeta = collections.map((c) => {
     const collProducts = products.filter((p) => p.collection === c.name)
