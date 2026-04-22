@@ -12553,7 +12553,7 @@ export const products: Product[] = [
   "id": "lincer-1776894126136",
   "sku": "plitka",
   "name": "Керамогранит и плитка для пола",
-  "slug": "-",
+  "slug": "",
   "brand": "LINCER",
   "collection": "Керамогранит",
   "product_type": "Керамогранит",
