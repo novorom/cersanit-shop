@@ -98,22 +98,46 @@ interface CollectionsClientProps {
 export function CollectionsClient({ initialCollections = [] }: CollectionsClientProps) {
   const { products } = useProducts()
 
-  // Visible products: have a slug, non‑negative price, and a real collection (exclude "other")
-  const visibleProducts = products.filter(p => p.slug && (p.price_retail ?? 0) >= 0 && p.collection && p.collection.toLowerCase() !== "other")
+  // Helper to normalize collection keys (trim, lower case)
+  const normalize = (s: string | undefined) => s ? s.trim().toLowerCase() : ""
 
-  const allCollections = [...new Set(visibleProducts.map(p => p.collection))].sort()
+  // Filter visible products (slug present, price >= 0, and a collection not "other")
+  const visibleProducts = products.filter(p =>
+    p.slug &&
+    (p.price_retail ?? 0) >= 0 &&
+    p.collection &&
+    normalize(p.collection) !== "other"
+  )
 
-  const collections = allCollections.map((collName) => {
-    const collectionProducts = visibleProducts.filter(p => p.collection === collName)
-    const firstProduct = collectionProducts[0]
-    return {
-      id: collName,
-      name: collName,
-      slug: collName.toLowerCase().replace(/\s+/g, "-"),
-      image: COLLECTION_IMAGE_OVERRIDES[collName.toUpperCase()] || collectionProducts.flatMap(p => (p.interior_images as string[] | undefined) || []).filter(Boolean)[0] || firstProduct?.collection_image || firstProduct?.main_image || "",
-      product_count: collectionProducts.length,
+  // Group products by normalized collection name, using original case for display
+  const collectionMap: Record<string, { name: string; products: typeof visibleProducts }> = {}
+  visibleProducts.forEach(p => {
+    const key = normalize(p.collection) || normalize(p.format_collection) // fallback to format_collection if needed
+    if (!key) return
+    if (!collectionMap[key]) {
+      collectionMap[key] = { name: p.collection.trim(), products: [] }
     }
-  }).filter(c => c.product_count > 1) // keep only collections with at least 2 products
+    collectionMap[key].products.push(p)
+  })
+
+  // Build collections array, keep only those with ≥2 products
+  const collections = Object.entries(collectionMap)
+    .filter(([, v]) => v.products.length > 1)
+    .map(([key, { name, products: collProducts }]) => {
+      const firstProduct = collProducts[0]
+      return {
+        id: key,
+        name,
+        slug: name.toLowerCase().replace(/\s+/g, "-"),
+        image:
+          COLLECTION_IMAGE_OVERRIDES[name.toUpperCase()] ||
+          collProducts.flatMap(p => (p.interior_images as string[] | undefined) || []).filter(Boolean)[0] ||
+          firstProduct?.collection_image ||
+          firstProduct?.main_image ||
+          "",
+        product_count: collProducts.length,
+      }
+    }) // keep only collections with at least 2 products
 
   const collectionsWithMeta = collections.map((c) => {
     const collProducts = products.filter((p) => p.collection === c.name)
