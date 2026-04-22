@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function CatalogPage() {
   const initialProducts: Product[] = products
-    .filter((p) => p.name && p.name.trim() && p.price_retail && p.price_retail > 0 && p.slug)
+    .filter((p) => p.name && p.name.trim() && p.price_retail >= 0 && p.slug);
 
   return <CatalogClient initialProducts={initialProducts} />
 }

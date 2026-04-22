@@ -34432,11 +34432,19 @@ export const products: Product[] = [
 
 // ─── Helpers ────────────────────────────────────────────────
 
-export const collections = [...new Set(products.map(p => p.collection))].sort()
-
-export const formats = [...new Set(products.map(p => p.format).filter(Boolean))].sort()
-
-export const colors = [...new Set(products.map(p => p.color).filter(Boolean))].sort()
+export const collections = (() => {
+  const counts: Record<string, number> = {};
+  products.filter(p => p.price_retail && p.slug).forEach(p => {
+    const col = p.collection || 'Без коллекции';
+    counts[col] = (counts[col] || 0) + 1;
+  });
+  return Object.entries(counts)
+    .filter(([, cnt]) => cnt >= 2)
+    .map(([col]) => col)
+    .sort();
+})();
+export const formats = [...new Set(products.filter(p => p.price_retail && p.slug).map(p => p.format).filter(Boolean))].sort();
+export const colors = [...new Set(products.filter(p => p.price_retail && p.slug).map(p => p.color).filter(Boolean))].sort();
 
 export function getProduct(slug: string): Product | undefined {
   return products.find(p => p.slug === slug)
