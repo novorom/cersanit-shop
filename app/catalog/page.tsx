@@ -6,11 +6,11 @@ import type { Product } from "@/lib/products-data"
 export const metadata: Metadata = {
   title: "Каталог плитки Керамогранит Опт в СПб — купить керамогранит и керамическую плитку со склада",
   description: "Каталог керамической плитки и керамогранита Керамогранит Опт в Санкт-Петербурге. Сотни моделей в наличии на складе. Цены оптовые. Доставка по СПб и ЛО от 1 дня. Самовывоз бесплатно.",
-  alternates: { canonical: "https://lincer-spb.ru/catalog" },
+  alternates: { canonical: "https://keramogranit-opt.ru/catalog" },
   openGraph: {
     title: "Каталог плитки Керамогранит Опт в СПб — все новинки в наличии",
     description: "Керамическая плитка и керамогранит со склада. Доставка по СПб от 1 дня.",
-    url: "https://lincer-spb.ru/catalog",
+    url: "https://keramogranit-opt.ru/catalog",
     siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",

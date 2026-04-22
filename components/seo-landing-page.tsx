@@ -14,8 +14,8 @@ import {
   Calculator,
   Clock,
 } from "lucide-react"
-import type { SeoPageData } from "@/lib/seo-data"
-import { PHONE, PHONE_RAW } from "@/lib/seo-data"
+import { SeoPageData, PHONE, PHONE_RAW } from "@/lib/seo-data"
+import { BreadcrumbSchema, FAQSchema } from "./schema-org"
 
 const iconMap: Record<string, typeof MapPin> = {
   "Склад в Янино": MapPin,
@@ -53,6 +53,13 @@ function getIcon(title: string) {
 export function SeoLandingPage({ data }: { data: SeoPageData }) {
   return (
     <div className="min-h-screen bg-background">
+      <BreadcrumbSchema
+        items={[
+          { name: "Главная", item: "/" },
+          { name: data.breadcrumbLabel, item: `/${data.slug}` },
+        ]}
+      />
+      <FAQSchema faq={data.faq} />
       {/* Breadcrumbs */}
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">
