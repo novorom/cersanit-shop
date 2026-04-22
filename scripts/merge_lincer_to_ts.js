@@ -14,7 +14,7 @@ function run() {
   const tsPath = path.join(__dirname, '../lib/products-data.ts');
   let tsContent = fs.readFileSync(tsPath, 'utf8');
 
-  const jsonPath = path.join(__dirname, '../lincer_products_bulk.json');
+  const jsonPath = path.join(__dirname, '../lincer_full_dump.json');
   if (!fs.existsSync(jsonPath)) {
     console.log("No lincer_products_bulk.json found.");
     return;
@@ -86,19 +86,31 @@ function run() {
       return;
   }
 
-  // Find the last ] in the products array
-  const lastBracketIndex = tsContent.lastIndexOf(']');
-  if (lastBracketIndex === -1) {
-    console.error("Could not find array end in ts file");
+  // Find where the products array ends. 
+  // We look for the first ]; that follows the products definition.
+  const arrayStartMatch = tsContent.match(/export const products: Product\[\] = \[/);
+  if (!arrayStartMatch) {
+    console.error("Could not find products array start");
     return;
   }
-
+  
+  const startIndex = arrayStartMatch.index;
+  const restOfFile = tsContent.substring(startIndex);
+  const arrayEndRelativeIndex = restOfFile.indexOf('\n];');
+  
+  if (arrayEndRelativeIndex === -1) {
+    console.error("Could not find products array end (];)");
+    return;
+  }
+  
+  const arrayEndIndex = startIndex + arrayEndRelativeIndex;
+  
   const itemsString = newTsProducts.map(p => JSON.stringify(p, null, 2)).join(',\n  ');
   
-  const beforeBracket = tsContent.substring(0, lastBracketIndex).trimEnd();
-  const needsComma = !beforeBracket.endsWith('[');
+  const beforeEnd = tsContent.substring(0, arrayEndIndex).trimEnd();
+  const needsComma = !beforeEnd.endsWith('[');
   
-  const newContent = tsContent.substring(0, lastBracketIndex).trimEnd() + (needsComma ? ',\n  ' : '\n  ') + itemsString + '\n];\n';
+  const newContent = beforeEnd + (needsComma ? ',\n  ' : '\n  ') + itemsString + tsContent.substring(arrayEndIndex);
 
   fs.writeFileSync(tsPath, newContent, 'utf8');
   console.log(`Successfully merged ${newTsProducts.length} NEW Lincer products into lib/products-data.ts`);
