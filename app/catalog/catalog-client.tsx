@@ -38,7 +38,7 @@ function CatalogContent({ initialProducts = [] }: { initialProducts?: Product[] 
   }, [productType, collectionSlug])
 
   const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>(initialFilters)
-  const [priceRange, setPriceRange] = useState<[number, number]>([400, 9500])
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100000])
 
   useEffect(() => {
     const filters: Record<string, string[]> = {}
