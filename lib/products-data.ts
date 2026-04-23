@@ -98224,6 +98224,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404462",
+  "sku": "stg_a482_sg1550_vstavka_brash_vud_bezh_9_9_9_9_kerama_maratstsi",
+  "name": "Вставка STG\\A482\\SG1550 Браш Вуд бежевый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga482sg1550-99x99x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Вставка",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Вставка STG\\A482\\SG1550 Браш Вуд бежевый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Вставка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Вставка STG\\A482\\SG1550 Браш Вуд бежевый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c80/400_400_1/c80d5be4809edf1ebbd8b9fa1c0c5539.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c80/400_400_1/c80d5be4809edf1ebbd8b9fa1c0c5539.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404463",
+  "sku": "stg_b481_sg1550_vstavka_brash_vud_korichnevyy_9_9_9_9_kerama_maratstsi",
+  "name": "Вставка STG\\B481\\SG1550 Браш Вуд коричневый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stgb481sg1550-99x99x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Вставка",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Вставка STG\\B481\\SG1550 Браш Вуд коричневый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Вставка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Вставка STG\\B481\\SG1550 Браш Вуд коричневый  9,9x9,9x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f92/400_400_1/f92864d39bb0990d27a96f52dc41e50e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f92/400_400_1/f92864d39bb0990d27a96f52dc41e50e.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
