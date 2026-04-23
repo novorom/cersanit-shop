@@ -95078,6 +95078,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404319",
+  "sku": "vyaz_seryy_temnyy_d_pola_sg400700n_9_9_40_2_kerama_maratstsi",
+  "name": "Керамогранит SG400700N Вяз серый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg400700n-99x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG400700N Вяз серый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG400700N Вяз серый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8c3/400_400_1/8c30fd439ca96ecb64d0c663fc25249f.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8c3/400_400_1/8c30fd439ca96ecb64d0c663fc25249f.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404320",
+  "sku": "vyaz_tem_korichnevyy_d_pola_sg400400n_9_9_40_2_kerama_maratstsi",
+  "name": "Керамогранит SG400400N Вяз коричневый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg400400n-99x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG400400N Вяз коричневый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG400400N Вяз коричневый темный матовый 9,9x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9da/400_400_1/9daa1af9b6b59e79f6d7c37f110c8c79.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9da/400_400_1/9daa1af9b6b59e79f6d7c37f110c8c79.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404321",
+  "sku": "dl5100_btg_pro_vud_bezh_svetlyy_plintus_39_6_8_kerama_maratstsi",
+  "name": "Плинтус DL5100\\BTG Про Вуд бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dl5100btg-396x8x155-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус DL5100\\BTG Про Вуд бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус DL5100\\BTG Про Вуд бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b1f/400_400_1/b1f1ae6f53f503ec28d1de94c91861fc.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b1f/400_400_1/b1f1ae6f53f503ec28d1de94c91861fc.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404322",
+  "sku": "dl5101_btg_pro_vud_bezh_temnyy_plintus_39_6_8_kerama_maratstsi",
+  "name": "Плинтус DL5101\\BTG Про Вуд бежевый темный  39,6x8x1,55, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dl5101btg-396x8x155-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус DL5101\\BTG Про Вуд бежевый темный  39,6x8x1,55, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус DL5101\\BTG Про Вуд бежевый темный  39,6x8x1,55, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/93f/400_400_1/93f9b7ad6233bcbca916e96c8d783f5e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/93f/400_400_1/93f9b7ad6233bcbca916e96c8d783f5e.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
