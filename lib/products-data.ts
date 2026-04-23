@@ -108459,6 +108459,29 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404713",
+  "sku": "131_karandash_chernyy_bordyur_20_1_5_kerama_maratstsi",
+  "name": "Карандаш 131 черный глянцевый 20x1,5x1 Kerama Marazzi (Керама Марацци)",
+  "slug": "-131-20x15x1-kerama-marazzi-",
+  "brand": "Kerama Marazzi",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш 131 черный глянцевый 20x1,5x1 Kerama Marazzi (Керама Марацци) от бренда Kerama Marazzi (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш 131 черный глянцевый 20x1,5x1 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию Kerama Marazzi напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "stock_yanino": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d5a/400_400_1/d5a027a3eddb6e4ef0b173ca5fd31aed.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d5a/400_400_1/d5a027a3eddb6e4ef0b173ca5fd31aed.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
