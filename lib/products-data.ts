@@ -96618,6 +96618,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404389",
+  "sku": "7178_parallel_korichnevyy_20_50_kerama_maratstsi",
+  "name": "Плитка 7178 Параллель коричневый матовый 20x50x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-7178-20x50x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 7178 Параллель коричневый матовый 20x50x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 7178 Параллель коричневый матовый 20x50x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/641/400_400_1/641f4d0da45b2fd90637adef19c4ea52.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/641/400_400_1/641f4d0da45b2fd90637adef19c4ea52.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
