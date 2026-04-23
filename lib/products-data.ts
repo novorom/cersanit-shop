@@ -100446,6 +100446,248 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404563",
+  "sku": "bld031_klemanso_seryy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD031 Багет Клемансо серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld031-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD031 Багет Клемансо серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD031 Багет Клемансо серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/571/400_400_1/571651eed40b3745d0abe0ec690e7fae.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/571/400_400_1/571651eed40b3745d0abe0ec690e7fae.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404564",
+  "sku": "bld032_klemanso_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD032 Багет Клемансо серый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld032-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD032 Багет Клемансо серый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD032 Багет Клемансо серый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/be7/400_400_1/be7ca62fab7e77dcc02c72bae326ed3d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/be7/400_400_1/be7ca62fab7e77dcc02c72bae326ed3d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404565",
+  "sku": "bld033_klemanso_bezh_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD033 Багет Клемансо бежевый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld033-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD033 Багет Клемансо бежевый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD033 Багет Клемансо бежевый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2e6/400_400_1/2e6278cfd369ead9ddfb45ae12ef9b9b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2e6/400_400_1/2e6278cfd369ead9ddfb45ae12ef9b9b.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404566",
+  "sku": "bld035_klemanso_zelenyy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD035 Багет Клемансо зеленый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld035-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD035 Багет Клемансо зеленый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD035 Багет Клемансо зеленый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/60d/400_400_1/60dbbfa8f283f3e6306fa0e3d2684fe1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/60d/400_400_1/60dbbfa8f283f3e6306fa0e3d2684fe1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404567",
+  "sku": "bld036_klemanso_biryuzovyy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD036 Багет Клемансо бирюзовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld036-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD036 Багет Клемансо бирюзовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD036 Багет Клемансо бирюзовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5d5/400_400_1/5d51af91e25ac8debf17004c2a5f4a97.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5d5/400_400_1/5d51af91e25ac8debf17004c2a5f4a97.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404568",
+  "sku": "bld037_bordyur_baget_klemanso_zelenyy_temnyy_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD037 Багет Клемансо зеленый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld037-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD037 Багет Клемансо зеленый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD037 Багет Клемансо зеленый темный глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/686/400_400_1/686b82af1c0f5074a1c8200315e73c7c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/686/400_400_1/686b82af1c0f5074a1c8200315e73c7c.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404569",
+  "sku": "stg_a616_16000_klemanso_ornament_dekor_15_7_4_kerama_maratstsi",
+  "name": "Декор STG\\A616\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga61616000-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A616\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A616\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/02f/400_400_1/02fd9be20fd60ee6da7021fdf5994448.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/02f/400_400_1/02fd9be20fd60ee6da7021fdf5994448.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404570",
+  "sku": "stg_a617_16000_klemanso_ornament_dekor_15_7_4_kerama_maratstsi",
+  "name": "Декор STG\\A617\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga61716000-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A617\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A617\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/747/400_400_1/74748a95b44dc6712a75adb8b4314721.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/747/400_400_1/74748a95b44dc6712a75adb8b4314721.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404571",
+  "sku": "stg_a618_16000_klemanso_ornament_dekor_15_7_4_kerama_maratstsi",
+  "name": "Декор STG\\A618\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga61816000-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A618\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A618\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b24/400_400_1/b24a64d23429af1af0a5c521cc8ae3ba.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b24/400_400_1/b24a64d23429af1af0a5c521cc8ae3ba.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404572",
+  "sku": "stg_a619_16000_klemanso_ornament_dekor_15_7_4_kerama_maratstsi",
+  "name": "Декор STG\\A619\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga61916000-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A619\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A619\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2cc/400_400_1/2cc061d9fbad3ee93def01f8303d9f78.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2cc/400_400_1/2cc061d9fbad3ee93def01f8303d9f78.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404573",
+  "sku": "stg_a620_16000_klemanso_ornament_dekor_15_7_4_kerama_maratstsi",
+  "name": "Декор STG\\A620\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga62016000-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A620\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A620\\16000 Клемансо орнамент матовый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f33/400_400_1/f3341b88ee987ae7120e9d5ddada8605.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/f33/400_400_1/f3341b88ee987ae7120e9d5ddada8605.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
