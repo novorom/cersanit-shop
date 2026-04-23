@@ -102250,6 +102250,116 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404645",
+  "sku": "nt_a242_5009_atele_dekor_20_20_kerama_maratstsi",
+  "name": "Декор NT\\A242\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta2425009-20x20x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A242\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A242\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b6/400_400_1/9b601eb82c448e8ddfb54a2aebd1175d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9b6/400_400_1/9b601eb82c448e8ddfb54a2aebd1175d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404646",
+  "sku": "nt_a243_5009_atele_dekor_20_20_kerama_maratstsi",
+  "name": "Декор NT\\A243\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta2435009-20x20x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A243\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A243\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/453/400_400_1/453ea2198fbc2e733eb9a8048dee713a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/453/400_400_1/453ea2198fbc2e733eb9a8048dee713a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404647",
+  "sku": "nt_a244_5009_atele_dekor_20_20_kerama_maratstsi",
+  "name": "Декор NT\\A244\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta2445009-20x20x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A244\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A244\\5009 Ателье матовый 20x20x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b77/400_400_1/b777cf1d2bcc606ed8b9ab3280e1ad2d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b77/400_400_1/b777cf1d2bcc606ed8b9ab3280e1ad2d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404648",
+  "sku": "urban_seryy_sg927900n_kg_30_30_kerama_maratstsi",
+  "name": "Керамогранит SG927900N Урбан серый 30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg927900n-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG927900N Урбан серый 30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG927900N Урбан серый 30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d23/400_400_1/d23d840f5730143c3c1a053b8473787d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d23/400_400_1/d23d840f5730143c3c1a053b8473787d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404649",
+  "sku": "urban_seryy_temnyy_sg928000n_kg_30_30_kerama_maratstsi",
+  "name": "Керамогранит SG928000N Урбан серый темный 30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg928000n-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG928000N Урбан серый темный 30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG928000N Урбан серый темный 30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9cd/400_400_1/9cd96db10a549f8e9502b394871ea7c2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9cd/400_400_1/9cd96db10a549f8e9502b394871ea7c2.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
