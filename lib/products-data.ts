@@ -92086,6 +92086,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404183",
+  "sku": "aura_marfil_d_sten_31_5_63_azori",
+  "name": "Плитка 506551201 Aura (Аура) Marfil бежевый 31,5х63, Azori (Азори)",
+  "slug": "-506551201-aura-marfil-31563-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 506551201 Aura (Аура) Marfil бежевый 31,5х63, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 506551201 Aura (Аура) Marfil бежевый 31,5х63, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7d0/7d045cfeb02650fbf282c680197ad211.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7d0/7d045cfeb02650fbf282c680197ad211.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
