@@ -132,9 +132,9 @@ async def main():
             logging.info(f"Loaded {len(products)} existing products.")
         except: pass
 
-    # Skip first 4800 URLs (based on previous logs)
-    start_index = 4800 
-    logging.info(f"Starting from index {start_index} to avoid re-processing 4800 URLs.")
+    # Start from the beginning; already processed URLs will be skipped via processed_urls set
+    start_index = 0 
+    logging.info(f"Starting from index {start_index} (full run).")
     
     sem = asyncio.Semaphore(2) 
     
