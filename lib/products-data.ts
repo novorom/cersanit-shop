@@ -97146,6 +97146,72 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404413",
+  "sku": "op_a169_65000_arabeski_mayolika_gaudi_6_5_6_5_dekor_kerama_maratstsi",
+  "name": "Декор OP\\A169\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-opa16965000-65x65x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OP\\A169\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OP\\A169\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ac8/400_400_1/ac8e23f0c93034e28748926f2b6dc38a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ac8/400_400_1/ac8e23f0c93034e28748926f2b6dc38a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404414",
+  "sku": "op_a170_65000_arabeski_mayolika_gaudi_6_5_6_5_dekor_kerama_maratstsi",
+  "name": "Декор OP\\A170\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-opa17065000-65x65x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OP\\A170\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OP\\A170\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e9d/400_400_1/e9d164f776f1fc9a5e7b8457c46c1457.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e9d/400_400_1/e9d164f776f1fc9a5e7b8457c46c1457.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404415",
+  "sku": "op_a172_65000_arabeski_mayolika_gaudi_6_5_6_5_dekor_kerama_maratstsi",
+  "name": "Декор OP\\A172\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-opa17265000-65x65x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OP\\A172\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OP\\A172\\65000 Арабески Майолика Гауди глянцевый 6,5x6,5x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/509/400_400_1/5094d5fadf297426a044cfa47746699e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/509/400_400_1/5094d5fadf297426a044cfa47746699e.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
