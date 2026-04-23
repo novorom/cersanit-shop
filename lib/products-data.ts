@@ -102624,6 +102624,138 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404662",
+  "sku": "sansevero_belyy_sg240400n_kg_24_24_kerama_maratstsi",
+  "name": "Керамогранит SG240400N Сансеверо белый матовый 24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg240400n-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG240400N Сансеверо белый матовый 24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG240400N Сансеверо белый матовый 24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7b4/400_400_1/7b45bedd1e07c597e805b6d44b8ac8a9.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7b4/400_400_1/7b45bedd1e07c597e805b6d44b8ac8a9.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404663",
+  "sku": "sansevero_chernyy_sg240500n_kg_24_24_kerama_maratstsi",
+  "name": "Керамогранит SG240500N Сансеверо черный матовый 24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg240500n-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG240500N Сансеверо черный матовый 24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG240500N Сансеверо черный матовый 24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c8c/400_400_1/c8cb3208917188d0ee53a2c7e85092e5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c8c/400_400_1/c8cb3208917188d0ee53a2c7e85092e5.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404664",
+  "sku": "senat_bezh_kg_40_2_40_2_sg155700r_kerama_maratstsi",
+  "name": "Керамогранит SG155700R Сенат бежевый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg155700r-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG155700R Сенат бежевый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG155700R Сенат бежевый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6ea/400_400_1/6eadbcee3e531c3fab774b0833f3d5b3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6ea/400_400_1/6eadbcee3e531c3fab774b0833f3d5b3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404665",
+  "sku": "senat_sv_seryy_kg_40_2_40_2_sg155800r_kerama_maratstsi",
+  "name": "Керамогранит SG155800R Сенат серый светлый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg155800r-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG155800R Сенат серый светлый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG155800R Сенат серый светлый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aaa/400_400_1/aaa3fcf9c9e51774b9a950761fa03e9a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aaa/400_400_1/aaa3fcf9c9e51774b9a950761fa03e9a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404666",
+  "sku": "senat_seryy_obreznoy_kg_40_2_40_2_sg155900r_kerama_maratstsi",
+  "name": "Керамогранит SG155900R Сенат серый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg155900r-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG155900R Сенат серый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG155900R Сенат серый обрезной 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/236/400_400_1/2366fd2a76b16af185f0e36ec27093f2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/236/400_400_1/2366fd2a76b16af185f0e36ec27093f2.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404667",
+  "sku": "sg173_001_slanets_dekor_mozaichnyy_30_30_kerama_maratstsi",
+  "name": "Декор SG173\\001 Сланец  30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg173001-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор SG173\\001 Сланец  30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор SG173\\001 Сланец  30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/943/400_400_1/943218c0cecd43afc23681fb63d36b6d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/943/400_400_1/943218c0cecd43afc23681fb63d36b6d.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
