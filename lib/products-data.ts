@@ -98840,6 +98840,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404490",
+  "sku": "siyanie_bezhevyy_sg161000_40_2_40_2_keramicheskiy_granit_kerama_maratstsi",
+  "name": "Керамогранит SG161000N Сияние бежевый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg161000n-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG161000N Сияние бежевый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG161000N Сияние бежевый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/046/400_400_1/046af7fdcf8fba3026817935d20f5c95.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/046/400_400_1/046af7fdcf8fba3026817935d20f5c95.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404491",
+  "sku": "siyanie_goluboy_sg161100n_40_2_40_2_keramicheskiy_granit",
+  "name": "Керамогранит SG161100N Сияние голубой 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg161100n-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG161100N Сияние голубой 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG161100N Сияние голубой 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4dd/400_400_1/4dd0eec4236e3c411957b8724309f314.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4dd/400_400_1/4dd0eec4236e3c411957b8724309f314.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404492",
+  "sku": "siyanie_svetlyy_sg161200n_40_2_40_2_kg_kerama_maratstsi",
+  "name": "Керамогранит SG161200N Сияние светлый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg161200n-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG161200N Сияние светлый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG161200N Сияние светлый 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/514/400_400_1/5149bc2cb28ddd147c6459473844bae7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/514/400_400_1/5149bc2cb28ddd147c6459473844bae7.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404493",
+  "sku": "24018_el_saler_rozovyy_d_sten_20_23_1_kerama_maratstsi",
+  "name": "Плитка 24018 Эль Салер розовый глянцевый 20x23,1x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-24018-20x231x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 24018 Эль Салер розовый глянцевый 20x23,1x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 24018 Эль Салер розовый глянцевый 20x23,1x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9f3/400_400_1/9f3c05e8826a4a16d39e97b353da28a2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9f3/400_400_1/9f3c05e8826a4a16d39e97b353da28a2.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
