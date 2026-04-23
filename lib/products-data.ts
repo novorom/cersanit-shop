@@ -101304,6 +101304,72 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404602",
+  "sku": "19049_3f_blanshe_chernyy_bordyur_20_9_9_kerama_maratstsi",
+  "name": "Бордюр 19049\\3F Бланше черный структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци)",
+  "slug": "-190493f-99x20-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 19049\\3F Бланше черный структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 19049\\3F Бланше черный структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/016/400_400_1/0167e8a22cfbd8e454a81b8df1c23dff.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/016/400_400_1/0167e8a22cfbd8e454a81b8df1c23dff.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404603",
+  "sku": "19051_3f_blanshe_bezh_bordyur_20_9_9_b_kerama_maratstsi",
+  "name": "Бордюр 19051\\3F Бланше бежевый структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци)",
+  "slug": "-190513f-99x20-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 19051\\3F Бланше бежевый структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 19051\\3F Бланше бежевый структура глянцевый 9,9x20, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ca5/400_400_1/ca5b92bb628bd9a4a5c0c015aab34370.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ca5/400_400_1/ca5b92bb628bd9a4a5c0c015aab34370.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404604",
+  "sku": "mld_a46_19000_blanshe_zoloto_d_sten_20_9_9_kerama_maratstsi",
+  "name": "Декор MLD\\A46\\19000 Бланше золото глянцевый 9,9x20x0,92, Kerama Marazzi (Керама Марацци)",
+  "slug": "-mlda4619000-99x20x092-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор MLD\\A46\\19000 Бланше золото глянцевый 9,9x20x0,92, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор MLD\\A46\\19000 Бланше золото глянцевый 9,9x20x0,92, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/410/400_400_1/4100cf72d5703c8d6939f99a72007edd.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/410/400_400_1/4100cf72d5703c8d6939f99a72007edd.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
