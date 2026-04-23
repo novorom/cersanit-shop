@@ -98290,6 +98290,138 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404465",
+  "sku": "6327_foskari_biryuzovyy_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6327 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6327-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6327 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6327 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bec/400_400_1/beca319821574695c40897cfebb25328.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bec/400_400_1/beca319821574695c40897cfebb25328.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404466",
+  "sku": "6330_foskari_belyy_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6330 Фоскари бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6330-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6330 Фоскари бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6330 Фоскари бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/70f/400_400_1/70f1a67c6f70b90a4fb1a36c06f94105.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/70f/400_400_1/70f1a67c6f70b90a4fb1a36c06f94105.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404467",
+  "sku": "op_a22_6328_foskari_biryuzovyy_dekor_25_40_kerama_maratstsi",
+  "name": "Декор OP\\A22\\6328 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-opa226328-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OP\\A22\\6328 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OP\\A22\\6328 Фоскари бирюзовый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8bf/400_400_1/8bf093ec3da660026a3482873d30d321.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8bf/400_400_1/8bf093ec3da660026a3482873d30d321.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404468",
+  "sku": "op_a27_6331_foskari_biryuzovyy_bordyur_25_5_4_kerama_maratstsi",
+  "name": "Бордюр OP\\A27\\6331 Фоскари бирюзовый глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-opa276331-25x54x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр OP\\A27\\6331 Фоскари бирюзовый глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр OP\\A27\\6331 Фоскари бирюзовый глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/35d/400_400_1/35df8732c44f226ad622bed1ab4ec130.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/35d/400_400_1/35df8732c44f226ad622bed1ab4ec130.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404469",
+  "sku": "pwb002_foskari_biryuzovyy_volna_bordyur_25_2_kerama_maratstsi",
+  "name": "Карандаш PWB002 Фоскари бирюзовый волна глянцевый 25x2x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pwb002-25x2x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш PWB002 Фоскари бирюзовый волна глянцевый 25x2x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш PWB002 Фоскари бирюзовый волна глянцевый 25x2x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/352/400_400_1/3522e640bcd8ede416d11b9e0b625fb3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/352/400_400_1/3522e640bcd8ede416d11b9e0b625fb3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404470",
+  "sku": "foskari_belyy_d_pola_sg928600n_kg_30_30_kerama_maratstsi",
+  "name": "Керамогранит SG928600N Фоскари бежевый натуральный 30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg928600n-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG928600N Фоскари бежевый натуральный 30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG928600N Фоскари бежевый натуральный 30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d0b/400_400_1/d0be427f05b512355c38dcd65ff2ae91.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d0b/400_400_1/d0be427f05b512355c38dcd65ff2ae91.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
