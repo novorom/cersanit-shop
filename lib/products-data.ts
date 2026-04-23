@@ -101370,6 +101370,116 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404605",
+  "sku": "6341_gran_pale_bezh_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6341 Гран Пале бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6341-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6341 Гран Пале бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6341 Гран Пале бежевый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ad3/400_400_1/ad351a19af164fc60755d4491522a9ec.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ad3/400_400_1/ad351a19af164fc60755d4491522a9ec.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404606",
+  "sku": "6342_gran_pale_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6342 Гран Пале серый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6342-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6342 Гран Пале серый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6342 Гран Пале серый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/126/400_400_1/126462ed484fc6ac61887de28127dab2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/126/400_400_1/126462ed484fc6ac61887de28127dab2.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404607",
+  "sku": "6343_gran_pale_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6343 Гран Пале белый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6343-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6343 Гран Пале белый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6343 Гран Пале белый глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/129/400_400_1/1299650f15d9f8dda3fa0cce23a62260.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/129/400_400_1/1299650f15d9f8dda3fa0cce23a62260.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404608",
+  "sku": "6353_gran_pale_bezh_paneld_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6353 Гран Пале бежевый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6353-25x40x095-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6353 Гран Пале бежевый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6353 Гран Пале бежевый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/566/400_400_1/566c2873aa931d7f360a29ebad8bce0a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/566/400_400_1/566c2873aa931d7f360a29ebad8bce0a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404609",
+  "sku": "6354_gran_pale_seraya_panel_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6354 Гран Пале серый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6354-25x40x095-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6354 Гран Пале серый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6354 Гран Пале серый панель глянцевый 25x40x0,95, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d32/400_400_1/d3257b69c822e44d0a6ceff834d97dfe.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d32/400_400_1/d3257b69c822e44d0a6ceff834d97dfe.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
