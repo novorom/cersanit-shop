@@ -11,7 +11,13 @@ const FACTORY_FILES = [
     collection: "Коллекция [COLLECTION]",
     surface: "Поверхность [SURFACE]",
     format: "Размер [SIZE]",
-    thickness: "Толщина [THICKNESS]"
+    thickness: "Толщина [THICKNESS]",
+    more_specs: {
+      "фактура": "Фактура [RELIEF]",
+      "тип изделия": "Тип изделия [TYPE]",
+      "материал": "Материал [MATERIAL]",
+      "ректификат": "Ректифицированная [RECHT]"
+    }
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Gracia ceramica.xlsx",
@@ -25,7 +31,14 @@ const FACTORY_FILES = [
     height: "Высота (для сайта)",
     box_pcs: "Количество номенклатуры в упаковке ШТ",
     box_m2: "Количество номенклатуры в упаковке м2",
-    thickness: "Толщина (для сайта)"
+    thickness: "Толщина (для сайта)",
+    more_specs: {
+      "тип продукции": "Тип продукции (для сайта)",
+      "ректификат": "Ректификат (для сайта)",
+      "морозостойкость": "Морозостойкость (для сайта)",
+      "класс износостойкости": "Класс износостойкости (PEI)",
+      "класс скользкости": "Класс скользкости"
+    }
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Keramark_12.10.2025.xlsx",
@@ -35,7 +48,11 @@ const FACTORY_FILES = [
     collection: "Коллекция",
     surface: "Поверхность",
     color: "Цвет",
-    thickness: "Толщина"
+    thickness: "Толщина",
+    more_specs: {
+      "материал": "Материал",
+      "применение": "Применение"
+    }
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Eletto 25.02.26.xlsx",
@@ -85,8 +102,15 @@ function loadFactoryData() {
         brand: file.brand,
         box_pcs: row[file.box_pcs] || null,
         box_m2: row[file.box_m2] || null,
-        thickness: row[file.thickness] || null
+        thickness: row[file.thickness] || null,
+        more: {}
       };
+
+      if (file.more_specs) {
+        for (const [key, col] of Object.entries(file.more_specs)) {
+          if (row[col]) entry.more[key] = String(row[col]);
+        }
+      }
 
       masterMap.set(norm, entry);
       

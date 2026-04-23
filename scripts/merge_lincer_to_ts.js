@@ -171,6 +171,11 @@ function run() {
         if (factory.box_pcs) specs.push({ key: "штук в упаковке", label: String(factory.box_pcs) });
         if (factory.box_m2) specs.push({ key: "кв.м в упаковке", label: String(factory.box_m2) });
         if (factory.thickness) specs.push({ key: "толщина", label: String(factory.thickness) + " мм" });
+        if (factory.more) {
+            Object.entries(factory.more).forEach(([k, v]) => {
+                specs.push({ key: k, label: v });
+            });
+        }
     }
 
     const saved = existingDataMap.get(sku) || { price: 0, stock: 0 };
