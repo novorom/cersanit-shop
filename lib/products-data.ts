@@ -95650,6 +95650,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404345",
+  "sku": "144_karandash_bezh_matovyy_bordyur_20_1_5_kerama_maratstsi",
+  "name": "Карандаш 144 бежевый матовый 20x1,5x1 Kerama Marazzi (Керама Марацци)",
+  "slug": "-144-20x15x1-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш 144 бежевый матовый 20x1,5x1 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш 144 бежевый матовый 20x1,5x1 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6c1/400_400_1/6c141762e4f5cee13b3a64f89913aa2f.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6c1/400_400_1/6c141762e4f5cee13b3a64f89913aa2f.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
