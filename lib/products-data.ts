@@ -102470,6 +102470,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404655",
+  "sku": "terrasa_korich_protivosk_stupen_frontalnaya_40_2_30_sg158500n_gr_kerama_maratstsi",
+  "name": "Ступень SG158500N\\GR фронтальная Терраса коричневый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158500ngr-402x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Ступень",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Ступень SG158500N\\GR фронтальная Терраса коричневый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Ступень) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Ступень SG158500N\\GR фронтальная Терраса коричневый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/22c/400_400_1/22c26f3354f12f0e56793dfa5976bd3e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/22c/400_400_1/22c26f3354f12f0e56793dfa5976bd3e.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404656",
+  "sku": "terrasa_korichnevaya_uglovaya_stupen_sg158500n_gr_an_30_30_kerama_maratstsi",
+  "name": "Ступень SG158500N\\GR\\ANS угловая Терраса коричневый левая  30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158500ngrans-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Ступень",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Ступень SG158500N\\GR\\ANS угловая Терраса коричневый левая  30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Ступень) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Ступень SG158500N\\GR\\ANS угловая Терраса коричневый левая  30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/024/400_400_1/024e83a8502796afc386327b3d494c51.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/024/400_400_1/024e83a8502796afc386327b3d494c51.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
