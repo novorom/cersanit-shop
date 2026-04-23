@@ -95672,6 +95672,182 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404346",
+  "sku": "16028_murano_belyy_d_sten_7_4_15_kerama_maratstsi",
+  "name": "Плитка 16028 Мурано белый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-16028-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 16028 Мурано белый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 16028 Мурано белый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fcd/400_400_1/fcdcd7bc98eef586847b6d806b669c12.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fcd/400_400_1/fcdcd7bc98eef586847b6d806b669c12.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404347",
+  "sku": "16029_murano_seryy_d_sten_7_4_15_kerama_maratstsi",
+  "name": "Плитка 16029 Мурано серый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-16029-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 16029 Мурано серый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 16029 Мурано серый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/45c/400_400_1/45c909b0eff67817bbf75991c726c0f1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/45c/400_400_1/45c909b0eff67817bbf75991c726c0f1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404348",
+  "sku": "16030_murano_goluboy_d_sten_7_4_15_kerama_maratstsi",
+  "name": "Плитка 16030 Мурано голубой глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-16030-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 16030 Мурано голубой глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 16030 Мурано голубой глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/589/400_400_1/589faf94a6112ab435437fe39d2ef264.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/589/400_400_1/589faf94a6112ab435437fe39d2ef264.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404349",
+  "sku": "16031_murano_rozovyy_d_sten_7_4_15_kerama_maratstsi",
+  "name": "Плитка 16031 Мурано розовый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-16031-74x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 16031 Мурано розовый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 16031 Мурано розовый глянцевый 7,4x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/126/400_400_1/126be1582690874f6793a24061e6da74.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/126/400_400_1/126be1582690874f6793a24061e6da74.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404350",
+  "sku": "bld018_murano_rozovyy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD018 Багет Мурано розовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld018-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD018 Багет Мурано розовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD018 Багет Мурано розовый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/60a/400_400_1/60a16e331581f70a81f57ea0f3af9ec5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/60a/400_400_1/60a16e331581f70a81f57ea0f3af9ec5.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404351",
+  "sku": "bld019_murano_goluboy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD019 Багет Мурано голубой глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld019-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD019 Багет Мурано голубой глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD019 Багет Мурано голубой глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a14/400_400_1/a147e26a17f865573195646bfc721029.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a14/400_400_1/a147e26a17f865573195646bfc721029.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404352",
+  "sku": "bld020_murano_seryy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD020 Багет Мурано серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld020-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD020 Багет Мурано серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD020 Багет Мурано серый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/83a/400_400_1/83a8ffdb33b61a6685f8f8bb2e853594.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/83a/400_400_1/83a8ffdb33b61a6685f8f8bb2e853594.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404353",
+  "sku": "bld021_murano_belyy_bordyur_15_3_kerama_maratstsi",
+  "name": "Бордюр BLD021 Багет Мурано белый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bld021-15x3x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLD021 Багет Мурано белый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLD021 Багет Мурано белый глянцевый 15x3x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d86/400_400_1/d86d34abcd54c72caa8e479c36d13d70.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d86/400_400_1/d86d34abcd54c72caa8e479c36d13d70.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
