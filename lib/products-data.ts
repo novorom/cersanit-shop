@@ -94858,6 +94858,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404309",
+  "sku": "pla003_rezidentsiya_bezh_bordyur_20_2_kerama_maratstsi",
+  "name": "Бордюр PLA003 Резиденция матовый 20x2x1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-pla003-20x2x1-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр PLA003 Резиденция матовый 20x2x1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр PLA003 Резиденция матовый 20x2x1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d87/400_400_1/d87e9948d140509cb8bcd64b3148ae6a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d87/400_400_1/d87e9948d140509cb8bcd64b3148ae6a.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
