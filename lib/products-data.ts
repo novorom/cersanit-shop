@@ -92394,6 +92394,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404197",
+  "sku": "ascoli_beige_d_sten_31_5_63_azori",
+  "name": "Плитка 507121201 Ascoli (Асколи) Beige бежевый 31,5х63, Azori (Азори)",
+  "slug": "-507121201-ascoli-beige-31563-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 507121201 Ascoli (Асколи) Beige бежевый 31,5х63, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 507121201 Ascoli (Асколи) Beige бежевый 31,5х63, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7b1/7b1c8c7439878c92375ac1f27231e70c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/7b1/7b1c8c7439878c92375ac1f27231e70c.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
