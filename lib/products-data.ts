@@ -94374,6 +94374,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404287",
+  "sku": "15009_nyuport_fioletovyy_d_sten_15_40_kerama_maratstsi",
+  "name": "Плитка 15009 Ньюпорт фиолетовый глянцевый 15x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-15009-15x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 15009 Ньюпорт фиолетовый глянцевый 15x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 15009 Ньюпорт фиолетовый глянцевый 15x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7cd/400_400_1/7cda627bcecf11a726aeebc62349d231.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7cd/400_400_1/7cda627bcecf11a726aeebc62349d231.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
