@@ -4,6 +4,7 @@ import { useState, useMemo } from "react"
 import Link from "next/link"
 import { ChevronDown, ChevronRight, SlidersHorizontal, X } from "lucide-react"
 import { filterOptions } from "@/lib/filter-options"
+import { SeoBlocks } from "@/components/seo-blocks"
 import { useProducts } from "@/lib/products-context"
 
 // Прокси-CDN: бесплатный сервис, конвертирует в WebP, сжимает, кэширует
@@ -428,6 +429,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
             )}
           </div>
         </div>
+        <SeoBlocks />
       </div>
     </div>
   )

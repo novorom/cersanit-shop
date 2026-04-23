@@ -28,7 +28,7 @@ export async function generateMetadata({
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
   const priceUnit = isUnit ? "₽/шт" : "₽/м²"
-  const title = `${product.name} — купить в СПб ${product.price_retail} ${priceUnit}`
+  const title = `${product.name} купить оптом и в розницу в СПб — цена ${product.price_retail} ${priceUnit}`
 
   // Уникальное описание: комбинируем характеристики + SEO текст коллекции
   const collectionSeo = product.collection ? getCollectionSeo(product.collection) : null
@@ -36,12 +36,12 @@ export async function generateMetadata({
     ? ` ${collectionSeo.application.slice(0, 120)}...`
     : ""
   const description =
-    `Купить ${product.name} в Санкт-Петербурге. Цена ${product.price_retail} ${priceUnit}.` +
+    `Купить ${product.name} в Санкт-Петербурге оптом и в розницу. Актуальная цена ${product.price_retail} ${priceUnit}.` +
     `${product.surface ? ` Поверхность: ${product.surface}.` : ""}` +
     `${product.color ? ` Цвет: ${product.color}.` : ""}` +
     `${product.format ? ` Формат ${product.format} см.` : ""}` +
     `${appText}` +
-    ` Склад Янино, доставка по СПб и ЛО от 1 дня. Артикул: ${product.sku}.`
+    ` Официальный дилер, склад в Янино, доставка по СПб и ЛО от 1 дня. Артикул: ${product.sku}.`
 
   return {
     title,
