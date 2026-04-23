@@ -146,7 +146,16 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     const surfaces = [...new Set(collProducts.map((p) => p.surface).filter((s): s is string => !!s))]
     const isNew = collProducts.some((p) => p.is_new)
     const isBestseller = collProducts.some((p) => p.is_bestseller)
-    return { ...c, types, colors, surfaces, isNew, isBestseller, realCount: collProducts.length }
+    
+    // Generate original selling description for the collection
+    const brandNames = [...new Set(collProducts.map(p => p.brand))].join(", ")
+    const description = `Коллекция ${c.name} от ${brandNames} представлена в гипермаркете «Керамогранит Опт». ` +
+      `Включает в себя ${types.join(", ").toLowerCase()}. ` +
+      (surfaces.length > 0 ? `Доступные поверхности: ${surfaces.join(", ").toLowerCase()}. ` : "") +
+      `Данная серия идеально подходит для создания стильного и долговечного интерьера. ` +
+      `Вы можете купить товары из коллекции ${c.name} с доставкой по Санкт-Петербургу и Ленинградской области со склада в Янино.`
+
+    return { ...c, types, colors, surfaces, isNew, isBestseller, realCount: collProducts.length, description }
   })
 
   // При первой загрузке используем серверные данные, чтобы не было пустой страницы

@@ -343,17 +343,23 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
         <div className="py-12 lg:py-16 bg-muted/30">
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">
-              Коллекция {collectionName} {brand}
+              О коллекции {collectionName} {brand}
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                Коллекция {collectionName} — высококачественная продукция производителя {brand}.
-                Все товары имеют сертификаты качества и соответствуют российским стандартам.
-                {priceFrom && ` Цены от ${priceFrom.toLocaleString("ru-RU")} до ${priceTo?.toLocaleString("ru-RU")} ₽/м².`}
+                Коллекция {collectionName} от известного производителя {brand} — это сочетание современного дизайна и безупречного качества. 
+                В серии представлено {collectionProducts.length} позиций, включая {designs.length > 0 ? `дизайны «${designs.join("», «")}»` : "различные декоративные решения"}.
               </p>
               <p>
-                В наличии на складе в Янино-1 (15–20 мин от КАД). Самовывоз бесплатный.
-                Доставка по СПб и ЛО 1–2 рабочих дня. Для консультации звоните: {PHONE}.
+                Плитка и керамогранит {collectionName} доступны в форматах {formats.join(", ")} см, что позволяет подобрать идеальный вариант для любого помещения — от уютной ванной до просторной гостиной. 
+                Вся продукция сертифицирована, отличается высокой износостойкостью и долговечностью.
+              </p>
+              <p>
+                В гипермаркете «Керамогранит Опт» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}. 
+                Товары в наличии на нашем собственном складе в Янино-1. Мы обеспечиваем быструю отгрузку и доставку по Санкт-Петербургу и Ленинградской области в течение 1–2 рабочих дней.
+              </p>
+              <p>
+                Нужна помощь в расчете или консультация? Звоните нам по телефону {PHONE} или пишите в Telegram. Мы поможем создать интерьер вашей мечты!
               </p>
             </div>
           </div>

@@ -21,7 +21,7 @@ async def fetch_sitemap_urls(url):
                     if "/catalog/brands/" in u: continue
                     if u.count('/') < 5: continue
                     
-                    if any(x in u for x in ["/plitka/", "/keramogranit/", "/mozaika/", "/stupeni/"]):
+                    if any(x in u for x in ["/plitka/", "/keramogranit/", "/mozaika/", "/stupeni/", "/clinker/", "/fasad/", "/kamen/"]):
                         filtered.append(u)
                 
                 return filtered
@@ -51,7 +51,14 @@ async def fetch_product(session, url, sem):
                 if attempt == 2: return None
             
             # IMPORTANT: Check for discontinued products
-            if "Снят с производства" in html or "Снята с производства" in html:
+            discontinued_markers = [
+                "Снят с производства", 
+                "Снята с производства", 
+                "Товар снят с производства",
+                "снят с производства",
+                "снята с производства"
+            ]
+            if any(marker in html for marker in discontinued_markers):
                 return None
             
             soup = BeautifulSoup(html, 'html.parser')
@@ -69,6 +76,7 @@ async def fetch_product(session, url, sem):
             material_type = ""
             application = ""
 
+            characteristics = {}
             props = soup.select('.properties__item')
             for prop in props:
                 p_title_el = prop.select_one('.properties__title')
@@ -76,6 +84,8 @@ async def fetch_product(session, url, sem):
                 if p_title_el and p_val_el:
                     p_name = p_title_el.text.strip()
                     p_val = p_val_el.text.strip()
+                    characteristics[p_name] = p_val
+                    
                     if "Артикул" in p_name: sku = p_val
                     elif "Коллекция" in p_name or "Серия" in p_name: collection = p_val
                     elif "Размер" in p_name or "Формат" in p_name: format_val = p_val
@@ -106,7 +116,8 @@ async def fetch_product(session, url, sem):
                 "sku": sku, "name": name, "brand": brand, "collection": collection,
                 "format": format_val, "surface": surface, "color": color,
                 "material_type": material_type, "application": application,
-                "description": description, "image": image, "url": url
+                "description": description, "image": image, "url": url,
+                "characteristics": characteristics
             }
         except Exception:
             return None
@@ -115,6 +126,21 @@ def save_to_json(products):
     with open('lincer_full_dump.json', 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=2)
     logging.info(f"Saved {len(products)} products to lincer_full_dump.json")
+
+import subprocess
+
+def sync_and_push(count):
+    try:
+        logging.info(f"Triggering automatic sync and push for {count} products...")
+        # 1. Sync JSON to TS
+        subprocess.run(["node", "scripts/merge_lincer_to_ts.js"], check=True)
+        # 2. Git Add, Commit, Push
+        subprocess.run(["git", "add", "lib/products-data.ts", "lincer_full_dump.json"], check=True)
+        subprocess.run(["git", "commit", "-m", f"Auto-sync: {count} Lincer products"], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+        logging.info("Auto-sync and push completed successfully.")
+    except Exception as e:
+        logging.error(f"Failed to auto-sync/push: {e}")
 
 async def main():
     logging.info("Fetching sitemap...")
@@ -156,11 +182,14 @@ async def main():
     
     async with aiohttp.ClientSession(headers=headers) as session:
         batch_size = 20
+        batches_since_push = 0
         for i in range(start_index, len(urls), batch_size):
             batch = [u for u in urls[i:i+batch_size] if u not in processed_urls]
             
             if not batch:
-                logging.info(f"Batch {i}-{i+batch_size} already done or empty.")
+                # Still check occasionally even if batch is empty to ensure we are caught up
+                if i % 1000 == 0:
+                     logging.info(f"Index {i} - already processed.")
                 continue
 
             tasks = [fetch_product(session, url, sem) for url in batch]
@@ -175,9 +204,17 @@ async def main():
             
             logging.info(f"Index {i + batch_size}/{len(urls)}. Found {new_found} new (Total products: {len(products)}).")
             save_to_json(products)
+            
+            batches_since_push += 1
+            # Every 5 batches (100 URLs searched), we sync and push to avoid too many commits but keep it fresh
+            if new_found > 0 or batches_since_push >= 5:
+                sync_and_push(len(products))
+                batches_since_push = 0
+
             await asyncio.sleep(5)
 
     save_to_json(products)
+    sync_and_push(len(products))
     logging.info("Scraping completed!")
 
 import os
