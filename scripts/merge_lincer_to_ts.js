@@ -108,13 +108,23 @@ function run() {
       });
   }
 
+  const { loadFactoryData, normalizeName } = require('./factory_truth');
+  const factoryMap = loadFactoryData();
+
   const lincerObjects = lincerProducts.map((p, index) => {
     let name = p.name.trim();
-    // Remove leading numeric SKU (e.g. "010100001276 Name...")
     name = name.replace(/^\d+\s+/, '');
     
-    const brand = extractBrand(name, p.brand);
-    let collection = p.collection;
+    // Check factory source of truth first
+    const norm = normalizeName(name);
+    const factory = factoryMap.get(norm);
+    
+    let brand = factory ? factory.brand : extractBrand(name, p.brand);
+    let collection = factory ? factory.collection : p.collection;
+    let sku = factory ? factory.sku : (p.sku || '');
+    let color = factory ? factory.color : (p.color || 'Ассорти');
+    let surface = factory ? factory.surface : (p.surface || '');
+    let format = factory ? factory.format : (p.format || 'Не указан');
 
     const blacklist = [
         'керамогранит', 'плитка', 'декор', 'бренды', 'панно', 'вставка',
@@ -129,9 +139,8 @@ function run() {
 
     if (!collection || blacklist.some(b => collection.toLowerCase().includes(b)) || isTechnicalCode(collection)) {
         const parts = name.split(/[\s,._-]+/);
-        collection = "Base"; // Default fallback
+        collection = collection || "Base"; 
         
-        // Try to find a good collection name in the product name
         for (let part of parts) {
             const pClean = part.replace(/[^\wа-яё]/gi, '');
             if (pClean.length > 3 && 
@@ -142,12 +151,12 @@ function run() {
                 break;
             }
         }
-    } else {
-        // Sanitize existing collection name
+    }
+
+    // Ensure first letter cap for collection if it's still raw
+    if (collection && collection !== "Base") {
         collection = collection.trim();
-        if (collection.toUpperCase() === collection) {
-            collection = collection.charAt(0).toUpperCase() + collection.slice(1).toLowerCase();
-        }
+        collection = collection.charAt(0).toUpperCase() + collection.slice(1).toLowerCase();
     }
 
     const specs = [];
@@ -157,22 +166,22 @@ function run() {
       });
     }
 
-    const saved = existingDataMap.get(p.sku) || { price: 0, stock: 0 };
+    const saved = existingDataMap.get(sku) || { price: 0, stock: 0 };
 
     return {
       id: "lincer-" + (400000 + index),
-      sku: p.sku || '',
+      sku: sku,
       name: name,
       slug: generateSlug(name),
       brand: brand,
       collection: collection || "Base",
       product_type: p.name.toLowerCase().includes('ступен') ? 'Ступень' : (p.name.toLowerCase().includes('вставк') || p.name.toLowerCase().includes('декор') ? 'Вставка' : 'Керамогранит'),
-      format: p.format || 'Не указан',
-      color: p.color || 'Ассорти',
-      surface: p.surface || '',
+      format: format,
+      color: color,
+      surface: surface,
       material_type: p.material_type || '',
       application: p.application || '',
-      description: generateSellingDescription(p, brand, collection),
+      description: generateSellingDescription(p, brand, collection || "Base"),
       price_retail: saved.price || 0,
       stock_yanino: saved.stock || 0,
       main_image: p.image || '',
