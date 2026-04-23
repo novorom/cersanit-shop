@@ -95430,6 +95430,226 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404335",
+  "sku": "vt_a61_1266h_palasio_9_8kh9_8_ornament_d_pola_kerama_maratstsi",
+  "name": "Вставка VT\\A61\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta611266h-98x98x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Вставка",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Вставка VT\\A61\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Вставка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Вставка VT\\A61\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ca7/400_400_1/ca7e98b11a4ce0c7af7d2eb0eb9253d3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ca7/400_400_1/ca7e98b11a4ce0c7af7d2eb0eb9253d3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404336",
+  "sku": "vt_a62_1266h_palasio_9_8x9_8_ornament_d_pola_kerama_maratstsi",
+  "name": "Вставка VT\\A62\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta621266h-98x98x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Вставка",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Вставка VT\\A62\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Вставка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Вставка VT\\A62\\1266H Паласио  9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aa6/400_400_1/aa6e88812e47751f4bf145f5e078c810.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aa6/400_400_1/aa6e88812e47751f4bf145f5e078c810.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404337",
+  "sku": "fmd017_alkala_plintus_chernyy_20_10_kerama_maratstsi",
+  "name": "Плинтус FMD017 Алькала черный глянцевый 20x10x1,3, Kerama Marazzi (Керама Марацци)",
+  "slug": "-fmd017-20x10x13-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус FMD017 Алькала черный глянцевый 20x10x1,3, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус FMD017 Алькала черный глянцевый 20x10x1,3, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/67e/400_400_1/67e40b2628b4320c756cdac0ae08a978.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/67e/400_400_1/67e40b2628b4320c756cdac0ae08a978.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404338",
+  "sku": "6398_lombardia_seryy_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6398 Ломбардиа серый матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6398-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6398 Ломбардиа серый матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6398 Ломбардиа серый матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2c1/400_400_1/2c11ff53979359f79b9d0627d6289965.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2c1/400_400_1/2c11ff53979359f79b9d0627d6289965.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404339",
+  "sku": "1266h_amalfi_bezh_svetlyy_d_sten_30_40_iz_12_chastey_9_8kh9_8_kerama_maratstsi",
+  "name": "Керамогранит 1266H Амальфи бежевый светлый матовый из 12 частей 9,8x9,8x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-1266h-12-98x98x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит 1266H Амальфи бежевый светлый матовый из 12 частей 9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит 1266H Амальфи бежевый светлый матовый из 12 частей 9,8x9,8x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b4e/400_400_1/b4ee7c4762ac364262b586249bdd5f81.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b4e/400_400_1/b4ee7c4762ac364262b586249bdd5f81.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404340",
+  "sku": "vt_c165_6403_borromeo_dekor_25_40_kerama_maratstsi",
+  "name": "Декор VT\\C165\\6403 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vtc1656403-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\C165\\6403 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\C165\\6403 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/140/400_400_1/14036af19b9821b7a4c41d3d2a843bb1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/140/400_400_1/14036af19b9821b7a4c41d3d2a843bb1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404341",
+  "sku": "6404_borromeo_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6404 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6404-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6404 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6404 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c6f/400_400_1/c6f5ff4876c00034835645c8e6eb7fa1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c6f/400_400_1/c6f5ff4876c00034835645c8e6eb7fa1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404342",
+  "sku": "6403_borromeo_goluboy_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6403 Борромео голубой матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6403-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6403 Борромео голубой матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6403 Борромео голубой матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4a6/400_400_1/4a641d7436de7e9c7387f671d3830114.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4a6/400_400_1/4a641d7436de7e9c7387f671d3830114.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404343",
+  "sku": "vt_a165_6402_borromeo_dekor_25_40_kerama_maratstsi",
+  "name": "Декор VT\\A165\\6402 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta1656402-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A165\\6402 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A165\\6402 Борромео матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e73/400_400_1/e73df045747f77b516fca0933c41f6b6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e73/400_400_1/e73df045747f77b516fca0933c41f6b6.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404344",
+  "sku": "6399_lombardia_seryy_temnyy_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6399 Ломбардиа серый темный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6399-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6399 Ломбардиа серый темный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6399 Ломбардиа серый темный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5d0/400_400_1/5d06d9e709d5ef26725bd816ab3da291.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5d0/400_400_1/5d06d9e709d5ef26725bd816ab3da291.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
