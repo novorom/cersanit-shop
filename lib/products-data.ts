@@ -98268,6 +98268,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404464",
+  "sku": "pof011_biser_bezh_svetlyy_20_1_4_kerama_maratstsi",
+  "name": "Карандаш POF011 Бисер бежевый светлый матовый 20x1,4x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pof011-20x14x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш POF011 Бисер бежевый светлый матовый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш POF011 Бисер бежевый светлый матовый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/eea/400_400_1/eeafa997b2849fb22fa654fffa32ee79.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/eea/400_400_1/eeafa997b2849fb22fa654fffa32ee79.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
