@@ -94286,6 +94286,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404283",
+  "sku": "nt_a207_sg23000_buranelli_dekor_20_23_1_kerama_maratstsi",
+  "name": "Декор NT\\A207\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta207sg2300-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A207\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A207\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/98f/400_400_1/98fd9b9cf48f6cfbe695272a280f3c0a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/98f/400_400_1/98fd9b9cf48f6cfbe695272a280f3c0a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404284",
+  "sku": "nt_a218_sg23000_buranelli_dekor_20_23_1_kerama_maratstsi",
+  "name": "Декор NT\\A218\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta218sg2300-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A218\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A218\\SG2300 Буранелли, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/37d/400_400_1/37d9d754fb9a01be3db425aeb514f334.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/37d/400_400_1/37d9d754fb9a01be3db425aeb514f334.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
