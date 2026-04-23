@@ -94396,6 +94396,72 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404288",
+  "sku": "5226_surrey_belyy_d_sten_20_20_0_88_korobk_84_48_poddon_kerama_maratstsi",
+  "name": "Плитка 5226 Суррей белый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци)",
+  "slug": "-5226-20x20x083-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 5226 Суррей белый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 5226 Суррей белый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ffc/400_400_1/ffc48198ac3412dd9816c11706d42032.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ffc/400_400_1/ffc48198ac3412dd9816c11706d42032.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404289",
+  "sku": "5227_surrey_d_sten_20_20_kerama_maratstsi",
+  "name": "Плитка 5227 Суррей глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци)",
+  "slug": "-5227-20x20x083-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 5227 Суррей глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 5227 Суррей глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e21/400_400_1/e212faeadad97b3e26d8be6f738d5042.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e21/400_400_1/e212faeadad97b3e26d8be6f738d5042.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404290",
+  "sku": "5229_surrey_bezh_d_sten_20_20_kerama_maratstsi",
+  "name": "Плитка 5229 Суррей бежевый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци)",
+  "slug": "-5229-20x20x083-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 5229 Суррей бежевый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 5229 Суррей бежевый глянцевый 20x20x0,83, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/20b/400_400_1/20bb022ef1e4b5b8084ff398f2badb29.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/20b/400_400_1/20bb022ef1e4b5b8084ff398f2badb29.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
