@@ -97454,6 +97454,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404427",
+  "sku": "dd_c24_17023_bario_15_15_dekor_kerama_maratstsi",
+  "name": "Декор DD\\C24\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ddc2417023-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор DD\\C24\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор DD\\C24\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/232/400_400_1/2321767a3adfa94e7cfdfdebba6c3ac5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/232/400_400_1/2321767a3adfa94e7cfdfdebba6c3ac5.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404428",
+  "sku": "dd_c28_17023_bario_15_15_dekor_kerama_maratstsi",
+  "name": "Декор DD\\C28\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ddc2817023-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор DD\\C28\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор DD\\C28\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ce6/400_400_1/ce67434bcd1b404175f7857f72f2d6a5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ce6/400_400_1/ce67434bcd1b404175f7857f72f2d6a5.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
