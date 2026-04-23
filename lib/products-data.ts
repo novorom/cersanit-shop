@@ -102360,6 +102360,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404650",
+  "sku": "ble009_sorbonna_bezh_bordyur_25_5_5_kerama_maratstsi",
+  "name": "Бордюр BLE009 Багет Сорбонна бежевый матовый 25x5,5x1,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ble009-25x55x18-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BLE009 Багет Сорбонна бежевый матовый 25x5,5x1,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BLE009 Багет Сорбонна бежевый матовый 25x5,5x1,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c37/400_400_1/c373b158bee8e7ed03eed53884af582b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c37/400_400_1/c373b158bee8e7ed03eed53884af582b.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404651",
+  "sku": "fmb015_sorbonna_bezh_plintus_25_15_kerama_maratstsi",
+  "name": "Плинтус FMB015 Сорбонна бежевый матовый 25x15x1,5, Kerama Marazzi (Керама Марацци)",
+  "slug": "-fmb015-25x15x15-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус FMB015 Сорбонна бежевый матовый 25x15x1,5, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус FMB015 Сорбонна бежевый матовый 25x15x1,5, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1d9/400_400_1/1d9a845e76ddcf2822abb98101869eb4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1d9/400_400_1/1d9a845e76ddcf2822abb98101869eb4.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404652",
+  "sku": "id90_sorbonna_nabornyy_bordyur_25_40_kerama_maratstsi",
+  "name": "Декор ID90 Сорбонна наборный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-id90-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор ID90 Сорбонна наборный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор ID90 Сорбонна наборный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d6e/400_400_1/d6e8fed5f8440c47f9dd71bfa0f63983.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d6e/400_400_1/d6e8fed5f8440c47f9dd71bfa0f63983.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404653",
+  "sku": "mm6358_sorbonna_mozaichnyy_25_40_dekor_kerama_maratstsi",
+  "name": "Декор MM6358 Сорбонна мозаичный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-mm6358-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор MM6358 Сорбонна мозаичный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор MM6358 Сорбонна мозаичный матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/757/400_400_1/757a1c88ad9fcf4212cb9767f40fadcb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/757/400_400_1/757a1c88ad9fcf4212cb9767f40fadcb.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
