@@ -98422,6 +98422,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404471",
+  "sku": "17057_salinas_bezh_d_sten_15_15_kerama_maratstsi",
+  "name": "Плитка 17057 Салинас бежевый глянцевый 15x15x0,82, Kerama Marazzi (Керама Марацци)",
+  "slug": "-17057-15x15x082-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 17057 Салинас бежевый глянцевый 15x15x0,82, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 17057 Салинас бежевый глянцевый 15x15x0,82, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5a3/400_400_1/5a3e48220eefea7f12406f459c3017ba.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5a3/400_400_1/5a3e48220eefea7f12406f459c3017ba.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404472",
+  "sku": "pfg005_salinas_seryy_15_2_kerama_maratstsi",
+  "name": "Бордюр PFG005 Багет Салинас серый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-pfg005-15x2x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр PFG005 Багет Салинас серый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр PFG005 Багет Салинас серый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c57/400_400_1/c577df50d407ac3fe00986fb9e44f45c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c57/400_400_1/c577df50d407ac3fe00986fb9e44f45c.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404473",
+  "sku": "pfg007_salinas_zelenyy_15_2_kerama_maratstsi",
+  "name": "Бордюр PFG007 Багет Салинас зеленый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-pfg007-15x2x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр PFG007 Багет Салинас зеленый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр PFG007 Багет Салинас зеленый глянцевый 15x2x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/626/400_400_1/62628c2432433726380d49a643cd3fb7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/626/400_400_1/62628c2432433726380d49a643cd3fb7.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404474",
+  "sku": "ssa001_salinas_seryy_dekor_15_15_kerama_maratstsi",
+  "name": "Декор SSA001 Салинас серый глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ssa001-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор SSA001 Салинас серый глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор SSA001 Салинас серый глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2a4/400_400_1/2a470f3d27381e422677d772ad4f63f0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2a4/400_400_1/2a470f3d27381e422677d772ad4f63f0.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
