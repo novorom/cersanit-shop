@@ -102514,6 +102514,116 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404657",
+  "sku": "terrasa_korichnevyy_protivoskolzyashchiy_kg_sg158500n_40_2_40_2_kerama_maratstsi",
+  "name": "Керамогранит SG158500N Терраса коричневый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158500n-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG158500N Терраса коричневый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG158500N Терраса коричневый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/903/400_400_1/9034c7eff2379514e30e05f2bf5d0282.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/903/400_400_1/9034c7eff2379514e30e05f2bf5d0282.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404658",
+  "sku": "terrasa_seraya_protivosk_front_stupen_sg158700n_gr_40_2_30_kerama_maratstsi",
+  "name": "Ступень SG158700N\\GR фронтальная Терраса серый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158700ngr-402x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Ступень",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Ступень SG158700N\\GR фронтальная Терраса серый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Ступень) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Ступень SG158700N\\GR фронтальная Терраса серый противоскользящий  40,2x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/125/400_400_1/125d43c6d93e57c77d79b7112d25b198.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/125/400_400_1/125d43c6d93e57c77d79b7112d25b198.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404659",
+  "sku": "terrasa_seryy_protivoskolzyashchiy_kg_sg158700n_40_2_40_2_kerama_maratstsi",
+  "name": "Керамогранит SG158700N Терраса серый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg158700n-402x402x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG158700N Терраса серый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG158700N Терраса серый противоскользящий 40,2x40,2x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8ac/400_400_1/8ac6db6451f8d0bc72d41b9d02396f13.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8ac/400_400_1/8ac6db6451f8d0bc72d41b9d02396f13.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404660",
+  "sku": "sg5401_btg_salvetti_kapuchino_plintus_obreznoy_39_6_8_kerama_maratstsi",
+  "name": "Плинтус SG5401\\BTG Сальветти капучино  39,6x8x1,55, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg5401btg-396x8x155-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус SG5401\\BTG Сальветти капучино  39,6x8x1,55, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус SG5401\\BTG Сальветти капучино  39,6x8x1,55, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b40/400_400_1/b40b6084236a75b7aff1b662ff4f2fb6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b40/400_400_1/b40b6084236a75b7aff1b662ff4f2fb6.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404661",
+  "sku": "salvetti_vishnya_sg515300r_obreznoy_kg_20_119_5_kerama_maratstsi",
+  "name": "Керамогранит SG515300R Сальветти вишня обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg515300r-20x1195x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG515300R Сальветти вишня обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG515300R Сальветти вишня обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e77/400_400_1/e7795ad820cc6b668704ebfd8c6b1e41.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e77/400_400_1/e7795ad820cc6b668704ebfd8c6b1e41.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
