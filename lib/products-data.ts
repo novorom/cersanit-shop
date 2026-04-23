@@ -93516,6 +93516,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404248",
+  "sku": "abba_flowers_seryy_plitka_d_sten_30_60_652261_golden_tile",
+  "name": "65226 Abba (Абба) Flowers серый плитка д/стен 30*60, Golden Tile",
+  "slug": "65226-abba-flowers-3060-golden-tile",
+  "brand": "LINCER",
+  "collection": "65226",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить 65226 Abba (Абба) Flowers серый плитка д/стен 30*60, Golden Tile от бренда LINCER (коллекция 65226) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать 65226 Abba (Абба) Flowers серый плитка д/стен 30*60, Golden Tile с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ee2/ee2057112bebdd30967d8f26679faa4c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ee2/ee2057112bebdd30967d8f26679faa4c.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
