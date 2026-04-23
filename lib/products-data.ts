@@ -96090,6 +96090,138 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404365",
+  "sku": "12123r_rambla_bezh_obreznoy_25_75_d_sten_kerama_maratstsi",
+  "name": "Плитка 12123R Рамбла бежевый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-12123r-25x75x09-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 12123R Рамбла бежевый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 12123R Рамбла бежевый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3cb/400_400_1/3cb1d9358817bdd280151cadf1f39a77.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3cb/400_400_1/3cb1d9358817bdd280151cadf1f39a77.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404366",
+  "sku": "12124r_rambla_korich_obreznoy_25_75_d_sten_kerama_maratstsi",
+  "name": "Плитка 12124R Рамбла коричневый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-12124r-25x75x09-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 12124R Рамбла коричневый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 12124R Рамбла коричневый матовый обрезной 25x75x0,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4d4/400_400_1/4d42a1354efa3684d1a35781de116dec.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4d4/400_400_1/4d42a1354efa3684d1a35781de116dec.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404367",
+  "sku": "mm12130_rambla_bezh_mozaichnyy_25_25_dekor_kerama_maratstsi",
+  "name": "Декор MM12130 Рамбла бежевый мозаичный матовый 25x25x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-mm12130-25x25x09-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор MM12130 Рамбла бежевый мозаичный матовый 25x25x0,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор MM12130 Рамбла бежевый мозаичный матовый 25x25x0,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b9e/400_400_1/b9eb01d27b52025d2b9c70e00d0ab3e5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b9e/400_400_1/b9eb01d27b52025d2b9c70e00d0ab3e5.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404368",
+  "sku": "sg23033n_rambla_korichnevyy_plitka_dlya_pola_20kh23_1_kerama_maratstsi",
+  "name": "Керамогранит SG23033N Рамбла коричневый 20x23,1x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg23033n-20x231x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG23033N Рамбла коричневый 20x23,1x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG23033N Рамбла коричневый 20x23,1x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/38d/400_400_1/38d21b345b5c9cb0e025af4eb55ad389.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/38d/400_400_1/38d21b345b5c9cb0e025af4eb55ad389.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404369",
+  "sku": "sg23035n_rambla_bezh_plitka_dlya_pola_20kh23_1_kerama_maratstsi",
+  "name": "Керамогранит SG23035N Рамбла бежевый 20x23,1x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg23035n-20x231x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG23035N Рамбла бежевый 20x23,1x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG23035N Рамбла бежевый 20x23,1x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a61/400_400_1/a61c87ab6c5f858f7a8bccfbabfc6809.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a61/400_400_1/a61c87ab6c5f858f7a8bccfbabfc6809.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404370",
+  "sku": "spb003r_rambla_korich_25_2_5_bordyur_kerama_maratstsi",
+  "name": "Бордюр SPB003R Рамбла коричневый матовый обрезной 25x2,5x1,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-spb003r-25x25x19-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр SPB003R Рамбла коричневый матовый обрезной 25x2,5x1,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр SPB003R Рамбла коричневый матовый обрезной 25x2,5x1,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e07/400_400_1/e07d3600984e3e383cdb874d31841ca6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e07/400_400_1/e07d3600984e3e383cdb874d31841ca6.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
