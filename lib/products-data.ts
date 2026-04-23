@@ -94880,6 +94880,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404310",
+  "sku": "rialto_svetlyy_lappat_kg_60_119_5_sg564602r_kerama_maratstsi",
+  "name": "Керамогранит SG564602R Риальто светлый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg564602r-60x1195x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG564602R Риальто светлый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG564602R Риальто светлый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6f2/400_400_1/le6eherjpu0otv32te8pph9ztm0fxmvz.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/6f2/400_400_1/le6eherjpu0otv32te8pph9ztm0fxmvz.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
