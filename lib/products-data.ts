@@ -97498,6 +97498,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404429",
+  "sku": "6234_luiza_tsvety_d_sten_25_40_kerama_maratstsi",
+  "name": "Плитка 6234 Луиза глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-6234-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 6234 Луиза глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 6234 Луиза глянцевый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e34/400_400_1/e34698d3c2e14b6354a882a60d535f9e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e34/400_400_1/e34698d3c2e14b6354a882a60d535f9e.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404430",
+  "sku": "6235_7_luiza_bordyur_tsvety_25_5_4_kerama_maratstsi",
+  "name": "Бордюр 6235\\7 Луиза глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-62357-25x54x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 6235\\7 Луиза глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 6235\\7 Луиза глянцевый 25x5,4x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/42b/400_400_1/42b15a9b117be64f1d5c5da42cebc9e4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/42b/400_400_1/42b15a9b117be64f1d5c5da42cebc9e4.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
