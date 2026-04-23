@@ -95848,6 +95848,116 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404354",
+  "sku": "nt_a181_17000_murano_rozovyy_dekor_15_15_kerama_maratstsi",
+  "name": "Декор NT\\A181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta18117000-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\A181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\A181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/429/400_400_1/4299d72ea49e5be2afd0fdcd2cedc383.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/429/400_400_1/4299d72ea49e5be2afd0fdcd2cedc383.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404355",
+  "sku": "nt_b181_17000_murano_goluboy_dekor_15_15_kerama_maratstsi",
+  "name": "Декор NT\\B181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ntb18117000-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\B181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\B181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/215/400_400_1/2153acb5c29a9e64bde4b1914a9c4c8b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/215/400_400_1/2153acb5c29a9e64bde4b1914a9c4c8b.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404356",
+  "sku": "nt_c181_17000_murano_dekor_15_15_kerama_maratstsi",
+  "name": "Декор NT\\C181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ntc18117000-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор NT\\C181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор NT\\C181\\17000 Мурано глянцевый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/94a/400_400_1/94a1378c3fa355e3058e300f26dee3d1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/94a/400_400_1/94a1378c3fa355e3058e300f26dee3d1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404357",
+  "sku": "nt_a190_8x8262_zolotoy_plyazh_panno_iz_8_chasteyts_20_30_razm_kazhd_chasti_60_80_kerama_maratstsi",
+  "name": "Панно NT\\A190\\8x\\8262 Золотой пляж Venezia матовый (из 8 ч. разм. 20x30) 80x60x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-nta1908x8262-venezia-8-20x30-80x60x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Панно",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Панно NT\\A190\\8x\\8262 Золотой пляж Venezia матовый (из 8 ч. разм. 20x30) 80x60x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Панно) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Панно NT\\A190\\8x\\8262 Золотой пляж Venezia матовый (из 8 ч. разм. 20x30) 80x60x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/007/400_400_1/007e7039721b5ea39afe92f043c4e484.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/007/400_400_1/007e7039721b5ea39afe92f043c4e484.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404358",
+  "sku": "pfd001_karandash_zolotoy_plyazh_temnyy_bezh_bordyur_30_2_kerama_marratstsi",
+  "name": "Карандаш PFD001 Золотой пляж светлый бежевый матовый 30x2x1,1 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pfd001-30x2x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш PFD001 Золотой пляж светлый бежевый матовый 30x2x1,1 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш PFD001 Золотой пляж светлый бежевый матовый 30x2x1,1 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bf2/400_400_1/bf24de7d915e3e62006d323ff931d81f.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bf2/400_400_1/bf24de7d915e3e62006d323ff931d81f.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
