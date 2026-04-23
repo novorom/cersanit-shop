@@ -99852,6 +99852,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404536",
+  "sku": "spa030r_grenel_seryy_svetlyy_obreznoy_bordyur_30_2_5_kerama_maratstsi",
+  "name": "Бордюр SPA030R Гренель серый светлый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-spa030r-30x25x19-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр SPA030R Гренель серый светлый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр SPA030R Гренель серый светлый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b31/400_400_1/b319cc9b8a73881bff25c6abb1f9a56e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b31/400_400_1/b319cc9b8a73881bff25c6abb1f9a56e.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404537",
+  "sku": "spa032r_grenel_seryy_obreznoy_bordyur_30_2_5_kerama_maratstsi",
+  "name": "Бордюр SPA032R Гренель серый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-spa032r-30x25x19-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр SPA032R Гренель серый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр SPA032R Гренель серый матовый обрезной 30x2,5x1,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f41c2772f58073065e10e350f1986c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f41c2772f58073065e10e350f1986c.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
