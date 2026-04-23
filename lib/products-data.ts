@@ -96640,6 +96640,72 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404390",
+  "sku": "dd_c31_17023_bario_15_15_dekor_kerama_maratstsi",
+  "name": "Декор DD\\C31\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ddc3117023-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор DD\\C31\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор DD\\C31\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9e1/400_400_1/9e1fd4b41286e6fdcccf352b2e52afbe.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9e1/400_400_1/9e1fd4b41286e6fdcccf352b2e52afbe.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404391",
+  "sku": "dd_c34_17023_bario_15_15_dekor_kerama_maratstsi",
+  "name": "Декор DD\\C34\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ddc3417023-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор DD\\C34\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор DD\\C34\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/06d/400_400_1/06d881af1069204f3fce5102cc39e05c.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/06d/400_400_1/06d881af1069204f3fce5102cc39e05c.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404392",
+  "sku": "dd_c36_17023_bario_15_15_dekor_kerama_maratstsi",
+  "name": "Декор DD\\C36\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ddc3617023-15x15x069-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор DD\\C36\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор DD\\C36\\17023 Барио матовый 15x15x0,69, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ebd/400_400_1/ebdeeecfe8cc546fffcbeb9507a3304b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ebd/400_400_1/ebdeeecfe8cc546fffcbeb9507a3304b.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
