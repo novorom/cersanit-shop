@@ -102162,6 +102162,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404641",
+  "sku": "os_a06_9010_zakat_8_5_28_5_dekor_kerama_maratstsi",
+  "name": "Декор OS\\A06\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци)",
+  "slug": "-osa069010-85x285x092-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OS\\A06\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OS\\A06\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c80/400_400_1/c8042b3492ba0ffab447a043de500148.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c80/400_400_1/c8042b3492ba0ffab447a043de500148.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404642",
+  "sku": "os_a07_9010_zakat_8_5_28_5_dekor_kerama_maratstsi",
+  "name": "Декор OS\\A07\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци)",
+  "slug": "-osa079010-85x285x092-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OS\\A07\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OS\\A07\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9f2/400_400_1/9f2d64b5db7ae5693ae33b51161129ce.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9f2/400_400_1/9f2d64b5db7ae5693ae33b51161129ce.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404643",
+  "sku": "os_a08_9010_zakat_8_5_28_5_dekor_kerama_maratstsi",
+  "name": "Декор OS\\A08\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци)",
+  "slug": "-osa089010-85x285x092-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OS\\A08\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OS\\A08\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e6f/400_400_1/e6f7bb6a42d6820732ce11cfb60a6d0d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e6f/400_400_1/e6f7bb6a42d6820732ce11cfb60a6d0d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404644",
+  "sku": "os_a09_9010_zakat_8_5_28_5_dekor_kerama_maratstsi",
+  "name": "Декор OS\\A09\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци)",
+  "slug": "-osa099010-85x285x092-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор OS\\A09\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор OS\\A09\\9010 Закат глянцевый 8,5x28,5x0,92, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a10/400_400_1/a10dd10631e6ccd1d47a765d06646a32.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a10/400_400_1/a10dd10631e6ccd1d47a765d06646a32.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
