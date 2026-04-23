@@ -93582,6 +93582,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404251",
+  "sku": "marmo_milano_rhombus_bezh_dekor_30_60_8m1061_golden_tile",
+  "name": "8M106 Marmo Milano (Мармо Милано) rhombus беж декор 30*60, Golden Tile",
+  "slug": "8m106-marmo-milano-rhombus-3060-golden-tile",
+  "brand": "LINCER",
+  "collection": "8M106",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить 8M106 Marmo Milano (Мармо Милано) rhombus беж декор 30*60, Golden Tile от бренда LINCER (коллекция 8M106) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать 8M106 Marmo Milano (Мармо Милано) rhombus беж декор 30*60, Golden Tile с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/955/400_400_1/95580eca179d77903eae08ea92f8baeb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/955/400_400_1/95580eca179d77903eae08ea92f8baeb.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
