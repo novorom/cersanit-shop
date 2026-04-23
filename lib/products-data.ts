@@ -93538,6 +93538,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404249",
+  "sku": "lightwood_bezh_1198_198_kg_511120_terragres",
+  "name": "51112 Lightwood (Лайтвуд) беж КГ 119,8*19,8, Terragres",
+  "slug": "51112-lightwood-1198198-terragres",
+  "brand": "LINCER",
+  "collection": "51112",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить 51112 Lightwood (Лайтвуд) беж КГ 119,8*19,8, Terragres от бренда LINCER (коллекция 51112) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать 51112 Lightwood (Лайтвуд) беж КГ 119,8*19,8, Terragres с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dc8/400_400_1/dc8e8a03d4c7ab9c225e86a282e7badc.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dc8/400_400_1/dc8e8a03d4c7ab9c225e86a282e7badc.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404250",
+  "sku": "osaka_brush_seryy_plitka_d_sten_20_50_522261_golden_tile",
+  "name": "52226 Osaka (Осака) Brush Серый плитка д/стен 20*50, Golden Tile",
+  "slug": "52226-osaka-brush-2050-golden-tile",
+  "brand": "LINCER",
+  "collection": "52226",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить 52226 Osaka (Осака) Brush Серый плитка д/стен 20*50, Golden Tile от бренда LINCER (коллекция 52226) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать 52226 Osaka (Осака) Brush Серый плитка д/стен 20*50, Golden Tile с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a02/400_400_1/a021c7a65b73d6feeef3adaba7ab22ee.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a02/400_400_1/a021c7a65b73d6feeef3adaba7ab22ee.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
