@@ -92306,6 +92306,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404193",
+  "sku": "bordyur_1_2_50_5_nerzh_stal_polirov_azori",
+  "name": "Бордюр 807441003 Нерж, сталь полиров, металлический 1,2х50,5, Azori (Азори)",
+  "slug": "-807441003-12505-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 807441003 Нерж, сталь полиров, металлический 1,2х50,5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 807441003 Нерж, сталь полиров, металлический 1,2х50,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b04/400_400_1/b0493f94f44619156a4e0a190b8c2b51.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b04/400_400_1/b0493f94f44619156a4e0a190b8c2b51.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404194",
+  "sku": "bordyur_1_2_63_metallicheskiy_serebryannyy_azori",
+  "name": "Бордюр 587441001 Металл/Серебро/Глянцевый металлический 1,2х63, Azori (Азори)",
+  "slug": "-587441001-1263-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 587441001 Металл/Серебро/Глянцевый металлический 1,2х63, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 587441001 Металл/Серебро/Глянцевый металлический 1,2х63, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/619/6196a1a9f8be64a860f40d47aab778c3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/619/6196a1a9f8be64a860f40d47aab778c3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404195",
+  "sku": "bordyur_2_2_50_5_metallicheskiy_serebryannyy_azori",
+  "name": "Бордюр 587441004 Металл/Серебро/Глянцевый металлический 2,2х50,5, Azori (Азори)",
+  "slug": "-587441004-22505-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 587441004 Металл/Серебро/Глянцевый металлический 2,2х50,5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 587441004 Металл/Серебро/Глянцевый металлический 2,2х50,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/a2d/a2d59d5a3dba9a6d37f1122cf1808fba.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/a2d/a2d59d5a3dba9a6d37f1122cf1808fba.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404196",
+  "sku": "bordyur_2_2_63_metallicheskiy_serebryannyy_azori",
+  "name": "Бордюр 587441002 Металл/Серебро/Глянцевый металлический 2,2х63, Azori (Азори)",
+  "slug": "-587441002-2263-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 587441002 Металл/Серебро/Глянцевый металлический 2,2х63, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 587441002 Металл/Серебро/Глянцевый металлический 2,2х63, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/344/344abf24505355c8b1a21ad73be4065e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/344/344abf24505355c8b1a21ad73be4065e.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
