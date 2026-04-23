@@ -97740,6 +97740,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404440",
+  "sku": "ad_a446_17000_alkasar_15_3_bordyur_kerama_maratstsi",
+  "name": "Бордюр AD\\A446\\17000 Алькасар глянцевый 15x3x0,69,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-ada44617000-15x3x0691-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр AD\\A446\\17000 Алькасар глянцевый 15x3x0,69,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр AD\\A446\\17000 Алькасар глянцевый 15x3x0,69,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18d/400_400_1/18d37125efb16fac5c79aeae35254eae.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18d/400_400_1/18d37125efb16fac5c79aeae35254eae.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
