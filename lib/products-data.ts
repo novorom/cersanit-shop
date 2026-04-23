@@ -95166,6 +95166,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404323",
+  "sku": "pro_vud_bezh_svetlyy_obreznoy_20_119_5_kg_dl510000r_kerama_maratstsi",
+  "name": "Керамогранит DL510000R Про Вуд бежевый светлый обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dl510000r-20x1195x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит DL510000R Про Вуд бежевый светлый обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит DL510000R Про Вуд бежевый светлый обрезной 20x119,5x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c25/400_400_1/ihmfdh759tfqjgjgh1m7uofuka5sn7dl.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c25/400_400_1/ihmfdh759tfqjgjgh1m7uofuka5sn7dl.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
