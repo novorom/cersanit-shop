@@ -103240,6 +103240,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404690",
+  "sku": "hgd_a307_9016_monparnas_dekor_kg_8_5_28_5_kerama_maratstsi",
+  "name": "Декор HGD\\A307\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци)",
+  "slug": "-hgda3079016-85x285x085-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор HGD\\A307\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор HGD\\A307\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/c0623d162a802d80a2adeb6742c528cc.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/c0623d162a802d80a2adeb6742c528cc.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404691",
+  "sku": "hgd_a308_9016_monparnas_dekor_kg_8_5_28_5_kerama_maratstsi",
+  "name": "Декор HGD\\A308\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци)",
+  "slug": "-hgda3089016-85x285x085-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор HGD\\A308\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор HGD\\A308\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3ed/400_400_1/3ed600ed89671a48e8361f32a739b57d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3ed/400_400_1/3ed600ed89671a48e8361f32a739b57d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404692",
+  "sku": "hgd_a309_9016_monparnas_dekor_kg_8_5_28_5_kerama_maratstsi",
+  "name": "Декор HGD\\A309\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци)",
+  "slug": "-hgda3099016-85x285x085-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор HGD\\A309\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор HGD\\A309\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/709/400_400_1/709a52e9a26f5e59e0ef00f1e58e1182.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/709/400_400_1/709a52e9a26f5e59e0ef00f1e58e1182.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404693",
+  "sku": "hgd_a310_9016_monparnas_dekor_kg_8_5_28_5_kerama_maratstsi",
+  "name": "Декор HGD\\A310\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци)",
+  "slug": "-hgda3109016-85x285x085-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор HGD\\A310\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор HGD\\A310\\9016 Монпарнас глянцевый 8,5x28,5x0,85, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c39/400_400_1/c39826be90c1aca8e01f9d43180ad5db.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c39/400_400_1/c39826be90c1aca8e01f9d43180ad5db.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
