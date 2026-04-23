@@ -107,7 +107,11 @@ function run() {
   }
 
   const lincerObjects = lincerProducts.map((p, index) => {
-    const brand = extractBrand(p.name, p.brand);
+    let name = p.name.trim();
+    // Remove leading numeric SKU (e.g. "010100001276 Name...")
+    name = name.replace(/^\d+\s+/, '');
+    
+    const brand = extractBrand(name, p.brand);
     let collection = p.collection;
 
     if (collection === 'Бренды' || !collection || collection === 'Панно' || collection === 'Керамогранит') {
@@ -133,8 +137,8 @@ function run() {
     return {
       id: "lincer-" + (400000 + index),
       sku: p.sku || '',
-      name: p.name,
-      slug: generateSlug(p.name),
+      name: name,
+      slug: generateSlug(name),
       brand: brand,
       collection: collection || "Base",
       product_type: p.name.toLowerCase().includes('ступен') ? 'Ступень' : (p.name.toLowerCase().includes('вставк') || p.name.toLowerCase().includes('декор') ? 'Вставка' : 'Керамогранит'),

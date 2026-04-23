@@ -178,12 +178,14 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
   const allDimensions = filterOptions.dimensions
   const allDesigns = filterOptions.designs
   const allSurfaceTypes = filterOptions.surface_types
+  const allBrands = filterOptions.brands
 
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedDimensions, setSelectedDimensions] = useState<string[]>([])
   const [selectedDesigns, setSelectedDesigns] = useState<string[]>([])
   const [selectedSurfaceTypes, setSelectedSurfaceTypes] = useState<string[]>([])
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [sortBy, setSortBy] = useState<"popular" | "name-asc" | "name-desc">("popular")
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
@@ -196,7 +198,8 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     selectedColors.length +
     selectedDimensions.length +
     selectedDesigns.length +
-    selectedSurfaceTypes.length
+    selectedSurfaceTypes.length +
+    selectedBrands.length
 
   const filtered = useMemo(() => {
     let result = [...effectiveCollectionsWithMeta]
@@ -222,6 +225,12 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
         })
       )
     }
+    if (selectedBrands.length > 0) {
+      result = result.filter((c) => {
+        const collProducts = products.filter((p) => p.collection === c.name)
+        return collProducts.some((p) => selectedBrands.includes(p.brand))
+      })
+    }
 
     switch (sortBy) {
       case "name-asc":
@@ -243,11 +252,13 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     setSelectedDimensions([])
     setSelectedDesigns([])
     setSelectedSurfaceTypes([])
+    setSelectedBrands([])
   }
 
   const filtersContent = (
     <div className="flex flex-col gap-2">
-      <FilterSection title="Тип плитки" options={allTypes} selected={selectedTypes} onToggle={toggleFilter(selectedTypes, setSelectedTypes)} defaultOpen />
+      <FilterSection title="Бренд" options={allBrands} selected={selectedBrands} onToggle={toggleFilter(selectedBrands, setSelectedBrands)} defaultOpen />
+      <FilterSection title="Тип плитки" options={allTypes} selected={selectedTypes} onToggle={toggleFilter(selectedTypes, setSelectedTypes)} />
       <FilterSection title="Цвет" options={allColors} selected={selectedColors} onToggle={toggleFilter(selectedColors, setSelectedColors)} />
       <FilterSection title="Размер" options={allDimensions} selected={selectedDimensions} onToggle={toggleFilter(selectedDimensions, setSelectedDimensions)} />
       <FilterSection title="Дизайн" options={allDesigns} selected={selectedDesigns} onToggle={toggleFilter(selectedDesigns, setSelectedDesigns)} />
@@ -322,6 +333,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
               ...selectedDimensions.map((d) => ({ val: d, toggle: toggleFilter(selectedDimensions, setSelectedDimensions) })),
               ...selectedDesigns.map((d) => ({ val: d, toggle: toggleFilter(selectedDesigns, setSelectedDesigns) })),
               ...selectedSurfaceTypes.map((s) => ({ val: s, toggle: toggleFilter(selectedSurfaceTypes, setSelectedSurfaceTypes) })),
+              ...selectedBrands.map((b) => ({ val: b, toggle: toggleFilter(selectedBrands, setSelectedBrands) })),
             ].map(({ val, toggle }) => (
               <button
                 key={val}

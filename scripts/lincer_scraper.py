@@ -182,12 +182,11 @@ async def main():
     
     async with aiohttp.ClientSession(headers=headers) as session:
         batch_size = 20
-        batches_since_push = 0
+        new_items_since_push = 0
         for i in range(start_index, len(urls), batch_size):
             batch = [u for u in urls[i:i+batch_size] if u not in processed_urls]
             
             if not batch:
-                # Still check occasionally even if batch is empty to ensure we are caught up
                 if i % 1000 == 0:
                      logging.info(f"Index {i} - already processed.")
                 continue
@@ -195,21 +194,22 @@ async def main():
             tasks = [fetch_product(session, url, sem) for url in batch]
             results = await asyncio.gather(*tasks)
             
-            new_found = 0
+            current_batch_new = 0
             for res in results:
                 if res:
                     products.append(res)
                     processed_urls.add(res['url'])
-                    new_found += 1
+                    current_batch_new += 1
             
-            logging.info(f"Index {i + batch_size}/{len(urls)}. Found {new_found} new (Total products: {len(products)}).")
+            new_items_since_push += current_batch_new
+            
+            logging.info(f"Index {i + batch_size}/{len(urls)}. Found {current_batch_new} new in batch (Total products: {len(products)}).")
             save_to_json(products)
             
-            batches_since_push += 1
-            # Every 5 batches (100 URLs searched), we sync and push to avoid too many commits but keep it fresh
-            if new_found > 0 or batches_since_push >= 5:
+            # Every 1000 new products found, we sync and push
+            if new_items_since_push >= 1000:
                 sync_and_push(len(products))
-                batches_since_push = 0
+                new_items_since_push = 0
 
             await asyncio.sleep(5)
 

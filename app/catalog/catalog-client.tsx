@@ -102,6 +102,7 @@ function CatalogContent({ initialProducts = [] }: { initialProducts?: Product[] 
           designs: "collection",
           surface_types: "surface",
           collections: "collection",
+          brands: "brand",
         }
         const field = fieldMap[key]
         if (!field) return true
