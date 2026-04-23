@@ -94330,6 +94330,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404285",
+  "sku": "pof004_biser_chernyy_zoloto_bordyur_20_1_4_kerama_maratstsi",
+  "name": "Карандаш POF004 Бисер черный золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pof004-20x14x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш POF004 Бисер черный золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш POF004 Бисер черный золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8a9/400_400_1/8a9de92364bc6fd8bfef445d7b8df090.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/8a9/400_400_1/8a9de92364bc6fd8bfef445d7b8df090.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
