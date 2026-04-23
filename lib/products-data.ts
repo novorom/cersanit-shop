@@ -92834,6 +92834,116 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404217",
+  "sku": "satti_kroshe_bordyur_27_8_3_5_azori",
+  "name": "Бордюр 582901003 Сатти Кроше коричневый 27,8х3,5, Azori (Азори)",
+  "slug": "-582901003-27835-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 582901003 Сатти Кроше коричневый 27,8х3,5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 582901003 Сатти Кроше коричневый 27,8х3,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/b48/b48ebb7e84f7101b850fe4bf446cb934.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/b48/b48ebb7e84f7101b850fe4bf446cb934.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404218",
+  "sku": "satti_flou_bordyur_27_8_5_azori",
+  "name": "Бордюр 582901002 Сатти Флоу золотой 27,8х5, Azori (Азори)",
+  "slug": "-582901002-2785-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 582901002 Сатти Флоу золотой 27,8х5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 582901002 Сатти Флоу золотой 27,8х5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/dda/ddae22643d5a42b6d6e482e96923a4da.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/dda/ddae22643d5a42b6d6e482e96923a4da.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404219",
+  "sku": "satti_flou_dekor_40_5_27_8_azori",
+  "name": "Декор 582902002 Сатти Флоу золотой 27,8х40,5, Azori (Азори)",
+  "slug": "-582902002-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор 582902002 Сатти Флоу золотой 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор 582902002 Сатти Флоу золотой 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ada/ada291d8dbdbcce8fa72f44d5aacd991.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/ada/ada291d8dbdbcce8fa72f44d5aacd991.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404220",
+  "sku": "satti_bezh_d_sten_niz_40_5_27_8_azori",
+  "name": "Плитка 502891101 Сатти Беж бежевый 27,8х40,5, Azori (Азори)",
+  "slug": "-502891101-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 502891101 Сатти Беж бежевый 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 502891101 Сатти Беж бежевый 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/0fa/0fa226f808b789829a17c088577c15e6.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/0fa/0fa226f808b789829a17c088577c15e6.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404221",
+  "sku": "satti_mokka_d_sten_niz_40_5_27_8_azori",
+  "name": "Плитка 502911101 Сатти Мокка коричневый 27,8х40,5, Azori (Азори)",
+  "slug": "-502911101-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 502911101 Сатти Мокка коричневый 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 502911101 Сатти Мокка коричневый 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/78a/78ac194bac0fef801fe89d6cad066b6e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/78a/78ac194bac0fef801fe89d6cad066b6e.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
