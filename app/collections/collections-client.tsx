@@ -121,9 +121,9 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     collectionMap[key].products.push(p)
   })
 
-  // Build collections array, keep only those with ≥2 products
+  // Build collections array, keep only those with >=3 products
   const collections = Object.entries(collectionMap)
-    .filter(([, v]) => v.products.length > 1)
+    .filter(([, v]) => v.products.length > 2)
     .map(([key, { name, products: collProducts }]) => {
       const firstProduct = collProducts[0]
       return {

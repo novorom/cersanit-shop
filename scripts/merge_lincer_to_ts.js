@@ -116,12 +116,27 @@ function run() {
     const brand = extractBrand(name, p.brand);
     let collection = p.collection;
 
-    if (collection === 'Бренды' || !collection || collection === 'Панно' || collection === 'Керамогранит') {
-        const parts = p.name.split(' ');
+    const blacklist = [
+        'керамогранит', 'плитка', 'декор', 'бренды', 'панно', 'вставка',
+        'серый', 'бежевый', 'белый', 'черный', 'коричневый', 'голубой',
+        'глянцевая', 'матовая', 'сатиновая', 'лаппатированная',
+        'mirror', 'mosaic', 'base', 'collection'
+    ];
+
+    const isTechnicalCode = (str) => /^[A-Z]{1,2}\d{2,5}[A-Z]{0,2}$/.test(str) || /^\d{10,15}$/.test(str);
+
+    if (!collection || blacklist.includes(collection.toLowerCase()) || isTechnicalCode(collection)) {
+        const parts = name.split(' ');
+        collection = "Base"; // Default fallback
+        
         // Try to find a good collection name in the product name
         for (let part of parts) {
-            if (part.length > 3 && !part.includes(',') && !part.includes('(') && !/^\d+$/.test(part)) {
-                collection = part;
+            const pClean = part.replace(/[^\wа-яё]/gi, '');
+            if (pClean.length > 3 && 
+                !blacklist.includes(pClean.toLowerCase()) && 
+                !isTechnicalCode(pClean) &&
+                !/^\d+$/.test(pClean)) {
+                collection = pClean;
                 break;
             }
         }
