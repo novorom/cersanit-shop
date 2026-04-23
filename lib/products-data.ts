@@ -99148,6 +99148,94 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404504",
+  "sku": "alleya_kirpichnyy_stupen_uglovaya_30_30_sg906800n_gr_an_kerama_maratstsi",
+  "name": "Ступень SG906800N\\GR\\AN угловая Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg906800ngran-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Ступень",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Ступень SG906800N\\GR\\AN угловая Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Ступень) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Ступень SG906800N\\GR\\AN угловая Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/570/400_400_1/57007fefe4727bf1c2d7afa6cc75fc9a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/570/400_400_1/57007fefe4727bf1c2d7afa6cc75fc9a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404505",
+  "sku": "alleya_kirpichnyy_stupen_frontalnaya_30_30_sg906800n_gr_kerama_maratstsi",
+  "name": "Ступень SG906800N\\GR фронтальная Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg906800ngr-30x30x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Ступень",
+  "product_type": "Ступень",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Ступень SG906800N\\GR фронтальная Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Ступень) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Ступень SG906800N\\GR фронтальная Аллея кирпичный  30x30x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cb3/400_400_1/cb334f36d0d9fc820dda11464de1d483.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cb3/400_400_1/cb334f36d0d9fc820dda11464de1d483.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404506",
+  "sku": "monte_tiberio_kg_60_60_sg622602r_lappat_kerama_maratstsi",
+  "name": "Керамогранит SG622602R Монте Тиберио лаппатированный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg622602r-60x60x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG622602R Монте Тиберио лаппатированный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG622602R Монте Тиберио лаппатированный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/464/400_400_1/464fcb3f3e2a51218debcdcea525ac48.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/464/400_400_1/464fcb3f3e2a51218debcdcea525ac48.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404507",
+  "sku": "monte_tiberio_bezh_lappatirovannyy_kg_60kh119_5_sg564502r_lappatir_kerama_maratstsi",
+  "name": "Керамогранит SG564502R Монте Тиберио бежевый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg564502r-60x1195x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит SG564502R Монте Тиберио бежевый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит SG564502R Монте Тиберио бежевый лаппатированный обрезной 60x119,5x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/da7/400_400_1/dd49sn552v79yawm4mw18nz6r07np2au.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/da7/400_400_1/dd49sn552v79yawm4mw18nz6r07np2au.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
