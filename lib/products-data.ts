@@ -95188,6 +95188,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404324",
+  "sku": "pro_stoun_antratsit_obreznoy_kg_60_60_dd600600r_kerama_maratstsi",
+  "name": "Керамогранит DD600600R Про Стоун антрацит обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd600600r-60x60x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит DD600600R Про Стоун антрацит обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит DD600600R Про Стоун антрацит обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/320/400_400_1/320b4946b8d0e91a776a3b784f1491f9.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/320/400_400_1/320b4946b8d0e91a776a3b784f1491f9.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
