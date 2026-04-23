@@ -93164,6 +93164,204 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404232",
+  "sku": "kamlot_indigo_kresh_dekor_40_5_27_8_azori",
+  "name": "Декор 582552001 Камлот Индиго Крэш синий 27,8х40,5, Azori (Азори)",
+  "slug": "-582552001-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор 582552001 Камлот Индиго Крэш синий 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор 582552001 Камлот Индиго Крэш синий 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/0f2/0f250bbc43a1c780bcf56f973c2ec9da.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/0f2/0f250bbc43a1c780bcf56f973c2ec9da.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404233",
+  "sku": "kamlot_indigo_eysha_bordyur_40_5_5_azori",
+  "name": "Бордюр 582551004 Камлот Индиго Эйша синий 40,5х5, Azori (Азори)",
+  "slug": "-582551004-4055-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 582551004 Камлот Индиго Эйша синий 40,5х5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 582551004 Камлот Индиго Эйша синий 40,5х5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/425/425839cad81ad378e492b6ff829bd6a1.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/425/425839cad81ad378e492b6ff829bd6a1.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404234",
+  "sku": "kamlot_indigo_eysha_dekor_40_5_27_8_azori",
+  "name": "Декор 582552002 Камлот Индиго Эйша синий 40,5х27,8, Azori (Азори)",
+  "slug": "-582552002-405278-azori-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор 582552002 Камлот Индиго Эйша синий 40,5х27,8, Azori (Азори) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор 582552002 Камлот Индиго Эйша синий 40,5х27,8, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/6b0/6b05db759bc133be28ef9f64dfa7bae9.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/6b0/6b05db759bc133be28ef9f64dfa7bae9.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404235",
+  "sku": "kamlot_indigo_d_sten_niz_40_5_27_8_azori",
+  "name": "Плитка 502541102 Камлот Индиго синий 27,8х40,5, Azori (Азори)",
+  "slug": "-502541102-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 502541102 Камлот Индиго синий 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 502541102 Камлот Индиго синий 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/abe/abe819088067149ee331281de7fd8d5a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/abe/abe819088067149ee331281de7fd8d5a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404236",
+  "sku": "kamlot_latte_d_sten_verkh_40_5_27_8_azori",
+  "name": "Плитка 502521201 Камлот Латте бежевый 27,8х40,5, Azori (Азори)",
+  "slug": "-502521201-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 502521201 Камлот Латте бежевый 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 502521201 Камлот Латте бежевый 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/249/249e2d422982dc51d98e4bcb93d5d86f.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/249/249e2d422982dc51d98e4bcb93d5d86f.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404237",
+  "sku": "kamlot_mokka_kresh_bordyur_40_5_5_azori",
+  "name": "Бордюр 582541001 Камлот Мокка Крэш коричневый 40,5х5, Azori (Азори)",
+  "slug": "-582541001-4055-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 582541001 Камлот Мокка Крэш коричневый 40,5х5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 582541001 Камлот Мокка Крэш коричневый 40,5х5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/ms8cbtcv3wxwu8x8l9ala7kelmplihcb.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/ms8cbtcv3wxwu8x8l9ala7kelmplihcb.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404238",
+  "sku": "kamlot_mokka_eysha_bordyur_40_5_5_azori",
+  "name": "Бордюр 582541004 Камлот Мокка Эйша коричневый 40,5х5, Azori (Азори)",
+  "slug": "-582541004-4055-azori-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр 582541004 Камлот Мокка Эйша коричневый 40,5х5, Azori (Азори) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр 582541004 Камлот Мокка Эйша коричневый 40,5х5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/fa4/fa483b6f158c3189952f8a5354a9e9d3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/fa4/fa483b6f158c3189952f8a5354a9e9d3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404239",
+  "sku": "kamlot_mokka_eysha_dekor_40_5_27_8_azori",
+  "name": "Декор 582542002 Камлот Мокка Эйша коричневый 27,8х40,5, Azori (Азори)",
+  "slug": "-582542002-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор 582542002 Камлот Мокка Эйша коричневый 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор 582542002 Камлот Мокка Эйша коричневый 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/8d3/8d3dd32f8d20c2b0297ba4e23ee4a53a.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/8d3/8d3dd32f8d20c2b0297ba4e23ee4a53a.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404240",
+  "sku": "kamlot_mokka_d_sten_niz_40_5_27_8_azori",
+  "name": "Плитка 502541101 Камлот Мокка коричневый 27,8х40,5, Azori (Азори)",
+  "slug": "-502541101-278405-azori-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 502541101 Камлот Мокка коричневый 27,8х40,5, Azori (Азори) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 502541101 Камлот Мокка коричневый 27,8х40,5, Azori (Азори) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/198/198a0cfeed9a9fe0ac5f0e965f331128.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/198/198a0cfeed9a9fe0ac5f0e965f331128.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
