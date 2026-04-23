@@ -94000,6 +94000,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404270",
+  "sku": "sg5157_btg_arsenale_bezh_plintus_39_6_8_kerama_maratstsi",
+  "name": "Плинтус SG5157\\BTG Арсенале бежевый  39,6x8x1,55, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg5157btg-396x8x155-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус SG5157\\BTG Арсенале бежевый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус SG5157\\BTG Арсенале бежевый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aca/400_400_1/aca06f269cf4d3e9dae3c950cfa7ad59.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/aca/400_400_1/aca06f269cf4d3e9dae3c950cfa7ad59.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404271",
+  "sku": "sg5159_btg_arsenale_bezh_svetlyy_plintus_39_6_8_kerama_maratstsi",
+  "name": "Плинтус SG5159\\BTG Арсенале бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци)",
+  "slug": "-sg5159btg-396x8x155-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус SG5159\\BTG Арсенале бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус SG5159\\BTG Арсенале бежевый светлый  39,6x8x1,55, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/55b/400_400_1/55bebda3cbf10f685441751aecd715e5.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/55b/400_400_1/55bebda3cbf10f685441751aecd715e5.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
