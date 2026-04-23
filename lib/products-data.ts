@@ -95958,6 +95958,138 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404359",
+  "sku": "14001r_prado_belyy_obreznoy_plitka_d_sten_40_120_kerama_maratstsi",
+  "name": "Плитка 14001R Прадо белый глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-14001r-40x120x1-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 14001R Прадо белый глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 14001R Прадо белый глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/81f/400_400_1/81f5412dcb649abf0e4ffa495dfdc47e.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/81f/400_400_1/81f5412dcb649abf0e4ffa495dfdc47e.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404360",
+  "sku": "14002r_prado_belyy_panel_obreznoyplitka_d_sten_40_120_kerama_maratstsi",
+  "name": "Плитка 14002R Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци)",
+  "slug": "-14002r-40x120x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плитка",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плитка 14002R Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плитка) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плитка 14002R Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/486/400_400_1/486aaca90378cf461851ab6ccb3c2cf7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/486/400_400_1/486aaca90378cf461851ab6ccb3c2cf7.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404361",
+  "sku": "fme002r_prado_20_40_plintus_kerama_maratstsi",
+  "name": "Плинтус FME002R Прадо белый глянцевый обрезной 20x40x1,6, Kerama Marazzi (Керама Марацци)",
+  "slug": "-fme002r-20x40x16-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Плинтус",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Плинтус FME002R Прадо белый глянцевый обрезной 20x40x1,6, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Плинтус) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Плинтус FME002R Прадо белый глянцевый обрезной 20x40x1,6, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/523/400_400_1/52357bb1edf370a2f8b6106f5f33e2f2.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/523/400_400_1/52357bb1edf370a2f8b6106f5f33e2f2.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404362",
+  "sku": "lsa014r_prado_belyy_struktura_obreznoy_40_3_4_bordyur_kerama_maratstsi",
+  "name": "Бордюр LSA014R Прадо белый структура глянцевый обрезной 40x3,4x0,9, Kerama Marazzi (Керама Марацци)",
+  "slug": "-lsa014r-40x34x09-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр LSA014R Прадо белый структура глянцевый обрезной 40x3,4x0,9, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр LSA014R Прадо белый структура глянцевый обрезной 40x3,4x0,9, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/01e/400_400_1/01e9f88e59b882d8e6c4b2fede516964.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/01e/400_400_1/01e9f88e59b882d8e6c4b2fede516964.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404363",
+  "sku": "mld_a110_14001r_dekor_prado_tsvety_obreznoy_40_120_kerama_maratstsi",
+  "name": "Декор MLD\\A110\\14001R Прадо цветы глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-mlda11014001r-40x120x1-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор MLD\\A110\\14001R Прадо цветы глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор MLD\\A110\\14001R Прадо цветы глянцевый обрезной 40x120x1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/466/400_400_1/466395270139b7860a62acedeb0ff6a3.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/466/400_400_1/466395270139b7860a62acedeb0ff6a3.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404364",
+  "sku": "14041r_3f_vt_a20_14002r_dekor_prado_obreznoy40_120_kerama_maratstsi",
+  "name": "Декор 14041R\\3F Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци)",
+  "slug": "-14041r3f-40x120x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор 14041R\\3F Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор 14041R\\3F Прадо белый панель глянцевый обрезной 40x120x1,2, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/76d/400_400_1/76d1100959d1855dcf5ccab0cd423aef.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/76d/400_400_1/76d1100959d1855dcf5ccab0cd423aef.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
