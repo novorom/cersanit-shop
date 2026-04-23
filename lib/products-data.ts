@@ -94352,6 +94352,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404286",
+  "sku": "70_karandash_belyy_matovyy_bordyur_25_2_kerama_maratstsi",
+  "name": "Карандаш 70 белый матовый 25x2x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-70-25x2x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш 70 белый матовый 25x2x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш 70 белый матовый 25x2x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/07d/400_400_1/07dceda70e34ad57c8911fdd86ff54d7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/07d/400_400_1/07dceda70e34ad57c8911fdd86ff54d7.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
