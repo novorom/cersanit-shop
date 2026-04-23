@@ -37,36 +37,44 @@ function run() {
   }
   const lincerProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-  // 1. Remove all existing Lincer products from the TS content
-  // We look for objects that have id starting with "lincer-"
-  // This is a more robust way to clear the slate
+  // SAFE REMOVAL:
+  // Find the start of the array
   const arrayStartText = 'export const products: Product[] = [';
   const startIndex = tsContent.indexOf(arrayStartText);
-  if (startIndex === -1) {
-    console.error("Could not find products array start");
-    return;
-  }
-
   const arrayEndIndex = tsContent.lastIndexOf('\n];');
-  if (arrayEndIndex === -1) {
-    console.error("Could not find products array end");
+
+  if (startIndex === -1 || arrayEndIndex === -1) {
+    console.error("Could not find products array");
     return;
   }
 
-  const productsContent = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
+  const header = tsContent.substring(0, startIndex + arrayStartText.length);
+  const footer = tsContent.substring(arrayEndIndex);
+  const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
+
+  // Split content by products. We look for "}," which ends a product.
+  // This is still a bit risky but we can filter by the ID content.
+  const blocks = content.split(/\n\s*\},?\s*\{/);
   
-  // Regex to split by objects (rough but effective for our structure)
-  const productBlocks = productsContent.split(/\n\s+\},\s+\{/);
-  
-  // Filter out any block that belongs to Lincer
-  const nonLincerBlocks = productBlocks.filter(block => {
-    return !block.includes('id: "lincer-') && !block.includes('"id": "lincer-');
+  const cleanBlocks = [];
+  blocks.forEach((block, idx) => {
+      // Ensure block is wrapped in {} if it's not the first/last parts of the split
+      let fullBlock = block.trim();
+      if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
+      if (!fullBlock.endsWith('}')) fullBlock = fullBlock + '}';
+      
+      // Check if it's a lincer product
+      if (fullBlock.includes('id: "lincer-') || fullBlock.includes('"id": "lincer-')) {
+          return;
+      }
+      if (fullBlock.length < 10) return; // ignore empty/junk
+      
+      cleanBlocks.push(fullBlock);
   });
 
-  console.log(`Removed existing Lincer entries. Re-adding ${lincerProducts.length} items with fresh SEO...`);
+  console.log(`Kept ${cleanBlocks.length} base products. Adding ${lincerProducts.length} Lincer products...`);
 
-  const newTsProducts = [];
-  lincerProducts.forEach((p, index) => {
+  const lincerObjects = lincerProducts.map((p, index) => {
     let brand = p.brand;
     let name = p.name;
     let collection = p.collection;
@@ -96,7 +104,7 @@ function run() {
       });
     }
 
-    newTsProducts.push({
+    return {
       id: "lincer-" + (400000 + index),
       sku: p.sku || '',
       name: name,
@@ -115,24 +123,14 @@ function run() {
       images: p.image ? [p.image] : [],
       specs: specs,
       is_new: true
-    });
+    };
   });
 
-  const lincerString = newTsProducts.map(p => JSON.stringify(p, null, 2)).join(',\n  ');
-  
-  let finalProductsContent = nonLincerBlocks.join('\n  }, {\n  ');
-  if (finalProductsContent.trim()) {
-      finalProductsContent += ',\n  ' + lincerString;
-  } else {
-      finalProductsContent = '\n  ' + lincerString;
-  }
+  const finalArrayContent = cleanBlocks.join(',\n  ') + (cleanBlocks.length > 0 ? ',\n  ' : '') + 
+                            lincerObjects.map(o => JSON.stringify(o, null, 2)).join(',\n  ');
 
-  const newContent = tsContent.substring(0, startIndex + arrayStartText.length) + 
-                     finalProductsContent + 
-                     tsContent.substring(arrayEndIndex);
-
-  fs.writeFileSync(tsPath, newContent, 'utf8');
-  console.log(`Successfully refreshed ${newTsProducts.length} Lincer products into lib/products-data.ts`);
+  fs.writeFileSync(tsPath, header + '\n  ' + finalArrayContent + footer, 'utf8');
+  console.log(`Successfully synced ${lincerObjects.length} Lincer products.`);
 }
 
 run();
