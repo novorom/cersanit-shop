@@ -166,6 +166,13 @@ function run() {
       });
     }
 
+    // Add factory specs
+    if (factory) {
+        if (factory.box_pcs) specs.push({ key: "штук в упаковке", label: String(factory.box_pcs) });
+        if (factory.box_m2) specs.push({ key: "кв.м в упаковке", label: String(factory.box_m2) });
+        if (factory.thickness) specs.push({ key: "толщина", label: String(factory.thickness) + " мм" });
+    }
+
     const saved = existingDataMap.get(sku) || { price: 0, stock: 0 };
 
     return {

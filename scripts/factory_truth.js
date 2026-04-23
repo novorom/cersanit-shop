@@ -10,7 +10,8 @@ const FACTORY_FILES = [
     name: "Наименование элемента",
     collection: "Коллекция [COLLECTION]",
     surface: "Поверхность [SURFACE]",
-    format: "Размер [SIZE]"
+    format: "Размер [SIZE]",
+    thickness: "Толщина [THICKNESS]"
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Gracia ceramica.xlsx",
@@ -21,7 +22,10 @@ const FACTORY_FILES = [
     surface: "Поверхность (для сайта)",
     color: "Цвет (для сайта)",
     width: "Ширина (для сайта)",
-    height: "Высота (для сайта)"
+    height: "Высота (для сайта)",
+    box_pcs: "Количество номенклатуры в упаковке ШТ",
+    box_m2: "Количество номенклатуры в упаковке м2",
+    thickness: "Толщина (для сайта)"
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Keramark_12.10.2025.xlsx",
@@ -30,7 +34,8 @@ const FACTORY_FILES = [
     name: "Название",
     collection: "Коллекция",
     surface: "Поверхность",
-    color: "Цвет"
+    color: "Цвет",
+    thickness: "Толщина"
   },
   {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Eletto 25.02.26.xlsx",
@@ -77,7 +82,10 @@ function loadFactoryData() {
         surface: row[file.surface] || null,
         color: row[file.color] || null,
         format: file.format ? row[file.format] : (row[file.width] && row[file.height] ? `${row[file.width]}x${row[file.height]}` : null),
-        brand: file.brand
+        brand: file.brand,
+        box_pcs: row[file.box_pcs] || null,
+        box_m2: row[file.box_m2] || null,
+        thickness: row[file.thickness] || null
       };
 
       masterMap.set(norm, entry);
