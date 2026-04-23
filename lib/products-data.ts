@@ -102448,6 +102448,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404654",
+  "sku": "stg_a596_6355_sorbonna_dekor_25_40_kerama_maratstsi",
+  "name": "Декор STG\\A596\\6355 Сорбонна матовый 25x40x0,8, Kerama Marazzi (Керама Марацци)",
+  "slug": "-stga5966355-25x40x08-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор STG\\A596\\6355 Сорбонна матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор STG\\A596\\6355 Сорбонна матовый 25x40x0,8, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d6f/400_400_1/d6f60d368bb6e7c37222c41ca75c3d43.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d6f/400_400_1/d6f60d368bb6e7c37222c41ca75c3d43.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
