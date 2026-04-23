@@ -121,9 +121,15 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     collectionMap[key].products.push(p)
   })
 
-  // Build collections array, keep only those with >=3 products
+  // Build collections array, keep only those with >=3 products and non-generic names
   const collections = Object.entries(collectionMap)
-    .filter(([, v]) => v.products.length > 2)
+    .filter(([key, v]) => {
+      const name = v.name.toLowerCase();
+      return v.products.length > 2 && 
+             name !== "base" && 
+             name !== "other" &&
+             !["керамогранит", "плитка", "декор", "бордюр", "ступень", "плинтус"].includes(name);
+    })
     .map(([key, { name, products: collProducts }]) => {
       const firstProduct = collProducts[0]
       return {

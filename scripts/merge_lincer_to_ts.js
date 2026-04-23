@@ -120,25 +120,33 @@ function run() {
         'керамогранит', 'плитка', 'декор', 'бренды', 'панно', 'вставка',
         'серый', 'бежевый', 'белый', 'черный', 'коричневый', 'голубой',
         'глянцевая', 'матовая', 'сатиновая', 'лаппатированная',
-        'mirror', 'mosaic', 'base', 'collection'
+        'mirror', 'mosaic', 'base', 'collection', 'бордюр', 'плинтус', 'ступень',
+        'карандаш', 'керамический', 'метлахская', 'матовый', 'пола', 'угловой',
+        'стен', 'верх', 'низ', 'для', 'составной', 'элемент', 'набор', 'комплект'
     ];
 
     const isTechnicalCode = (str) => /^[A-Z]{1,2}\d{2,5}[A-Z]{0,2}$/.test(str) || /^\d{10,15}$/.test(str);
 
-    if (!collection || blacklist.includes(collection.toLowerCase()) || isTechnicalCode(collection)) {
-        const parts = name.split(' ');
+    if (!collection || blacklist.some(b => collection.toLowerCase().includes(b)) || isTechnicalCode(collection)) {
+        const parts = name.split(/[\s,._-]+/);
         collection = "Base"; // Default fallback
         
         // Try to find a good collection name in the product name
         for (let part of parts) {
             const pClean = part.replace(/[^\wа-яё]/gi, '');
             if (pClean.length > 3 && 
-                !blacklist.includes(pClean.toLowerCase()) && 
+                !blacklist.some(b => pClean.toLowerCase().includes(b)) && 
                 !isTechnicalCode(pClean) &&
                 !/^\d+$/.test(pClean)) {
-                collection = pClean;
+                collection = pClean.charAt(0).toUpperCase() + pClean.slice(1).toLowerCase();
                 break;
             }
+        }
+    } else {
+        // Sanitize existing collection name
+        collection = collection.trim();
+        if (collection.toUpperCase() === collection) {
+            collection = collection.charAt(0).toUpperCase() + collection.slice(1).toLowerCase();
         }
     }
 
