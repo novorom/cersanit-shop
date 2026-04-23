@@ -94550,6 +94550,50 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404295",
+  "sku": "pro_stoun_svetlyy_obreznoy_kg_60_60_dd600300r_kerama_maratstsi",
+  "name": "Керамогранит DD600300R Про Стоун серый светлый обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd600300r-60x60x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит DD600300R Про Стоун серый светлый обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит DD600300R Про Стоун серый светлый обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/588/400_400_1/588bf5d0605637d48e04e2d70e27751b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/588/400_400_1/588bf5d0605637d48e04e2d70e27751b.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404296",
+  "sku": "pro_stoun_seryy_tyemnyy_obreznoy_kg_60_60_dd600500r_kerama_maratstsi",
+  "name": "Керамогранит DD600500R Про Стоун серый тёмный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци)",
+  "slug": "-dd600500r-60x60x11-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Керамогранит",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Керамогранит DD600500R Про Стоун серый тёмный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Керамогранит) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Керамогранит DD600500R Про Стоун серый тёмный обрезной 60x60x1,1, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a32/400_400_1/a320f5c3d8fb84aa7bbea8503784e911.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a32/400_400_1/a320f5c3d8fb84aa7bbea8503784e911.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
