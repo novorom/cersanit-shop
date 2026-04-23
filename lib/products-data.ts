@@ -102976,6 +102976,72 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404678",
+  "sku": "pof001_richmond_biser_belyy_serebro_bordyur_20kh1_4_kerama_maratstsi",
+  "name": "Карандаш POF001 Бисер белый серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pof001-20x14x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш POF001 Бисер белый серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш POF001 Бисер белый серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bda/400_400_1/bda8451d9758531055cd647f2e85dda7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/bda/400_400_1/bda8451d9758531055cd647f2e85dda7.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404679",
+  "sku": "pof002_richmond_biser_belyy_zoloto_bordyur_20kh1_4_kerama_maratstsi",
+  "name": "Карандаш POF002 Бисер белый золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pof002-20x14x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш POF002 Бисер белый золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш POF002 Бисер белый золото глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0a8/400_400_1/0a80f1282fa49cb95ceecb7d16df4c12.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/0a8/400_400_1/0a80f1282fa49cb95ceecb7d16df4c12.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404680",
+  "sku": "pof003_richmond_biser_chernyy_serebro_bordyur_20kh1_4_kerama_maratstsi",
+  "name": "Карандаш POF003 Бисер черный серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци)",
+  "slug": "-pof003-20x14x12-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Карандаш",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Карандаш POF003 Бисер черный серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Карандаш) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Карандаш POF003 Бисер черный серебро глянцевый 20x1,4x1,2 Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b32/400_400_1/b321790c6d59d1037f78acd19ac8f4a8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b32/400_400_1/b321790c6d59d1037f78acd19ac8f4a8.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
