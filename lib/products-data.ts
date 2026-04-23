@@ -96464,6 +96464,160 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404382",
+  "sku": "vt_a48_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A48\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta48sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A48\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A48\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3da/400_400_1/3da8151237f0da0c2a45dda4c8ee23f7.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/3da/400_400_1/3da8151237f0da0c2a45dda4c8ee23f7.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404383",
+  "sku": "vt_a49_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A49\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta49sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A49\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A49\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1ae/400_400_1/1aed2d8aa2f99e68190dda3d748985d4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1ae/400_400_1/1aed2d8aa2f99e68190dda3d748985d4.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404384",
+  "sku": "vt_a50_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A50\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta50sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A50\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A50\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dfd/400_400_1/dfd0dd441d8a4d5a0bdf1a539659caf0.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dfd/400_400_1/dfd0dd441d8a4d5a0bdf1a539659caf0.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404385",
+  "sku": "vt_a51_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A51\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta51sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A51\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A51\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/722/400_400_1/722d8918a75284f49f977d2e078515c4.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/722/400_400_1/722d8918a75284f49f977d2e078515c4.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404386",
+  "sku": "vt_a52_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A52\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta52sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A52\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A52\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1f4/400_400_1/1f404f195202463ebc17db9f1b7d288d.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/1f4/400_400_1/1f404f195202463ebc17db9f1b7d288d.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404387",
+  "sku": "vt_a54_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A54\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta54sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A54\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A54\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a9e/400_400_1/a9e61f8ff36e531c3b5056431a5a8c00.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a9e/400_400_1/a9e61f8ff36e531c3b5056431a5a8c00.webp"
+  ],
+  "specs": [],
+  "is_new": true
+},
+  {
+  "id": "lincer-404388",
+  "sku": "vt_a55_sg2432_palasio_24_24_ornament_kerama_maratstsi",
+  "name": "Декор VT\\A55\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци)",
+  "slug": "-vta55sg2432-24x24x07-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Декор",
+  "product_type": "Вставка",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Декор VT\\A55\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Декор) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Декор VT\\A55\\SG2432 Паласио  24x24x0,7, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18d/400_400_1/18dc3a97e982875bc682e9654a030da8.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/18d/400_400_1/18dc3a97e982875bc682e9654a030da8.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
