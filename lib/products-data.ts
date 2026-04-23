@@ -96706,6 +96706,28 @@ export const products: Product[] = [
   ],
   "specs": [],
   "is_new": true
+},
+  {
+  "id": "lincer-404393",
+  "sku": "bda014r_bordyur_marso_rozovyy_obreznoy_30_12_kerama_maratstsi",
+  "name": "Бордюр BDA014R Марсо розовый матовый обрезной 30x12x1,3, Kerama Marazzi (Керама Марацци)",
+  "slug": "-bda014r-30x12x13-kerama-marazzi-",
+  "brand": "LINCER",
+  "collection": "Бордюр",
+  "product_type": "Керамогранит",
+  "format": "Не указан",
+  "color": "Ассорти",
+  "surface": "",
+  "material_type": "",
+  "application": "",
+  "description": "Купить Бордюр BDA014R Марсо розовый матовый обрезной 30x12x1,3, Kerama Marazzi (Керама Марацци) от бренда LINCER (коллекция Бордюр) по оптовой цене в Санкт-Петербурге. \n\n\n\nВ гипермаркете «Керамогранит Опт» вы можете заказать Бордюр BDA014R Марсо розовый матовый обрезной 30x12x1,3, Kerama Marazzi (Керама Марацци) с доставкой со склада в Янино по Санкт-Петербургу и Ленинградской области. Мы предлагаем только оригинальную продукцию LINCER напрямую от производителя. Для оптовых покупателей и строительных компаний действуют специальные условия.",
+  "price_retail": 0,
+  "main_image": "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/440/400_400_1/4401ae20cd60bd8b8d6e4013efca5d6b.webp",
+  "images": [
+    "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/440/400_400_1/4401ae20cd60bd8b8d6e4013efca5d6b.webp"
+  ],
+  "specs": [],
+  "is_new": true
 }
 ];
 
