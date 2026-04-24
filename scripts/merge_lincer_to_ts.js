@@ -74,7 +74,7 @@ function run() {
   
   if (startIndex !== -1 && arrayEndIndex !== -1) {
       const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
-      const blocks = content.split(/\},?\s*\{/);
+      const blocks = content.split(/\n  \{/);
       blocks.forEach(block => {
           const skuMatch = block.match(/"sku":\s*"([^"]*)"/);
           if (skuMatch) {
@@ -95,17 +95,12 @@ function run() {
   const cleanBlocks = [];
   if (startIndex !== -1) {
       const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
-      const blocks = content.split(/\},?\s*\{/);
+      const blocks = content.split(/\n  \{/);
       blocks.forEach((block, idx) => {
           let b = block.trim();
-          if (idx === 0) {
-              if (!b.endsWith('}')) b += '}';
-          } else if (idx === blocks.length - 1) {
-              if (!b.startsWith('{')) b = '{' + b;
-          } else {
-              if (!b.startsWith('{')) b = '{' + b;
-              if (!b.endsWith('}')) b += '}';
-          }
+          if (!b.startsWith('{')) b = '{' + b;
+          if (b.endsWith(',')) b = b.slice(0, -1);
+          
           if (b.includes('id: "lincer-') || b.includes('"id": "lincer-')) return;
           if (b.length < 10) return;
           cleanBlocks.push(b);
@@ -208,7 +203,8 @@ function run() {
     };
   });
 
-  const finalArrayContent = cleanBlocks.join(',\n  ') + (cleanBlocks.length > 0 ? ',\n  ' : '') + 
+  const finalArrayContent = cleanBlocks.filter(b => b.trim().length > 10).join(',\n  ') + 
+                            (cleanBlocks.length > 0 ? ',\n  ' : '') + 
                             lincerObjects.map(o => JSON.stringify(o, null, 2)).join(',\n  ');
 
   fs.writeFileSync(tsPath, header + '\n  ' + finalArrayContent + footer, 'utf8');

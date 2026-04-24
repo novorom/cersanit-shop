@@ -93,21 +93,18 @@ function run() {
   const footer = tsContent.substring(arrayEndIndex);
   const productsContent = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
 
-  // Use a more flexible split that handles both formatted and minified JSON-like objects
-  const blocks = productsContent.split(/\},?\s*\{/);
+  // Use a much safer split that only targets top-level objects
+  const blocks = productsContent.split(/\n  \{/).map(b => b.trim()).filter(b => b.length > 0);
   console.log(`Found ${blocks.length} product blocks to analyze.`);
 
   let updatedCount = 0;
   const updatedBlocks = blocks.map((block, idx) => {
-      let fullBlock = block.trim();
-      // Restore braces removed by split
-      if (idx === 0) {
-          if (!fullBlock.endsWith('}')) fullBlock += '}';
-      } else if (idx === blocks.length - 1) {
-          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
-      } else {
-          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
-          if (!fullBlock.endsWith('}')) fullBlock += '}';
+      let fullBlock = block;
+      if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
+      if (fullBlock.endsWith(',')) fullBlock = fullBlock.slice(0, -1);
+      if (!fullBlock.endsWith('}')) {
+          // If it doesn't end with }, it might be because of the split or it's the last one
+          // But our split is at the START of objects, so fullBlock should contain the whole object until the next \n {
       }
       
       const skuMatch = fullBlock.match(/"sku":\s*"([^"]*)"/);

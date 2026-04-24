@@ -97,19 +97,14 @@ function run() {
   const productsContent = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
 
   let updatedCount = 0;
-  const blocks = productsContent.split(/\},?\s*\{/);
+  // Use a much safer split that only targets top-level objects
+  const blocks = productsContent.split(/\n  \{/).map(b => b.trim()).filter(b => b.length > 0);
   console.log(`Found ${blocks.length} product blocks to analyze.`);
 
   const updatedBlocks = blocks.map((block, idx) => {
-      let fullBlock = block.trim();
-      if (idx === 0) {
-          if (!fullBlock.endsWith('}')) fullBlock += '}';
-      } else if (idx === blocks.length - 1) {
-          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
-      } else {
-          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
-          if (!fullBlock.endsWith('}')) fullBlock += '}';
-      }
+      let fullBlock = block;
+      if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
+      if (fullBlock.endsWith(',')) fullBlock = fullBlock.slice(0, -1);
       
       const skuMatch = fullBlock.match(/"sku":\s*"([^"]*)"/);
       const nameMatch = fullBlock.match(/"name":\s*"([^"]*)"/);
