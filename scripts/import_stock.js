@@ -7,11 +7,28 @@ function run() {
   const tsPath = path.join(__dirname, '../lib/products-data.ts');
   let tsContent = fs.readFileSync(tsPath, 'utf8');
 
-  const stockPath = "/Users/r/Downloads/Копия ОСТАТКИ Янино.xls";
-  if (!fs.existsSync(stockPath)) {
-    console.error("Stock file not found in Downloads");
+  // Try multiple potential paths for the stock file
+  const potentialPaths = [
+    path.join(__dirname, '../Копия ОСТАТКИ Янино.xls'),
+    "/Users/r/Downloads/Копия ОСТАТКИ Янино.xls",
+    path.join(__dirname, '../ОСТАТКИ ЯНИНО.xls'),
+    "/Users/r/Downloads/ОСТАТКИ ЯНИНО.xls"
+  ];
+
+  let stockPath = "";
+  for (const p of potentialPaths) {
+      if (fs.existsSync(p)) {
+          stockPath = p;
+          break;
+      }
+  }
+
+  if (!stockPath) {
+    console.error("Stock file not found in potential locations");
     return;
   }
+
+  console.log(`Using stock file: ${stockPath}`);
 
   const workbook = xlsx.readFile(stockPath);
   const stockMapBySku = new Map();
@@ -29,9 +46,15 @@ function run() {
     const row = rows[i];
     if (!row) continue;
     
-    const skuIdxTemp = row.findIndex(cell => String(cell).toLowerCase() === 'артикул');
-    const nameIdxTemp = row.findIndex(cell => String(cell).toLowerCase().includes('номенклатура') || String(cell).toLowerCase() === 'название');
-    const stockIdxTemp = row.findIndex(cell => String(cell).toLowerCase().includes('доступно') || String(cell).toLowerCase().includes('свободный остаток'));
+    const skuIdxTemp = row.findIndex(cell => String(cell || "").toLowerCase().includes('артикул'));
+    const nameIdxTemp = row.findIndex(cell => {
+        const c = String(cell || "").toLowerCase();
+        return c.includes('номенклатура') || c === 'название' || c.includes('наименование');
+    });
+    const stockIdxTemp = row.findIndex(cell => {
+        const c = String(cell || "").toLowerCase();
+        return c.includes('доступно') || c.includes('свободный остаток') || c.includes('остаток');
+    });
     
     if (stockIdxTemp !== -1 && (skuIdxTemp !== -1 || nameIdxTemp !== -1)) {
         skuIdx = skuIdxTemp;
@@ -51,14 +74,15 @@ function run() {
 
   for (let i = startRow; i < rows.length; i++) {
     const row = rows[i];
-    if (!row) continue;
+    if (!row || row.length < Math.max(skuIdx, nameIdx, stockIdx)) continue;
     const sku = skuIdx !== -1 ? String(row[skuIdx] || "").trim() : "";
     const rawName = nameIdx !== -1 ? String(row[nameIdx] || "").trim() : "";
-    const stock = parseFloat(String(row[stockIdx] || "0").replace(',', '.'));
+    const stockVal = String(row[stockIdx] || "0").replace(',', '.').replace(/[^\d.]/g, '');
+    const stock = parseFloat(stockVal);
     
     if (!isNaN(stock) && stock > 0) {
-        if (sku) stockMapBySku.set(sku, stock);
-        if (rawName) stockMapByName.set(normalizeName(rawName), stock);
+        if (sku && sku !== "undefined") stockMapBySku.set(sku, stock);
+        if (rawName && rawName !== "undefined") stockMapByName.set(normalizeName(rawName), stock);
     }
   }
 
@@ -73,11 +97,19 @@ function run() {
   const productsContent = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
 
   let updatedCount = 0;
-  const blocks = productsContent.split(/\n\s*\},?\s*\{/);
-  const updatedBlocks = blocks.map(block => {
+  const blocks = productsContent.split(/\},?\s*\{/);
+  console.log(`Found ${blocks.length} product blocks to analyze.`);
+
+  const updatedBlocks = blocks.map((block, idx) => {
       let fullBlock = block.trim();
-      if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
-      if (!fullBlock.endsWith('}')) fullBlock = fullBlock + '}';
+      if (idx === 0) {
+          if (!fullBlock.endsWith('}')) fullBlock += '}';
+      } else if (idx === blocks.length - 1) {
+          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
+      } else {
+          if (!fullBlock.startsWith('{')) fullBlock = '{' + fullBlock;
+          if (!fullBlock.endsWith('}')) fullBlock += '}';
+      }
       
       const skuMatch = fullBlock.match(/"sku":\s*"([^"]*)"/);
       const nameMatch = fullBlock.match(/"name":\s*"([^"]*)"/);
@@ -107,8 +139,10 @@ function run() {
       return fullBlock;
   });
 
-  fs.writeFileSync(tsPath, header + '\n  ' + updatedBlocks.join(',\n  ') + footer, 'utf8');
+  const newContent = header + '\n  ' + updatedBlocks.join(',\n  ') + footer;
+  fs.writeFileSync(tsPath, newContent, 'utf8');
   console.log(`Successfully updated stocks for ${updatedCount} products.`);
 }
 
 run();
+

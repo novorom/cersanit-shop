@@ -4,6 +4,28 @@ const xlsx = require('xlsx');
 
 const FACTORY_FILES = [
   {
+    path: "/Users/r/cersanit-shop/ИМ_2D_заливочный_файл_Cersanit_22_09_2025_2.xlsx",
+    brand: "Cersanit",
+    sku: "Артикул",
+    name: "Наименование для сайта",
+    collection: "Коллекция",
+    surface: "Поверхность",
+    color: "Цвет плитки",
+    width: "Ширина плитки (см)",
+    height: "Длина плитки (см)",
+    box_pcs: "Количество изделий в коробке",
+    box_m2: "М2 в одной коробке",
+    thickness: "Толщина плитки (см)",
+    more_specs: {
+      "фактура": "Фактура поверхности",
+      "материал": "Материал",
+      "ректификат": "Ректификат",
+      "морозостойкость": "Морозостойкость",
+      "износостойкость": "Класс износостойкости",
+      "скольжение": "Класс устойчивости к скольжению"
+    }
+  },
+  {
     path: "/Users/r/Downloads/Загрузочные файлы от заводов/Azori загрузочный 25.02.26.xlsx",
     brand: "Azori",
     sku: "ID элемента",
@@ -67,17 +89,17 @@ const FACTORY_FILES = [
 
 function normalizeName(name) {
   if (!name) return "";
-  return name.toLowerCase()
-    .replace(/\(.*?\)/g, '') // Remove parentheses content
-    .replace(/[,\.\-\*]/g, ' ') // Remove common delimiters
-    .replace(/[^a-zа-я0-9\s]/g, '') // Remove other special chars
+  return String(name).toLowerCase()
+    .replace(/\(.*?\)/g, '') 
+    .replace(/[,\.\-\*\/]/g, ' ') 
+    .replace(/[^a-zа-я0-9\s]/g, '') 
     .replace(/\s+/g, ' ')
     .trim();
 }
 
 function loadFactoryData() {
   const masterMap = new Map();
-  const nameList = []; // For fuzzy/partial matching
+  const nameList = []; 
   console.log("Loading factory data source of truth...");
 
   for (const file of FACTORY_FILES) {
@@ -104,7 +126,7 @@ function loadFactoryData() {
         format: file.format ? row[file.format] : (row[file.width] && row[file.height] ? `${row[file.width]}x${row[file.height]}` : null),
         brand: file.brand,
         box_pcs: row[file.box_pcs] || null,
-        box_m2: row[file.box_m2] || null,
+        box_m2: row[row[file.box_m2]] || row[file.box_m2] || null, // Handle potential key overlap
         thickness: row[file.thickness] || null,
         more: {},
         normName: norm
@@ -128,4 +150,3 @@ function loadFactoryData() {
 
 module.exports = { loadFactoryData, normalizeName };
 
-module.exports = { loadFactoryData, normalizeName };

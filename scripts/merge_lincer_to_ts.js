@@ -67,8 +67,6 @@ function run() {
   }
   const lincerProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-  // Use a map to keep track of prices/stocks if we have them in the current TS
-  // to avoid losing them when re-merging from JSON
   const existingDataMap = new Map();
   const arrayStartText = 'export const products: Product[] = [';
   const startIndex = tsContent.indexOf(arrayStartText);
@@ -76,7 +74,7 @@ function run() {
   
   if (startIndex !== -1 && arrayEndIndex !== -1) {
       const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
-      const blocks = content.split(/\n\s*\},?\s*\{/);
+      const blocks = content.split(/\},?\s*\{/);
       blocks.forEach(block => {
           const skuMatch = block.match(/"sku":\s*"([^"]*)"/);
           if (skuMatch) {
@@ -97,11 +95,17 @@ function run() {
   const cleanBlocks = [];
   if (startIndex !== -1) {
       const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
-      const blocks = content.split(/\n\s*\},?\s*\{/);
-      blocks.forEach(block => {
+      const blocks = content.split(/\},?\s*\{/);
+      blocks.forEach((block, idx) => {
           let b = block.trim();
-          if (!b.startsWith('{')) b = '{' + b;
-          if (!b.endsWith('}')) b = b + '}';
+          if (idx === 0) {
+              if (!b.endsWith('}')) b += '}';
+          } else if (idx === blocks.length - 1) {
+              if (!b.startsWith('{')) b = '{' + b;
+          } else {
+              if (!b.startsWith('{')) b = '{' + b;
+              if (!b.endsWith('}')) b += '}';
+          }
           if (b.includes('id: "lincer-') || b.includes('"id": "lincer-')) return;
           if (b.length < 10) return;
           cleanBlocks.push(b);
@@ -109,17 +113,15 @@ function run() {
   }
 
   const { loadFactoryData, normalizeName } = require('./factory_truth');
-  const { masterMap: factoryMap, nameList, normalizeName: normFunc } = loadFactoryData();
+  const { masterMap: factoryMap, nameList } = loadFactoryData();
 
   const lincerObjects = lincerProducts.map((p, index) => {
     let name = p.name.trim();
     name = name.replace(/^\d+\s+/, '');
     
-    // Check factory source of truth
     const norm = normalizeName(name);
     let factory = factoryMap.get(norm);
     
-    // Partial matching if exact fails
     if (!factory) {
         factory = nameList.find(f => norm.includes(f.normName) || f.normName.includes(norm));
     }
@@ -158,7 +160,6 @@ function run() {
         }
     }
 
-    // Ensure first letter cap for collection if it's still raw
     if (collection && collection !== "Base") {
         collection = collection.trim();
         collection = collection.charAt(0).toUpperCase() + collection.slice(1).toLowerCase();
@@ -171,7 +172,6 @@ function run() {
       });
     }
 
-    // Add factory specs
     if (factory) {
         if (factory.box_pcs) specs.push({ key: "штук в упаковке", label: String(factory.box_pcs) });
         if (factory.box_m2) specs.push({ key: "кв.м в упаковке", label: String(factory.box_m2) });
@@ -214,5 +214,6 @@ function run() {
   fs.writeFileSync(tsPath, header + '\n  ' + finalArrayContent + footer, 'utf8');
   console.log(`Successfully fixed brands and collections for ${lincerObjects.length} products.`);
 }
+
 
 run();
