@@ -109,15 +109,20 @@ function run() {
   }
 
   const { loadFactoryData, normalizeName } = require('./factory_truth');
-  const factoryMap = loadFactoryData();
+  const { masterMap: factoryMap, nameList, normalizeName: normFunc } = loadFactoryData();
 
   const lincerObjects = lincerProducts.map((p, index) => {
     let name = p.name.trim();
     name = name.replace(/^\d+\s+/, '');
     
-    // Check factory source of truth first
+    // Check factory source of truth
     const norm = normalizeName(name);
-    const factory = factoryMap.get(norm);
+    let factory = factoryMap.get(norm);
+    
+    // Partial matching if exact fails
+    if (!factory) {
+        factory = nameList.find(f => norm.includes(f.normName) || f.normName.includes(norm));
+    }
     
     let brand = factory ? factory.brand : extractBrand(name, p.brand);
     let collection = factory ? factory.collection : p.collection;

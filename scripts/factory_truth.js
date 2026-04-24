@@ -68,13 +68,16 @@ const FACTORY_FILES = [
 function normalizeName(name) {
   if (!name) return "";
   return name.toLowerCase()
-    .replace(/[^a-zа-я0-9]/g, ' ')
+    .replace(/\(.*?\)/g, '') // Remove parentheses content
+    .replace(/[,\.\-\*]/g, ' ') // Remove common delimiters
+    .replace(/[^a-zа-я0-9\s]/g, '') // Remove other special chars
     .replace(/\s+/g, ' ')
     .trim();
 }
 
 function loadFactoryData() {
   const masterMap = new Map();
+  const nameList = []; // For fuzzy/partial matching
   console.log("Loading factory data source of truth...");
 
   for (const file of FACTORY_FILES) {
@@ -103,7 +106,8 @@ function loadFactoryData() {
         box_pcs: row[file.box_pcs] || null,
         box_m2: row[file.box_m2] || null,
         thickness: row[file.thickness] || null,
-        more: {}
+        more: {},
+        normName: norm
       };
 
       if (file.more_specs) {
@@ -113,13 +117,15 @@ function loadFactoryData() {
       }
 
       masterMap.set(norm, entry);
+      nameList.push(entry);
       
-      // Also try name without brand suffix
       const shortName = rawName.split(',')[0].trim();
       masterMap.set(normalizeName(shortName), entry);
     });
   }
-  return masterMap;
+  return { masterMap, nameList, normalizeName };
 }
+
+module.exports = { loadFactoryData, normalizeName };
 
 module.exports = { loadFactoryData, normalizeName };
