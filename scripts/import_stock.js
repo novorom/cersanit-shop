@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const xlsx = require('xlsx');
+const { normalizeName } = require('./factory_truth');
 
 function run() {
   const tsPath = path.join(__dirname, '../lib/products-data.ts');
@@ -13,12 +14,14 @@ function run() {
   }
 
   const workbook = xlsx.readFile(stockPath);
-  const stockMap = new Map();
+  const stockMapBySku = new Map();
+  const stockMapByName = new Map();
 
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   const rows = xlsx.utils.sheet_to_json(sheet, { header: 1 });
   
   let skuIdx = -1;
+  let nameIdx = -1;
   let stockIdx = -1;
   let startRow = -1;
 
@@ -27,10 +30,12 @@ function run() {
     if (!row) continue;
     
     const skuIdxTemp = row.findIndex(cell => String(cell).toLowerCase() === 'артикул');
+    const nameIdxTemp = row.findIndex(cell => String(cell).toLowerCase().includes('номенклатура') || String(cell).toLowerCase() === 'название');
     const stockIdxTemp = row.findIndex(cell => String(cell).toLowerCase().includes('доступно') || String(cell).toLowerCase().includes('свободный остаток'));
     
-    if (skuIdxTemp !== -1 && stockIdxTemp !== -1) {
+    if (stockIdxTemp !== -1 && (skuIdxTemp !== -1 || nameIdxTemp !== -1)) {
         skuIdx = skuIdxTemp;
+        nameIdx = nameIdxTemp;
         stockIdx = stockIdxTemp;
         startRow = i + 1;
         break;
@@ -42,22 +47,23 @@ function run() {
     return;
   }
 
-  console.log(`Found stock headers at row ${startRow}. SKU index: ${skuIdx}, Stock index: ${stockIdx}`);
+  console.log(`Found stock headers at row ${startRow}. SKU: ${skuIdx}, Name: ${nameIdx}, Stock: ${stockIdx}`);
 
   for (let i = startRow; i < rows.length; i++) {
     const row = rows[i];
     if (!row) continue;
-    const sku = String(row[skuIdx] || "").trim();
-    let stock = parseFloat(row[stockIdx]);
+    const sku = skuIdx !== -1 ? String(row[skuIdx] || "").trim() : "";
+    const rawName = nameIdx !== -1 ? String(row[nameIdx] || "").trim() : "";
+    const stock = parseFloat(String(row[stockIdx] || "0").replace(',', '.'));
     
-    if (sku && !isNaN(stock)) {
-        stockMap.set(sku, stock);
+    if (!isNaN(stock) && stock > 0) {
+        if (sku) stockMapBySku.set(sku, stock);
+        if (rawName) stockMapByName.set(normalizeName(rawName), stock);
     }
   }
 
-  console.log(`Collected stock for ${stockMap.size} unique SKUs.`);
+  console.log(`Collected stocks: ${stockMapBySku.size} by SKU, ${stockMapByName.size} by Name.`);
 
-  // Update TS file
   const arrayStartText = 'export const products: Product[] = [';
   const startIndex = tsContent.indexOf(arrayStartText);
   const arrayEndIndex = tsContent.lastIndexOf('\n];');
@@ -74,30 +80,35 @@ function run() {
       if (!fullBlock.endsWith('}')) fullBlock = fullBlock + '}';
       
       const skuMatch = fullBlock.match(/"sku":\s*"([^"]*)"/);
-      if (skuMatch) {
-          const sku = skuMatch[1];
-          if (stockMap.has(sku)) {
-              const newStock = stockMap.get(sku);
-              // Update stock_yanino
-              const updatedBlock = fullBlock.replace(/"stock_yanino":\s*\d+(\.\d+)?/g, `"stock_yanino": ${newStock}`)
-                                           .replace(/stock_yanino:\s*\d+(\.\d+)?/g, `stock_yanino: ${newStock}`);
-              updatedCount++;
-              return updatedBlock;
+      const nameMatch = fullBlock.match(/"name":\s*"([^"]*)"/);
+      
+      let newStock = null;
+      if (skuMatch && stockMapBySku.has(skuMatch[1])) {
+          newStock = stockMapBySku.get(skuMatch[1]);
+      } else if (nameMatch) {
+          const normName = normalizeName(nameMatch[1]);
+          if (stockMapByName.has(normName)) {
+              newStock = stockMapByName.get(normName);
           } else {
-              // If not in stock file, set to 0? 
-              // Usually safer to keep as is or set to 0 if we want "real-time" accuracy.
-              // Let's keep it as is unless it's a Lincer product we're refreshing.
-              return fullBlock.replace(/"stock_yanino":\s*\d+(\.\d+)?/g, `"stock_yanino": 0`)
-                               .replace(/stock_yanino:\s*\d+(\.\d+)?/g, `stock_yanino: 0`);
+              for (const [pName, pStock] of stockMapByName.entries()) {
+                  if (normName.includes(pName) || pName.includes(normName)) {
+                      newStock = pStock;
+                      break;
+                  }
+              }
           }
+      }
+
+      if (newStock !== null) {
+          updatedCount++;
+          return fullBlock.replace(/"stock_yanino":\s*[\d.]+/g, `"stock_yanino": ${newStock}`)
+                          .replace(/stock_yanino:\s*[\d.]+/g, `stock_yanino: ${newStock}`);
       }
       return fullBlock;
   });
 
-  const finalArrayContent = updatedBlocks.join(',\n  ');
-  fs.writeFileSync(tsPath, header + '\n  ' + finalArrayContent + footer, 'utf8');
-
-  console.log(`Successfully updated stock for ${updatedCount} products.`);
+  fs.writeFileSync(tsPath, header + '\n  ' + updatedBlocks.join(',\n  ') + footer, 'utf8');
+  console.log(`Successfully updated stocks for ${updatedCount} products.`);
 }
 
 run();
