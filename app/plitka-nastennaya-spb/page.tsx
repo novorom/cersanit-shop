@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Настенная плитка Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Настенная керамическая плитка Cersanit в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+  title: "Настенная плитка купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Настенная керамическая плитка в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-nastennaya-spb` },
   openGraph: {
-    title: "Настенная плитка Cersanit в Санкт-Петербурге",
-    description: "Настенная керамическая плитка Cersanit в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+    title: "Настенная плитка в Санкт-Петербурге",
+    description: "Настенная керамическая плитка в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
     url: `${SITE_URL}/plitka-nastennaya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -64,9 +64,9 @@ export default function LandingPage() {
 
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Настенная плитка Cersanit в Санкт-Петербурге</h1>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Настенная плитка в Санкт-Петербурге</h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
-            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер Cersanit в Санкт-Петербурге.
+            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер ведущих брендов в Санкт-Петербурге.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">
@@ -103,7 +103,7 @@ export default function LandingPage() {
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить настенную плитку в СПб</h2>
-            <p className="text-foreground/80 leading-relaxed">24 позиции настенной плитки Cersanit в наличии на складе в Янино. Плюс более 150 универсальных коллекций — подходят и для стен. Самовывоз бесплатный, доставка по СПб и ЛО от 1-2 дней.</p>
+            <p className="text-foreground/80 leading-relaxed">24 позиции настенной плитки в наличии на складе в Янино. Плюс более 150 универсальных коллекций — подходят и для стен. Самовывоз бесплатный, доставка по СПб и ЛО от 1-2 дней.</p>
           </div>
         </div>
       </section>

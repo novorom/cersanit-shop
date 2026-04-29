@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\SeoController;
 
+// Static & Landing Pages
+Route::get('/wholesale', function () {
+    return view('wholesale.index');
+})->name('wholesale.index');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,15 +34,12 @@ Route::get('/google-shopping.xml', [SeoController::class, 'googleShopping'])->na
 Route::get('/ai-feed.xml', [SeoController::class, 'aiFeed'])->name('seo.ai-feed');
 
 
-Route::get('/', function (ReportParserService $reportParserService) {
-    $allProducts = collect($reportParserService->getProducts());
-
-    // Фильтруем товары, чтобы в хитах были только полноценные карточки с артикулом и изображением
-    $validProducts = $allProducts->filter(function ($product) {
-        return !empty($product->sku) && !empty($product->main_image);
-    });
-
-    $bestsellers = $validProducts->shuffle()->take(6);
+Route::get('/', function () {
+    // Получаем хиты из базы данных (Lincer)
+    $bestsellers = \App\Models\Product::where('is_active', true)
+        ->inRandomOrder()
+        ->take(6)
+        ->get();
 
     return view('homepage', [
         'bestsellers' => $bestsellers

@@ -8,8 +8,8 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
 
-// Schedule monitoring of cersanit.ru - run every 2 weeks to check for new collections/products
-Schedule::command('monitor:cersanit --check-collections')
+// Schedule monitoring of keramogranit-opt.ru - run every 2 weeks to check for new collections/products
+Schedule::command('monitor:lincer --check-collections')
     ->twiceMonthly(1, 15) // Run on 1st and 15th of each month
     ->at('03:00') // Run at 3 AM to avoid peak hours
     ->withoutOverlapping()

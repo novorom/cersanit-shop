@@ -2,15 +2,20 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Cersanit Shop — Официальный дилер",
-  "image": "{{ asset('images/logo.png') }}",
-  "@id": "{{ route('home') }}",
-  "url": "{{ route('home') }}",
-  "telephone": "+7 (905) 205-09-00",
+  "name": "Керамогранит Опт — Оптовый гипермаркет плитки",
+  "url": "{{ url('/') }}",
+  "logo": "{{ asset('images/logo.png') }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+7-812-441-31-88",
+    "contactType": "sales",
+    "areaServed": "RU",
+    "availableLanguage": "Russian"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "ул. Шоссейная, 48",
-    "addressLocality": "Янино-1",
+    "streetAddress": "ул. Оптиков, 4",
+    "addressLocality": "Санкт-Петербург",
     "addressRegion": "Ленинградская область",
     "postalCode": "188689",
     "addressCountry": "RU"
@@ -31,7 +36,7 @@
         "Friday"
       ],
       "opens": "09:00",
-      "closes: "18:00"
+      "closes": "18:00"
     },
     {
         "@type": "OpeningHoursSpecification",
@@ -42,9 +47,6 @@
         "opens": "10:00",
         "closes": "16:00"
       }
-  ],
-  "sameAs": [
-    "https://vk.com/cersanit_yanino"
   ]
 }
 </script>

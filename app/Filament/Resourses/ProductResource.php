@@ -17,7 +17,7 @@ class ProductResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-squares-2x2';
     
-    protected static ?string $navigationLabel = 'Товары (Cersanit)';
+    protected static ?string $navigationLabel = 'Товары (Lincer)';
 
     public static function form(Form $form): Form
     {
@@ -36,7 +36,7 @@ class ProductResource extends Resource
                             ->maxLength(255),
                         Forms\Components\TextInput::make('brand')
                             ->label('Бренд')
-                            ->default('Cersanit')
+                            ->default('Lincer')
                             ->maxLength(255),
                         Forms\Components\TextInput::make('collection')
                             ->label('Коллекция')
@@ -155,7 +155,7 @@ class ProductResource extends Resource
                 Tables\Filters\SelectFilter::make('brand')
                     ->label('Бренд')
                     ->options([
-                        'Cersanit' => 'Cersanit',
+                        'Lincer' => 'Lincer',
                     ]),
                 Tables\Filters\SelectFilter::make('collection')
                     ->label('Коллекция')

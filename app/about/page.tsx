@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ExternalLink, Award, MapPin, Package } from 'lucide-react'
 
-const SITE_URL = 'https://cersanit-spb.ru'
+const SITE_URL = 'https://keramogranit-opt.ru'
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -13,14 +13,14 @@ const breadcrumbSchema = {
 }
 
 export const metadata = {
-  title: 'О компании Дом Плитки — официальный дилер Cersanit в СПб с 2011 года',
-  description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге — уже 15 лет. Официальный дилер Cersanit. Склад и шоурум в Янино-1. Телефон: +7 (905) 205-09-00.',
-  alternates: { canonical: 'https://cersanit-spb.ru/about' },
+  title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб с 2011 года',
+  description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Официальный дилер Lincer, Kerama Marazzi, Lincer. Склад в Янино-1. Телефон: +7 (905) 205-09-00.',
+  alternates: { canonical: 'https://keramogranit-opt.ru/about' },
   openGraph: {
-    title: 'О компании Дом Плитки — официальный дилер Cersanit в СПб',
-    description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге — уже 15 лет. Склад и шоурум в Янино.',
-    url: 'https://cersanit-spb.ru/about',
-    siteName: 'Дом Плитки CERSANIT',
+    title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб',
+    description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Склад и шоурум в Янино.',
+    url: 'https://keramogranit-opt.ru/about',
+    siteName: 'Керамогранит Опт',
     locale: 'ru_RU',
     type: 'website',
   },
@@ -29,7 +29,7 @@ export const metadata = {
 export default function AboutPage() {
   const jsonLd = breadcrumbSchema
   const manufacturers = [
-    { name: 'Cersanit', country: 'Польша' },
+    { name: 'Lincer', country: 'Польша' },
     { name: 'Шахтинская плитка (GraciaCeramica)', country: 'Россия' },
     { name: 'Нефрит-керамика', country: 'Россия' },
     { name: 'Квадро-Декор', country: 'Россия' },
@@ -63,7 +63,7 @@ export default function AboutPage() {
               О нашей компании
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              С 2011 года (15 лет) на рынке керамической плитки и керамогранита. Мы помогаем тысячам клиентов найти идеальное решение для их проектов. Являясь официальным дилером Cersanit в Санкт-Петербурге, мы обеспечиваем прямые поставки продукции с заводов, гарантируя оригинальное качество и конкурентные цены.
+              С 2011 года на рынке керамической плитки и керамогранита. Мы помогаем тысячам клиентов найти идеальное решение для их проектов. Являясь мультибрендовым гипермаркетом Керамогранит Опт в Санкт-Петербурге, мы обеспечиваем прямые поставки продукции с ведущих заводов (Lincer, Kerama Marazzi, Lincer, Idalgo), гарантируя оригинальное качество и конкурентные цены.
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
         <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">200+</div>
+              <div className="text-2xl font-bold text-primary mb-2">2000+</div>
               <p className="text-sm text-muted-foreground">Моделей плитки в наличии на складе</p>
             </div>
             <div className="text-center">
@@ -184,10 +184,10 @@ export default function AboutPage() {
       {/* Detail Content Section */}
       <section className="py-16 lg:py-24 bg-muted/20">
         <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают официального дилера Cersanit?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают гипермаркет Керамогранит Опт?</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p>
-              В нашем интернет-магазине представлен полный каталог продукции Cersanit: от классической керамической плитки для ванной до современных крупноформатных коллекций керамогранита 60х120 см. Мы тщательно отбираем коллекции, ориентируясь на актуальные тренды дизайна интерьеров 2025-2026 годов.
+              В нашем интернет-магазине представлен полный каталог продукции ведущих брендов: от классической керамической плитки Lincer и Kerama Marazzi до современных коллекций Lincer и Idalgo. Мы тщательно отбираем коллекции, ориентируясь на актуальные тренды дизайна интерьеров 2025-2026 годов.
             </p>
             <p>
               Наличие собственного склада в Янино-1 позволяет нам поддерживать постоянный запас популярных позиций. Это значит, что вам не нужно ждать доставки месяц — большинство заказов готовы к отгрузке или самовывозу уже на следующий рабочий день. На складе работает бригада профессиональных грузчиков, которые бесплатно загрузят ваш товар.
@@ -234,7 +234,7 @@ export default function AboutPage() {
                 width="100%"
                 height="400"
                 frameBorder="0"
-                title="Склад Дом Плитки CERSANIT в Янино — Яндекс Карты"
+                title="Склад гипермаркета Керамогранит Опт в Янино — Яндекс Карты"
                 allowFullScreen
                 loading="lazy"
               />

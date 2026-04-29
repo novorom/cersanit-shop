@@ -14,12 +14,12 @@ function optimizeImage(url: string | undefined | null, width = 800): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.keramogranit-opt.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.keramogranit-opt.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.keramogranit-opt.ru/upload/uf/b22/DEL232.jpg",
 }
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -43,16 +43,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { collection } = await params
   const collectionName = findCollectionName(collection)
-  if (!collectionName) return { title: "Коллекция не найдена | Дом Плитки" }
+  if (!collectionName) return { title: "Коллекция не найдена | Керамогранит Опт" }
 
   const seo = getCollectionSeo(collectionName)
   const collectionProducts = getCollectionProducts(collectionName)
   const prices = collectionProducts.map(p => p.price_retail).filter(Boolean)
   const priceFrom = prices.length ? Math.min(...prices) : null
 
-  const title = seo?.title || `Плитка ${collectionName} Cersanit купить в Санкт-Петербурге | Дом Плитки`
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
+  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Керамогранит Опт`
   const description = seo?.description ||
-    `Коллекция ${collectionName} Cersanit — ${collectionProducts.length} товаров в наличии на складе Янино.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
+    `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в наличии на складе.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
 
   const firstImage = collectionProducts[0]?.main_image || collectionProducts[0]?.collection_image
 
@@ -70,7 +71,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
       title,
       description,
       url: `${SITE_URL}/collections/${collection}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: firstImage ? [{ url: firstImage, alt: collectionName }] : [],
@@ -92,7 +93,7 @@ function findCollectionName(slug: string): string | undefined {
 
 function getCollectionProducts(collectionName: string) {
   return products.filter(
-    (p) => p.collection === collectionName && p.slug && p.name && p.price_retail > 0
+    (p) => p.collection?.toLowerCase() === collectionName.toLowerCase() && p.slug && p.name
   )
 }
 
@@ -166,12 +167,12 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const formats = [...new Set(collectionProducts.map(p => p.format).filter(Boolean))]
   const designs = [...new Set(collectionProducts.map(p => p.design).filter(Boolean))]
 
-  // Schema.org ItemList
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Коллекция ${collectionName} Cersanit`,
-    description: seo?.about || `Коллекция ${collectionName} от Cersanit в наличии в Санкт-Петербурге`,
+    name: `Коллекция ${collectionName} ${brand}`,
+    description: seo?.about || `Коллекция ${collectionName} от ${brand} в наличии в Санкт-Петербурге`,
     url: `${SITE_URL}/collections/${collection}`,
     numberOfItems: collectionProducts.length,
     itemListElement: collectionProducts.slice(0, 10).map((p, i) => ({
@@ -210,7 +211,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       {
         "@type": "Question",
         name: `Плитка коллекции ${collectionName} есть в наличии?`,
-        acceptedAnswer: { "@type": "Answer", text: `Да, коллекция ${collectionName} от Cersanit есть в наличии на складе в Янино. Актуальные остатки уточняйте по телефону +7 (905) 205-09-00.` },
+        acceptedAnswer: { "@type": "Answer", text: `Да, коллекция ${collectionName} от ${brand} есть в наличии на складе. Актуальные остатки уточняйте по телефону +7 (905) 205-09-00.` },
       },
       {
         "@type": "Question",
@@ -272,7 +273,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           <h1 className="text-3xl lg:text-4xl font-bold text-white text-balance drop-shadow">
             {seo?.title
               ? seo.title.replace(" купить в СПб", "").replace(" купить в Санкт-Петербурге", "")
-              : `Коллекция ${collectionName} Cersanit`}
+              : `Коллекция ${collectionName} ${brand}`}
           </h1>
           <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-white/80 text-sm">
             <span>{collectionProducts.length} позиций в наличии</span>
@@ -297,7 +298,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           <h2 className="text-2xl font-bold text-foreground mb-2">
             {collectionName} — {collectionProducts.length} позиций
           </h2>
-          <p className="text-muted-foreground mb-8">Все товары в наличии на складе Янино, Ленинградская обл.</p>
+          <p className="text-muted-foreground mb-8">Все товары в наличии на складе в Санкт-Петербурге.</p>
           {collectionProducts.length > 0 ? (
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {collectionProducts.map((product, i) => (
@@ -342,17 +343,23 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
         <div className="py-12 lg:py-16 bg-muted/30">
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">
-              Коллекция {collectionName} Cersanit
+              О коллекции {collectionName} {brand}
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                Коллекция {collectionName} — высококачественная продукция польского производителя Cersanit.
-                Все товары имеют сертификаты качества и соответствуют российским стандартам.
-                {priceFrom && ` Цены от ${priceFrom.toLocaleString("ru-RU")} до ${priceTo?.toLocaleString("ru-RU")} ₽/м².`}
+                Коллекция {collectionName} от известного производителя {brand} — это сочетание современного дизайна и безупречного качества. 
+                В серии представлено {collectionProducts.length} позиций, включая {designs.length > 0 ? `дизайны «${designs.join("», «")}»` : "различные декоративные решения"}.
               </p>
               <p>
-                В наличии на складе в Янино-1 (15–20 мин от КАД). Самовывоз бесплатный.
-                Доставка по СПб и ЛО 1–2 рабочих дня. Для консультации звоните: {PHONE}.
+                Плитка и керамогранит {collectionName} доступны в форматах {formats.join(", ")} см, что позволяет подобрать идеальный вариант для любого помещения — от уютной ванной до просторной гостиной. 
+                Вся продукция сертифицирована, отличается высокой износостойкостью и долговечностью.
+              </p>
+              <p>
+                В гипермаркете «Керамогранит Опт» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}. 
+                Товары в наличии на нашем собственном складе в Янино-1. Мы обеспечиваем быструю отгрузку и доставку по Санкт-Петербургу и Ленинградской области в течение 1–2 рабочих дней.
+              </p>
+              <p>
+                Нужна помощь в расчете или консультация? Звоните нам по телефону {PHONE} или пишите в Telegram. Мы поможем создать интерьер вашей мечты!
               </p>
             </div>
           </div>

@@ -6,7 +6,7 @@ import { getCollectionSeo } from "@/lib/collection-seo"
 import { ProductPageClient } from "./product-client"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export async function generateStaticParams() {
   return products
@@ -23,12 +23,12 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return { title: "Товар не найден | Дом Плитки CERSANIT" }
+    return { title: "Товар не найден | Керамогранит Опт" }
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
   const priceUnit = isUnit ? "₽/шт" : "₽/м²"
-  const title = `${product.name} — купить в СПб ${product.price_retail} ${priceUnit}`
+  const title = `${product.name} купить оптом и в розницу в СПб — цена ${product.price_retail} ${priceUnit}`
 
   // Уникальное описание: комбинируем характеристики + SEO текст коллекции
   const collectionSeo = product.collection ? getCollectionSeo(product.collection) : null
@@ -36,12 +36,12 @@ export async function generateMetadata({
     ? ` ${collectionSeo.application.slice(0, 120)}...`
     : ""
   const description =
-    `Купить ${product.name} в Санкт-Петербурге. Цена ${product.price_retail} ${priceUnit}.` +
+    `Купить ${product.name} в Санкт-Петербурге оптом и в розницу. Актуальная цена ${product.price_retail} ${priceUnit}.` +
     `${product.surface ? ` Поверхность: ${product.surface}.` : ""}` +
     `${product.color ? ` Цвет: ${product.color}.` : ""}` +
     `${product.format ? ` Формат ${product.format} см.` : ""}` +
     `${appText}` +
-    ` Склад Янино, доставка по СПб и ЛО от 1 дня. Артикул: ${product.sku}.`
+    ` Официальный дилер, склад в Янино, доставка по СПб и ЛО от 1 дня. Артикул: ${product.sku}.`
 
   return {
     title,
@@ -51,7 +51,7 @@ export async function generateMetadata({
       title,
       description: description.slice(0, 200),
       url: `${SITE_URL}/catalog/${product.slug}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: product.main_image
@@ -98,10 +98,10 @@ export default async function ProductPage({
     name: product.name,
     description: collectionSeo?.about
       ? `${collectionSeo.about} ${collectionSeo.application}`
-      : `${product.name} — керамическая плитка и керамогранит Cersanit. Купить в Санкт-Петербурге на складе Янино.`,
+      : `${product.name} — керамическая плитка и керамогранит ${product.brand || 'Керамогранит Опт'}. Купить в Санкт-Петербурге на складе.`,
     sku: product.sku,
     mpn: product.bsu,
-    brand: { "@type": "Brand", name: "Cersanit" },
+    brand: { "@type": "Brand", name: product.brand || "Керамогранит Опт" },
     image: product.main_image ? [product.main_image] : [],
     itemCondition: "https://schema.org/NewCondition",
     offers: {
@@ -114,7 +114,7 @@ export default async function ProductPage({
           : "https://schema.org/PreOrder",
       seller: {
         "@type": "Organization",
-        name: "Дом Плитки CERSANIT",
+        name: "Керамогранит Опт",
         url: SITE_URL,
       },
       url: `${SITE_URL}/catalog/${product.slug}`,
@@ -249,8 +249,8 @@ export default async function ProductPage({
               {product.name} — купить в СПб
             </h2>
             <p className="text-sm text-foreground/75 leading-relaxed">
-              {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от польского
-              производителя Cersanit.
+              {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от 
+              производителя {product.brand || "Керамогранит Опт"}.
               {product.format ? ` Формат ${product.format} см.` : ""}
               {product.surface ? ` Поверхность ${product.surface.toLowerCase()}.` : ""}
               {product.color ? ` Цвет: ${product.color}.` : ""}

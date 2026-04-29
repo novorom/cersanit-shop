@@ -4,6 +4,7 @@ import { useState, useMemo } from "react"
 import Link from "next/link"
 import { ChevronDown, ChevronRight, SlidersHorizontal, X } from "lucide-react"
 import { filterOptions } from "@/lib/filter-options"
+import { SeoBlocks } from "@/components/seo-blocks"
 import { useProducts } from "@/lib/products-context"
 
 // Прокси-CDN: бесплатный сервис, конвертирует в WebP, сжимает, кэширует
@@ -15,9 +16,9 @@ function optimizeImage(url: string | undefined | null, width = 600): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.keramogranit-opt.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.keramogranit-opt.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.keramogranit-opt.ru/upload/uf/b22/DEL232.jpg",
 }
 
 /* ---------- Filter sidebar section ---------- */
@@ -98,21 +99,52 @@ interface CollectionsClientProps {
 export function CollectionsClient({ initialCollections = [] }: CollectionsClientProps) {
   const { products } = useProducts()
 
-  const allCollections = [...new Set(products.map((p) => p.collection))]
-    .filter((c) => c !== "other" && c.toLowerCase() !== "other")
-    .sort()
+  // Helper to normalize collection keys (trim, lower case)
+  const normalize = (s: string | undefined) => s ? s.trim().toLowerCase() : ""
 
-  const collections = allCollections.map((collName) => {
-    const collectionProducts = products.filter((p) => p.collection === collName)
-    const firstProduct = collectionProducts[0]
-    return {
-      id: collName,
-      name: collName,
-      slug: collName.toLowerCase().replace(/\s+/g, "-"),
-      image: COLLECTION_IMAGE_OVERRIDES[collName.toUpperCase()] || collectionProducts.flatMap(p => (p.interior_images as string[] | undefined) || []).filter(Boolean)[0] || firstProduct?.collection_image || firstProduct?.main_image || "",
-      product_count: collectionProducts.length,
+  // Filter visible products (slug present, price >= 0, and a collection not "other")
+  const visibleProducts = products.filter(p =>
+    p.slug &&
+    (p.price_retail ?? 0) >= 0 &&
+    p.collection &&
+    normalize(p.collection) !== "other"
+  )
+
+  // Group products by normalized collection name, using original case for display
+  const collectionMap: Record<string, { name: string; products: typeof visibleProducts }> = {}
+  visibleProducts.forEach(p => {
+    const key = normalize(p.collection) || normalize(p.format_collection) // fallback to format_collection if needed
+    if (!key) return
+    if (!collectionMap[key]) {
+      collectionMap[key] = { name: p.collection.trim(), products: [] }
     }
+    collectionMap[key].products.push(p)
   })
+
+  // Build collections array, keep only those with >=3 products and non-generic names
+  const collections = Object.entries(collectionMap)
+    .filter(([key, v]) => {
+      const name = v.name.toLowerCase();
+      return v.products.length > 2 && 
+             name !== "base" && 
+             name !== "other" &&
+             !["керамогранит", "плитка", "декор", "бордюр", "ступень", "плинтус"].includes(name);
+    })
+    .map(([key, { name, products: collProducts }]) => {
+      const firstProduct = collProducts[0]
+      return {
+        id: key,
+        name,
+        slug: name.toLowerCase().replace(/\s+/g, "-"),
+        image:
+          COLLECTION_IMAGE_OVERRIDES[name.toUpperCase()] ||
+          collProducts.flatMap(p => (p.interior_images as string[] | undefined) || []).filter(Boolean)[0] ||
+          firstProduct?.collection_image ||
+          firstProduct?.main_image ||
+          "",
+        product_count: collProducts.length,
+      }
+    }) // keep only collections with at least 2 products
 
   const collectionsWithMeta = collections.map((c) => {
     const collProducts = products.filter((p) => p.collection === c.name)
@@ -121,7 +153,16 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     const surfaces = [...new Set(collProducts.map((p) => p.surface).filter((s): s is string => !!s))]
     const isNew = collProducts.some((p) => p.is_new)
     const isBestseller = collProducts.some((p) => p.is_bestseller)
-    return { ...c, types, colors, surfaces, isNew, isBestseller, realCount: collProducts.length }
+    
+    // Generate original selling description for the collection
+    const brandNames = [...new Set(collProducts.map(p => p.brand))].join(", ")
+    const description = `Коллекция ${c.name} от ${brandNames} представлена в гипермаркете «Керамогранит Опт». ` +
+      `Включает в себя ${types.join(", ").toLowerCase()}. ` +
+      (surfaces.length > 0 ? `Доступные поверхности: ${surfaces.join(", ").toLowerCase()}. ` : "") +
+      `Данная серия идеально подходит для создания стильного и долговечного интерьера. ` +
+      `Вы можете купить товары из коллекции ${c.name} с доставкой по Санкт-Петербургу и Ленинградской области со склада в Янино.`
+
+    return { ...c, types, colors, surfaces, isNew, isBestseller, realCount: collProducts.length, description }
   })
 
   // При первой загрузке используем серверные данные, чтобы не было пустой страницы
@@ -144,12 +185,14 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
   const allDimensions = filterOptions.dimensions
   const allDesigns = filterOptions.designs
   const allSurfaceTypes = filterOptions.surface_types
+  const allBrands = filterOptions.brands
 
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedDimensions, setSelectedDimensions] = useState<string[]>([])
   const [selectedDesigns, setSelectedDesigns] = useState<string[]>([])
   const [selectedSurfaceTypes, setSelectedSurfaceTypes] = useState<string[]>([])
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [sortBy, setSortBy] = useState<"popular" | "name-asc" | "name-desc">("popular")
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
@@ -162,7 +205,8 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     selectedColors.length +
     selectedDimensions.length +
     selectedDesigns.length +
-    selectedSurfaceTypes.length
+    selectedSurfaceTypes.length +
+    selectedBrands.length
 
   const filtered = useMemo(() => {
     let result = [...effectiveCollectionsWithMeta]
@@ -188,6 +232,12 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
         })
       )
     }
+    if (selectedBrands.length > 0) {
+      result = result.filter((c) => {
+        const collProducts = products.filter((p) => p.collection === c.name)
+        return collProducts.some((p) => selectedBrands.includes(p.brand))
+      })
+    }
 
     switch (sortBy) {
       case "name-asc":
@@ -209,11 +259,13 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     setSelectedDimensions([])
     setSelectedDesigns([])
     setSelectedSurfaceTypes([])
+    setSelectedBrands([])
   }
 
   const filtersContent = (
     <div className="flex flex-col gap-2">
-      <FilterSection title="Тип плитки" options={allTypes} selected={selectedTypes} onToggle={toggleFilter(selectedTypes, setSelectedTypes)} defaultOpen />
+      <FilterSection title="Бренд" options={allBrands} selected={selectedBrands} onToggle={toggleFilter(selectedBrands, setSelectedBrands)} defaultOpen />
+      <FilterSection title="Тип плитки" options={allTypes} selected={selectedTypes} onToggle={toggleFilter(selectedTypes, setSelectedTypes)} />
       <FilterSection title="Цвет" options={allColors} selected={selectedColors} onToggle={toggleFilter(selectedColors, setSelectedColors)} />
       <FilterSection title="Размер" options={allDimensions} selected={selectedDimensions} onToggle={toggleFilter(selectedDimensions, setSelectedDimensions)} />
       <FilterSection title="Дизайн" options={allDesigns} selected={selectedDesigns} onToggle={toggleFilter(selectedDesigns, setSelectedDesigns)} />
@@ -245,7 +297,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
         {/* Title row */}
         <div className="flex items-end justify-between mb-8">
           <div>
-            <h1 className="text-2xl lg:text-3xl font-bold text-foreground">Коллекции Cersanit</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold text-foreground">Наши коллекции</h1>
             <p className="mt-2 text-muted-foreground">
               {filtered.length}{" "}
               {filtered.length === 1 ? "коллекция" : filtered.length < 5 ? "коллекции" : "коллекций"}
@@ -288,6 +340,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
               ...selectedDimensions.map((d) => ({ val: d, toggle: toggleFilter(selectedDimensions, setSelectedDimensions) })),
               ...selectedDesigns.map((d) => ({ val: d, toggle: toggleFilter(selectedDesigns, setSelectedDesigns) })),
               ...selectedSurfaceTypes.map((s) => ({ val: s, toggle: toggleFilter(selectedSurfaceTypes, setSelectedSurfaceTypes) })),
+              ...selectedBrands.map((b) => ({ val: b, toggle: toggleFilter(selectedBrands, setSelectedBrands) })),
             ].map(({ val, toggle }) => (
               <button
                 key={val}
@@ -382,6 +435,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
             )}
           </div>
         </div>
+        <SeoBlocks />
       </div>
     </div>
   )

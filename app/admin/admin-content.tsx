@@ -108,7 +108,7 @@ export default function AdminContent() {
               ? "Остатки Янино"
               : fileType === "zavod"
                 ? "Остатки Завод"
-                : "Прайс Церсанит",
+                : "Прайс Линцер",
           result,
         },
       ])
@@ -267,7 +267,7 @@ export default function AdminContent() {
 
               {/* Price File */}
               <div className="flex flex-col">
-                <label className="block text-sm font-medium text-foreground mb-2">Прайс Церсанит</label>
+                <label className="block text-sm font-medium text-foreground mb-2">Прайс Линцер</label>
                 <input
                   ref={priceFileRef}
                   type="file"

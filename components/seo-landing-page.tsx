@@ -14,8 +14,8 @@ import {
   Calculator,
   Clock,
 } from "lucide-react"
-import type { SeoPageData } from "@/lib/seo-data"
-import { PHONE, PHONE_RAW } from "@/lib/seo-data"
+import { SeoPageData, PHONE, PHONE_RAW } from "@/lib/seo-data"
+import { BreadcrumbSchema, FAQSchema } from "./schema-org"
 
 const iconMap: Record<string, typeof MapPin> = {
   "Склад в Янино": MapPin,
@@ -51,55 +51,15 @@ function getIcon(title: string) {
 }
 
 export function SeoLandingPage({ data }: { data: SeoPageData }) {
-  const lowPrice = data.featuredProducts?.length ? Math.min(...data.featuredProducts.map(p => p.price)) : 410;
-  const highPrice = data.featuredProducts?.length ? Math.max(...data.featuredProducts.map(p => p.price)) : 4500;
-  const offerCount = data.featuredProducts?.length ? data.featuredProducts.length * 8 : 124;
-
-  const aggregateJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": data.h1,
-    "description": data.description,
-    "brand": {
-      "@type": "Brand",
-      "name": "Cersanit СПб"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "url": `https://cersanit-spb.ru/${data.slug}`,
-      "priceCurrency": "RUB",
-      "lowPrice": lowPrice,
-      "highPrice": highPrice,
-      "offerCount": offerCount,
-      "availability": "https://schema.org/InStock"
-    }
-  };
-
-  const faqJsonLd = data.faq && data.faq.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": data.faq.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  } : null;
-
   return (
     <div className="min-h-screen bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateJsonLd) }}
+      <BreadcrumbSchema
+        items={[
+          { name: "Главная", item: "/" },
+          { name: data.breadcrumbLabel, item: `/${data.slug}` },
+        ]}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <FAQSchema faq={data.faq} />
       {/* Breadcrumbs */}
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">

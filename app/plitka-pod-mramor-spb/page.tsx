@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -15,14 +15,14 @@ const MARBLE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под мрамор для стен Cersanit в СПб — цены со склада | Дом Плитки",
-  description: "Керамогранит под мрамор Cersanit в СПб. Calacatta, Deep Calacatta, Lumina Onyx, Travertino — в наличии на складе Янино. Доставка по СПб от 1 дня. Роскошный вид без хлопот.",
+  title: "Плитка под мрамор для стен Lincer в СПб — цены со склада | Керамогранит Опт",
+  description: "Керамогранит под мрамор Lincer в СПб. Calacatta, Deep Calacatta, Lumina Onyx, Travertino — в наличии на складе Янино. Доставка по СПб от 1 дня. Роскошный вид без хлопот.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-mramor-spb` },
   openGraph: {
-    title: "Плитка под мрамор Cersanit в Санкт-Петербурге",
+    title: "Плитка под мрамор ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией мрамора — Calacatta, Deep Calacatta, Lumina Onyx. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-mramor-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -35,11 +35,11 @@ const faq = [
   },
   {
     question: "Что такое коллекция Calacatta и чем она популярна?",
-    answer: "Calacatta — классика итальянского мрамора: белый или светло-серый фон с выразительными серыми прожилками. Это самый популярный дизайн для ванных комнат и кухонь. Cersanit предлагает несколько вариантов: Calacatta (классика), Deep Calacatta (с насыщенными прожилками), Light Marquina (тёмный фон с белыми прожилками).",
+    answer: "Calacatta — классика итальянского мрамора: белый или светло-серый фон с выразительными серыми прожилками. Это самый популярный дизайн для ванных комнат и кухонь. Lincer предлагает несколько вариантов: Calacatta (классика), Deep Calacatta (с насыщенными прожилками), Light Marquina (тёмный фон с белыми прожилками).",
   },
   {
     question: "Можно ли укладывать плитку под мрамор на пол?",
-    answer: "Да, большинство коллекций под мрамор Cersanit подходят для пола. Полированные поверхности лучше использовать в зонах с низкой проходимостью. Для ванных, прихожих и кухонь выбирайте матовые или сатиновые варианты — они менее скользкие.",
+    answer: "Да, большинство коллекций под мрамор Lincer подходят для пола. Полированные поверхности лучше использовать в зонах с низкой проходимостью. Для ванных, прихожих и кухонь выбирайте матовые или сатиновые варианты — они менее скользкие.",
   },
   {
     question: "Какой формат плитки под мрамор выбрать?",
@@ -89,7 +89,7 @@ export default function PlitkaПодМрамор() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Плитка под мрамор Cersanit в Санкт-Петербурге
+            Плитка под мрамор ведущих брендов в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Роскошь натурального мрамора без сложного ухода и высоких цен. Коллекции Calacatta,
@@ -130,7 +130,7 @@ export default function PlitkaПодМрамор() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">
               Мраморная плитка создаёт ощущение дорогого интерьера в ванной, гостиной или прихожей.
-              Cersanit использует технологию цифровой печати высокого разрешения, которая воспроизводит
+              Lincer использует технологию цифровой печати высокого разрешения, которая воспроизводит
               мельчайшие детали мраморных прожилок. При этом керамогранит не требует пропитки, не боится
               бытовой химии и сохраняет внешний вид десятилетиями.
             </p>

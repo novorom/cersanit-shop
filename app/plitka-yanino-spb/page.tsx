@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка Cersanit со склада Янино — самовывоз в СПб | Дом Плитки",
-  description: "Плитка Cersanit со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
+  title: "Плитка со склада Янино — самовывоз в СПб | Керамогранит Опт",
+  description: "Плитка со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
   alternates: { canonical: `${SITE_URL}/plitka-yanino-spb` },
   openGraph: {
-    title: "Плитка Cersanit со склада в Янино — самовывоз",
-    description: "Плитка Cersanit со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
+    title: "Плитка со склада в Янино — самовывоз",
+    description: "Плитка со склада в Янино-1 СПб. Более 190 позиций в наличии. Самовывоз бесплатно в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
     url: `${SITE_URL}/plitka-yanino-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -32,7 +32,7 @@ const faq = [
 const BLOG_ARTICLES = [
   { href: "/blog/kak-vybrat-plitku-dlya-vannoj", title: "Как выбрать плитку в шоуруме", desc: "На что обратить внимание при осмотре образцов." },
   { href: "/blog/skolko-plitki-nuzhno-kupit", title: "Расчёт количества плитки", desc: "Как не купить лишнего и не остаться без запаса." },
-  { href: "/blog/sertifikaty-kachestva", title: "Сертификаты качества Cersanit", desc: "Какие документы мы предоставляем при покупке." },
+  { href: "/blog/sertifikaty-kachestva", title: "Сертификаты качества Lincer", desc: "Какие документы мы предоставляем при покупке." },
 ]
 
 export default function LandingPage() {
@@ -64,9 +64,9 @@ export default function LandingPage() {
 
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка Cersanit со склада в Янино — самовывоз</h1>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка со склада в Янино — самовывоз</h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
-            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер Cersanit в Санкт-Петербурге.
+            {filteredProducts.length} позиций в наличии на складе в Янино. Официальный дилер ведущих брендов в Санкт-Петербурге.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">

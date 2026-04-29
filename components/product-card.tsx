@@ -109,7 +109,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       {/* Info */}
       <div className="flex flex-col gap-1.5 p-3.5">
         <span className="text-[11px] text-muted-foreground uppercase tracking-wide">
-          {product.collection} / {product.format}
+          {product.brand} / {product.collection} / {product.format}
         </span>
         <h3 className="text-sm font-medium text-foreground leading-snug line-clamp-2 group-hover:text-primary transition-colors">
           {product.name}

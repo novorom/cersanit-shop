@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 
 export const metadata: Metadata = {
-  title: "Как выбрать плитку для ванной комнаты — полный гид 2025 | Дом Плитки СПб",
-  description: "Как правильно выбрать плитку для ванной: размер, цвет, фактура, скользкость. Советы по подбору коллекции Cersanit для маленькой и большой ванной. Примеры и рекомендации.",
+  title: "Как выбрать плитку для ванной комнаты — полный гид 2025 | Керамогранит Опт",
+  description: "Как правильно выбрать плитку для ванной: размер, цвет, фактура, скользкость. Советы по подбору коллекции Lincer для маленькой и большой ванной. Примеры и рекомендации.",
   alternates: { canonical: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj` },
-  openGraph: { title: "Как выбрать плитку для ванной — полный гид", url: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как выбрать плитку для ванной — полный гид", url: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как выбрать плитку для ванной комнаты — полный гид 2025",
         description: "Полное руководство по выбору плитки для ванной: размер, цвет, фактура, бюджет.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`,
         datePublished: "2025-02-01",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">
@@ -79,7 +79,7 @@ export default function Article() {
               <p className="text-blue-900 font-medium text-sm">💡 Важно: плитка для пола и стен отличается. Не путайте их местами.</p>
             </div>
             <p className="leading-relaxed mb-3"><strong>Для пола</strong> нужна плитка с классом скользкости не ниже R9 (в идеале R10–R11). Матовая поверхность или рельеф. Высокая твёрдость — PEI 4–5. В мокрых зонах особенно важно — мозаика 28×25 см со швами даёт хорошее сцепление.</p>
-            <p className="leading-relaxed"><strong>Для стен</strong> — широкий выбор. Можно использовать керамическую плитку (она легче и дешевле), полированный керамогранит под мрамор, крупные форматы. Главное — влагостойкость (все плитки Cersanit её имеют).</p>
+            <p className="leading-relaxed"><strong>Для стен</strong> — широкий выбор. Можно использовать керамическую плитку (она легче и дешевле), полированный керамогранит под мрамор, крупные форматы. Главное — влагостойкость (все плитки её имеют).</p>
           </section>
 
           <section>
@@ -90,7 +90,7 @@ export default function Article() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">Популярные коллекции Cersanit для ванной</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">Популярные коллекции Lincer для ванной</h2>
             <div className="flex flex-col gap-4">
               {[
                 { name: "Calacatta", desc: "Белый мрамор с золотыми прожилками. Классика для стен. 29,8×59,8 см. Вечный стиль." },
@@ -134,9 +134,9 @@ export default function Article() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60-glyantsevaya" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/c2b/KTL052.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">795 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60-glyantsevaya" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/c2b/KTL052.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">795 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-northwood-bezhevyy-18x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/5b6/C_NW4M012D_1a.jpg&w=300&output=webp&q=80" alt="Керамогранит Northwood 18x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Northwood 18x60</span><span className="mt-2 block text-base font-bold text-foreground">1098 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

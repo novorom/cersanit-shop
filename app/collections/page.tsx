@@ -17,7 +17,10 @@ export default function CollectionsPage() {
   for (const product of products) {
     if (!product.collection || !product.collection.trim()) continue
 
-    const name = product.collection.trim()
+    let name = product.collection.trim()
+    // Normalize name to avoid Case Mismatches (AMATI vs Amati)
+    name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
+
     const slug = name
       .toLowerCase()
       .replace(/\s+/g, "-")

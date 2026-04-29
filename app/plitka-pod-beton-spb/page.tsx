@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -14,14 +14,14 @@ const BETON_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под бетон Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Керамогранит под бетон и лофт Cersanit в СПб. Soft Concrete, Concretehouse, Lofthouse, Effecta — склад Янино, доставка по СПб от 1 дня. Стиль лофт и минимализм для пола и стен.",
+  title: "Плитка под бетон Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамогранит под бетон и лофт Lincer в СПб. Soft Concrete, Concretehouse, Lofthouse, Effecta — склад Янино, доставка по СПб от 1 дня. Стиль лофт и минимализм для пола и стен.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-beton-spb` },
   openGraph: {
-    title: "Плитка под бетон Cersanit в Санкт-Петербурге",
+    title: "Плитка под бетон ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит в стиле лофт — Soft Concrete, Concretehouse, Lofthouse. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-beton-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -34,7 +34,7 @@ const faq = [
   },
   {
     question: "Для каких помещений подходит плитка под бетон?",
-    answer: "Стиль лофт и минимализм популярен в гостиных, кухнях, прихожих и ванных комнатах. Особенно выигрышно смотрится в просторных помещениях с высокими потолками. Коллекции Cersanit под бетон подходят как для пола, так и для стен.",
+    answer: "Стиль лофт и минимализм популярен в гостиных, кухнях, прихожих и ванных комнатах. Особенно выигрышно смотрится в просторных помещениях с высокими потолками. Коллекции Lincer под бетон подходят как для пола, так и для стен.",
   },
   {
     question: "Какие форматы плитки под бетон есть в наличии?",
@@ -87,7 +87,7 @@ export default function PlitkaПодБетон() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Плитка под бетон Cersanit в Санкт-Петербурге
+            Плитка под бетон ведущих брендов в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Индустриальный стиль лофт и минимализм для пола и стен. Soft Concrete, Concretehouse,

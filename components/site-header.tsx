@@ -43,7 +43,7 @@ export function SiteHeader() {
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-7xl px-4 flex items-center justify-between h-auto py-2.5 text-sm flex-wrap gap-3">
-          <span className="hidden sm:block">Официальный дилер Cersanit в России</span>
+          <span className="hidden sm:block">Мультибрендовый дилер керамической плитки в РФ</span>
           <div className="flex items-center gap-4 flex-wrap">
             <a href="tel:+79052050900" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
               <Phone className="h-3.5 w-3.5 shrink-0" />

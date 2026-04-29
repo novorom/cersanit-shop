@@ -4,17 +4,17 @@ import Image from "next/image"
 import { Star, MapPin, Calendar, ExternalLink } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Отзывы о нас | Дом Плитки CERSANIT",
+  title: "Отзывы о нас | Керамогранит Опт",
   description:
-    "Магазин плитки Cersanit с 2011 года в Санкт-Петербурге. Отзывы реальных покупателей. Более 15 лет на рынке керамической плитки и керамогранита. Склад и шоурум в Янино.",
+    "Магазин плитки с 2011 года в Санкт-Петербурге. Отзывы реальных покупателей. Более 15 лет на рынке керамической плитки и керамогранита. Склад и шоурум в Янино.",
   alternates: {
-    canonical: "https://cersanit-spb.ru/reviews",
+    canonical: "https://keramogranit-opt.ru/reviews",
   },
   openGraph: {
-    title: "Отзывы покупателей | Дом Плитки CERSANIT в СПб",
-    description: "Реальные отзывы о магазине плитки Cersanit в Санкт-Петербурге. Более 15 лет на рынке, склад в Янино.",
-    url: "https://cersanit-spb.ru/reviews",
-    siteName: "Дом Плитки CERSANIT",
+    title: "Отзывы покупателей | Керамогранит Опт в СПб",
+    description: "Реальные отзывы о магазине плитки ведущих брендов в Санкт-Петербурге. Более 15 лет на рынке, склад в Янино.",
+    url: "https://keramogranit-opt.ru/reviews",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -24,7 +24,7 @@ export default function ReviewsPage() {
   const reviewsSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Дом Плитки CERSANIT",
+    name: "Керамогранит Опт",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -45,7 +45,7 @@ export default function ReviewsPage() {
         author: { "@type": "Person", name: "Марина С." },
         datePublished: "2024-11",
         reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Помогли рассчитать количество плитки, ничего лишнего не навязывали. Качество товара отличное — всё Cersanit, польское производство.",
+        reviewBody: "Помогли рассчитать количество плитки, ничего лишнего не навязывали. Качество товара отличное — всё Lincer, польское производство.",
       },
       {
         "@type": "Review",
@@ -66,7 +66,7 @@ export default function ReviewsPage() {
         author: { "@type": "Person", name: "Дмитрий Л." },
         datePublished: "2025-04",
         reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Брал плитку Cersanit Lofthouse для прихожей и кухни. Цены ниже чем в строительных гипермаркетах, а качество сертифицированное. Самовывоз из Янино удобный — за 20 минут всё погрузили.",
+        reviewBody: "Брал плитку Lincer Lofthouse для прихожей и кухни. Цены ниже чем в строительных гипермаркетах, а качество сертифицированное. Самовывоз из Янино удобный — за 20 минут всё погрузили.",
       },
       {
         "@type": "Review",
@@ -80,7 +80,7 @@ export default function ReviewsPage() {
         author: { "@type": "Person", name: "Игорь Т." },
         datePublished: "2025-08",
         reviewRating: { "@type": "Rating", ratingValue: "4" },
-        reviewBody: "Хорошая компания, официальный дилер Cersanit. Взял керамогранит 60x60 для ремонта офиса. Плитка качественная, укладчики остались довольны. Единственное — склад работает до 16:45, пришлось подстраиваться.",
+        reviewBody: "Хорошая компания, мультибрендовый гипермаркет. Взял керамогранит 60x60 для ремонта офиса. Плитка качественная, укладчики остались довольны. Единственное — склад работает до 16:45, пришлось подстраиваться.",
       },
     ],
   }
@@ -105,7 +105,7 @@ export default function ReviewsPage() {
           <div className="flex items-start gap-4 mb-6">
             <Image
               src="/images/avito-logo.png"
-              alt="Авито — отзывы о магазине плитки Cersanit"
+              alt="Авито — отзывы о магазине плитки"
               width={48}
               height={48}
               className="rounded-lg object-cover"
@@ -162,7 +162,7 @@ export default function ReviewsPage() {
                 name: "Марина С.",
                 date: "Ноябрь 2024",
                 rating: 5,
-                text: "Помогли рассчитать количество плитки для кухни и ванной, ничего лишнего не навязывали. Качество товара отличное — всё Cersanit, польское производство. Самовывоз бесплатный.",
+                text: "Помогли рассчитать количество плитки для кухни и ванной, ничего лишнего не навязывали. Качество товара отличное — всё Lincer, польское производство. Самовывоз бесплатный.",
               },
               {
                 name: "Дмитрий В.",

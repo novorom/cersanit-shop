@@ -27,7 +27,7 @@ class SetPlaceholderImages extends Command
             $size = '600x600';
             
             $placeholders = [
-                "https://placehold.co/{$size}/{$color}/white?text=" . urlencode($product->collection ?: 'Cersanit')
+                "https://placehold.co/{$size}/{$color}/white?text=" . urlencode($product->collection ?: 'Lincer')
             ];
             
             $product->update(['images' => $placeholders]);

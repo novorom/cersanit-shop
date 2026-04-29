@@ -25,6 +25,23 @@ export const filterOptions = {
     "светло-коричневый",
     "синий",
   ],
+  brands: [
+    "Kerama Marazzi",
+    "Azori",
+    "Gracia Ceramica",
+    "Cersanit",
+    "Уральский гранит",
+    "Идальго",
+    "Гранитея",
+    "Eletto",
+    "Bonaparte (Бонапарт)",
+    "Керамика Будущего",
+    "Керранова",
+    "Grasaro",
+    "Laminam",
+    "Atlas Concorde",
+    "Italon",
+  ],
   dimensions: [
     "7x60",
     "18x60",
@@ -74,11 +91,11 @@ export const filterOptions = {
 
   // Design category mapping to collections
   designCategoryMapping: {
-    "Дерево": ["Lofthouse", "Woodhouse", "Wood Concept Natural", "Wood Concept Prime", "Wood Concept Rustic", "Chesterwood", "Finwood", "Maplewood", "Northwood", "Patinawood", "Sandwood", "Starwood", "Antiquewood", "Colorwood", "Harbourwood", "Timber Land", "Kauri Wood", "Bonsai Tree", "Teakwood", "Amberwood", "Oakwood"],
-    "Камень": ["Royal Stone", "Royal stone", "Slate", "Mont Blanc", "Deco", "Calacatta", "Deep Calacatta", "Classy Marble", "Gold Venice", "Soft Concrete", "Silver Roots", "Grigio Nuovalato", "Lumina Onyx"],
-    "Мрамор": ["Calacatta", "Deep Calacatta", "Lumina Onyx", "Classy Marble", "Gold Venice"],
-    "Бетон": ["Soft Concrete", "Effecta", "Landscape", "Concretehouse"],
-    "Однотонный": ["Loft", "Navi", "Pudra", "Queen", "Raven", "Sonata"],
-    "Геометрия": ["Atria", "Coliseum", "Galaxy", "Infinity", "Lorenzo", "Mercury", "Orion", "Polaris", "Space", "Greenhouse", "Blend", "Oriental", "Palitra", "Sevilla", "Siena", "Tiffany", "Daisy", "Exterio", "JackStone", "Cambio", "Rustico", "Silvia", "Stilo", "Lina", "Marina", "Inverno", "Cento", "Manzolino", "Vena", "Nero", "Pacific", "Pamir", "Sherbrooke", "Asher", "Ultra", "Spark", "Modis", "Residence", "Stonehouse", "Desert", "Limestone", "Coastline", "Sandstone", "Stellar", "Luna", "Magic", "Ritmo", "Avalon", "Stream", "Motley", "Carpet"],
+    "Дерево": ["Lofthouse", "Woodhouse", "Wood Concept Natural", "Wood Concept Prime", "Wood Concept Rustic", "Chesterwood", "Finwood", "Maplewood", "Northwood", "Patinawood", "Sandwood", "Starwood", "Antiquewood", "Colorwood", "Harbourwood", "Timber Land", "Kauri Wood", "Bonsai Tree", "Teakwood", "Amberwood", "Oakwood", "Fregat", "Montioni"],
+    "Камень": ["Royal Stone", "Royal stone", "Slate", "Mont Blanc", "Deco", "Calacatta", "Deep Calacatta", "Classy Marble", "Gold Venice", "Soft Concrete", "Silver Roots", "Grigio Nuovalato", "Lumina Onyx", "Granite", "Dako", "Desert", "Stonehouse", "Limestone", "Sandstone"],
+    "Мрамор": ["Calacatta", "Deep Calacatta", "Lumina Onyx", "Classy Marble", "Gold Venice", "Carrara", "Empire"],
+    "Бетон": ["Soft Concrete", "Effecta", "Landscape", "Concretehouse", "Dako", "Loft"],
+    "Однотонный": ["Loft", "Navi", "Pudra", "Queen", "Raven", "Sonata", "Моноколор"],
+    "Геометрия": ["Atria", "Coliseum", "Galaxy", "Infinity", "Lorenzo", "Mercury", "Orion", "Polaris", "Space", "Greenhouse", "Blend", "Oriental", "Palitra", "Sevilla", "Siena", "Tiffany", "Daisy", "Exterio", "JackStone", "Cambio", "Rustico", "Silvia", "Stilo", "Lina", "Marina", "Inverno", "Cento", "Manzolino", "Vena", "Nero", "Pacific", "Pamir", "Sherbrooke", "Asher", "Ultra", "Spark", "Modis", "Residence", "Stonehouse", "Desert", "Limestone", "Coastline", "Sandstone", "Stellar", "Luna", "Magic", "Ritmo", "Avalon", "Stream", "Motley", "Carpet", "Конфетти"],
   },
 }

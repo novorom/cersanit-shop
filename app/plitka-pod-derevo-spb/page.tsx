@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -17,14 +17,14 @@ const WOOD_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под дерево Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Керамическая плитка и керамогранит под дерево Cersanit в СПб. Woodhouse, Lofthouse, Wood Concept, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 472 ₽/м².",
+  title: "Плитка под дерево Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамическая плитка и керамогранит под дерево Lincer в СПб. Woodhouse, Lofthouse, Wood Concept, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 472 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-pod-derevo-spb` },
   openGraph: {
-    title: "Плитка под дерево Cersanit в Санкт-Петербурге",
+    title: "Плитка под дерево ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией дерева — Woodhouse, Lofthouse, Wood Concept. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-derevo-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -36,7 +36,7 @@ const faq = [
     answer: "Керамогранит не боится влаги, не царапается, не рассыхается и не требует специального ухода. Идеален для ванных комнат, кухонь, прихожих и балконов. Современная печать делает текстуру практически неотличимой от натурального дерева.",
   },
   {
-    question: "Какие коллекции Cersanit под дерево самые популярные?",
+    question: "Какие коллекции Lincer под дерево самые популярные?",
     answer: "Наибольшим спросом пользуются Woodhouse (тёплые тона, 18x60 и 22x90 см), Lofthouse (серые оттенки, лофт-стиль, 30x60 см) и Wood Concept Natural (нейтральные бежевые тона, 18.5x59.8 см).",
   },
   {
@@ -86,7 +86,7 @@ export default function PlitkaПодДерево() {
       <section className="bg-primary text-primary-foreground py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">
-            Плитка под дерево Cersanit в Санкт-Петербурге
+            Плитка под дерево ведущих брендов в Санкт-Петербурге
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Керамогранит с фотореалистичной текстурой дерева — тепло и уют без забот о влаге и царапинах.

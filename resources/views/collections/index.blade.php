@@ -1,7 +1,7 @@
 @extends('layout')
 
-@section('title', 'Коллекции Cersanit - Визуальный каталог')
-@section('meta_description', 'Визуальный каталог коллекций керамической плитки и керамогранита Cersanit от официального дилера в Санкт-Петербурге')
+@section('title', 'Коллекции Керамогранит Опт - Визуальный каталог')
+@section('meta_description', 'Визуальный каталог коллекций керамической плитки и керамогранита Керамогранит Опт от официального дилера.')
 
 @section('content')
 <!-- Hero Section -->
@@ -10,10 +10,10 @@
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-3xl">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                Коллекции CERSANIT
+                Коллекции Керамогранит Опт
             </h1>
             <p class="text-xl mb-6 text-blue-100">
-                Официальный дилер в Санкт-Петербурге. Выбирайте дизайн, а не артикул.
+                Официальный дилер керамической плитки. Выбирайте дизайн, а не артикул.
             </p>
             <div class="flex flex-wrap gap-4 text-sm">
                 <div class="flex items-center">
@@ -26,7 +26,7 @@
                     <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                     </svg>
-                    Остатки на складе в Янино
+                    Остатки на наших складах
                 </div>
                 <div class="flex items-center">
                     <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -122,7 +122,7 @@
     <!-- Info Section -->
     <div class="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
         <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Почему Cersanit?</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Почему Керамогранит Опт?</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
@@ -132,7 +132,7 @@
                     </svg>
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Гарантия качества</h3>
-                <p class="text-gray-600">Официальный дистрибьютор в СПб с гарантией от производителя</p>
+                <p class="text-gray-600">Надежный дистрибьютор в СПб с гарантией от производителя</p>
             </div>
             <div class="text-center">
                 <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -141,7 +141,7 @@
                     </svg>
                 </div>
                 <h3 class="text-lg font-semibold mb-2">Быстрая доставка</h3>
-                <p class="text-gray-600">Склад в Янино, доставка по СПб и Ленобласти от 1 дня</p>
+                <p class="text-gray-600">Широкая сеть складов, доставка по СПб и Ленобласти от 1 дня</p>
             </div>
             <div class="text-center">
                 <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -159,7 +159,7 @@
     <div class="mt-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-8 text-center text-white">
         <h2 class="text-3xl font-bold mb-4">Не нашли нужную коллекцию?</h2>
         <p class="text-lg mb-6">Напишите нам в WhatsApp, поможем подобрать аналог или заказать под индивидуальный проект</p>
-        <a href="https://wa.me/79052050900?text=Здравствуйте, интересуют коллекции Cersanit для проекта"
+        <a href="https://wa.me/78124413188?text=Здравствуйте, интересуют коллекции Керамогранит Опт для проекта"
            target="_blank"
            class="inline-flex items-center bg-white text-green-600 font-bold py-3 px-6 rounded-lg hover:bg-green-50 transition">
             <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">

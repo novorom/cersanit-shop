@@ -4,17 +4,17 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 const COLLECTIONS = ["Calacatta","Deep Calacatta","Soft Concrete","Lofthouse","Wood Concept Natural","Wood Concept Prime","Woodhouse","Concretehouse","Travertino","Limestone","Sandstone","Sevilla","Siena","Stilo","Silvia","Lina","Marble","Polaris","Cambio"]
 
 export const metadata: Metadata = {
-  title: "Плитка для кухни Cersanit купить в Санкт-Петербурге | Дом Плитки",
-  description: "Керамическая плитка и керамогранит для кухни Cersanit в СПб. Влагостойкая, жиростойкая, легко моется. Склад Янино, доставка по СПб от 1 дня. Цены от 472 руб/м2.",
+  title: "Плитка для кухни Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамическая плитка и керамогранит для кухни Lincer в СПб. Влагостойкая, жиростойкая, легко моется. Склад Янино, доставка по СПб от 1 дня. Цены от 472 руб/м2.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-kuhni-spb` },
-  openGraph: { title: "Плитка для кухни Cersanit в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для кухни Lincer в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
 }
 
 const faq = [
@@ -36,7 +36,7 @@ export default function PlitkaKuhnya() {
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Главная",item:SITE_URL},{"@type":"ListItem",position:2,name:"Каталог",item:`${SITE_URL}/catalog`},{"@type":"ListItem",position:3,name:"Плитка для кухни",item:`${SITE_URL}/plitka-dlya-kuhni-spb`}]}) }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/catalog" className="hover:text-primary transition-colors">Каталог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Плитка для кухни</span></nav></div></div>
-      <section className="bg-primary text-primary-foreground py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка для кухни Cersanit в Санкт-Петербурге</h1><p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">Влагостойкая, жиростойкая, легко моется — для пола и стен кухни. {items.length} позиций в наличии на складе в Янино.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">Смотреть товары <ChevronRight className="h-4 w-4" /></Link><a href={`tel:${PHONE_RAW}`} className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-primary-foreground/30 text-primary-foreground font-medium text-sm hover:bg-primary-foreground/10 transition-colors"><Phone className="h-4 w-4" /> {PHONE}</a></div></div></section>
+      <section className="bg-primary text-primary-foreground py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-balance">Плитка для кухни ведущих брендов в Санкт-Петербурге</h1><p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">Влагостойкая, жиростойкая, легко моется — для пола и стен кухни. {items.length} позиций в наличии на складе в Янино.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">Смотреть товары <ChevronRight className="h-4 w-4" /></Link><a href={`tel:${PHONE_RAW}`} className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-primary-foreground/30 text-primary-foreground font-medium text-sm hover:bg-primary-foreground/10 transition-colors"><Phone className="h-4 w-4" /> {PHONE}</a></div></div></section>
       <section id="products" className="py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">Плитка для кухни — {items.length} позиций</h2><p className="text-muted-foreground mb-8">Все товары в наличии на складе Янино</p><div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">{items.map((p,i) => <ProductCard key={p.id} product={p} priority={i<4} />)}</div></div></section>
       <section className="py-12 lg:py-16 bg-muted/30"><div className="mx-auto max-w-4xl px-4 flex flex-col gap-8">
         <div><h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Как выбрать плитку для кухни?</h2><p className="text-foreground/80 leading-relaxed">Кухня — зона повышенной влажности и жировых загрязнений. Для пола выбирайте керамогранит с матовой поверхностью (класс скользкости R10+) — он прочнее и не скользит. Для стен и фартука — глазурованная плитка, легко моется от жира. Водопоглощение: не выше 3% для стен, не выше 0,5% для пола.</p></div>

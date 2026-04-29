@@ -9,9 +9,9 @@ import { useProducts } from "@/lib/products-context"
 
 const homeFaq = [
   {
-    question: "Вы официальный дилер Cersanit?",
+    question: "Вы продаете плитку разных брендов?",
     answer:
-      "Да, мы являемся официальным дилером Cersanit в России. Все товары поставляются напрямую с заводов, имеют сертификаты качества и гарантию производителя. Работаем на рынке керамической плитки с 2011 года.",
+      "Да, мы являемся мультибрендовым дилером (Lincer, Kerama Marazzi, Lincer, Gracia Ceramica, Idalgo и др.). Все товары поставляются напрямую с заводов, имеют сертификаты качества и гарантию производителя.",
   },
   {
     question: "Где находится ваш склад?",
@@ -36,18 +36,18 @@ const homeFaq = [
 ]
 
 const TOP_COLLECTIONS = [
-  { id: 1, name: "Calacatta", slug: "calacatta", image: "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg" },
-  { id: 2, name: "Wood Concept Natural", slug: "wood-concept-natural", image: "https://pvi.cersanit.ru/upload/uf/02e/Interior_WN4T013_1.jpg" },
-  { id: 3, name: "Lofthouse", slug: "lofthouse", image: "https://pvi.cersanit.ru/upload/uf/0db/INT_LOFTHOUSE_5_1.jpg" },
-  { id: 4, name: "Northwood", slug: "northwood", image: "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg" },
-  { id: 5, name: "Woodhouse", slug: "woodhouse", image: "https://pvi.cersanit.ru/upload/uf/f0c/INT_Woodhouse_WS4O112_3_1.jpg" },
-  { id: 6, name: "Royal Stone", slug: "royal-stone", image: "https://pvi.cersanit.ru/upload/uf/cb8/INT_Royal_stone_2_1.jpg" },
-  { id: 7, name: "Wood Concept Prime", slug: "wood-concept-prime", image: "https://pvi.cersanit.ru/upload/uf/8e6/Interior_WP4T523_1.jpg" },
-  { id: 8, name: "Soft Concrete", slug: "soft-concrete", image: "https://pvi.cersanit.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg" },
-  { id: 9, name: "Galaxy", slug: "galaxy", image: "https://pvi.cersanit.ru/upload/uf/279/Int_Galaxy_012_1_1.jpg" },
-  { id: 10, name: "Effecta", slug: "effecta", image: "https://pvi.cersanit.ru/upload/uf/8b9/INT_Effecta_2_1.jpg" },
-  { id: 11, name: "Coliseum", slug: "coliseum", image: "https://pvi.cersanit.ru/upload/uf/93e/INT_Coliseum_012_2_1.jpg" },
-  { id: 12, name: "Infinity", slug: "infinity", image: "https://pvi.cersanit.ru/upload/uf/672/INT_Infinity_092_1_1.jpg" },
+  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
+  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
+  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
+  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
+  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
+  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
+  { id: 7, name: "Dako", slug: "dako", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
+  { id: 8, name: "A17914", slug: "a17914", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
+  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
+  { id: 10, name: "Лейла", slug: "лейла", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
+  { id: 11, name: "Armani", slug: "armani", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
+  { id: 12, name: "Camelot", slug: "camelot", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
 ]
 
 export function HomeContent() {
@@ -60,7 +60,7 @@ export function HomeContent() {
       <section className="relative h-[520px] lg:h-[600px] overflow-hidden">
         <Image
           src="/images/hero-bathroom.jpg"
-          alt="Современный интерьер ванной комнаты с керамической плиткой Cersanit"
+          alt="Современный интерьер ванной комнаты с керамической плиткой Lincer"
           fill
           className="object-cover"
           priority
@@ -75,10 +75,10 @@ export function HomeContent() {
               </span>
             </div>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-background leading-tight text-balance">
-              Керамическая плитка Cersanit в Санкт-Петербурге
+              Керамическая плитка и керамогранит в Санкт-Петербурге
             </h1>
             <p className="text-lg text-background/70 leading-relaxed max-w-md">
-              Более 750 наименований в наличии на складе в Янино. Доставка по СПб и Ленинградской области от 1 дня. Самовывоз бесплатно.
+              Оптовый гипермаркет Керамогранит Опт. Более 2000 наименований в наличии на складе. Доставка по СПб и ЛО от 1 дня.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link
@@ -238,7 +238,7 @@ export function HomeContent() {
               {
                 icon: Award,
                 title: "Официальный дилер",
-                description: "Прямые поставки с заводов Cersanit. Гарантия подлинности каждого товара.",
+                description: "Прямые поставки от ведущих заводов. Гарантия подлинности каждого товара.",
               },
               {
                 icon: Truck,
@@ -273,14 +273,14 @@ export function HomeContent() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="max-w-4xl">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 text-balance">
-              Магазин плитки Cersanit в Санкт-Петербурге
+              Мультибрендовый гипермаркет плитки Керамогранит Опт в Санкт-Петербурге
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                Дом Плитки -- специализированный интернет-магазин керамической плитки и керамогранита Cersanit в Санкт-Петербурге. С 2011 года мы обеспечиваем жителей СПб и Ленинградской области качественной облицовочной продукцией напрямую от производителя. Наш собственный склад в Янино позволяет поддерживать в наличии более 750 наименований -- от настенной керамической плитки до напольного керамогранита и декоративной мозаики.
+                Керамогранит Опт -- специализированный интернет-магазин керамической плитки и керамогранита в Санкт-Петербурге. Мы обеспечиваем жителей СПб и Ленинградской области качественной продукцией от крупнейших производителей (Kerama Marazzi, Lincer, Idalgo, Gracia Ceramica и др.). Наш склад позволяет поддерживать в наличии тысячи наименований.
               </p>
               <p>
-                В каталоге представлены все основные категории: керамическая плитка для ванной и кухни, керамогранит под дерево, мрамор и бетон, мозаика на сетке, ступени и плинтуса. Среди популярных коллекций: Calacatta (элегантный белый мрамор), Wood Concept Natural (реалистичная имитация дерева), Deco (современная геометрия), Lofthouse и Woodhouse. Все товары сертифицированы и соответствуют российским стандартам качества.
+                В каталоге представлены все основные категории: керамическая плитка для ванной и кухни, керамогранит под дерево, мрамор и бетон, мозаика на сетке, ступени и плинтуса. Все товары сертифицированы и соответствуют российским стандартам качества.
               </p>
               <p>
                 Мы предлагаем удобные условия покупки: бесплатный самовывоз со склада в Янино с погрузкой в ваш транспорт, доставку по Санкт-Петербургу и Ленинградской области от 1 рабочего дня, а также отправку по всей России транспортными компаниями. Для строительных компаний и юридических лиц -- работа по безналичному расчёту с НДС.

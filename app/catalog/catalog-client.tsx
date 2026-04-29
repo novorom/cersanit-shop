@@ -7,6 +7,7 @@ import { SlidersHorizontal, ChevronRight, Grid3X3, LayoutGrid } from "lucide-rea
 import { filterOptions } from "@/lib/filter-options"
 import { ProductCard } from "@/components/product-card"
 import { CatalogFilters, MobileFilterDrawer } from "@/components/catalog-filters"
+import { SeoBlocks } from "@/components/seo-blocks"
 import { useProducts } from "@/lib/products-context"
 import type { Product } from "@/lib/products-data"
 
@@ -38,7 +39,7 @@ function CatalogContent({ initialProducts = [] }: { initialProducts?: Product[] 
   }, [productType, collectionSlug])
 
   const [activeFilters, setActiveFilters] = useState<Record<string, string[]>>(initialFilters)
-  const [priceRange, setPriceRange] = useState<[number, number]>([400, 9500])
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100000])
 
   useEffect(() => {
     const filters: Record<string, string[]> = {}
@@ -102,6 +103,7 @@ function CatalogContent({ initialProducts = [] }: { initialProducts?: Product[] 
           designs: "collection",
           surface_types: "surface",
           collections: "collection",
+          brands: "brand",
         }
         const field = fieldMap[key]
         if (!field) return true
@@ -296,6 +298,7 @@ function CatalogContent({ initialProducts = [] }: { initialProducts?: Product[] 
             )}
           </div>
         </div>
+        <SeoBlocks />
       </div>
 
       <MobileFilterDrawer isOpen={mobileFiltersOpen} onClose={() => setMobileFiltersOpen(false)}>

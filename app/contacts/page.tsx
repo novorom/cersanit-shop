@@ -100,7 +100,7 @@ export default function ContactsPage() {
     {
       icon: '📷',
       name: 'Instagram',
-      url: 'https://www.instagram.com/cersanit_spb',
+      url: 'https://www.instagram.com/lincer_spb',
     },
     {
       icon: '📹',

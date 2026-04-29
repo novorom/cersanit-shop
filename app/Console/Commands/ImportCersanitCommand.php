@@ -7,24 +7,24 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
-class ImportCersanitCommand extends Command
+class ImportLincerCommand extends Command
 {
-    protected $signature = 'import:cersanit {--fresh : Очистить таблицу перед импортом}';
-    protected $description = 'Импорт товаров Cersanit из JSON файла (201 товар из прайса)';
+    protected $signature = 'import:lincer {--fresh : Очистить таблицу перед импортом}';
+    protected $description = 'Импорт товаров Lincer из JSON файла (201 товар из прайса)';
 
     public function handle()
     {
-        $this->info('🚀 Начинаем импорт товаров Cersanit...');
+        $this->info('🚀 Начинаем импорт товаров Lincer...');
         
         // Проверяем наличие файла
-        if (!Storage::exists('cersanit_products.json')) {
-            $this->error('❌ Файл cersanit_products.json не найден в storage/app/');
-            $this->info('💡 Скопируйте файл cersanit_products.json в storage/app/');
+        if (!Storage::exists('lincer_products.json')) {
+            $this->error('❌ Файл lincer_products.json не найден в storage/app/');
+            $this->info('💡 Скопируйте файл lincer_products.json в storage/app/');
             return 1;
         }
 
         // Читаем JSON
-        $json = Storage::get('cersanit_products.json');
+        $json = Storage::get('lincer_products.json');
         $products = json_decode($json, true);
 
         if (!$products) {
@@ -70,7 +70,7 @@ class ImportCersanitCommand extends Command
                     'sku' => $data['sku'],
                     'name' => $this->cleanName($data['name']),
                     'slug' => $slug,
-                    'brand' => 'Cersanit',
+                    'brand' => 'Lincer',
                     'collection' => $data['collection'],
                     'format' => $data['size'],
                     'surface' => $surface,
@@ -99,7 +99,7 @@ class ImportCersanitCommand extends Command
                         'Поверхность' => $surface,
                         'Цвет' => $color,
                         'Единица измерения' => $data['unit'],
-                        'Бренд' => 'Cersanit',
+                        'Бренд' => 'Lincer',
                         'Страна производства' => 'Польша',
                     ], JSON_UNESCAPED_UNICODE),
                     
@@ -232,7 +232,7 @@ class ImportCersanitCommand extends Command
     private function generateTitle($data)
     {
         return sprintf(
-            '%s %s %s купить в СПб - %s₽ (-20%%) | Cersanit Янино',
+            '%s %s %s купить в СПб - %s₽ (-20%%) | Lincer Янино',
             ucfirst($data['type']),
             $data['collection'],
             $data['size'],
@@ -243,7 +243,7 @@ class ImportCersanitCommand extends Command
     private function generateDescription($data)
     {
         return sprintf(
-            '%s %s %s см от официального дилера Cersanit в СПб. Цена %s₽ вместо %s₽ (экономия %s₽). Склад Янино, самовывоз сегодня. Доставка по СПб от 500₽. Артикул: %s',
+            '%s %s %s см от официального дилера Lincer в СПб. Цена %s₽ вместо %s₽ (экономия %s₽). Склад Янино, самовывоз сегодня. Доставка по СПб от 500₽. Артикул: %s',
             ucfirst($data['type']),
             $data['collection'],
             $data['size'],
@@ -257,7 +257,7 @@ class ImportCersanitCommand extends Command
     private function generateKeywords($data)
     {
         return implode(', ', [
-            'cersanit',
+            'lincer',
             mb_strtolower($data['collection']),
             $data['type'],
             $data['size'],
@@ -276,7 +276,7 @@ class ImportCersanitCommand extends Command
         $surface = $this->extractSurface($data['name']);
         
         return <<<DESC
-Коллекция {$data['collection']} от Cersanit – это воплощение современного дизайна и высокого качества. 
+Коллекция {$data['collection']} от Lincer – это воплощение современного дизайна и высокого качества. 
 
 **Основные характеристики:**
 - Размер: {$data['size']} см
@@ -285,7 +285,7 @@ class ImportCersanitCommand extends Command
 - Производство: Польша
 
 **Преимущества покупки у нас:**
-- ✅ Официальный дилер Cersanit
+- ✅ Официальный дилер Lincer
 - ✅ Цена {$data['price_our']}₽ вместо {$data['price_retail']}₽
 - ✅ Экономия {$data['discount']}₽ на каждом м²
 - ✅ Склад в Янино (самовывоз сегодня)

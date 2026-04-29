@@ -1,23 +1,23 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 export const metadata: Metadata = {
-  title: "Рекомендации по затирке швов плитки — инструкция Cersanit | Дом Плитки СПб",
+  title: "Рекомендации по затирке швов плитки — инструкция Lincer | Керамогранит Опт",
   description: "Как выбрать затирку для плитки, подготовить швы и нанести состав. Как удалить остатки затирки и цветные ореолы с поверхности плитки.",
   alternates: { canonical: `${SITE_URL}/blog/rekomendatsii-po-zatirke` },
-  openGraph: { title: "Рекомендации по затирке швов плитки", url: `${SITE_URL}/blog/rekomendatsii-po-zatirke`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Рекомендации по затирке швов плитки", url: `${SITE_URL}/blog/rekomendatsii-po-zatirke`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function GroutingAdvice() {
   return (
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
-        headline: "Рекомендации по затирке швов плитки — инструкция Cersanit",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: "https://cersanit-spb.ru" },
+        headline: "Рекомендации по затирке швов плитки — инструкция Lincer",
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: "https://keramogranit-opt.ru" },
         mainEntityOfPage: `${SITE_URL}/blog/rekomendatsii-po-zatirke`,
         datePublished: "2025-02-15",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/blog" className="hover:text-primary transition-colors">Блог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Затирка швов</span></nav></div></div>
 
@@ -32,9 +32,9 @@ export default function GroutingAdvice() {
 
       <article className="mx-auto max-w-3xl px-4 py-12 lg:py-16">
         <header className="mb-10">
-          <div className="text-sm text-muted-foreground mb-3">5 минут чтения · Рекомендации Cersanit</div>
+          <div className="text-sm text-muted-foreground mb-3">5 минут чтения · Рекомендации Lincer</div>
           <h1 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">Рекомендации по затирке швов плитки</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">Как подобрать, нанести затирку и удалить её остатки с поверхности плитки для внутренней облицовки стен. Официальные рекомендации Cersanit.</p>
+          <p className="text-lg text-muted-foreground leading-relaxed">Как подобрать, нанести затирку и удалить её остатки с поверхности плитки для внутренней облицовки стен. Официальные рекомендации Lincer.</p>
         </header>
         <div className="flex flex-col gap-8 text-foreground/80">
           <section>
@@ -110,7 +110,7 @@ export default function GroutingAdvice() {
           <h3 className="font-bold text-foreground mb-4">Читайте также</h3>
           <div className="flex flex-col gap-3">
             <Link href="/blog/kak-ukladyvat-plitku" className="flex items-center gap-2 text-primary hover:underline"><ChevronRight className="h-4 w-4" />Как укладывать плитку своими руками</Link>
-            <Link href="/blog/sertifikaty-kachestva" className="flex items-center gap-2 text-primary hover:underline"><ChevronRight className="h-4 w-4" />Сертификаты качества Cersanit</Link>
+            <Link href="/blog/sertifikaty-kachestva" className="flex items-center gap-2 text-primary hover:underline"><ChevronRight className="h-4 w-4" />Сертификаты качества Lincer</Link>
           </div>
         </div>
       
@@ -118,8 +118,8 @@ export default function GroutingAdvice() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
-                  <Link href="/catalog/mozaika-lofthouse-seryy-28x25" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/1d7/LS6O096.jpg&w=300&output=webp&q=80" alt="Мозаика Lofthouse серый 28x25" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Lofthouse серый 28x25</span><span className="mt-2 block text-base font-bold text-foreground">1680 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/77c/KTL051st.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta белый 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta белый 30x60</span><span className="mt-2 block text-base font-bold text-foreground">780 ₽/м²</span></div></Link>
+                  <Link href="/catalog/mozaika-lofthouse-seryy-28x25" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/1d7/LS6O096.jpg&w=300&output=webp&q=80" alt="Мозаика Lofthouse серый 28x25" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Мозаика Lofthouse серый 28x25</span><span className="mt-2 block text-base font-bold text-foreground">1680 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

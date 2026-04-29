@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://cersanit-spb.ru"
-const SHOP_NAME = "Дом Плитки CERSANIT"
+const SITE_URL = "https://keramogranit-opt.ru"
+const SHOP_NAME = "Керамогранит Опт"
 
 export const dynamic = "force-dynamic"
 export const revalidate = 86400
@@ -60,7 +60,7 @@ export async function GET() {
 ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retail} RUB</g:price>
       <g:availability>${availability}</g:availability>
       <g:condition>${condition}</g:condition>
-      <g:brand>${escapeXml(p.brand || "Cersanit")}</g:brand>
+      <g:brand>${escapeXml(p.brand || "Lincer")}</g:brand>
       ${p.sku ? `<g:mpn>${escapeXml(p.sku)}</g:mpn>` : p.bsu ? `<g:mpn>${escapeXml(p.bsu)}</g:mpn>` : ""}
       <g:google_product_category>${googleCategory}</g:google_product_category>
       <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection || "")}</g:product_type>
@@ -84,7 +84,7 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
   <channel>
     <title>${SHOP_NAME}</title>
     <link>${SITE_URL}</link>
-    <description>Керамическая плитка и керамогранит Cersanit в Санкт-Петербурге</description>
+    <description>Керамическая плитка и керамогранит ведущих брендов в Санкт-Петербурге</description>
 ${items}
   </channel>
 </rss>`

@@ -11,6 +11,7 @@ interface FilterSection {
 }
 
 const filterSections: FilterSection[] = [
+  { label: "Бренд", key: "brands", options: filterOptions.brands },
   { label: "Тип плитки", key: "product_types", options: filterOptions.product_types },
   { label: "Цвет", key: "colors", options: filterOptions.colors },
   { label: "Размер", key: "dimensions", options: filterOptions.dimensions },
@@ -33,7 +34,7 @@ export function CatalogFilters({
   priceRange,
   onPriceRangeChange,
 }: CatalogFiltersProps) {
-  const [openSections, setOpenSections] = useState<string[]>(["product_types", "colors"])
+  const [openSections, setOpenSections] = useState<string[]>(["brands", "product_types"])
 
   const toggleSection = (key: string) => {
     setOpenSections((prev) =>

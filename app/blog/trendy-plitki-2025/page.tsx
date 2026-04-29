@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://keramogranit-opt.ru"
 export const metadata: Metadata = {
-  title: "Тренды плитки 2025: что выбрать для ванной и кухни | Дом Плитки СПб",
+  title: "Тренды плитки 2025: что выбрать для ванной и кухни | Керамогранит Опт",
   description: "Главные тренды керамической плитки и керамогранита в 2025 году: крупный формат, природные текстуры, нейтральные тона. Что в моде и как применить в интерьере.",
   alternates: { canonical: `${SITE_URL}/blog/trendy-plitki-2025` },
-  openGraph: { title: "Тренды плитки 2025", url: `${SITE_URL}/blog/trendy-plitki-2025`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Тренды плитки 2025", url: `${SITE_URL}/blog/trendy-plitki-2025`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function Article() {
   return (
@@ -15,10 +15,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Тренды плитки 2025: что выбрать для ванной и кухни",
         description: "Обзор главных трендов керамики в 2025 году.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/trendy-plitki-2025`,
         datePublished: "2025-03-15",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">
@@ -45,13 +45,13 @@ export default function Article() {
         <header className="mb-10">
           <div className="text-sm text-muted-foreground mb-3">7 минут чтения · Тренды и дизайн</div>
           <h1 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">Тренды плитки 2025: что выбирают дизайнеры</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">2025 год — это тотальный комфорт, природные материалы и крупный формат. Разбираем главные тенденции с примерами из каталога Cersanit.</p>
+          <p className="text-lg text-muted-foreground leading-relaxed">2025 год — это тотальный комфорт, природные материалы и крупный формат. Разбираем главные тенденции с примерами из каталога Lincer.</p>
         </header>
         <div className="flex flex-col gap-8 text-foreground/80">
           {[
             {
               title: "1. Крупный формат 60×120 и больше",
-              text: "Минимум швов, монолитный вид, ощущение роскоши — крупный формат продолжает доминировать. В 2025 это уже не роскошь, а стандарт для гостиных и просторных ванных. Коллекции Cersanit в формате 60×120: Deep Calacatta, Gold Venice, Soft Concrete, Silver Roots — все в наличии на складе.",
+              text: "Минимум швов, монолитный вид, ощущение роскоши — крупный формат продолжает доминировать. В 2025 это уже не роскошь, а стандарт для гостиных и просторных ванных. Коллекции Lincer в формате 60×120: Deep Calacatta, Gold Venice, Soft Concrete, Silver Roots — все в наличии на складе.",
               link: "/keramogranit-60x120-spb",
               linkText: "Керамогранит 60×120 в каталоге →",
             },
@@ -113,9 +113,9 @@ export default function Article() {
               <section className="mt-8">
                 <h3 className="text-base font-semibold text-foreground mb-4">Товары из этой статьи</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                  <Link href="/catalog/keramogranit-gold-venice-belyy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/0da/uefsnr25qfuu5b7khlor2mmc0oorecum/A17121_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Gold Venice 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Gold Venice 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
-                  <Link href="/catalog/plitka-calacatta-belyy-30x60-glyantsevaya" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/c2b/KTL052.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">795 ₽/м²</span></div></Link>
-                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.cersanit.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-gold-venice-belyy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/0da/uefsnr25qfuu5b7khlor2mmc0oorecum/A17121_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Gold Venice 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Gold Venice 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
+                  <Link href="/catalog/plitka-calacatta-belyy-30x60-glyantsevaya" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/c2b/KTL052.jpg&w=300&output=webp&q=80" alt="Плитка Calacatta рельеф 30x60" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Плитка Calacatta рельеф 30x60</span><span className="mt-2 block text-base font-bold text-foreground">795 ₽/м²</span></div></Link>
+                  <Link href="/catalog/keramogranit-soft-concrete-svetlo-seryy-60x120" className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md hover:border-primary/30 transition-all"><div className="relative aspect-square overflow-hidden bg-muted"><img src="https://images.weserv.nl/?url=https://pvi.keramogranit-opt.ru/upload/uf/068/gcqu8u24rft50mgxzpbijnh33k074vg0/A17122_01.jpg&w=300&output=webp&q=80" alt="Керамогранит Soft Concrete 60x120" className="w-full h-full object-cover" loading="lazy" /></div><div className="p-3"><span className="text-xs text-muted-foreground line-clamp-2">Керамогранит Soft Concrete 60x120</span><span className="mt-2 block text-base font-bold text-foreground">2213 ₽/м²</span></div></Link>
                 </div>
                 <Link href="/catalog" className="mt-4 inline-flex items-center text-sm text-primary hover:underline font-medium">Весь каталог →</Link>
               </section>              </article>

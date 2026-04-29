@@ -21,7 +21,7 @@
     "image": "{{ url($imageUrl) }}",
     "brand": {
         "@type": "Brand",
-        "name": "{{ e($product->brand ?? 'Cersanit') }}"
+        "name": "{{ e($product->brand ?? 'Керамогранит Опт') }}"
     },
     "offers": {
         "@type": "Offer",
