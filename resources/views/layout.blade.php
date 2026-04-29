@@ -17,8 +17,8 @@
     <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
 
     {{-- SEO & Verifications --}}
-    <meta name="yandex-verification" content="1f85757551ab6b60" />
-    <meta name="google-site-verification" content="lincer-clone-google-val" />
+    <meta name="yandex-verification" content="c26277345b786016" />
+    <meta name="google-site-verification" content="aQYqAGATjFgdx_MvrEs3m5z95_SqArJAqluUH02RQNY" />
     <link rel="canonical" href="{{ url()->current() }}" />
 
     @include('components.seo.organization-schema')
