@@ -12,6 +12,7 @@ export default function CartPage() {
   const router = useRouter()
   const { items, removeItem, updateQuantity, clearCart, total } = useCart()
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+  const [orderSuccess, setOrderSuccess] = useState(false)
 
   const handleCheckout = async (orderData: OrderData) => {
     try {
@@ -30,17 +31,45 @@ export default function CartPage() {
         throw new Error(errorData.error || 'Failed to submit order')
       }
 
+      const responseData = await response.json().catch(() => ({}))
+      const orderId = responseData.orderId || Math.floor(Math.random() * 1000000).toString()
+
       // Clear cart and show success message
       clearCart()
       setIsCheckoutOpen(false)
+      setOrderSuccess(true)
       
-      // Show success message
-      alert('Спасибо! Ваш заказ принят. Мы свяжемся с вами в ближайшее время.')
-      router.push('/catalog')
+      // Trigger Google Opt-in
+      if (typeof window !== 'undefined' && (window as any).renderOptIn) {
+        const email = orderData.contactMethod === 'email' ? orderData.contactValue : ''
+        setTimeout(() => {
+          ;(window as any).renderOptIn(orderId, email)
+        }, 500)
+      }
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Ошибка при отправке заказа. Пожалуйста, попробуйте позже.'
       alert(errorMessage)
     }
+  }
+
+  if (orderSuccess) {
+    return (
+      <div className="bg-muted/30 min-h-screen">
+        <div className="mx-auto max-w-7xl px-4 py-16">
+          <div className="bg-background rounded-2xl border border-border p-8 md:p-12 text-center max-w-2xl mx-auto">
+            <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">✓</div>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Спасибо за заказ!</h1>
+            <p className="text-foreground/60 mb-8">Ваш заказ успешно оформлен. Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+            <Link
+              href="/catalog"
+              className="inline-flex items-center justify-center h-11 px-6 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+            >
+              Вернуться в каталог
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   if (items.length === 0) {

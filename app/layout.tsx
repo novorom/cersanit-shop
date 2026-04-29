@@ -28,8 +28,15 @@ export const metadata: Metadata = {
     "плитка для ванной СПб",
   ],
   robots: { index: true, follow: true },
-  alternates: {
-    canonical: SITE_URL,
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-120.png", sizes: "120x120", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "Дом Плитки Cersanit СПб — официальный дилер, склад в Янино",
@@ -138,6 +145,35 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+        <script src="https://apis.google.com/js/platform.js?onload=renderBadge" async defer></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.renderBadge = function() {
+                var ratingBadgeContainer = document.createElement("div");
+                document.body.appendChild(ratingBadgeContainer);
+                window.gapi.load('ratingbadge', function() {
+                  window.gapi.ratingbadge.render(ratingBadgeContainer, {
+                    "merchant_id": 5750220121,
+                    "position": "BOTTOM_LEFT"
+                  });
+                });
+              }
+              
+              window.renderOptIn = function(orderId, email) {
+                window.gapi.load('surveyoptin', function() {
+                  window.gapi.surveyoptin.render({
+                    "merchant_id": 5750220121,
+                    "order_id": orderId,
+                    "email": email || "",
+                    "delivery_country": "RU",
+                    "estimated_delivery_date": new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+                  });
+                });
+              }
+            `,
+          }}
         />
       </head>
       <body className={`${inter.className} antialiased`}>
