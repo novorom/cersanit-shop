@@ -93,7 +93,7 @@
                     <h4 class="font-semibold mb-4 uppercase text-sm tracking-wider">Контакты</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
                         <li>8 (812) 441-31-88</li>
-                        <li>info@keramogranit-opt.ru</li>
+                        <li>info@cersanit-spb.ru</li>
                         <li>г. Санкт-Петербург</li>
                     </ul>
                 </div>

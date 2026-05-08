@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class ParseLincerImages extends Command
 {
     protected $signature = 'parse:lincer-images {--limit=10}';
-    protected $description = 'Парсинг фото товаров с keramogranit-opt.ru';
+    protected $description = 'Парсинг фото товаров с cersanit-spb.ru';
 
     public function handle()
     {
@@ -38,7 +38,7 @@ class ParseLincerImages extends Command
             try {
                 // Формируем URL поиска
                 $searchQuery = urlencode($product->sku);
-                $searchUrl = "https://keramogranit-opt.ru/search/?q={$searchQuery}";
+                $searchUrl = "https://cersanit-spb.ru/search/?q={$searchQuery}";
 cat > resources/views/catalog/product-card.blade.php << 'ENDOFFILE'
 <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden group">
     <a href="{{ route('catalog.show', $product->slug) }}" class="block">

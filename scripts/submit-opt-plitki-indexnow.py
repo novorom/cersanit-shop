@@ -4,9 +4,9 @@ import json
 import uuid
 import os
 
-SITE_URL = 'https://opt-plitki-spb.ru'
+SITE_URL = 'https://www.opt-plitki-spb.ru'
 SITEMAP_URL = f'{SITE_URL}/sitemap.xml'
-INDEXNOW_KEY = uuid.uuid4().hex
+INDEXNOW_KEY = '3e1f7e74c42645c6acef98fd0830e84d'
 INDEXNOW_KEY_LOCATION = f'{SITE_URL}/{INDEXNOW_KEY}.txt'
 
 # Save key to public dir so Vercel serves it
@@ -47,7 +47,7 @@ def submit_to_indexnow(urls):
         return
 
     payload = {
-        "host": "opt-plitki-spb.ru",
+        "host": "www.opt-plitki-spb.ru",
         "key": INDEXNOW_KEY,
         "keyLocation": INDEXNOW_KEY_LOCATION,
         "urlList": urls

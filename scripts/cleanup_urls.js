@@ -18,10 +18,10 @@ function walk(dir, callback) {
 };
 
 const replacements = [
-  { from: /https:\/\/lincer-spb\.ru/g, to: 'https://keramogranit-opt.ru' },
-  { from: /https:\/\/keramogranit-spb\.ru/g, to: 'https://keramogranit-opt.ru' },
-  { from: /lincer-spb\.ru/g, to: 'keramogranit-opt.ru' },
-  { from: /keramogranit-spb\.ru/g, to: 'keramogranit-opt.ru' },
+  { from: /https:\/\/lincer-spb\.ru/g, to: 'https://cersanit-spb.ru' },
+  { from: /https:\/\/keramogranit-spb\.ru/g, to: 'https://cersanit-spb.ru' },
+  { from: /lincer-spb\.ru/g, to: 'cersanit-spb.ru' },
+  { from: /keramogranit-spb\.ru/g, to: 'cersanit-spb.ru' },
 ];
 
 targetDirs.forEach(dir => {

@@ -36,18 +36,18 @@ const homeFaq = [
 ]
 
 const TOP_COLLECTIONS = [
-  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
-  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
-  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
-  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
-  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
-  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
-  { id: 7, name: "Dako", slug: "dako", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
-  { id: 8, name: "A17914", slug: "a17914", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
-  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
-  { id: 10, name: "Лейла", slug: "лейла", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
-  { id: 11, name: "Armani", slug: "armani", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
-  { id: 12, name: "Camelot", slug: "camelot", image: "https://keramogranit-opt.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
+  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
+  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
+  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
+  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
+  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
+  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
+  { id: 7, name: "Dako", slug: "dako", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
+  { id: 8, name: "A17914", slug: "a17914", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
+  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
+  { id: 10, name: "Лейла", slug: "лейла", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
+  { id: 11, name: "Armani", slug: "armani", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
+  { id: 12, name: "Camelot", slug: "camelot", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
 ]
 
 export function HomeContent() {

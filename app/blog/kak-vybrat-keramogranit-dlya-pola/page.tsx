@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
   title: "Как выбрать керамогранит для пола: гид 2026 | Керамогранит Опт",

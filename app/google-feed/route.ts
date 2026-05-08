@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 const SHOP_NAME = "Керамогранит Опт"
 
 export const dynamic = "force-dynamic"

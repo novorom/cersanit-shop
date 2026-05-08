@@ -151,7 +151,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
     material: product.material_type,
     offers: {
       "@type": "Offer",
-      url: `https://keramogranit-opt.ru/catalog/${product.slug}`,
+      url: `https://cersanit-spb.ru/catalog/${product.slug}`,
       priceCurrency: "RUB",
       price: product.price_retail,
       availability:
@@ -217,9 +217,9 @@ export function ProductPageClient({ slug }: { slug: string }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Главная", item: "https://keramogranit-opt.ru" },
-      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://keramogranit-opt.ru/catalog" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://keramogranit-opt.ru/catalog/${product.slug}` },
+      { "@type": "ListItem", position: 1, name: "Главная", item: "https://cersanit-spb.ru" },
+      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://cersanit-spb.ru/catalog" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://cersanit-spb.ru/catalog/${product.slug}` },
     ],
   }
 

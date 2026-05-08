@@ -14,12 +14,12 @@ function optimizeImage(url: string | undefined | null, width = 800): string {
 
 // Переопределённые главные изображения для конкретных коллекций
 const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
-  "CALACATTA": "https://pvi.keramogranit-opt.ru/upload/uf/ae8/Calacatta_large_1.jpg",
-  "NORTHWOOD": "https://pvi.keramogranit-opt.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
-  "DECO": "https://pvi.keramogranit-opt.ru/upload/uf/b22/DEL232.jpg",
+  "CALACATTA": "https://pvi.cersanit.ru/upload/uf/ae8/Calacatta_large_1.jpg",
+  "NORTHWOOD": "https://pvi.cersanit.ru/upload/uf/a08/INT_Northwood_012_2_2.jpg",
+  "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
 }
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 

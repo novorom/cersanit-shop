@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   description:
     "Магазин плитки с 2011 года в Санкт-Петербурге. Отзывы реальных покупателей. Более 15 лет на рынке керамической плитки и керамогранита. Склад и шоурум в Янино.",
   alternates: {
-    canonical: "https://keramogranit-opt.ru/reviews",
+    canonical: "https://cersanit-spb.ru/reviews",
   },
   openGraph: {
     title: "Отзывы покупателей | Керамогранит Опт в СПб",
     description: "Реальные отзывы о магазине плитки ведущих брендов в Санкт-Петербурге. Более 15 лет на рынке, склад в Янино.",
-    url: "https://keramogranit-opt.ru/reviews",
+    url: "https://cersanit-spb.ru/reviews",
     siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",

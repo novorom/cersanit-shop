@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 

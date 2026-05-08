@@ -22,7 +22,11 @@ const FACTORY_FILES = [
       "ректификат": "Ректификат",
       "морозостойкость": "Морозостойкость",
       "износостойкость": "Класс износостойкости",
-      "скольжение": "Класс устойчивости к скольжению"
+      "скольжение": "Класс устойчивости к скольжению",
+      "дизайн": "Дизайн",
+      "применение": "Применение",
+      "назначение": "Назначение",
+      "поверхность": "Поверхность"
     }
   },
   {
@@ -84,6 +88,74 @@ const FACTORY_FILES = [
     collection: "Коллекция [COLLECTION]",
     surface: "Поверхность [SURFACE]",
     format: "Размер [SIZE]"
+  },
+  {
+    path: "/Users/r/Downloads/Загрузочный прайс 050226 Идальго.xls",
+    brand: "Hidalgo",
+    sku: "Артикул",
+    name: "Наименование",
+    collection: "Коллекция",
+    surface: "Поверхность",
+    color: "Цвет",
+    format: "Размер"
+  },
+  {
+    path: "/Users/r/Downloads/Гранитея.xlsx",
+    brand: "Graniteya",
+    sku: "__EMPTY_2",
+    name: "__EMPTY",
+    collection: "__EMPTY",
+    surface: "__EMPTY_7",
+    color: "__EMPTY_3",
+    format: "__EMPTY_6",
+    thickness: "__EMPTY_4",
+    headerRow: 1 
+  },
+  {
+    path: "/Users/r/Downloads/Zagruzochnyi_-fai_l_19.01.2026.xlsx",
+    brand: "Unitile",
+    sku: "Артикул",
+    name: "Наименование (ИМ)",
+    collection: "Коллекция (ИМ)",
+    surface: "Поверхность (ИМ)",
+    color: "Цвет (ИМ)",
+    width: "Ширина (ИМ)",
+    height: "Высота (ИМ)",
+    box_pcs: "Количество в упаковке (шт)",
+    box_m2: "Количество в упаковке (м2)",
+    thickness: "Толщина (ИМ)",
+    more_specs: {
+      "тип": "Тип продукции (ИМ)",
+      "материал": "Основной материал (ИМ)",
+      "рельеф": "Рельеф (ИМ)",
+      "ректификат": "Ректификат (ИМ)",
+      "текстура": "Текстура (ИМ)",
+      "износостойкость": "Износостойкость (ИМ)",
+      "морозостойкость": "Морозостойкость (ИМ)",
+      "применение": "Область применения (ИМ)"
+    }
+  },
+  {
+    path: "/Users/r/Downloads/Загрузочные файлы от заводов/Керама Марацци/ExportPlitka_10_19_34.csv",
+    brand: "Kerama Marazzi",
+    sku: "Артикул",
+    name: "НаименованиеИМ",
+    collection: "КоллекцияИМ",
+    surface: "ПоверхностьИМ",
+    color: "Цвет",
+    format: "ФорматИМ",
+    box_pcs: "ШтукВКоробке",
+    box_m2: "МетровВКоробке",
+    thickness: "ТолщинаИМ",
+    isCsv: true,
+    encoding: "windows-1251",
+    delimiter: ";",
+    more_specs: {
+      "ректификат": "Реттификат",
+      "износостойкость": "УстойчивостьКИстираемости",
+      "страна": "СтранаПроизводства",
+      "материал": "ВидПродукцииИМ"
+    }
   }
 ];
 
@@ -91,14 +163,37 @@ function normalizeName(name) {
   if (!name) return "";
   return String(name).toLowerCase()
     .replace(/\(.*?\)/g, '') 
-    .replace(/[,\.\-\*\/]/g, ' ') 
-    .replace(/[^a-zа-я0-9\s]/g, '') 
+    .replace(/(\d+),(\d+)/g, '$1.$2') 
+    .replace(/[,\-\*\/]/g, ' ') 
+    .replace(/[^a-zа-я0-9.\s]/g, '') 
     .replace(/\s+/g, ' ')
     .trim();
 }
 
+const { execSync } = require('child_process');
+
+function parseCsvLine(line, delimiter) {
+    const parts = [];
+    let current = '';
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        if (char === '"') {
+            inQuotes = !inQuotes;
+        } else if (char === delimiter && !inQuotes) {
+            parts.push(current);
+            current = '';
+        } else {
+            current += char;
+        }
+    }
+    parts.push(current);
+    return parts;
+}
+
 function loadFactoryData() {
   const masterMap = new Map();
+  const skuMap = new Map();
   const nameList = []; 
   console.log("Loading factory data source of truth...");
 
@@ -108,14 +203,39 @@ function loadFactoryData() {
       continue;
     }
     console.log(`Processing ${file.brand}...`);
-    const workbook = xlsx.readFile(file.path);
-    const sheet = workbook.Sheets[workbook.SheetNames[0]];
-    const data = xlsx.utils.sheet_to_json(sheet);
+    let data = [];
+    if (file.isCsv) {
+      try {
+        const encoding = file.encoding || 'utf-8';
+        const buffer = execSync(`iconv -f ${encoding} -t UTF-8 "${file.path}"`, { maxBuffer: 1024 * 1024 * 100 });
+        const content = buffer.toString();
+        const lines = content.split('\n').filter(l => l.trim());
+        if (lines.length === 0) continue;
+        
+        const headers = parseCsvLine(lines[0], file.delimiter || ',');
+        for (let i = 1; i < lines.length; i++) {
+            const values = parseCsvLine(lines[i], file.delimiter || ',');
+            const row = {};
+            headers.forEach((h, idx) => {
+                row[h.trim()] = values[idx] || '';
+            });
+            data.push(row);
+        }
+      } catch (e) {
+        console.error(`Error parsing CSV ${file.path}:`, e.message);
+        continue;
+      }
+    } else {
+      const workbook = xlsx.readFile(file.path);
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      data = xlsx.utils.sheet_to_json(sheet, { range: file.headerRow || 0 });
+    }
 
+    let count = 0;
     data.forEach(row => {
       const rawName = String(row[file.name] || "").trim();
       const sku = String(row[file.sku] || "").trim();
-      if (!rawName) return;
+      if (!rawName && !sku) return;
 
       const norm = normalizeName(rawName);
       const entry = {
@@ -126,7 +246,7 @@ function loadFactoryData() {
         format: file.format ? row[file.format] : (row[file.width] && row[file.height] ? `${row[file.width]}x${row[file.height]}` : null),
         brand: file.brand,
         box_pcs: row[file.box_pcs] || null,
-        box_m2: row[row[file.box_m2]] || row[file.box_m2] || null, // Handle potential key overlap
+        box_m2: row[file.box_m2] || null, 
         thickness: row[file.thickness] || null,
         more: {},
         normName: norm
@@ -138,14 +258,18 @@ function loadFactoryData() {
         }
       }
 
-      masterMap.set(norm, entry);
+      if (norm) {
+          masterMap.set(norm, entry);
+          const shortName = rawName.split(',')[0].trim();
+          masterMap.set(normalizeName(shortName), entry);
+      }
+      if (sku && sku !== "undefined") {
+          skuMap.set(sku, entry);
+      }
       nameList.push(entry);
-      
-      const shortName = rawName.split(',')[0].trim();
-      masterMap.set(normalizeName(shortName), entry);
     });
   }
-  return { masterMap, nameList, normalizeName };
+  return { masterMap, skuMap, nameList, normalizeName };
 }
 
 module.exports = { loadFactoryData, normalizeName };

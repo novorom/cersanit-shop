@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 class MonitoringLincer extends Command
 {
     protected $signature = 'monitor:lincer {--check-collections : Check for new collections}';
-    protected $description = 'Monitor keramogranit-opt.ru for new products and collections';
+    protected $description = 'Monitor cersanit-spb.ru for new products and collections';
 
     protected $client;
 
@@ -19,7 +19,7 @@ class MonitoringLincer extends Command
     {
         parent::__construct();
         $this->client = new Client([
-            'base_uri' => 'https://www.keramogranit-opt.ru',
+            'base_uri' => 'https://www.cersanit-spb.ru',
             'timeout'  => 30,
             'headers' => [
                 'User-Agent' => 'Mozilla/5.0 (compatible; MonitoringBot/1.0)'
@@ -53,7 +53,7 @@ class MonitoringLincer extends Command
     }
 
     /**
-     * Check for new collections on keramogranit-opt.ru
+     * Check for new collections on cersanit-spb.ru
      */
     protected function checkCollections(): void
     {

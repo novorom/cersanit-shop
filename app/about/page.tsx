@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ExternalLink, Award, MapPin, Package } from 'lucide-react'
 
-const SITE_URL = 'https://keramogranit-opt.ru'
+const SITE_URL = 'https://cersanit-spb.ru'
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -15,11 +15,11 @@ const breadcrumbSchema = {
 export const metadata = {
   title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб с 2011 года',
   description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Официальный дилер Lincer, Kerama Marazzi, Lincer. Склад в Янино-1. Телефон: +7 (905) 205-09-00.',
-  alternates: { canonical: 'https://keramogranit-opt.ru/about' },
+  alternates: { canonical: 'https://cersanit-spb.ru/about' },
   openGraph: {
     title: 'О компании Керамогранит Опт — мультибрендовый гипермаркет плитки в СПб',
     description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Склад и шоурум в Янино.',
-    url: 'https://keramogranit-opt.ru/about',
+    url: 'https://cersanit-spb.ru/about',
     siteName: 'Керамогранит Опт',
     locale: 'ru_RU',
     type: 'website',

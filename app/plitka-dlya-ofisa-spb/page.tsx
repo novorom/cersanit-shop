@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 

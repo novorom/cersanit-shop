@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 const KEY = 'XryjspYdja9YiYzwSAm5o058RhV3TLca';
-const HOST = 'keramogranit-opt.ru';
+const HOST = 'cersanit-spb.ru';
 
 // List of all URLs to submit
 const urls = [

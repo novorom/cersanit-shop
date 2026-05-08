@@ -6,7 +6,7 @@ import { getCollectionSeo } from "@/lib/collection-seo"
 import { ProductPageClient } from "./product-client"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 
 export async function generateStaticParams() {
   return products

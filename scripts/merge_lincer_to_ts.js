@@ -67,7 +67,10 @@ function run() {
   }
   const lincerProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 
-  const existingDataMap = new Map();
+  const { loadFactoryData, normalizeName } = require('./factory_truth');
+  const { masterMap: factoryMap, skuMap, nameList } = loadFactoryData();
+
+  const existingProductsMap = new Map();
   const arrayStartText = 'export const products: Product[] = [';
   const startIndex = tsContent.indexOf(arrayStartText);
   const arrayEndIndex = tsContent.lastIndexOf('\n];');
@@ -76,15 +79,36 @@ function run() {
       const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
       const blocks = content.split(/\n  \{/);
       blocks.forEach(block => {
-          const skuMatch = block.match(/"sku":\s*"([^"]*)"/);
-          if (skuMatch) {
-              const sku = skuMatch[1];
-              const priceMatch = block.match(/"price_retail":\s*(\d+)/);
-              const stockMatch = block.match(/"stock_yanino":\s*(\d+(\.\d+)?)/);
-              existingDataMap.set(sku, {
+          let b = block.trim();
+          if (!b.startsWith('{')) b = '{' + b;
+          if (b.endsWith(',')) b = b.slice(0, -1);
+          
+          const skuMatch = b.match(/"sku":\s*"([^"]*)"/);
+          const idMatch = b.match(/"id":\s*"([^"]*)"/);
+          const nameMatch = b.match(/"name":\s*"([^"]*)"/);
+          
+          if (idMatch) {
+              const id = idMatch[1];
+              const sku = skuMatch ? skuMatch[1] : null;
+              const name = nameMatch ? nameMatch[1] : null;
+              
+              const priceMatch = b.match(/"price_retail":\s*(\d+)/);
+              const stockMatch = b.match(/"stock_yanino":\s*(\d+(\.\d+)?)/);
+              const specsMatch = b.match(/"specs":\s*(\[[\s\S]*?\])/);
+              
+              const data = {
+                  id,
+                  sku,
+                  name,
                   price: priceMatch ? parseInt(priceMatch[1]) : 0,
-                  stock: stockMatch ? parseFloat(stockMatch[1]) : 0
-              });
+                  stock: stockMatch ? parseFloat(stockMatch[1]) : 0,
+                  specs: specsMatch ? specsMatch[1] : "[]",
+                  fullBlock: b
+              };
+              
+              if (sku) existingProductsMap.set("sku:" + sku, data);
+              if (name) existingProductsMap.set("name:" + normalizeName(name), data);
+              existingProductsMap.set("id:" + id, data);
           }
       });
   }
@@ -93,40 +117,61 @@ function run() {
   const footer = tsContent.substring(arrayEndIndex);
 
   const cleanBlocks = [];
-  if (startIndex !== -1) {
-      const content = tsContent.substring(startIndex + arrayStartText.length, arrayEndIndex);
-      const blocks = content.split(/\n  \{/);
-      blocks.forEach((block, idx) => {
-          let b = block.trim();
-          if (!b.startsWith('{')) b = '{' + b;
-          if (b.endsWith(',')) b = b.slice(0, -1);
-          
-          if (b.includes('id: "lincer-') || b.includes('"id": "lincer-')) return;
-          if (b.length < 10) return;
-          cleanBlocks.push(b);
-      });
+  // Keep original products that are not prefixed with "lincer-"
+  for (const [key, data] of existingProductsMap.entries()) {
+      if (key.startsWith("id:") && !data.id.startsWith("lincer-")) {
+          cleanBlocks.push(data.fullBlock);
+      }
   }
 
-  const { loadFactoryData, normalizeName } = require('./factory_truth');
-  const { masterMap: factoryMap, nameList } = loadFactoryData();
+  let matchedCount = 0;
+  let specCount = 0;
 
   const lincerObjects = lincerProducts.map((p, index) => {
     let name = p.name.trim();
     name = name.replace(/^\d+\s+/, '');
     
     const norm = normalizeName(name);
-    let factory = factoryMap.get(norm);
+    const stopWords = ['плитка', 'для', 'стен', 'пола', 'керамогранит', 'декор', 'cersanit', 'azori', 'gracia', 'ceramica', 'keramark', 'eletto', 'kerama', 'marazzi'];
     
-    if (!factory) {
-        factory = nameList.find(f => norm.includes(f.normName) || f.normName.includes(norm));
+    // 1. Try matching by SKU from factory data
+    let factory = skuMap.get(p.sku) || factoryMap.get(norm);
+    
+    // Fallback: extract base SKU if contains underscores
+    if (!factory && p.sku && p.sku.includes('_')) {
+        const baseSku = p.sku.split('_')[0];
+        if (baseSku.length > 2) factory = skuMap.get(baseSku);
     }
+    
+    // 2. Try fuzzy name matching if no direct match
+    if (!factory) {
+        const targetWords = norm.split(' ').filter(w => w.length > 2 && !stopWords.includes(w));
+        factory = nameList.find(f => {
+            const sourceWords = f.normName.split(' ').filter(w => w.length > 2 && !stopWords.includes(w));
+            if (sourceWords.length === 0) return false;
+            // Most "important" words from factory name must be present in the product name
+            const matches = sourceWords.filter(sw => targetWords.some(tw => tw.includes(sw) || sw.includes(tw)));
+            return matches.length >= Math.min(sourceWords.length, 2); // Match at least 2 words or all if less
+        });
+    }
+
+    if (factory) matchedCount++;
     
     let brand = factory ? factory.brand : extractBrand(name, p.brand);
     let collection = factory ? factory.collection : p.collection;
     let sku = factory ? factory.sku : (p.sku || '');
     let color = factory ? factory.color : (p.color || 'Ассорти');
     let surface = factory ? factory.surface : (p.surface || '');
-    let format = factory ? factory.format : (p.format || 'Не указан');
+    let format = factory ? factory.format : (p.format || '');
+
+    if (!format || format === 'Не указан') {
+        const formatMatch = name.match(/(\d+[.,]?\d*\s*[xх*]\s*\d+[.,]?\d*)/i);
+        if (formatMatch) {
+            format = formatMatch[1].replace(/х/i, 'x').replace(/\s+/g, '');
+        } else {
+            format = 'Не указан';
+        }
+    }
 
     const blacklist = [
         'керамогранит', 'плитка', 'декор', 'бренды', 'панно', 'вставка',
@@ -160,13 +205,7 @@ function run() {
         collection = collection.charAt(0).toUpperCase() + collection.slice(1).toLowerCase();
     }
 
-    const specs = [];
-    if (p.characteristics) {
-      Object.entries(p.characteristics).forEach(([key, value]) => {
-        specs.push({ key: key.toLowerCase(), label: String(value) });
-      });
-    }
-
+    let specs = [];
     if (factory) {
         if (factory.box_pcs) specs.push({ key: "штук в упаковке", label: String(factory.box_pcs) });
         if (factory.box_m2) specs.push({ key: "кв.м в упаковке", label: String(factory.box_m2) });
@@ -178,9 +217,23 @@ function run() {
         }
     }
 
-    const saved = existingDataMap.get(sku) || { price: 0, stock: 0 };
+    // Try to find if this product already existed in the TS (to preserve its data)
+    const saved = existingProductsMap.get("sku:" + sku) || existingProductsMap.get("name:" + norm) || { price: 0, stock: 0, specs: "[]" };
 
-    return {
+    // If we have saved specs from previous version and factory failed, use saved
+    let finalSpecs = specs;
+    if (specs.length === 0 && saved.specs !== "[]") {
+        try {
+            const parsed = JSON.parse(saved.specs);
+            if (parsed.length > 0) {
+                finalSpecs = parsed;
+            }
+        } catch(e) {}
+    }
+
+    if (finalSpecs.length > 0) specCount++;
+
+    const res = {
       id: "lincer-" + (400000 + index),
       sku: sku,
       name: name,
@@ -198,9 +251,29 @@ function run() {
       stock_yanino: saved.stock || 0,
       main_image: p.image || '',
       images: p.image ? [p.image] : [],
-      specs: specs,
+      specs: finalSpecs,
       is_new: true
     };
+
+    // Enrich with specific fields for UI
+    if (factory) {
+        if (factory.thickness) res.thickness = String(factory.thickness).replace(',', '.');
+        if (factory.box_pcs) res.pieces_per_box = Number(factory.box_pcs);
+        if (factory.box_m2) res.sqm_per_box = Number(String(factory.box_m2).replace(',', '.'));
+        
+        if (factory.more) {
+            const m = factory.more;
+            if (m.ректификат) res.rectified = m.ректификат.toLowerCase().includes('да') || m.ректификат.toLowerCase().includes('рект');
+            if (m.морозостойкость) res.frost_resistant = m.морозостойкость.toLowerCase().includes('да');
+            if (m.износостойкость) res.wear_class = m.износостойкость;
+            if (m.скольжение || m['класс скользкости']) res.slip_class = m.скольжение || m['класс скользкости'];
+            if (m.водопоглощение) res.water_abs = m.водопоглощение;
+            if (m.материал && !res.material_type) res.material_type = m.материал;
+            if (m.применение && !res.application) res.application = m.применение;
+        }
+    }
+
+    return res;
   });
 
   const finalArrayContent = cleanBlocks.filter(b => b.trim().length > 10).join(',\n  ') + 
@@ -208,7 +281,10 @@ function run() {
                             lincerObjects.map(o => JSON.stringify(o, null, 2)).join(',\n  ');
 
   fs.writeFileSync(tsPath, header + '\n  ' + finalArrayContent + footer, 'utf8');
-  console.log(`Successfully fixed brands and collections for ${lincerObjects.length} products.`);
+  console.log(`Successfully merged ${lincerObjects.length} products.`);
+  console.log(`Matched with factory: ${matchedCount}`);
+  console.log(`Products with specs: ${specCount}`);
+  console.log(`Preserved ${cleanBlocks.length} original products.`);
 }
 
 

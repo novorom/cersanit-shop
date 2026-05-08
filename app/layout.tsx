@@ -8,7 +8,7 @@ import { ProductsProvider } from "@/lib/products-context"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
-const SITE_URL = "https://keramogranit-opt.ru"
+const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
   title: {
@@ -88,7 +88,7 @@ const localBusinessJsonLd = {
   description:
     "Мультибрендовый гипермаркет керамической плитки и керамогранита в Санкт-Петербурге. Склад в Янино-1. Доставка по СПб и ЛО от 1 дня.",
   telephone: "+7-905-205-09-00",
-  email: "info@keramogranit-opt.ru",
+  email: "info@cersanit-spb.ru",
   priceRange: "₽₽",
   currenciesAccepted: "RUB",
   paymentAccepted: "Наличные, банковская карта, безналичный расчёт",
