@@ -7,7 +7,11 @@ const SHOP_NAME = "Керамогранит Опт"
 export const dynamic = "force-dynamic"
 export const revalidate = 86400
 
-export async function GET() {
+export async function GET(request: Request) {
+  const host = request.headers.get("host") || "cersanit-spb.ru"
+  const protocol = host.includes("localhost") ? "http" : "https"
+  const dynamicSiteUrl = `${protocol}://${host}`
+
   const activeProducts = products.filter(
     (p) => p.slug && p.price_retail && p.price_retail > 0 && p.main_image
   )
@@ -55,13 +59,13 @@ export async function GET() {
       <g:id>${escapeXml(p.id)}</g:id>
       <g:title>${escapeXml(p.name)}</g:title>
       <g:description>${escapeXml(description)}</g:description>
-      <g:link>${SITE_URL}/catalog/${escapeXml(p.slug)}</g:link>
+      <g:link>${dynamicSiteUrl}/catalog/${escapeXml(p.slug)}</g:link>
       <g:image_link>${escapeXml(p.main_image!)}</g:image_link>
 ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retail} RUB</g:price>
       <g:availability>${availability}</g:availability>
       <g:condition>${condition}</g:condition>
       <g:brand>${escapeXml(p.brand || "Lincer")}</g:brand>
-      ${p.sku ? `<g:mpn>${escapeXml(p.sku)}</g:mpn>` : p.bsu ? `<g:mpn>${escapeXml(p.bsu)}</g:mpn>` : ""}
+      ${(p.sku || p.bsu) ? `<g:mpn>${escapeXml(p.sku || p.bsu)}</g:mpn>` : ""}
       <g:google_product_category>${googleCategory}</g:google_product_category>
       <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection || "")}</g:product_type>
       <g:shipping>
@@ -69,7 +73,7 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
         <g:service>Доставка по СПб и ЛО</g:service>
         <g:price>0 RUB</g:price>
       </g:shipping>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>${(p.sku || p.bsu) ? "yes" : "no"}</g:identifier_exists>
       ${p.material_type ? `<g:material>${escapeXml(p.material_type)}</g:material>` : ""}
       ${p.color ? `<g:color>${escapeXml(p.color)}</g:color>` : ""}
       ${p.format ? `<g:size>${escapeXml(p.format)}</g:size>` : ""}
@@ -83,7 +87,7 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
     <title>${SHOP_NAME}</title>
-    <link>${SITE_URL}</link>
+    <link>${dynamicSiteUrl}</link>
     <description>Керамическая плитка и керамогранит ведущих брендов в Санкт-Петербурге</description>
 ${items}
   </channel>
