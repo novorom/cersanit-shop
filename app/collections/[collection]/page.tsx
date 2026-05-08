@@ -64,9 +64,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
     title,
     description,
     alternates: { canonical: `${SITE_URL}/collections/${collection}` },
-    robots: isThinCollection
-      ? { index: false, follow: true }
-      : { index: true, follow: true },
+    robots: { index: true, follow: true },
     openGraph: {
       title,
       description,

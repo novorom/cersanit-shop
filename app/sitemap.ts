@@ -98,9 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         )
     ),
   ]
-  // В sitemap включаем только коллекции с 3+ товарами
   const collectionPages: MetadataRoute.Sitemap = collectionSlugs
-    .filter((slug) => (collectionProductCount[slug] || 0) >= 3)
     .map((slug) => ({
       url: `${SITE_URL}/collections/${slug}`,
       lastModified: CATALOG_UPDATED,
