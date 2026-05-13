@@ -158,7 +158,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
         totalStock > 0
           ? "https://schema.org/InStock"
           : "https://schema.org/OutOfStock",
-      seller: { "@type": "Organization", name: "Керамогранит Опт" },
+      seller: { "@type": "Organization", name: "Дом Плитки Cersanit" },
       areaServed: { "@type": "City", name: "Санкт-Петербург" },
       priceValidUntil: "2026-12-31",
       hasMerchantReturnPolicy: {

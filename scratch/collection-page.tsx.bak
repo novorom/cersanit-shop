@@ -43,15 +43,15 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { collection } = await params
   const collectionName = findCollectionName(collection)
-  if (!collectionName) return { title: "Коллекция не найдена | Керамогранит Опт" }
+  if (!collectionName) return { title: "Коллекция не найдена | Дом Плитки Cersanit" }
 
   const seo = getCollectionSeo(collectionName)
   const collectionProducts = getCollectionProducts(collectionName)
   const prices = collectionProducts.map(p => p.price_retail).filter(Boolean)
   const priceFrom = prices.length ? Math.min(...prices) : null
 
-  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
-  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Керамогранит Опт`
+  const brand = collectionProducts[0]?.brand || "Дом Плитки Cersanit"
+  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Дом Плитки Cersanit`
   const description = seo?.description ||
     `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в наличии на складе.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
 
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
       title,
       description,
       url: `${SITE_URL}/collections/${collection}`,
-      siteName: "Керамогранит Опт",
+      siteName: "Дом Плитки Cersanit",
       locale: "ru_RU",
       type: "website",
       images: firstImage ? [{ url: firstImage, alt: collectionName }] : [],
@@ -165,7 +165,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const formats = [...new Set(collectionProducts.map(p => p.format).filter(Boolean))]
   const designs = [...new Set(collectionProducts.map(p => p.design).filter(Boolean))]
 
-  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
+  const brand = collectionProducts[0]?.brand || "Дом Плитки Cersanit"
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -179,7 +179,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       item: {
         "@type": "Product",
         name: p.name,
-        description: `${p.name} — купить в Санкт-Петербурге в магазине Керамогранит Опт.`,
+        description: `${p.name} — купить в Санкт-Петербурге в магазине Дом Плитки Cersanit.`,
         image: p.main_image ? [p.main_image] : ["https://cersanit-spb.ru/logo.png"],
         brand: { "@type": "Brand", "name": p.brand || "Cersanit" },
         sku: p.sku || p.id,
@@ -378,7 +378,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
                 Вся продукция сертифицирована, отличается высокой износостойкостью и долговечностью.
               </p>
               <p>
-                В гипермаркете «Керамогранит Опт» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}. 
+                В гипермаркете «Дом Плитки Cersanit» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}. 
                 Товары в наличии на нашем собственном складе в Янино-1. Мы обеспечиваем быструю отгрузку и доставку по Санкт-Петербургу и Ленинградской области в течение 1–2 рабочих дней.
               </p>
               <p>
