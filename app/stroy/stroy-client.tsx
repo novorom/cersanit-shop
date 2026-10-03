@@ -262,7 +262,7 @@ function formatNumber(n: number): string {
   return n.toLocaleString('ru-RU')
 }
 
-function swatch(item: any, big: boolean = false): JSX.Element {
+function swatch(item: any, big: boolean = false): React.ReactElement {
   if (item.img) {
     return (
       <img
