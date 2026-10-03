@@ -1,3 +1,5 @@
+# Exclude Laravel/PHP files
+**/*.php
 app/Console
 app/Http
 app/Filament
@@ -5,5 +7,25 @@ app/Models
 app/Providers
 app/Services
 app/Livewire
-app/*.php
-app/**/*.php
+bootstrap
+config
+database
+lang
+resources
+routes
+storage
+artisan
+composer.json
+composer.lock
+phpunit.xml
+tests
+vendor
+*.c
+*.md
+*.xlsx
+*.json
+*.xml
+*.log
+.env*
+.aider*
+.DS_Store
