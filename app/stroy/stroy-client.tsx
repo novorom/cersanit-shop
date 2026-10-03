@@ -71,7 +71,6 @@ export interface StroyItem {
 }
 
 const ITEMS: StroyItem[] = [
-  [
 {"t":"gres","b":"Kerama Marazzi","n":"Мирабо Серый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":9269,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/dc8/320_320_1/dc8bdb371c36720a80ee968a312a79be.jpg","isPhoto":true},
 {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Светлый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":7293,"p":null,"img":"","isPhoto":false},
 {"t":"gres","b":"М-Квадрат","n":"Bianco Белый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":6708,"p":650,"img":"","isPhoto":false},
@@ -247,7 +246,6 @@ const ITEMS: StroyItem[] = [
 {"t":"gres","b":"Казахстан","n":"В60332","s":"600 × 600 мм","k":"600×600","g":"","q":32,"p":1080,"img":"","isPhoto":false},
 {"t":"tile","b":"Unitile (г. Шахты)","n":"Delux beige wall 01 ГЛАДКАЯ","s":"600 × 250 × 9 мм","k":"600×250","g":"","q":31,"p":null,"img":"","isPhoto":false},
 {"t":"tile","b":"Нефрит-Керамика","n":"Фреш Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":30,"p":null,"img":"","isPhoto":false}
-]
 ]
 // Текстуры для безопасного отката, если удаленная ссылка не загрузилась
 const FALLBACK_TEXTURES = {
@@ -512,7 +510,7 @@ export default function StroyPageClient() {
     setCallStatus('Отправляем...')
 
     const what = selectedItem
-      ? `Позиция: ${selectedItem.n}, ${selectedItem.s}${selectedItem.b ? `, ${selectedItem.b}` : ''}${selectedItem.g ? `, ${selectedItem.g}` : ''}${quantity > 0 ? `. Нужно: ${quantity} м²` : ''}${selectedItem.p ? `. Цена на сайте: ${formatNumber(selectedItem.p)} ₽/м²` : ''}`
+      ? `Позиция: ${selectedItem.n}, ${selectedItem.s}${selectedItem.b ? `, ${selectedItem.b}` : ''}${selectedItem.g ? `, ${selectedItem.g}` : ''}${parseInt(quantity) > 0 ? `. Нужно: ${quantity} м²` : ''}${selectedItem.p ? `. Цена на сайте: ${formatNumber(selectedItem.p)} ₽/м²` : ''}`
       : 'Запрос с главной страницы'
 
     const message = `Заказ звонка: ${callPhone}${callName ? ` (${callName})` : ''}. ${what}`
