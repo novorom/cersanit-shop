@@ -264,8 +264,6 @@ const ITEMS: StroyItem[] = [
   {"t":"tile","b":"Unitile (г. Шахты)","n":"Delux beige wall 01 ГЛАДКАЯ","s":"600 × 250 × 9 мм","k":"600×250","g":"","q":31,"p":null,"img":"","isPhoto":false},
   {"t":"tile","b":"Нефрит-Керамика","n":"Фреш Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":30,"p":null,"img":"","isPhoto":false}
 ]
-]
-
 // Текстуры для безопасного отката, если удаленная ссылка не загрузилась
 const FALLBACK_TEXTURES = {
   marbleWhite: '/images/tiles/marble-white.jpg',
