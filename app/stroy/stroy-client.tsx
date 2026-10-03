@@ -1,22 +1,17 @@
-import { Metadata } from 'next'
-import StroyPageClient from './stroy-client'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Строителям — оптовые поставки керамической плитки и керамогранита в СПб | Керамогранит Опт',
-  description: 'Плитка и керамогранит от 400 ₽/м² со склада в Войскорово. Работаем по счёту с НДС, самовывоз, бесплатный расчёт количества. Телефон: +7 (905) 205-09-00.',
-  alternates: { canonical: 'https://www.opt-plitki-spb.ru/stroy' },
-  openGraph: {
-    title: 'Строителям — оптовые поставки керамической плитки и керамогранита в СПб',
-    description: 'Плитка и керамогранит от 400 ₽/м² со склада в Войскорово. Работаем по счёту с НДС.',
-    url: 'https://www.opt-plitki-spb.ru/stroy',
-    siteName: 'Керамогранит Опт',
-    locale: 'ru_RU',
-    type: 'website',
-  },
-}
+import { useState } from 'react'
+import { Phone, X, Search, Send, Copy, ArrowUp } from 'lucide-react'
 
-export default function StroyPage() {
-  return <StroyPageClient />
+const SITE_URL = 'https://www.opt-plitki-spb.ru'
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Главная", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Строителям", item: `${SITE_URL}/stroy` },
+  ],
 }
 
 const CFG = {
@@ -124,11 +119,11 @@ const ITEMS = [
   { t: "tile", b: "Нефрит-Керамика", n: "Слим Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 207, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 201, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "S.WHITE Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 172, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 163, p: null },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 163, p: null },
   { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Серый Светлый Матовый обрезной", s: "300 × 600 × 9 мм", k: "600×300", g: "", q: 126, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Монохромо Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 115, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Saboya Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 111, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 68, p: null },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 68, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Раф Рельеф зеленый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 61, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Стоун Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 61, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Frida Grey", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 57, p: null },
@@ -205,7 +200,7 @@ const ITEMS = [
   { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 172, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Моноколор Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 169, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 129, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "ПК", q: 128, p: null },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "ПК", q: 128, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Kids Красный", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 117, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 87, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Терракотовый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 72, p: null },
@@ -276,7 +271,6 @@ function swatch(item: any, big: boolean = false): JSX.Element {
         title="Увеличить"
         loading="lazy"
         className="w-full h-full object-cover cursor-zoom-in hover:scale-105 transition-transform"
-        onClick={() => openLightbox(item)}
       />
     )
   }
@@ -301,7 +295,7 @@ function swatch(item: any, big: boolean = false): JSX.Element {
   )
 }
 
-export default function StroyPage() {
+export default function StroyPageClient() {
   const [cat, setCat] = useState('all')
   const [selectedSizes, setSelectedSizes] = useState<Set<string>>(new Set())
   const [searchQuery, setSearchQuery] = useState('')
