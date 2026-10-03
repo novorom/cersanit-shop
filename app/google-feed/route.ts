@@ -65,7 +65,7 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
       <g:availability>${availability}</g:availability>
       <g:condition>${condition}</g:condition>
       <g:brand>${escapeXml(p.brand || "Lincer")}</g:brand>
-      ${(p.sku || p.bsu) ? `<g:mpn>${escapeXml(p.sku || p.bsu)}</g:mpn>` : ""}
+      ${(p.sku || p.bsu) ? `<g:mpn>${escapeXml(p.sku || p.bsu || "")}</g:mpn>` : ""}
       <g:google_product_category>${googleCategory}</g:google_product_category>
       <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection || "")}</g:product_type>
       <g:shipping>
