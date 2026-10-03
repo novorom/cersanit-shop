@@ -47,6 +47,7 @@ const breadcrumbSchema = {
 }
 
 const CFG = {
+  web3formsKey: '15b32313-a149-4439-8169-15ec9f6669fe',
   phone: '+7 905 205-09-00',
   phoneClean: '+79052050900',
   tg: 'https://t.me/flyroman',
@@ -70,204 +71,199 @@ export interface StroyItem {
 }
 
 const ITEMS: StroyItem[] = [
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 7848, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Светлый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 7293, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Bianco Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6708, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090230/products_v2/prod_plitburg-265701_byanko_bordyur_6x40_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6378, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034552/products_v2/prod_azori-00-00002402.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Astaria Ice Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6309, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Hornito Amber Коричневый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 5197, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ea3/400_400_1/abtmloyynxvbr6afhpiue7cvpsw2vjbm.webp", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 4912, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Toronto Betton Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 4841, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/04d/400_400_1/04dacfe983f5dbeee7b604f7b520f87b.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Ferrum Коричневый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 4017, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/f5b/f5bec7703e5d6743d74ead97b6d952b9.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Матовый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 3342, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Терраццо Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 3126, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090818/products_v2/prod_plitburg-terratstso_seryy_kg_60_60_nr0136_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Каньон Серый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 3126, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090425/products_v2/prod_plitburg-732071_kanon_seryy_svetlyy_45_45_m_kvadrat.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 3115, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Torino Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2994, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Челси Беж", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2952, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Коричневый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 2858, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Челси Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2827, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Manhattan Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2790, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Manhattan Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2781, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Arctic White", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2630, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GTF400M ЗИМНИЙ БЕЛЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1587, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GT047M УМБРА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1451, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GTF427M БЕЖЕВЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1406, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Черный Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 763, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 762, p: 1250, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776103984/products_v2/prod_plitburg-monte_tiberio_kg_60_60_sg622602r_lappat_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GTF422M РЖАВЧИНА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 680, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 567, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 283, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 1200 × 11 мм", k: "1200×600", g: "3 сорт", q: 197, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GT061M ЯНТАРЬ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 35, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Фрегат Бежевый Обрезной", s: "200 × 800 × 9 мм", k: "800×200", g: "1 сорт", q: 359, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105803/products_v2/prod_plitburg-sg701390r_fregat_bezhevyy_obreznoy_kg_20_80_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 2675, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "DACITE BASE GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2633, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Savage Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2478, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "SILENT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2345, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Black Terrazzo Чёрный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2187, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776036431/products_v2/prod_eletto-588112001.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Matera Бежевый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2158, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "Байтерек Бежевый (Baiterek Bej)", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1946, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/298/li77bguk3m8o07ob1aje84rauh1aoveq.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Прожетто Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1751, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090702/products_v2/prod_plitburg-prozhetto_d_seryy_temnyy_polirov_pr0066_60_30_m_kvadrat_vyvod.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1421, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Грани Таганая", n: "GT202M КРИСТАЛЬНО-МОЛОЧНЫЙ", s: "600 × 600 мм", k: "600×600", g: "", q: 1369, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Евро-Керамика", n: "РИМ БЕЖЕВЫЙ Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 1362, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "CALACATTA GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1251, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776036168/products_v2/prod_eletto-589122002.jpg", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "AUTUNNO BASE LIGHT BEIGE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1176, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038365/products_v2/prod_010300000232.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Калакатта Серые", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1134, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091078/products_v2/prod_plitburg-kalakatta_pr_seryy_svetlyy_polirovn_kg_120_60_pr0162_m_kvadrat_vyvod.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1085, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Marble line dark grey Серый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1042, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038430/products_v2/prod_010100001300.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 961, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "PULPIS GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 839, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035196/products_v2/prod_azori-00-00108582.jpg", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "NATURA WHITE РЫЖИЕ ПРОЖИЛКИ", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 761, p: 1080, img: "https://lincer.ru/upload/iblock/522/pd5eynlyzx505o8mwlgska60vt3ug1jd.png", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "CONCRETE LIGHT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 735, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034329/products_v2/prod_azori-503231201.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 732, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Ривьера Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 707, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4cc/400_400_1/3xczzwk3zfz88abc4ajx1janrhq6n4xe.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 521, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Оранжевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 442, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Фиолетовый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "2 сорт", q: 403, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Antibs Бежевый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 387, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Matera СЕРЫЙ", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 360, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "CHIPS WHITE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 358, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/202/400_400_1/2024d81b983277e82e628b619ce17f37.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 353, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Магма Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 334, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Магма Серый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 240, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 237, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 226, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 216, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 210, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 190, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 158, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776103984/products_v2/prod_plitburg-monte_tiberio_kg_60_60_sg622602r_lappat_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Евро-Керамика", n: "ГРАНДАС Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "2 сорт", q: 156, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "В60324", s: "600 × 600 мм", k: "600×600", g: "", q: 154, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Желтый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 106, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Rocks Light Grey Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 105, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 101, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "В60336", s: "600 × 600 мм", k: "600×600", g: "", q: 97, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Пурпурно-Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 74, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Зеленый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 72, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Синий Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 50, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 48, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Фондамента Серый Темный", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 44, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/54c/400_400_1/v4z70c3mk7nkfnpn3kb4w8ayeyxnz3yj.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 34, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
-  { t: "gres", b: "Евро-Керамика", n: "10 GCR 0016. ТЕХНО", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 34, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a6b/400_400_1/a6b1e28947c8006bf9da3d8875496e42.webp", isPhoto: true },
-  { t: "gres", b: "Казахстан", n: "В60332", s: "600 × 600 мм", k: "600×600", g: "", q: 32, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 1152, p: 450, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e50/400_400_1/e5021d10686713407142223c4b3501a6.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Роял Ноэль Эмперадор Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 1044, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776089385/products_v2/prod_plitburg-130762_royal_plitka_d_sten_20_45_m_kvadrat.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Шерон Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 961, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Прайм Цемент Светло-Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 802, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091378/products_v2/prod_plitburg-730571_keramogranit_prime_seryy_45kh45_pieza_rosa.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Мадра Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 642, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Mono smoke Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 633, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776033264/products_v2/prod_azori-508851101.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Луксор Вуд Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 563, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/f5b/f5bec7703e5d6743d74ead97b6d952b9.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Palette Skin Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 534, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 385, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 228, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035409/products_v2/prod_nefrit-00-00-5-17-00-00-000.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Слим Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 207, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 201, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "S.WHITE Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 172, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091721/products_v2/prod_plitburg-100000_1081_tile_white_d_sten_50_25_nefrit_keramika.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 163, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Серый Светлый Матовый обрезной", s: "300 × 600 × 9 мм", k: "600×300", g: "", q: 126, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7d3/400_400_1/bm9xbiea19c28ko1wfdjhsh1hqo3p73y.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Монохромо Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 115, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Saboya Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 111, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035325/products_v2/prod_nefrit-00-00-5-18-00-06-1082.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 68, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Раф Рельеф зеленый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 61, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Стоун Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 61, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104099/products_v2/prod_plitburg-pro_stoun_antratsit_obreznoy_kg_60_60_dd600600r_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Frida Grey", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 57, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Hugo Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 54, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037841/products_v2/prod_010100001635.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Venice Crema Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 45, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/88b/400_400_1/10wgjdf2fan0im74d9v0wi1yam7tvmlc.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 40, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e50/400_400_1/e5021d10686713407142223c4b3501a6.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Бейс Калакатта Грей", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 39, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сиата Оливковый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 34, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 02 Рефлёная", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 1335, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037875/products_v2/prod_010100001524.jpg", isPhoto: true },
-  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 01 Гладкая", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 31, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037875/products_v2/prod_010100001524.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Риф Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2570, p: 400, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2274, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/202/400_400_1/2024d81b983277e82e628b619ce17f37.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Тесина Песочный", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2205, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091696/products_v2/prod_plitburg-160106_1211_portelu_plitka_d_polov_tesina_38_5_38_5_nefrit_keramika.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Синий", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1454, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/202/400_400_1/2024d81b983277e82e628b619ce17f37.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Грэйс Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1362, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091478/products_v2/prod_plitburg-nr0333_keramogranit_grace_120x60_progres.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1347, p: 450, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лайт Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1150, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034707/products_v2/prod_azori-583252001.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Моногамма Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 840, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Alcor Светлый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 498, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Даф Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 420, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 37, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Бежевый обрезной", s: "600 × 150 × 11 мм", k: "600×150", g: "1 сорт", q: 93, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7d3/400_400_1/bm9xbiea19c28ko1wfdjhsh1hqo3p73y.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 1155, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Глэдис Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 828, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 598, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cda/400_400_1/xqzu9f13rucbnz038cv2jc5ja1s5ugs7.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 562, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cda/400_400_1/xqzu9f13rucbnz038cv2jc5ja1s5ugs7.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Розовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 546, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Голубой", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 531, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 505, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cda/400_400_1/xqzu9f13rucbnz038cv2jc5ja1s5ugs7.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 472, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035409/products_v2/prod_nefrit-00-00-5-17-00-00-000.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Sens Light Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 368, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776073236/products_v2/prod_plitburg-senso_grey_light_pg_01_12_5_50_gracia_ceramica.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Paradise White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 264, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Коричневый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 224, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Interni Grey Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 173, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Oslo Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 124, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037320/products_v2/prod_010400001039.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Эмилия Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 120, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ea3/400_400_1/abtmloyynxvbr6afhpiue7cvpsw2vjbm.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Atlantic Light Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 99, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776033148/products_v2/prod_azori-586562001.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Artdeco White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 86, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Касл Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 69, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776084011/products_v2/prod_plitburg-plitka_dlya_sten_nyukasl_150341.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 68, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cda/400_400_1/xqzu9f13rucbnz038cv2jc5ja1s5ugs7.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Лиловый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 43, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фреш Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 30, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9dc/400_400_1/9dc706e9f10d85e7900fabd14eda66f4.webp", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/f5b/f5bec7703e5d6743d74ead97b6d952b9.webp", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "СМОУК Серый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "ВАРДИ Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1070, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2e5/400_400_1/o089se33kfq4edmjs9q0ny9tsl8czw8p.webp", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 03", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 377, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/f5b/f5bec7703e5d6743d74ead97b6d952b9.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Hornito Silver Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2626, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ea3/400_400_1/abtmloyynxvbr6afhpiue7cvpsw2vjbm.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Chantilly Cemento Navy", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2432, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Astaria Graphite Графит", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2255, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Breccia Romano Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1573, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b4f/400_400_1/uqmxyz7h37jvee0r7e9pxut38lx1qmna.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1002, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034552/products_v2/prod_azori-00-00002402.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Sonata Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 430, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091617/products_v2/prod_plitburg-731171_sonata_kg_45_45_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Grandwood Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 390, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/f5b/f5bec7703e5d6743d74ead97b6d952b9.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Mezzo Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 109, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091458/products_v2/prod_plitburg-730471_keramogranit_mezzo_ceryy_45x45_pieza_rosa.jpg", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "NEO Серый", s: "400 × 400 × 7 мм", k: "400×400", g: "Стандарт", q: 1731, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038457/products_v2/prod_010300000239.jpg", isPhoto: true },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "ГЕРМЕС Белый Терраццо 02", s: "400 × 400 × 8 мм", k: "400×400", g: "Стандарт", q: 640, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/202/400_400_1/2024d81b983277e82e628b619ce17f37.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Сенат Бежевый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 325, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104768/products_v2/prod_plitburg-senat_bezh_kg_40_2_40_2_sg155700r_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Мотиво Серый Светлый", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 309, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/627/400_400_1/456lychtf8fb29ytsxrf3isp080o2md2.webp", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Сенат Серый Светлый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 239, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104768/products_v2/prod_plitburg-senat_bezh_kg_40_2_40_2_sg155700r_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Норд Белый", s: "400 × 400 × 8 мм", k: "400×400", g: "3 сорт", q: 144, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Гермес Коричневый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 994, p: 450, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Парфюм бежевый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 170, p: 450, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Синий", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 804, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/cda/400_400_1/xqzu9f13rucbnz038cv2jc5ja1s5ugs7.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Желтый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 478, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Оранжевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 472, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Голубой", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 351, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 350, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Зеленый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 344, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 319, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд ТЕМНО Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 312, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 268, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 219, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 174, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 172, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Моноколор Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 169, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038507/products_v2/prod_010400001306.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 129, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "ПК", q: 128, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d85/400_400_1/d85da3f0ec1aac4584807e7b0fb10ac0.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Красный", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 117, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 87, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Терракотовый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 72, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Карен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 64, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Кураж 2 КРАСНЫЙ", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 57, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035515/products_v2/prod_nefrit-04-01-1-09-00-35-050-0.jpg", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дженни Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 43, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/5d1/5d183f229d29737f5b1af35238e23dae.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Элегия Песочный", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 126, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ea3/400_400_1/abtmloyynxvbr6afhpiue7cvpsw2vjbm.webp", isPhoto: true },
-  { t: "tile", b: "Нефрит-Керамика", n: "Росси Серый", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 63, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c91/400_400_1/c91e7b7a18cc6b15e16ddffe4700f55e.webp", isPhoto: true },
-  { t: "gres", b: "М-Квадрат", n: "Мюнхен Камни Коричневый", s: "330 × 330 × 8 мм", k: "330×330", g: "ГОСТ", q: 351, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090543/products_v2/prod_plitburg-725962_myunkhen_uzor_d_pola_kg_33kh33_m_kvadrat.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Бежевый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 2073, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105052/products_v2/prod_plitburg-kolliano_bezh_svetlyy_sg_912600n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Светло-Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 1373, p: 610, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Гармония Белый", s: "300 × 300 × 8 мм", k: "300×300", g: "2 сорт", q: 272, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776100231/products_v2/prod_plitburg-garmoniya_kg_seraya_sg917600n_30_30_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 8 мм", k: "300×300", g: "", q: 220, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Техно 2 Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037231/products_v2/prod_kvadro-decor-kdt03a21m.jpg", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Техно-2 Серый Матовая Ступень", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/507/400_400_1/lxjoic8r1003d32c3f3edl7bx8cahw3b.webp", isPhoto: true },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Утолщённый Соль-Перец Серый Матовая", s: "300 × 300 × 12 мм", k: "300×300", g: "", q: 74, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Урбан Серый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 66, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104724/products_v2/prod_plitburg-urban_seryy_sg927900n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Серый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 47, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105052/products_v2/prod_plitburg-kolliano_bezh_svetlyy_sg_912600n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Белый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 742, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030680/products_v2/prod_kerama-marazzi-5281.jpg", isPhoto: true },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Бежевый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 339, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030680/products_v2/prod_kerama-marazzi-5281.jpg", isPhoto: true },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Персиковый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 99, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030821/products_v2/prod_kerama-marazzi-5177.jpg", isPhoto: true },
+{"t":"gres","b":"Kerama Marazzi","n":"Мирабо Серый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":7848,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/dc8/320_320_1/dc8bdb371c36720a80ee968a312a79be.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Светлый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":7293,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Bianco Белый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":6708,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Terrazzo mix Бежевый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":6378,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Astaria Ice Белый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":6309,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Hornito Amber Коричневый Светлый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":5197,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"Квадро Декор","n":"Керамогранит технический Соль-Перец Серый Матовая","s":"300 × 300 × 7 мм","k":"300×300","g":"","q":4912,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/f36/320_320_1/f3632254448c78a146ea7d6b6466452c.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Toronto Betton Grey","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":4841,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Ferrum Коричневый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":4017,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Мирабо Серый Тёмный Матовый Обрезной","s":"600 × 1200 × 9 мм","k":"1200×600","g":"1 сорт","q":3342,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/ad5/320_320_1/ojciu7ia6dwjzdcw4kfgwuqfrisupghi.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Терраццо Серый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":3126,"p":950,"img":"https://lincer.ru/upload/resize_cache/iblock/87a/320_320_1/mypaloms3ft1giuwjl8x14yl299ls3yl.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Каньон Серый Светлый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":3126,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Белый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":3115,"p":null,"img":"https://plitburg.ru/upload/dev2fun.imagecompress/webp/iblock/4b3/nmipqyxeiau2a0n5jy2b9eoyb9kuxqkx.webp","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Sanar Серый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":2794,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Мирабо Бежевый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":2675,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/c28/320_320_1/c28a4186e0e7997886825dab7afbafda.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"DACITE BASE GREY","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":2633,"p":1080,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Hornito Silver Серый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":2626,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Риф Бежевый","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":2570,"p":400,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Savage Коричневый Светлый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":2478,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Chantilly Cemento Navy","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":2432,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"Казахстан","n":"SILENT GREY","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":2345,"p":1080,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Террацио Белый","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":2274,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Astaria Graphite Графит","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":2255,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Тесина Песочный","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":2205,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Black Terrazzo Чёрный","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":2187,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Matera Бежевый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":2158,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Коллиано Бежевый Светлый","s":"300 × 300 × 8 мм","k":"300×300","g":"1 сорт","q":2073,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/d76/320_320_1/d76904bb801634dabcc3be9fe4071b7a.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"ВAITEREK BEJ","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":1946,"p":1080,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Прожетто Серый Светлый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":1751,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"NEO Серый","s":"400 × 400 × 7 мм","k":"400×400","g":"Стандарт","q":1731,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GTF400M ЗИМНИЙ БЕЛЫЙ","s":"1200 × 600 мм","k":"1200×600","g":"","q":1587,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Breccia Romano Белый","s":"450 × 450 × 8 мм","k":"450×450","g":"Стандарт","q":1573,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Террацио Синий","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":1454,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GT047M УМБРА","s":"1200 × 600 мм","k":"1200×600","g":"","q":1451,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Мирабо Серый Тёмный Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":1421,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/2cd/320_320_1/2cd2214d6c329885ba69f01a8d3d2554.jpg","isPhoto":true},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GTF427M БЕЖЕВЫЙ","s":"1200 × 600 мм","k":"1200×600","g":"","q":1406,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Квадро Декор","n":"Керамогранит технический Соль-Перец Светло-Серый Матовая","s":"300 × 300 × 7 мм","k":"300×300","g":"","q":1373,"p":610,"img":"https://lincer.ru/upload/resize_cache/iblock/074/320_320_1/07433e15fc146e615fa871f61bfddcdd.jpg","isPhoto":true},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GT202M КРИСТАЛЬНО-МОЛОЧНЫЙ","s":"600 × 600 мм","k":"600×600","g":"","q":1369,"p":null,"img":"https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/074/074477d5e79cd5c0a8c701e9aac7cd3f.webp","isPhoto":true},
+  {"t":"gres","b":"Евро-Керамика","n":"РИМ БЕЖЕВЫЙ Рект","s":"600 × 600 × 10 мм","k":"600×600","g":"1 сорт","q":1362,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Грэйс Белый","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":1362,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Нарни Серый","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":1347,"p":450,"img":"","isPhoto":false},
+  {"t":"tile","b":"Unitile (г. Шахты)","n":"Delux beige wall 02 РЕФЛЁНАЯ","s":"600 × 250 × 9 мм","k":"600×250","g":"","q":1335,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Казахстан","n":"CALACATTA GREY","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":1251,"p":1080,"img":"https://lincer.ru/upload/resize_cache/iblock/189/320_320_1/bwvvmtb0w29a1e5ig1ti01ex0uctlyqn.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"AUTUNNO BASE LIGHT BEIGE","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":1176,"p":1080,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Дрим Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":1155,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Лия Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"Стандарт","q":1152,"p":450,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Лайт Бежевый","s":"600 × 200 × 9 мм","k":"600×200","g":"Стандарт","q":1150,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Калакатта Серые","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":1134,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"НОРДЛАНД Бежевый 01","s":"125 × 500 мм","k":"500×125","g":"Стандарт","q":1133,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"СМОУК Серый 01","s":"125 × 500 мм","k":"500×125","g":"Стандарт","q":1133,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Белый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":1085,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/987/320_320_1/h0p5tfapegkuhuhqm9colvsgz03qyniy.jpg","isPhoto":true},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"ВАРДИ Бежевый 01","s":"125 × 500 мм","k":"500×125","g":"Стандарт","q":1070,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Роял Ноэль Эмперадор Коричневый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":1044,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Marble line dark grey Серый Тёмный","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":1042,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Terrazzo mix Бежевый","s":"450 × 450 × 8 мм","k":"450×450","g":"Стандарт","q":1002,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Гермес Короичневый","s":"400 × 250 × 8 мм","k":"400×250","g":"Стандарт","q":994,"p":450,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Шерон Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"Стандарт","q":961,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Магма Коричневый Темный","s":"600 × 600 × 10 мм","k":"600×600","g":"Стандарт","q":961,"p":950,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Моногамма Серый","s":"600 × 200 × 9 мм","k":"600×200","g":"ПК","q":840,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Казахстан","n":"PULPIS GREY","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":839,"p":1080,"img":"https://lincer.ru/upload/resize_cache/iblock/633/320_320_1/gt78h1h5ulbfvfc0sfki5ebdmrku8luu.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Глэдис Бежевый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":828,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Хитроу Синий","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":804,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Прайм Цемент Светло-Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"Сортовая","q":802,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Черный Обрезной","s":"600 × 1200 × 9 мм","k":"1200×600","g":"2 сорт","q":763,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/7af/320_320_1/02rtp2m0si13z5p0kbmfrwul036u1btz.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Монте Тиберио Серый Светлый Обрезной","s":"600 × 1200 × 9 мм","k":"1200×600","g":"2 сорт","q":762,"p":1250,"img":"https://lincer.ru/upload/resize_cache/iblock/27f/320_320_1/y96vd38d6ojtddaop04dbnhl66h59qyy.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"NATURA WHITE РЫЖИЕ ПРОЖИЛКИ","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":761,"p":1080,"img":"","isPhoto":false},
+  {"t":"tile","b":"Kerama Marazzi","n":"Калейдоскоп Белый","s":"200 × 200 мм","k":"200×200","g":"1 сорт","q":742,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/ab0/320_320_1/ab0ecf1b0eea13b132c3268f1657199c.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"CONCRETE LIGHT GREY","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":735,"p":1080,"img":"https://lincer.ru/upload/resize_cache/iblock/d15/320_320_1/fxq1hg787qs4058kcebbj1h1zz0tnpyl.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Серый Светлый","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":732,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/2f2/320_320_1/ikzxo89o0691wt3mp8u0soa67ikrdmiu.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Ривьера Серый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":707,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GTF422M РЖАВЧИНА","s":"1200 × 600 мм","k":"1200×600","g":"","q":680,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Мадра Коричневый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":642,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"ГЕРМЕС Белый Терраццо 02","s":"400 × 400 × 8 мм","k":"400×400","g":"Стандарт","q":640,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Mono smoke Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":633,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Бирюзовый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":598,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Серый Светлый Обрезной","s":"600 × 1200 × 9 мм","k":"1200×600","g":"1 сорт","q":567,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/51d/320_320_1/v86dse7a7ijxsxer2sqrkp73btlb4xxd.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Луксор Вуд Коричневый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":563,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Синий","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":562,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Розовый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":546,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Palette Skin Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":534,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Дрим Голубой","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":531,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Коричневый Светлый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":521,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/711/320_320_1/xbcbspb16oufl6yvj1c3sc6eemuuc152.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Бирюзовый","s":"500 × 250 × 9 мм","k":"500×250","g":"ПК","q":505,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Alcor Светлый","s":"600 × 200 × 9 мм","k":"600×200","g":"ПК","q":498,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Желтый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":478,"p":null,"img":"https://plitburg.ru/upload/dev2fun.imagecompress/webp/iblock/496/r9mfds7eitcpsnh48vyjt1qd9v0nq5qa.webp","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Однотонная Белый Матовая","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":472,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Оранжевый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":472,"p":null,"img":"https://plitburg.ru/upload/dev2fun.imagecompress/webp/iblock/c02/vyzarrh7xs95g1ffn91tox698l3r1ffm.webp","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Оранжевый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":442,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/bf7/320_320_1/bf7bfb7bc912600c203b11b30e249e6f.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Sonata Серый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":430,"p":650,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Даф Серый","s":"600 × 200 × 9 мм","k":"600×200","g":"Оптимум","q":420,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Фиолетовый Обрезной","s":"600 × 600 × 11 мм","k":"600×600","g":"2 сорт","q":403,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Grandwood Бежевый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":390,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Antibs Бежевый Тёмный","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":387,"p":950,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сарагоса Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":385,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Unitile (г. Шахты)","n":"НОРДЛАНД Бежевый 03","s":"125 × 500 мм","k":"500×125","g":"Стандарт","q":377,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Sens Light Серый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":368,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Matera СЕРЫЙ","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":360,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Фрегат Бежевый Обрезной","s":"200 × 800 × 9 мм","k":"800×200","g":"1 сорт","q":359,"p":null,"img":"https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/595/k49kgdbh7ve7t4wc2y72z1j6mk7tleuj.webp","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"CHIPS WHITE","s":"600 × 600 × 9,5 мм","k":"600×600","g":"","q":358,"p":1080,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Терраццо Серый","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":353,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/87a/320_320_1/mypaloms3ft1giuwjl8x14yl299ls3yl.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Голубой","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":351,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Мюнхен Камни Коричневый","s":"330 × 330 × 8 мм","k":"330×330","g":"ГОСТ","q":351,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Норд Серый","s":"400 × 200 × 8 мм","k":"400×200","g":"Оптимум","q":350,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Зеленый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":344,"p":null,"img":"https://plitburg.ru/upload/dev2fun.imagecompress/webp/iblock/dbb/2fzdgksdey0vmtrm6gl3iedlf8v6hmp1.webp","isPhoto":true},
+  {"t":"tile","b":"Kerama Marazzi","n":"Калейдоскоп Бежевый","s":"200 × 200 мм","k":"200×200","g":"1 сорт","q":339,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/228/320_320_1/2284eac41c089343473a7f1a23dcdc9f.jpg","isPhoto":true},
+  {"t":"gres","b":"М-Квадрат","n":"Магма Серый Светлый","s":"600 × 600 × 10 мм","k":"600×600","g":"Стандарт","q":334,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Сенат Бежевый Обрезной","s":"400 × 400 × 8 мм","k":"400×400","g":"1 сорт","q":325,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/6ea/320_320_1/6eadbcee3e531c3fab774b0833f3d5b3.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Норд Бежевый","s":"400 × 200 × 8 мм","k":"400×200","g":"Оптимум","q":319,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Норд ТЕМНО Бежевый","s":"400 × 200 × 8 мм","k":"400×200","g":"Оптимум","q":312,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Мотиво Серый Светлый","s":"400 × 400 × 8 мм","k":"400×400","g":"1 сорт","q":309,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/445/320_320_1/2krbffdgfkvcaewnwfd84ulcagd5omm0.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Серый Светлый Обрезной","s":"600 × 1200 × 9 мм","k":"1200×600","g":"2 сорт","q":283,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/51d/320_320_1/v86dse7a7ijxsxer2sqrkp73btlb4xxd.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Гармония Белый","s":"300 × 300 × 8 мм","k":"300×300","g":"2 сорт","q":272,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/4b0/320_320_1/4b0df93b7a79705c7a03fe961d4346e2.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Серый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":268,"p":null,"img":"https://plitburg.ru/upload/dev2fun.imagecompress/webp/iblock/a13/udf6xzjl3o93le7m16wvv4pw4n886eog.webp","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Paradise White Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":264,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Магма Серый Темный","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":240,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Сенат Серый Светлый Обрезной","s":"400 × 400 × 8 мм","k":"400×400","g":"1 сорт","q":239,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/aaa/320_320_1/aaa3fcf9c9e51774b9a950761fa03e9a.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Терраццо Серый","s":"600 × 600 × 9 мм","k":"600×600","g":"2 сорт","q":237,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/87a/320_320_1/mypaloms3ft1giuwjl8x14yl299ls3yl.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Однотонная Белый Матовая","s":"600 × 300 × 9 мм","k":"600×300","g":"Сортовая","q":228,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Красный Обрезной","s":"600 × 600 × 11 мм","k":"600×600","g":"1 сорт","q":226,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/c56/320_320_1/c569e0b98e41ea5d77f381553347d971.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Коричневый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":224,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Квадро Декор","n":"Керамогранит технический Соль-Перец Серый Матовая","s":"300 × 300 × 8 мм","k":"300×300","g":"","q":220,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/f36/320_320_1/f3632254448c78a146ea7d6b6466452c.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Норд Бежевый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":219,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Магма Коричневый Светлый","s":"600 × 600 × 10 мм","k":"600×600","g":"ГОСТ","q":216,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Терраццо Серый Светлый","s":"600 × 600 × 9 мм","k":"600×600","g":"2 сорт","q":210,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/da6/320_320_1/utn5o6eyu170ihwyk9dtk34g9ppvhrat.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Слим Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":207,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/22c/320_320_1/22cb48df2a0fb5fe7fdab54a249d3297.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сарагоса Коричневый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":201,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Белый Обрезной","s":"600 × 1200 × 11 мм","k":"1200×600","g":"3 сорт","q":197,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/e92/320_320_1/f25c894udzyz113ia4jr7xcqhxcej3bm.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Белый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"2 сорт","q":190,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/987/320_320_1/h0p5tfapegkuhuhqm9colvsgz03qyniy.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Норд Серый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":174,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Interni Grey Серый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":173,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Фьюжен Серый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":172,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"S.WHITE Белый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":172,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Парфюм бежевый","s":"400 × 250 × 8 мм","k":"400×250","g":"Стандарт","q":170,"p":450,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Моноколор Белый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":169,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сарагоса Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":163,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Монте Тиберио Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":158,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/2ac/320_320_1/henze2hcdkhrgr7e2887sy25of8i4stt.jpg","isPhoto":true},
+  {"t":"gres","b":"Евро-Керамика","n":"ГРАНДАС Рект","s":"600 × 600 × 10 мм","k":"600×600","g":"2 сорт","q":156,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/123/320_320_1/123f8bedf353356e7ac33c35dd1b9c0d.jpg","isPhoto":true},
+  {"t":"gres","b":"Казахстан","n":"В60324","s":"600 × 600 мм","k":"600×600","g":"","q":154,"p":1080,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Норд Белый","s":"400 × 400 × 8 мм","k":"400×400","g":"3 сорт","q":144,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Фьюжен Белый","s":"400 × 200 × 8 мм","k":"400×200","g":"Оптимум","q":129,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сарагоса Белый","s":"400 × 200 × 8 мм","k":"400×200","g":"ПК","q":128,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Элегия Песочный","s":"385 × 385 × 8,5 мм","k":"385×385","g":"Стандарт","q":126,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Kerama Marazzi","n":"Про Матрикс Серый Светлый Матовый обрезной","s":"300 × 600 × 9 мм","k":"600×300","g":"","q":126,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/4cc/320_320_1/g925pob859qw8zoamqjnf566jng8qfgv.jpg","isPhoto":true},
+  {"t":"tile","b":"","n":"Oslo Синий","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":124,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Эмилия Бежевый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":120,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Kids Красный","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":117,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Монохромо Белый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":115,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Saboya Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"Стандарт","q":111,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Mezzo Серый","s":"450 × 450 × 8 мм","k":"450×450","g":"ГОСТ","q":109,"p":650,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Желтый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":106,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"М-Квадрат","n":"Rocks Light Grey Серый Светлый","s":"600 × 600 × 10 мм","k":"600×600","g":"Стандарт","q":105,"p":950,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Бежевый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":101,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Kerama Marazzi","n":"Калейдоскоп Персиковый","s":"200 × 200 мм","k":"200×200","g":"1 сорт","q":99,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/30e/320_320_1/30e44ac55fb493d514c5ab350c79334f.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Atlantic Light Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":99,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Казахстан","n":"В60336","s":"600 × 600 мм","k":"600×600","g":"","q":97,"p":1080,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Про Матрикс Бежевый обрезной","s":"600 × 150 × 11 мм","k":"600×150","g":"1 сорт","q":93,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Фьюжен Белый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":87,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Квадро Декор","n":"Керамогранит технический Техно 2 Серый Матовая","s":"300 × 300 × 7 мм","k":"300×300","g":"","q":87,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"","n":"Керамогранит технический Техно-2 Серый Матовая Ступень","s":"300 × 300 × 7 мм","k":"300×300","g":"","q":87,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Artdeco White Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":86,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Пурпурно-Красный Обрезной","s":"600 × 600 × 11 мм","k":"600×600","g":"1 сорт","q":74,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Квадро Декор","n":"Керамогранит технический УТОЛЩЕННЫЙ Соль-Перец Серый Матовая","s":"300 × 300 × 12 мм","k":"300×300","g":"","q":74,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Хитроу Терракотовый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":72,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Зеленый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":72,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Касл Серый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":69,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сарагоса Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":68,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Джойс Синий","s":"500 × 250 × 9 мм","k":"500×250","g":"ПК","q":68,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Урбан Серый Светлый","s":"300 × 300 × 8 мм","k":"300×300","g":"1 сорт","q":66,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Карен Серый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":64,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Росси Серый","s":"385 × 385 × 8,5 мм","k":"385×385","g":"Стандарт","q":63,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Раф Рельеф зеленый","s":"600 × 300 × 9 мм","k":"600×300","g":"Сортовая","q":61,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Стоун Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":61,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/446/320_320_1/68vzptybe8dc07ywhrj8n5f9da9yjdf9.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Кураж 2 КРАСНЫЙ","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":57,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Frida Grey","s":"600 × 300 × 9 мм","k":"600×300","g":"ПК","q":57,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Hugo Серый","s":"600 × 300 × 9 мм","k":"600×300","g":"Стандарт","q":54,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Синий Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"1 сорт","q":50,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/d9b/320_320_1/d9bbd7a253dee9327756a136743fcb74.jpg","isPhoto":true},
+  {"t":"gres","b":"Kerama Marazzi","n":"Радуга Бежевый Обрезной","s":"600 × 600 × 11 мм","k":"600×600","g":"1 сорт","q":48,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Коллиано Серый","s":"300 × 300 × 8 мм","k":"300×300","g":"1 сорт","q":47,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/3cf/320_320_1/3cf5d0f682068a56d659a174b1f0d69a.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Venice Crema Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":45,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Фондамента Серый Темный","s":"600 × 600 × 11 мм","k":"600×600","g":"1 сорт","q":44,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/2ac/320_320_1/rn7mt6d93dditm0g7ddk3xl2un2ojbpn.jpg","isPhoto":true},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Дрим Лиловый","s":"500 × 250 × 9 мм","k":"500×250","g":"Стандарт","q":43,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Дженни Бежевый","s":"400 × 200 × 8 мм","k":"400×200","g":"Стандарт","q":43,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Лия Бежевый","s":"600 × 300 × 9 мм","k":"600×300","g":"Оптимум","q":40,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Бейс Калакатта Грей","s":"600 × 300 × 9 мм","k":"600×300","g":"Стандарт","q":39,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Нарни Серый","s":"600 × 200 × 9 мм","k":"600×200","g":"Оптимум","q":37,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Грани Таганая","n":"Грани Таганая GT061M ЯНТАРЬ","s":"1200 × 600 мм","k":"1200×600","g":"","q":35,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Kerama Marazzi","n":"Королевская Дорога Коричневый Светлый Обрезной","s":"600 × 600 × 9 мм","k":"600×600","g":"2 сорт","q":34,"p":null,"img":"https://lincer.ru/upload/resize_cache/iblock/711/320_320_1/xbcbspb16oufl6yvj1c3sc6eemuuc152.jpg","isPhoto":true},
+  {"t":"gres","b":"Евро-Керамика","n":"10 GCR 0016. ТЕХНО","s":"600 × 600 × 10 мм","k":"600×600","g":"1 сорт","q":34,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Сиата Оливковый","s":"600 × 300 × 9 мм","k":"600×300","g":"Сортовая","q":34,"p":null,"img":"","isPhoto":false},
+  {"t":"gres","b":"Казахстан","n":"В60332","s":"600 × 600 мм","k":"600×600","g":"","q":32,"p":1080,"img":"","isPhoto":false},
+  {"t":"tile","b":"Unitile (г. Шахты)","n":"Delux beige wall 01 ГЛАДКАЯ","s":"600 × 250 × 9 мм","k":"600×250","g":"","q":31,"p":null,"img":"","isPhoto":false},
+  {"t":"tile","b":"Нефрит-Керамика","n":"Фреш Белый","s":"500 × 250 × 9 мм","k":"500×250","g":"Оптимум","q":30,"p":null,"img":"","isPhoto":false}
+]
 ]
 
 // Текстуры для безопасного отката, если удаленная ссылка не загрузилась
@@ -294,7 +290,8 @@ function getSafeFallback(item: StroyItem): string {
   return FALLBACK_TEXTURES.concrete
 }
 
-function formatNumber(n: number): string {
+function formatNumber(n: number | null | undefined): string {
+  if (n === null || n === undefined) return '0'
   return n.toLocaleString('ru-RU')
 }
 
@@ -521,7 +518,7 @@ export default function StroyPageClient() {
     setTimeout(() => setCopied(false), 2200)
   }
 
-  function handleCallSubmit(e: FormEvent) {
+  async function handleCallSubmit(e: FormEvent) {
     e.preventDefault()
     const digitsOnly = callPhone.replace(/\D/g, '')
     if (digitsOnly.length < 10) {
@@ -529,8 +526,46 @@ export default function StroyPageClient() {
       return
     }
 
-    setCallStatus('')
-    setCallSuccess(true)
+    setCallStatus('Отправляем...')
+
+    const what = selectedItem
+      ? `Позиция: ${selectedItem.n}, ${selectedItem.s}${selectedItem.b ? `, ${selectedItem.b}` : ''}${selectedItem.g ? `, ${selectedItem.g}` : ''}${quantity > 0 ? `. Нужно: ${quantity} м²` : ''}${selectedItem.p ? `. Цена на сайте: ${formatNumber(selectedItem.p)} ₽/м²` : ''}`
+      : 'Запрос с главной страницы'
+
+    const message = `Заказ звонка: ${callPhone}${callName ? ` (${callName})` : ''}. ${what}`
+
+    try {
+      if (CFG.web3formsKey) {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            access_key: CFG.web3formsKey,
+            subject: 'Заказ звонка: ТФ Керамика',
+            from_name: 'Сайт ТФ Керамика',
+            name: callName || 'Не указано',
+            phone: callPhone,
+            message: what,
+          }),
+        })
+
+        const data = await response.json()
+        if (!data.success) throw new Error('Failed')
+      }
+
+      setCallStatus('')
+      setCallSuccess(true)
+      setCallPhone('')
+      setCallName('')
+    } catch (error) {
+      const tgLink = `${CFG.tg}?text=${encodeURIComponent(message)}`
+      setCallStatus(
+        `Не удалось отправить. Напишите нам в <a href="${tgLink}" target="_blank" rel="noopener" className="underline">Telegram</a>.`
+      )
+    }
   }
 
   function exportToCsv() {
@@ -604,12 +639,10 @@ export default function StroyPageClient() {
             Оптовые складские остатки со скидкой до 70%
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight tracking-tight">
-            Плитка и керамогранит для строителей со склада в Войскорово
+            Плитка и керамогранит для строителей. Остатки со склада от 400 ₽/м²
           </h1>
           <p className="text-base sm:text-lg text-[#555d64] mb-6 max-w-3xl leading-relaxed">
-            Прямые поставки от заводов (Kerama Marazzi, Нефрит-Керамика, М-Квадрат, Unitile). Цены с НДС,
-            оплата по счёту для юрлиц и ИП. Бесплатный расчёт по смете, самовывоз сегодня или доставка на
-            объект манипулятором.
+            Цены с НДС, работаем по счёту. Забираете сами в Войскорово или заказываете доставку. Цены действуют до 31 октября или до окончания остатков.
           </p>
 
           <div className="flex gap-3 flex-wrap items-center">
@@ -631,7 +664,7 @@ export default function StroyPageClient() {
               rel="noopener"
               className="px-5 py-3 rounded-xl bg-white border-2 border-gray-300 text-gray-800 font-bold hover:bg-gray-50 transition-colors flex items-center gap-2"
             >
-              <Send className="w-4 h-4 text-[#229ED9]" /> Telegram снабжения
+              <Send className="w-4 h-4 text-[#229ED9]" /> Написать в Telegram
             </a>
           </div>
         </div>
@@ -1036,7 +1069,7 @@ export default function StroyPageClient() {
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3 text-sm">
               <div className="font-bold text-lg text-[#f4c400] flex items-center gap-2">
-                <Building2 className="w-5 h-5" /> Склад «Керамогранит Опт»
+                <Building2 className="w-5 h-5" /> ТФ Керамика
               </div>
               <p className="flex items-start gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-gray-400" />
@@ -1068,7 +1101,7 @@ export default function StroyPageClient() {
 
         {/* Footer info note */}
         <div className="text-center text-xs text-gray-500 py-6">
-          ООО «Керамогранит Опт». Вся представленная продукция сертифицирована. Актуальные остатки и бронь уточняйте у менеджеров отдела оптовых продаж.
+          ООО «ТФ Керамика». Цены и наличие актуальны на дату обновления, остатки по позициям уточняйте у менеджера.
         </div>
       </div>
 
