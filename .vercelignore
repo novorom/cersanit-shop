@@ -1,0 +1,9 @@
+app/Console
+app/Http
+app/Filament
+app/Models
+app/Providers
+app/Services
+app/Livewire
+app/*.php
+app/**/*.php
