@@ -18,16 +18,6 @@ export const metadata: Metadata = {
 export default function StroyPage() {
   return <StroyPageClient />
 }
-
-const CFG = {
-  phone: '+7 905 205-09-00',
-  tg: 'https://t.me/flyroman',
-  updated: '1 октября 2026',
-  address: 'Ленинградская область, Тосненский район, Тельмановское городское поселение, посёлок Войскорово, 14В',
-  hours: 'Пн–Пт, с 08:00 до 18:00',
-}
-
-const ITEMS = [
   { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 7848, p: null },
   { t: "tile", b: "Нефрит-Керамика", n: "Джойс Светлый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 7293, p: null },
   { t: "gres", b: "М-Квадрат", n: "Bianco Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6708, p: 650 },
