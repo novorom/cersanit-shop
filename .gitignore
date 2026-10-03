@@ -25,3 +25,4 @@ Thumbs.db
 .aider*
 .vercel
 .env*
+pnpm-lock.yaml
