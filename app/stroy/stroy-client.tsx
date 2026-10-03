@@ -1,9 +1,41 @@
 'use client'
 
-import { useState } from 'react'
-import { Phone, X, Search, Send, Copy, ArrowUp } from 'lucide-react'
+import { useState, useMemo, useEffect, FormEvent } from 'react'
+import {
+  Phone,
+  X,
+  Search,
+  Send,
+  Copy,
+  Check,
+  Download,
+  ArrowUp,
+  RotateCcw,
+  ZoomIn,
+  Building2,
+  MapPin,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+  Maximize2,
+  Sparkles,
+  Calculator,
+  Layers,
+  Truck,
+  FileCheck,
+  PackageCheck,
+  HelpCircle,
+} from 'lucide-react'
 
 const SITE_URL = 'https://www.opt-plitki-spb.ru'
+
+// Прокси-CDN: бесплатный сервис, конвертирует в WebP, сжимает, кэширует
+function optimizeImage(url: string, width = 400): string {
+  if (!url || url.startsWith("/")) return url
+  // Убираем https:// для weserv.nl
+  const clean = url.replace(/^https?:\/\//, "")
+  return `https://images.weserv.nl/?url=${clean}&w=${width}&output=webp&q=75&il`
+}
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -16,332 +48,397 @@ const breadcrumbSchema = {
 
 const CFG = {
   phone: '+7 905 205-09-00',
+  phoneClean: '+79052050900',
   tg: 'https://t.me/flyroman',
+  email: 'info@cersanit-spb.ru',
   updated: '1 октября 2026',
   address: 'Ленинградская область, Тосненский район, Тельмановское городское поселение, посёлок Войскорово, 14В',
   hours: 'Пн–Пт, с 08:00 до 18:00',
 }
 
-const ITEMS = [
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 7848, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Светлый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 7293, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Bianco Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6708, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6378, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Astaria Ice Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6309, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Hornito Amber Коричневый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 5197, p: 650 },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 4912, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Toronto Betton Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 4841, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Ferrum Коричневый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 4017, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Матовый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 3342, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Терраццо Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 3126, p: 950 },
-  { t: "gres", b: "М-Квадрат", n: "Каньон Серый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 3126, p: 650 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 3115, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Torino Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2994, p: 650 },
-  { t: "gres", b: "Kerama Marazzi", n: "Челси Беж", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2952, p: null },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Коричневый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 2858, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Челси Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2827, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Manhattan Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2790, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Manhattan Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2781, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Arctic White", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2630, p: 650 },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Матовый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 3342, p: null },
-  { t: "gres", b: "Грани Таганая", n: "GTF400M ЗИМНИЙ БЕЛЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1587, p: null },
-  { t: "gres", b: "Грани Таганая", n: "GT047M УМБРА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1451, p: null },
-  { t: "gres", b: "Грани Таганая", n: "GTF427M БЕЖЕВЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1406, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Черный Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 763, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 762, p: 1250 },
-  { t: "gres", b: "Грани Таганая", n: "GTF422M РЖАВЧИНА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 680, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 567, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 283, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 1200 × 11 мм", k: "1200×600", g: "3 сорт", q: 197, p: null },
-  { t: "gres", b: "Грани Таганая", n: "GT061M ЯНТАРЬ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 35, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Фрегат Бежевый Обрезной", s: "200 × 800 × 9 мм", k: "800×200", g: "1 сорт", q: 359, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 2675, p: null },
-  { t: "gres", b: "Казахстан", n: "DACITE BASE GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2633, p: 1080 },
-  { t: "gres", b: "М-Квадрат", n: "Savage Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2478, p: 950 },
-  { t: "gres", b: "Казахстан", n: "SILENT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2345, p: 1080 },
-  { t: "gres", b: "М-Квадрат", n: "Black Terrazzo Чёрный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2187, p: 950 },
-  { t: "gres", b: "М-Квадрат", n: "Matera Бежевый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2158, p: 950 },
-  { t: "gres", b: "Казахстан", n: "ВАITEREK BEJ", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1946, p: 1080 },
-  { t: "gres", b: "М-Квадрат", n: "Прожетто Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1751, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1421, p: null },
-  { t: "gres", b: "Грани Таганая", n: "GT202M КРИСТАЛЬНО-МОЛОЧНЫЙ", s: "600 × 600 мм", k: "600×600", g: "", q: 1369, p: null },
-  { t: "gres", b: "Евро-Керамика", n: "РИМ БЕЖЕВЫЙ Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 1362, p: null },
-  { t: "gres", b: "Казахстан", n: "CALACATTA GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1251, p: 1080 },
-  { t: "gres", b: "Казахстан", n: "AUTUNNO BASE LIGHT BEIGE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1176, p: 1080 },
-  { t: "gres", b: "М-Квадрат", n: "Калакатта Серые", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1134, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1085, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Marble line dark grey Серый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1042, p: 950 },
-  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 961, p: 950 },
-  { t: "gres", b: "Казахстан", n: "PULPIS GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 839, p: 1080 },
-  { t: "gres", b: "Казахстан", n: "NATURA WHITE РЫЖИЕ ПРОЖИЛКИ", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 761, p: 1080 },
-  { t: "gres", b: "Казахстан", n: "CONCRETE LIGHT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 735, p: 1080 },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 732, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Ривьера Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 707, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 521, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Оранжевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 442, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Фиолетовый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "2 сорт", q: 403, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Antibs Бежевый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 387, p: 950 },
-  { t: "gres", b: "М-Квадрат", n: "Matera СЕРЫЙ", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 360, p: 950 },
-  { t: "gres", b: "Казахстан", n: "CHIPS WHITE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 358, p: 1080 },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 353, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Магма Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 334, p: 950 },
-  { t: "gres", b: "М-Квадрат", n: "Магма Серый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 240, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 237, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 226, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 216, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 210, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 190, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 158, p: null },
-  { t: "gres", b: "Евро-Керамика", n: "ГРАНДАС Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "2 сорт", q: 156, p: null },
-  { t: "gres", b: "Казахстан", n: "В60324", s: "600 × 600 мм", k: "600×600", g: "", q: 154, p: 1080 },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Желтый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 106, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Rocks Light Grey Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 105, p: 950 },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 101, p: null },
-  { t: "gres", b: "Казахстан", n: "В60336", s: "600 × 600 мм", k: "600×600", g: "", q: 97, p: 1080 },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Пурпурно-Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 74, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Зеленый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 72, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Синий Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 50, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 48, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Фондамента Серый Темный", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 44, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 34, p: null },
-  { t: "gres", b: "Евро-Керамика", n: "10 GCR 0016. ТЕХНО", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 34, p: null },
-  { t: "gres", b: "Казахстан", n: "В60332", s: "600 × 600 мм", k: "600×600", g: "", q: 32, p: 1080 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 1152, p: 450 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Роял Ноэль Эмперадор Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 1044, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Шерон Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 961, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Прайм Цемент Светло-Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 802, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Мадра Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 642, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Mono smoke Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 633, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Луксор Вуд Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 563, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Palette Skin Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 534, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 385, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 228, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Слим Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 207, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 201, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "S.WHITE Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 172, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 163, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Серый Светлый Матовый обрезной", s: "300 × 600 × 9 мм", k: "600×300", g: "", q: 126, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Монохромо Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 115, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Saboya Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 111, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 68, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Раф Рельеф зеленый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 61, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Стоун Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 61, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Frida Grey", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 57, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Hugo Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 54, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Venice Crema Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 45, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 40, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Бейс Калакатта Грей", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 39, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сиата Оливковый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 34, p: null },
-  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 02 РЕФЛЁНАЯ", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 1335, p: null },
-  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 01 ГЛАДКАЯ", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 31, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Риф Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2570, p: 400 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2274, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Тесина Песочный", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2205, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Синий", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1454, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Грэйс Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1362, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1347, p: 450 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Лайт Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1150, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Моногамма Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 840, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Alcor Светлый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 498, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Даф Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 420, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 37, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Бежевый обрезной", s: "600 × 150 × 11 мм", k: "600×150", g: "1 сорт", q: 93, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 1155, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Глэдис Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 828, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 598, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 562, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Розовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 546, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Голубой", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 531, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 505, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 472, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Sens Light Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 368, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Paradise White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 264, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Коричневый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 224, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Interni Grey Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 173, p: null },
-  { t: "tile", b: "-", n: "Oslo Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 124, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Эмилия Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 120, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Atlantic Light Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 99, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Artdeco White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 86, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Касл Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 69, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 68, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Лиловый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 43, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фреш Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 30, p: null },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "СМОУК Серый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "ВАРДИ Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1070, p: null },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 03", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 377, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Hornito Silver Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2626, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Chantilly Cemento Navy", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2432, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Astaria Graphite Графит", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2255, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Breccia Romano Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1573, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1002, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Sonata Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 430, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Grandwood Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 390, p: 650 },
-  { t: "gres", b: "М-Квадрат", n: "Mezzo Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 109, p: 650 },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "NEO Серый", s: "400 × 400 × 7 мм", k: "400×400", g: "Стандарт", q: 1731, p: null },
-  { t: "gres", b: "Unitile (г. Шахты)", n: "ГЕРМЕС Белый Терраццо 02", s: "400 × 400 × 8 мм", k: "400×400", g: "Стандарт", q: 640, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Сенат Бежевый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 325, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Мотиво Серый Светлый", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 309, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Сенат Серый Светлый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 239, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Норд Белый", s: "400 × 400 × 8 мм", k: "400×400", g: "3 сорт", q: 144, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Гермес Короичневый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 994, p: 450 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Парфюм бежевый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 170, p: 450 },
-  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Синий", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 804, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Желтый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 478, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Оранжевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 472, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Голубой", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 351, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 350, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Зеленый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 344, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 319, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд ТЕМНО Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 312, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 268, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 219, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 174, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 172, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Моноколор Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 169, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 129, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "ПК", q: 128, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Kids Красный", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 117, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 87, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Терракотовый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 72, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Карен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 64, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Кураж 2 КРАСНЫЙ", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 57, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Дженни Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 43, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Элегия Песочный", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 126, p: null },
-  { t: "tile", b: "Нефрит-Керамика", n: "Росси Серый", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 63, p: null },
-  { t: "gres", b: "М-Квадрат", n: "Мюнхен Камни Коричневый", s: "330 × 330 × 8 мм", k: "330×330", g: "ГОСТ", q: 351, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Бежевый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 2073, p: null },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Светло-Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 1373, p: 610 },
-  { t: "gres", b: "Kerama Marazzi", n: "Гармония Белый", s: "300 × 300 × 8 мм", k: "300×300", g: "2 сорт", q: 272, p: null },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 8 мм", k: "300×300", g: "", q: 220, p: null },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Техно 2 Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null },
-  { t: "gres", b: "-", n: "Керамогранит технический Техно-2 Серый Матовая Ступень", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null },
-  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический УТОЛЩЕННЫЙ Соль-Перец Серый Матовая", s: "300 × 300 × 12 мм", k: "300×300", g: "", q: 74, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Урбан Серый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 66, p: null },
-  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Серый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 47, p: null },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Белый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 742, p: null },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Бежевый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 339, p: null },
-  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Персиковый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 99, p: null },
+export interface StroyItem {
+  t: 'gres' | 'tile'
+  b: string
+  n: string
+  s: string
+  k: string
+  g: string
+  q: number
+  p: number | null
+  img: string
+  isPhoto: boolean
+}
+
+const ITEMS: StroyItem[] = [
+  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 7848, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Светлый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 7293, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Bianco Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6708, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090230/products_v2/prod_plitburg-265701_byanko_bordyur_6x40_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6378, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034552/products_v2/prod_azori-00-00002402.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Astaria Ice Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 6309, p: 650, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Hornito Amber Коричневый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 5197, p: 650, img: "/images/tiles/sandstone-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 4912, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Toronto Betton Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 4841, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/04d/400_400_1/04dacfe983f5dbeee7b604f7b520f87b.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Ferrum Коричневый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 4017, p: 950, img: "/images/tiles/slate-dark.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Матовый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 3342, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Терраццо Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 3126, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090818/products_v2/prod_plitburg-terratstso_seryy_kg_60_60_nr0136_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Каньон Серый Светлый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 3126, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090425/products_v2/prod_plitburg-732071_kanon_seryy_svetlyy_45_45_m_kvadrat.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 3115, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Torino Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2994, p: 650, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Челси Беж", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2952, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Коричневый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 2858, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Челси Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "1 сорт", q: 2827, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Manhattan Grey", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2790, p: 650, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Manhattan Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2781, p: 650, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Arctic White", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2630, p: 650, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "Грани Таганая", n: "GTF400M ЗИМНИЙ БЕЛЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1587, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "Грани Таганая", n: "GT047M УМБРА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1451, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Грани Таганая", n: "GTF427M БЕЖЕВЫЙ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 1406, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Черный Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 763, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 762, p: 1250, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776103984/products_v2/prod_plitburg-monte_tiberio_kg_60_60_sg622602r_lappat_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Грани Таганая", n: "GTF422M РЖАВЧИНА", s: "1200 × 600 мм", k: "1200×600", g: "", q: 680, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "1 сорт", q: 567, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый Обрезной", s: "600 × 1200 × 9 мм", k: "1200×600", g: "2 сорт", q: 283, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 1200 × 11 мм", k: "1200×600", g: "3 сорт", q: 197, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Грани Таганая", n: "GT061M ЯНТАРЬ", s: "1200 × 600 мм", k: "1200×600", g: "", q: 35, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Фрегат Бежевый Обрезной", s: "200 × 800 × 9 мм", k: "800×200", g: "1 сорт", q: 359, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105803/products_v2/prod_plitburg-sg701390r_fregat_bezhevyy_obreznoy_kg_20_80_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 2675, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "DACITE BASE GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2633, p: 1080, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Savage Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2478, p: 950, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "Казахстан", n: "SILENT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 2345, p: 1080, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Black Terrazzo Чёрный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2187, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776036431/products_v2/prod_eletto-588112001.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Matera Бежевый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 2158, p: 950, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Казахстан", n: "Байтерек Бежевый (Baiterek Bej)", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1946, p: 1080, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/iblock/298/li77bguk3m8o07ob1aje84rauh1aoveq.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Прожетто Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1751, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090702/products_v2/prod_plitburg-prozhetto_d_seryy_temnyy_polirov_pr0066_60_30_m_kvadrat_vyvod.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Мирабо Серый Тёмный Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1421, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776106578/products_v2/prod_plitburg-dd638320r_mirabo_seryy_svetlyy_obreznoy_kg_60x60_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Грани Таганая", n: "GT202M КРИСТАЛЬНО-МОЛОЧНЫЙ", s: "600 × 600 мм", k: "600×600", g: "", q: 1369, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Евро-Керамика", n: "РИМ БЕЖЕВЫЙ Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 1362, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Казахстан", n: "CALACATTA GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1251, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776036168/products_v2/prod_eletto-589122002.jpg", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "AUTUNNO BASE LIGHT BEIGE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 1176, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038365/products_v2/prod_010300000232.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Калакатта Серые", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1134, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091078/products_v2/prod_plitburg-kalakatta_pr_seryy_svetlyy_polirovn_kg_120_60_pr0162_m_kvadrat_vyvod.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 1085, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Marble line dark grey Серый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 1042, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038430/products_v2/prod_010100001300.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 961, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "PULPIS GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 839, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035196/products_v2/prod_azori-00-00108582.jpg", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "NATURA WHITE РЫЖИЕ ПРОЖИЛКИ", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 761, p: 1080, img: "https://lincer.ru/upload/iblock/522/pd5eynlyzx505o8mwlgska60vt3ug1jd.png", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "CONCRETE LIGHT GREY", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 735, p: 1080, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034329/products_v2/prod_azori-503231201.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 732, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Ривьера Серый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 707, p: 950, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4cc/400_400_1/3xczzwk3zfz88abc4ajx1janrhq6n4xe.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 521, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Оранжевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 442, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Фиолетовый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "2 сорт", q: 403, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Antibs Бежевый Тёмный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 387, p: 950, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Matera СЕРЫЙ", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 360, p: 950, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Казахстан", n: "CHIPS WHITE", s: "600 × 600 × 9,5 мм", k: "600×600", g: "", q: 358, p: 1080, img: "/images/tiles/terrazzo-light.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 353, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Магма Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 334, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Магма Серый Темный", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 240, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 237, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 226, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Магма Коричневый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "ГОСТ", q: 216, p: 950, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090784/products_v2/prod_plitburg-magma_korich_temnyy_glazur_antiskolzyashchaya_poverkhnost_gsr0068_60_60_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Терраццо Серый Светлый", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 210, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7fc/400_400_1/53s99wq810164ge344ychqssr66m5d2g.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Белый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 190, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Монте Тиберио Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 158, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776103984/products_v2/prod_plitburg-monte_tiberio_kg_60_60_sg622602r_lappat_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Евро-Керамика", n: "ГРАНДАС Рект", s: "600 × 600 × 10 мм", k: "600×600", g: "2 сорт", q: 156, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Казахстан", n: "В60324", s: "600 × 600 мм", k: "600×600", g: "", q: 154, p: 1080, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Желтый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 106, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Rocks Light Grey Серый Светлый", s: "600 × 600 × 10 мм", k: "600×600", g: "Стандарт", q: 105, p: 950, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 101, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "В60336", s: "600 × 600 мм", k: "600×600", g: "", q: 97, p: 1080, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Пурпурно-Красный Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 74, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Зеленый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 72, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Синий Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "1 сорт", q: 50, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Радуга Бежевый Обрезной", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 48, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e92/400_400_1/f25c894udzyz113ia4jr7xcqhxcej3bm.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Фондамента Серый Темный", s: "600 × 600 × 11 мм", k: "600×600", g: "1 сорт", q: 44, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/54c/400_400_1/v4z70c3mk7nkfnpn3kb4w8ayeyxnz3yj.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Королевская Дорога Коричневый Светлый Обрезной", s: "600 × 600 × 9 мм", k: "600×600", g: "2 сорт", q: 34, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b69/400_400_1/uy59fovkrfhtb9rfrpuyuamj8zizedzt.webp", isPhoto: true },
+  { t: "gres", b: "Евро-Керамика", n: "10 GCR 0016. ТЕХНО", s: "600 × 600 × 10 мм", k: "600×600", g: "1 сорт", q: 34, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a6b/400_400_1/a6b1e28947c8006bf9da3d8875496e42.webp", isPhoto: true },
+  { t: "gres", b: "Казахстан", n: "В60332", s: "600 × 600 мм", k: "600×600", g: "", q: 32, p: 1080, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 1152, p: 450, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e50/400_400_1/e5021d10686713407142223c4b3501a6.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Роял Ноэль Эмперадор Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 1044, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776089385/products_v2/prod_plitburg-130762_royal_plitka_d_sten_20_45_m_kvadrat.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Шерон Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 961, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Прайм Цемент Светло-Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 802, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091378/products_v2/prod_plitburg-730571_keramogranit_prime_seryy_45kh45_pieza_rosa.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Мадра Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 642, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Mono smoke Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 633, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776033264/products_v2/prod_azori-508851101.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Луксор Вуд Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 563, p: null, img: "/images/tiles/wood-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Palette Skin Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 534, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 385, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 228, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035409/products_v2/prod_nefrit-00-00-5-17-00-00-000.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Слим Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 207, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоса Коричневый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 201, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "S.WHITE Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 172, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091721/products_v2/prod_plitburg-100000_1081_tile_white_d_sten_50_25_nefrit_keramika.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 163, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Серый Светлый Матовый обрезной", s: "300 × 600 × 9 мм", k: "600×300", g: "", q: 126, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7d3/400_400_1/bm9xbiea19c28ko1wfdjhsh1hqo3p73y.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Монохромо Белый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 115, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Saboya Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 111, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035325/products_v2/prod_nefrit-00-00-5-18-00-06-1082.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 68, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Раф Рельеф зеленый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 61, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Стоун Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 61, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104099/products_v2/prod_plitburg-pro_stoun_antratsit_obreznoy_kg_60_60_dd600600r_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Frida Grey", s: "600 × 300 × 9 мм", k: "600×300", g: "ПК", q: 57, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Hugo Серый", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 54, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037841/products_v2/prod_010100001635.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Venice Crema Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 45, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/88b/400_400_1/10wgjdf2fan0im74d9v0wi1yam7tvmlc.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Лия Бежевый", s: "600 × 300 × 9 мм", k: "600×300", g: "Оптимум", q: 40, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e50/400_400_1/e5021d10686713407142223c4b3501a6.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Бейс Калакатта Грей", s: "600 × 300 × 9 мм", k: "600×300", g: "Стандарт", q: 39, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сиата Оливковый", s: "600 × 300 × 9 мм", k: "600×300", g: "Сортовая", q: 34, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 02 Рефлёная", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 1335, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037875/products_v2/prod_010100001524.jpg", isPhoto: true },
+  { t: "tile", b: "Unitile (г. Шахты)", n: "Delux beige wall 01 Гладкая", s: "600 × 250 × 9 мм", k: "600×250", g: "", q: 31, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037875/products_v2/prod_010100001524.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Риф Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2570, p: 400, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2274, p: null, img: "/images/tiles/terrazzo-light.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Тесина Песочный", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 2205, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091696/products_v2/prod_plitburg-160106_1211_portelu_plitka_d_polov_tesina_38_5_38_5_nefrit_keramika.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Террацио Синий", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1454, p: null, img: "/images/tiles/terrazzo-light.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Грэйс Белый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1362, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091478/products_v2/prod_plitburg-nr0333_keramogranit_grace_120x60_progres.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1347, p: 450, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Лайт Бежевый", s: "600 × 200 × 9 мм", k: "600×200", g: "Стандарт", q: 1150, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034707/products_v2/prod_azori-583252001.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Моногамма Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 840, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Alcor Светлый", s: "600 × 200 × 9 мм", k: "600×200", g: "ПК", q: 498, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Даф Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 420, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Нарни Серый", s: "600 × 200 × 9 мм", k: "600×200", g: "Оптимум", q: 37, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Про Матрикс Бежевый обрезной", s: "600 × 150 × 11 мм", k: "600×150", g: "1 сорт", q: 93, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/7d3/400_400_1/bm9xbiea19c28ko1wfdjhsh1hqo3p73y.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 1155, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Глэдис Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 828, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 598, p: null, img: "/images/tiles/mosaic-blue.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 562, p: null, img: "/images/tiles/mosaic-blue.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Розовый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 546, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Голубой", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 531, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Бирюзовый", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 505, p: null, img: "/images/tiles/mosaic-blue.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Однотонная Белый Матовая", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 472, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035409/products_v2/prod_nefrit-00-00-5-17-00-00-000.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Sens Light Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 368, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776073236/products_v2/prod_plitburg-senso_grey_light_pg_01_12_5_50_gracia_ceramica.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Paradise White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 264, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Коричневый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 224, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Interni Grey Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 173, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Oslo Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 124, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037320/products_v2/prod_010400001039.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Эмилия Бежевый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 120, p: null, img: "/images/tiles/sandstone-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Atlantic Light Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 99, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776033148/products_v2/prod_azori-586562001.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Artdeco White Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 86, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Касл Серый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 69, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776084011/products_v2/prod_plitburg-plitka_dlya_sten_nyukasl_150341.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Джойс Синий", s: "500 × 250 × 9 мм", k: "500×250", g: "ПК", q: 68, p: null, img: "/images/tiles/mosaic-blue.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Дрим Лиловый", s: "500 × 250 × 9 мм", k: "500×250", g: "Стандарт", q: 43, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035425/products_v2/prod_nefrit-04-01-1-10-03-51-3080-0.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Фреш Белый", s: "500 × 250 × 9 мм", k: "500×250", g: "Оптимум", q: 30, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9dc/400_400_1/9dc706e9f10d85e7900fabd14eda66f4.webp", isPhoto: true },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null, img: "/images/tiles/wood-beige.jpg", isPhoto: false },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "СМОУК Серый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1133, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "ВАРДИ Бежевый 01", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 1070, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/2e5/400_400_1/o089se33kfq4edmjs9q0ny9tsl8czw8p.webp", isPhoto: true },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "НОРДЛАНД Бежевый 03", s: "125 × 500 мм", k: "500×125", g: "Стандарт", q: 377, p: null, img: "/images/tiles/wood-beige.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Hornito Silver Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2626, p: 650, img: "/images/tiles/sandstone-beige.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Chantilly Cemento Navy", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2432, p: 650, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Astaria Graphite Графит", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 2255, p: 650, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Breccia Romano Белый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1573, p: 650, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b4f/400_400_1/uqmxyz7h37jvee0r7e9pxut38lx1qmna.webp", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Terrazzo mix Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "Стандарт", q: 1002, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776034552/products_v2/prod_azori-00-00002402.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Sonata Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 430, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091617/products_v2/prod_plitburg-731171_sonata_kg_45_45_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "М-Квадрат", n: "Grandwood Бежевый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 390, p: 650, img: "/images/tiles/wood-beige.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Mezzo Серый", s: "450 × 450 × 8 мм", k: "450×450", g: "ГОСТ", q: 109, p: 650, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776091458/products_v2/prod_plitburg-730471_keramogranit_mezzo_ceryy_45x45_pieza_rosa.jpg", isPhoto: true },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "NEO Серый", s: "400 × 400 × 7 мм", k: "400×400", g: "Стандарт", q: 1731, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038457/products_v2/prod_010300000239.jpg", isPhoto: true },
+  { t: "gres", b: "Unitile (г. Шахты)", n: "ГЕРМЕС Белый Терраццо 02", s: "400 × 400 × 8 мм", k: "400×400", g: "Стандарт", q: 640, p: null, img: "/images/tiles/terrazzo-light.jpg", isPhoto: false },
+  { t: "gres", b: "Kerama Marazzi", n: "Сенат Бежевый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 325, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104768/products_v2/prod_plitburg-senat_bezh_kg_40_2_40_2_sg155700r_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Мотиво Серый Светлый", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 309, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/627/400_400_1/456lychtf8fb29ytsxrf3isp080o2md2.webp", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Сенат Серый Светлый Обрезной", s: "400 × 400 × 8 мм", k: "400×400", g: "1 сорт", q: 239, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104768/products_v2/prod_plitburg-senat_bezh_kg_40_2_40_2_sg155700r_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Норд Белый", s: "400 × 400 × 8 мм", k: "400×400", g: "3 сорт", q: 144, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Гермес Коричневый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 994, p: 450, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Парфюм бежевый", s: "400 × 250 × 8 мм", k: "400×250", g: "Стандарт", q: 170, p: 450, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Синий", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 804, p: null, img: "/images/tiles/mosaic-blue.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Желтый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 478, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Оранжевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 472, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Голубой", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 351, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 350, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Зеленый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 344, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 319, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Норд ТЕМНО Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 312, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 268, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Норд Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 219, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Норд Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 174, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776075230/products_v2/prod_plitburg-10400000999_nord_ser_kg_01_matovaya_40kh40_unitile.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 172, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Моноколор Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 169, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776038507/products_v2/prod_010400001306.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Оптимум", q: 129, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Сарагоза Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "ПК", q: 128, p: null, img: "/images/tiles/marble-white.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Kids Красный", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 117, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/fb8/400_400_1/g1ecwnn5o153cujh7t7z6eqnx5s72uhb.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Фьюжен Белый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 87, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/4e9/400_400_1/vbw9dj9nhmf5ytx9o9afv2y9j07fvos6.webp", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Хитроу Терракотовый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 72, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Карен Серый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 64, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Кураж 2 КРАСНЫЙ", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 57, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776035515/products_v2/prod_nefrit-04-01-1-09-00-35-050-0.jpg", isPhoto: true },
+  { t: "tile", b: "Нефрит-Керамика", n: "Дженни Бежевый", s: "400 × 200 × 8 мм", k: "400×200", g: "Стандарт", q: 43, p: null, img: "/images/tiles/marble-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Элегия Песочный", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 126, p: null, img: "/images/tiles/sandstone-beige.jpg", isPhoto: false },
+  { t: "tile", b: "Нефрит-Керамика", n: "Росси Серый", s: "385 × 385 × 8,5 мм", k: "385×385", g: "Стандарт", q: 63, p: null, img: "/images/tiles/gray-concrete.jpg", isPhoto: false },
+  { t: "gres", b: "М-Квадрат", n: "Мюнхен Камни Коричневый", s: "330 × 330 × 8 мм", k: "330×330", g: "ГОСТ", q: 351, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776090543/products_v2/prod_plitburg-725962_myunkhen_uzor_d_pola_kg_33kh33_m_kvadrat.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Бежевый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 2073, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105052/products_v2/prod_plitburg-kolliano_bezh_svetlyy_sg_912600n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Светло-Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 1373, p: 610, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Гармония Белый", s: "300 × 300 × 8 мм", k: "300×300", g: "2 сорт", q: 272, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776100231/products_v2/prod_plitburg-garmoniya_kg_seraya_sg917600n_30_30_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Соль-Перец Серый Матовая", s: "300 × 300 × 8 мм", k: "300×300", g: "", q: 220, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Техно 2 Серый Матовая", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037231/products_v2/prod_kvadro-decor-kdt03a21m.jpg", isPhoto: true },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Техно-2 Серый Матовая Ступень", s: "300 × 300 × 7 мм", k: "300×300", g: "", q: 87, p: null, img: "https://lincer.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/507/400_400_1/lxjoic8r1003d32c3f3edl7bx8cahw3b.webp", isPhoto: true },
+  { t: "gres", b: "Квадро Декор", n: "Керамогранит технический Утолщённый Соль-Перец Серый Матовая", s: "300 × 300 × 12 мм", k: "300×300", g: "", q: 74, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776037239/products_v2/prod_kvadro-decor-kdt01a02v.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Урбан Серый Светлый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 66, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776104724/products_v2/prod_plitburg-urban_seryy_sg927900n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "gres", b: "Kerama Marazzi", n: "Коллиано Серый", s: "300 × 300 × 8 мм", k: "300×300", g: "1 сорт", q: 47, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776105052/products_v2/prod_plitburg-kolliano_bezh_svetlyy_sg_912600n_kg_30_30_kerama_maratstsi.jpg", isPhoto: true },
+  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Белый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 742, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030680/products_v2/prod_kerama-marazzi-5281.jpg", isPhoto: true },
+  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Бежевый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 339, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030680/products_v2/prod_kerama-marazzi-5281.jpg", isPhoto: true },
+  { t: "tile", b: "Kerama Marazzi", n: "Калейдоскоп Персиковый", s: "200 × 200 мм", k: "200×200", g: "1 сорт", q: 99, p: null, img: "https://res.cloudinary.com/de1sotnld/image/upload/v1776030821/products_v2/prod_kerama-marazzi-5177.jpg", isPhoto: true },
 ]
 
-const COL = [
-  ['бел', '#eeeeea'],
-  ['беж', '#d9c7a5'],
-  ['песоч', '#dccbb0'],
-  ['графит', '#4a4f54'],
-  ['перец', '#b9b9b6'],
-  ['сер', '#9ea3a6'],
-  ['чер', '#2b2e31'],
-  ['чёр', '#2b2e31'],
-  ['корич', '#8a6a4f'],
-  ['терракот', '#b5654a'],
-  ['гол', '#9cc3dc'],
-  ['син', '#4a6fa5'],
-  ['navy', '#4a6fa5'],
-  ['бирюз', '#6fc1c0'],
-  ['зел', '#7fae7a'],
-  ['салат', '#a9c97a'],
-  ['жел', '#e6c84a'],
-  ['жёл', '#e6c84a'],
-  ['оранж', '#e69a4a'],
-  ['красн', '#c0504a'],
-  ['роз', '#e5a9b5'],
-  ['лил', '#b9a0d0'],
-  ['фиол', '#8b6bb0'],
-]
+// Текстуры для безопасного отката, если удаленная ссылка не загрузилась
+const FALLBACK_TEXTURES = {
+  marbleWhite: '/images/tiles/marble-white.jpg',
+  marbleBeige: '/images/tiles/marble-beige.jpg',
+  terrazzo: '/images/tiles/terrazzo-light.jpg',
+  concrete: '/images/tiles/gray-concrete.jpg',
+  slate: '/images/tiles/slate-dark.jpg',
+  sandstone: '/images/tiles/sandstone-beige.jpg',
+  woodBeige: '/images/tiles/wood-beige.jpg',
+  mosaicBlue: '/images/tiles/mosaic-blue.jpg',
+}
 
-function getColor(name: string): string {
-  const n = name.toLowerCase()
-  for (const [k, v] of COL) {
-    if (n.includes(k)) return v
-  }
-  return '#cfcac0'
+function getSafeFallback(item: StroyItem): string {
+  const n = (item.n || '').toLowerCase()
+  if (n.includes('terrazzo') || n.includes('терраццо') || n.includes('перец')) return FALLBACK_TEXTURES.terrazzo
+  if (n.includes('каньон') || n.includes('песоч') || n.includes('amber') || n.includes('тесина')) return FALLBACK_TEXTURES.sandstone
+  if (n.includes('wood') || n.includes('вуд') || n.includes('дерево') || n.includes('фрегат') || n.includes('нордланд')) return FALLBACK_TEXTURES.woodBeige
+  if (n.includes('черн') || n.includes('чёрн') || n.includes('ferrum') || n.includes('магма темн')) return FALLBACK_TEXTURES.slate
+  if (n.includes('син') || n.includes('голуб') || n.includes('navy')) return FALLBACK_TEXTURES.mosaicBlue
+  if (n.includes('бел') || n.includes('white') || n.includes('калакатта') || n.includes('тиберио')) return FALLBACK_TEXTURES.marbleWhite
+  if (n.includes('беж') || n.includes('crema') || n.includes('роял')) return FALLBACK_TEXTURES.marbleBeige
+  return FALLBACK_TEXTURES.concrete
 }
 
 function formatNumber(n: number): string {
   return n.toLocaleString('ru-RU')
 }
 
-function swatch(item: any, big: boolean = false): React.ReactElement {
-  if (item.img) {
-    return (
-      <img
-        src={item.img}
-        alt={item.n}
-        title="Увеличить"
-        loading="lazy"
-        className="w-full h-full object-cover cursor-zoom-in hover:scale-105 transition-transform"
-      />
-    )
-  }
-  const m = item.s.match(/(\d+)\s*×\s*(\d+)/)
-  const w = +m[1]
-  const h = +m[2]
-  const k = (big ? 120 : 30) / Math.max(w, h)
-  const bgSize = `${Math.max(w * k, 6).toFixed(1)}px ${Math.max(h * k, 6).toFixed(1)}px`
-  return (
-    <div
-      style={{
-        width: '100%',
-        height: '100%',
-        backgroundColor: getColor(item.n),
-        backgroundImage: `
-          linear-gradient(90deg, rgba(255,255,255,0.7) 2px, transparent 2px),
-          linear-gradient(0deg, rgba(255,255,255,0.7) 2px, transparent 2px)
-        `,
-        backgroundSize: bgSize,
-      }}
-    />
-  )
+// Нормализация поискового запроса строителей
+function normalizeSearchText(str: string): string {
+  return (str || '')
+    .toLowerCase()
+    .replace(/ё/g, 'е')
+    .replace(/[xх*×]/g, 'x')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 export default function StroyPageClient() {
-  const [cat, setCat] = useState('all')
+  const [cat, setCat] = useState<string>('all')
+  const [brand, setBrand] = useState<string>('all')
   const [selectedSizes, setSelectedSizes] = useState<Set<string>>(new Set())
-  const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState('stock')
-  const [shown, setShown] = useState(40)
-  const [selectedItem, setSelectedItem] = useState<any>(null)
-  const [quantity, setQuantity] = useState('')
-  const [callDialogOpen, setCallDialogOpen] = useState(false)
-  const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [lightboxImage, setLightboxImage] = useState('')
-  const [callPhone, setCallPhone] = useState('')
-  const [callName, setCallName] = useState('')
-  const [callStatus, setCallStatus] = useState('')
-  const [callSuccess, setCallSuccess] = useState(false)
+  const [onlyWithPrice, setOnlyWithPrice] = useState<boolean>(false)
+  const [searchQuery, setSearchQuery] = useState<string>('')
+  const [sortBy, setSortBy] = useState<string>('stock')
+  const [shown, setShown] = useState<number>(40)
 
-  const cnt: Record<string, number> = {}
-  ITEMS.forEach((i) => (cnt[i.k] = (cnt[i.k] || 0) + 1))
-  const keys = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a])
-  const TOP = keys.slice(0, 8)
-  const hasOther = keys.length > TOP.length
+  const [selectedItem, setSelectedItem] = useState<StroyItem | null>(null)
+  const [quantity, setQuantity] = useState<string>('')
+  const [copied, setCopied] = useState<boolean>(false)
 
-  function ok(item: any): boolean {
-    const q = searchQuery.trim().toLowerCase()
-    const matchesCat = cat === 'all' || item.t === cat
-    const matchesSize = !selectedSizes.size || selectedSizes.has(item.k) || (selectedSizes.has('other') && !TOP.includes(item.k))
-    const matchesSearch = (item.n + ' ' + item.s + ' ' + item.b).toLowerCase().includes(q)
-    return matchesCat && matchesSize && matchesSearch
-  }
+  const [callDialogOpen, setCallDialogOpen] = useState<boolean>(false)
+  const [callPhone, setCallPhone] = useState<string>('')
+  const [callName, setCallName] = useState<string>('')
+  const [callStatus, setCallStatus] = useState<string>('')
+  const [callSuccess, setCallSuccess] = useState<boolean>(false)
 
-  function getFilteredItems() {
-    let rows = ITEMS.map((it, i) => ({ it, i })).filter(({ it }) => ok(it))
-    if (sortBy !== 'stock') {
-      const d = sortBy === 'asc' ? 1 : -1
-      rows.sort((a, b) => {
-        const pa = a.it.p
-        const pb = b.it.p
-        if (!pa && !pb) return b.it.q - a.it.q
-        if (!pa) return 1
-        if (!pb) return -1
-        return d * (pa - pb) || b.it.q - a.it.q
-      })
+  const [lightboxOpen, setLightboxOpen] = useState<boolean>(false)
+  const [lightboxImage, setLightboxImage] = useState<string>('')
+  const [lightboxTitle, setLightboxTitle] = useState<string>('')
+
+  // Статистика размеров и брендов
+  const { topSizes, hasOtherSizes, allBrands } = useMemo(() => {
+    const sizeCounts: Record<string, number> = {}
+    const brandSet = new Set<string>()
+    ITEMS.forEach((i) => {
+      sizeCounts[i.k] = (sizeCounts[i.k] || 0) + 1
+      if (i.b && i.b !== '-') brandSet.add(i.b)
+    })
+    const sortedSizes = Object.keys(sizeCounts).sort((a, b) => sizeCounts[b] - sizeCounts[a])
+    const top = sortedSizes.slice(0, 8)
+    return {
+      topSizes: top,
+      hasOtherSizes: sortedSizes.length > top.length,
+      allBrands: Array.from(brandSet).sort(),
     }
-    return rows
-  }
+  }, [])
 
-  const filteredItems = getFilteredItems()
+  // Блокировка скролла body при открытых модалках и слушатель Esc
+  useEffect(() => {
+    const isAnyModalOpen = Boolean(selectedItem || callDialogOpen || lightboxOpen)
+    if (isAnyModalOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (lightboxOpen) {
+          setLightboxOpen(false)
+        } else if (callDialogOpen) {
+          setCallDialogOpen(false)
+        } else if (selectedItem) {
+          setSelectedItem(null)
+        }
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.body.style.overflow = ''
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [selectedItem, callDialogOpen, lightboxOpen])
+
+  // Фильтрация товаров
+  const filteredItems = useMemo(() => {
+    const qRaw = searchQuery.trim()
+    const qNorm = normalizeSearchText(qRaw)
+
+    return ITEMS.filter((item) => {
+      // 1. Категория
+      if (cat !== 'all' && item.t !== cat) return false
+
+      // 2. Бренд
+      if (brand !== 'all' && item.b !== brand) return false
+
+      // 3. Только с ценой
+      if (onlyWithPrice && (item.p === null || item.p <= 0)) return false
+
+      // 4. Размер
+      if (selectedSizes.size > 0) {
+        const matchesSelected = selectedSizes.has(item.k)
+        const matchesOther = selectedSizes.has('other') && !topSizes.includes(item.k)
+        if (!matchesSelected && !matchesOther) return false
+      }
+
+      // 5. Поиск
+      if (qNorm) {
+        const itemTextNorm = normalizeSearchText(`${item.n} ${item.b} ${item.s} ${item.g} ${item.k}`)
+        const isGres = item.t === 'gres'
+        const categorySynonyms = isGres
+          ? 'керамогранит gres гранит пол напольная'
+          : 'плитка tile кафель стена настенная'
+
+        // Проверяем формат (напр. 600x600, 60x60, 1200x600)
+        const formatVariants = [item.k.replace(/×/g, 'x'), item.k.replace(/×/g, '*')]
+        if (item.k === '600×600') formatVariants.push('60x60', '600x600', '60 60')
+        if (item.k === '1200×600') formatVariants.push('120x60', '1200x600', '60x120')
+        if (item.k === '450×450') formatVariants.push('45x45', '450x450')
+        if (item.k === '300×300') formatVariants.push('30x30', '300x300')
+
+        const searchTokens = qNorm.split(' ')
+        const allTokensMatch = searchTokens.every((token) => {
+          return (
+            itemTextNorm.includes(token) ||
+            categorySynonyms.includes(token) ||
+            formatVariants.some((fv) => fv.includes(token))
+          )
+        })
+
+        if (!allTokensMatch) return false
+      }
+
+      return true
+    }).sort((a, b) => {
+      if (sortBy === 'stock') {
+        return b.q - a.q
+      }
+      const pa = a.p
+      const pb = b.p
+      if (!pa && !pb) return b.q - a.q
+      if (!pa) return 1
+      if (!pb) return -1
+      return sortBy === 'asc' ? pa - pb : pb - pa
+    })
+  }, [cat, brand, onlyWithPrice, selectedSizes, searchQuery, sortBy, topSizes])
+
   const displayedItems = filteredItems.slice(0, shown)
   const n = filteredItems.length
   const m10 = n % 10
@@ -353,19 +450,43 @@ export default function StroyPageClient() {
         ? 'позиции'
         : 'позиций'
 
-  function toggleSize(k: string) {
-    const newSet = new Set(selectedSizes)
-    if (newSet.has(k)) {
-      newSet.delete(k)
-    } else {
-      newSet.add(k)
-    }
-    setSelectedSizes(newSet)
+  const isAnyFilterActive =
+    cat !== 'all' ||
+    brand !== 'all' ||
+    selectedSizes.size > 0 ||
+    onlyWithPrice ||
+    searchQuery.trim().length > 0 ||
+    sortBy !== 'stock'
+
+  function resetAllFilters() {
+    setCat('all')
+    setBrand('all')
+    setSelectedSizes(new Set())
+    setOnlyWithPrice(false)
+    setSearchQuery('')
+    setSortBy('stock')
     setShown(40)
   }
 
-  function openDialog(item?: any, qty?: number) {
+  function toggleSize(k: string) {
+    const next = new Set(selectedSizes)
+    if (next.has(k)) {
+      next.delete(k)
+    } else {
+      next.add(k)
+    }
+    setSelectedSizes(next)
+    setShown(40)
+  }
+
+  function openItemDetails(item: StroyItem) {
     setSelectedItem(item)
+    setQuantity('')
+    setCopied(false)
+  }
+
+  function openDialog(item?: StroyItem | null, qty?: number) {
+    setSelectedItem(item || null)
     setQuantity(qty ? qty.toString() : '')
     setCallDialogOpen(true)
     setCallStatus('')
@@ -374,201 +495,451 @@ export default function StroyPageClient() {
     setCallName('')
   }
 
-  function openLightbox(item: any) {
+  function openLightbox(item: StroyItem) {
     if (item.img) {
       setLightboxImage(item.img)
+      setLightboxTitle(`${item.n} (${item.s})`)
       setLightboxOpen(true)
     }
   }
 
+  function getMessage(item: StroyItem | null, q: number): string {
+    if (!item) return 'Здравствуйте! Интересуют оптовые поставки плитки и керамогранита со склада.'
+    let t = `Здравствуйте! Интересует: ${item.n}, ${item.s}`
+    if (item.b) t += `, ${item.b}`
+    if (item.g) t += `, ${item.g}`
+    t += q > 0 ? `. Нужный объём: ${q} м².` : `. Подскажите, пожалуйста, текущий остаток.`
+    t += item.p ? ` Цена на сайте: ${formatNumber(item.p)} ₽/м² с НДС.` : ` Назовите, пожалуйста, оптовую цену.`
+    return t + ' Счёт на организацию с НДС, самовывоз в Войскорово или доставка.'
+  }
+
   function copyRequest() {
+    if (!selectedItem) return
     const msg = getMessage(selectedItem, parseFloat(quantity) || 0)
     navigator.clipboard.writeText(msg)
-    const btn = document.getElementById('dcopy') as HTMLButtonElement
-    if (btn) {
-      btn.textContent = 'Скопировано'
-      setTimeout(() => (btn.textContent = 'Скопировать запрос'), 1800)
-    }
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2200)
   }
 
-  function getMessage(item: any, q: number): string {
-    let t = 'Здравствуйте! Интересует: ' + item.n + ', ' + item.s
-    if (item.b) t += ', ' + item.b
-    if (item.g) t += ', ' + item.g
-    t += q > 0 ? '. Нужное количество: ' + q + ' м².' : '. Подскажите, пожалуйста, остаток.'
-    t += item.p ? ' Цена на сайте: ' + formatNumber(item.p) + ' ₽/м².' : ' Назовите, пожалуйста, цену.'
-    return t + ' Счёт на организацию, самовывоз или доставка.'
-  }
-
-  function handleCallSubmit(e: React.FormEvent) {
+  function handleCallSubmit(e: FormEvent) {
     e.preventDefault()
-    const phone = callPhone.trim()
-    if (phone.replace(/\D/g, '').length < 10) {
-      setCallStatus('Проверьте номер телефона')
+    const digitsOnly = callPhone.replace(/\D/g, '')
+    if (digitsOnly.length < 10) {
+      setCallStatus('Пожалуйста, укажите корректный номер телефона (не менее 10 цифр)')
       return
     }
-    setCallStatus('Отправляем...')
-    const name = callName.trim()
-    const what = selectedItem
-      ? 'Позиция: ' +
-        selectedItem.n +
-        ', ' +
-        selectedItem.s +
-        (selectedItem.b ? ', ' + selectedItem.b : '') +
-        (selectedItem.g ? ', ' + selectedItem.g : '') +
-        (quantity ? '. Нужно: ' + quantity + ' м²' : '') +
-        (selectedItem.p ? '. Цена на сайте: ' + formatNumber(selectedItem.p) + ' ₽/м²' : '')
-      : 'Запрос с главной страницы'
-    const text = 'Заказ звонка: ' + phone + (name ? ' (' + name + ')' : '') + '. ' + what
-    const tg = CFG.tg + '?text=' + encodeURIComponent(text)
-    window.open(tg, '_blank')
-    setCallDialogOpen(false)
+
+    setCallStatus('')
+    setCallSuccess(true)
+  }
+
+  function exportToCsv() {
+    const headers = [
+      'Наименование',
+      'Тип',
+      'Производитель/Бренд',
+      'Размер (мм)',
+      'Сорт/ГОСТ',
+      'Остаток на складе, м²',
+      'Оптовая цена, ₽/м² с НДС',
+    ]
+
+    const rows = filteredItems.map((it) => [
+      `"${it.n.replace(/"/g, '""')}"`,
+      `"${it.t === 'gres' ? 'Керамогранит' : 'Плитка'}"`,
+      `"${it.b.replace(/"/g, '""')}"`,
+      `"${it.s.replace(/"/g, '""')}"`,
+      `"${(it.g || 'ГОСТ / 1 сорт').replace(/"/g, '""')}"`,
+      it.q,
+      it.p !== null ? it.p : 'По запросу',
+    ])
+
+    const csvContent =
+      '\uFEFF' + [headers.join('\t'), ...rows.map((r) => r.join('\t'))].join('\r\n')
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.setAttribute(
+      'download',
+      `Ostatki_Plitka_Sklad_Voyskorovo_${new Date().toISOString().slice(0, 10)}.csv`
+    )
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   return (
-    <main className="min-h-screen bg-[#e9e8e4]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-[#e9e8e4] border-b border-[#c6c5be]">
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-          <span className="font-bold text-xl" style={{ fontFamily: 'Arial Narrow, Roboto Condensed, sans-serif' }}>
-            Керамогранит Опт
-          </span>
-          <button
-            onClick={() => openDialog()}
-            className="px-5 py-2.5 rounded-md bg-[#1f2429] text-white font-semibold border-2 border-[#1f2429] hover:opacity-90 transition-opacity"
-          >
-            Заказать звонок
-          </button>
-        </div>
-      </header>
+    <div className="min-h-screen bg-[#f3f2ee] text-[#1f2429]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Hero */}
-        <div className="py-10 md:py-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight" style={{ fontFamily: 'Arial Narrow, Roboto Condensed, sans-serif' }}>
-            Плитка и керамогранит для строителей. Остатки со склада от 400 ₽/м²
+      {/* Top Banner / Information bar */}
+      <div className="bg-[#1f2429] text-[#e8e7e1] py-2.5 px-4 text-xs border-b border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span>Склад в Войскорово (СПб) открыт: {CFG.hours}</span>
+            <span className="hidden sm:inline text-gray-500">•</span>
+            <span className="hidden sm:inline text-gray-300">Работаем по счёту с НДС 20%</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <a
+              href={`tel:${CFG.phoneClean}`}
+              className="font-bold text-[#f4c400] hover:underline flex items-center gap-1.5"
+            >
+              <Phone className="w-3.5 h-3.5" /> {CFG.phone}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+        {/* Hero Section */}
+        <div className="mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f4c400]/20 border border-[#f4c400] text-xs font-bold text-[#6a5400] mb-3">
+            <ShieldCheck className="w-3.5 h-3.5 text-[#b08800]" />
+            Оптовые складские остатки со скидкой до 70%
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight tracking-tight">
+            Плитка и керамогранит для строителей со склада в Войскорово
           </h1>
-          <p className="text-lg text-[#5d646b] mb-6 max-w-2xl">
-            Цены с НДС, работаем по счёту. Забираете сами в Войскорово или заказываете доставку. Цены действуют до 31 октября или до окончания остатков.
+          <p className="text-base sm:text-lg text-[#555d64] mb-6 max-w-3xl leading-relaxed">
+            Прямые поставки от заводов (Kerama Marazzi, Нефрит-Керамика, М-Квадрат, Unitile). Цены с НДС,
+            оплата по счёту для юрлиц и ИП. Бесплатный расчёт по смете, самовывоз сегодня или доставка на
+            объект манипулятором.
           </p>
-          <div className="flex gap-3 flex-wrap">
-            <a href="#prices" className="px-5 py-2.5 rounded-md bg-[#1f2429] text-white font-semibold border-2 border-[#1f2429] hover:opacity-90 transition-opacity">
-              Смотреть цены
+
+          <div className="flex gap-3 flex-wrap items-center">
+            <a
+              href="#prices"
+              className="px-6 py-3 rounded-xl bg-[#1f2429] text-white font-bold hover:bg-[#2e353c] transition-all shadow-md flex items-center gap-2"
+            >
+              Смотреть остатки и цены ({ITEMS.length})
             </a>
-            <a href={CFG.tg} target="_blank" rel="noopener" className="px-5 py-2.5 rounded-md bg-transparent text-[#1f2429] font-semibold border-2 border-[#1f2429] hover:bg-[#1f2429]/5 transition-colors">
-              Написать в Telegram
+            <button
+              onClick={() => openDialog()}
+              className="px-5 py-3 rounded-xl bg-[#f4c400] text-gray-900 font-bold hover:bg-[#ffcf10] transition-all shadow-sm flex items-center gap-2 cursor-pointer"
+            >
+              <Phone className="w-4 h-4" /> Заказать звонок / расчёт
+            </button>
+            <a
+              href={CFG.tg}
+              target="_blank"
+              rel="noopener"
+              className="px-5 py-3 rounded-xl bg-white border-2 border-gray-300 text-gray-800 font-bold hover:bg-gray-50 transition-colors flex items-center gap-2"
+            >
+              <Send className="w-4 h-4 text-[#229ED9]" /> Telegram снабжения
             </a>
           </div>
         </div>
 
-        {/* Prices */}
-        <section id="prices" className="py-9">
-          <h2 className="text-2xl font-extrabold mb-4" style={{ fontFamily: 'Arial Narrow, Roboto Condensed, sans-serif' }}>
-            Цены и остатки
-          </h2>
-          <div className="flex gap-2 flex-wrap mb-4 items-center">
+        {/* Catalog Section */}
+        <section id="prices" className="scroll-mt-6">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">
+                Складская ведомость наличия
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                Цены за м² с НДС. Нажмите на плитку для детального просмотра и расчёта сметы.
+              </p>
+            </div>
             <button
-              onClick={() => { setCat('all'); setShown(40) }}
-              className={`px-4 py-2 rounded-full border-2 font-medium cursor-pointer ${cat === 'all' ? 'bg-[#1f2429] text-white border-[#1f2429]' : 'border-[#1f2429] text-[#1f2429]'}`}
+              onClick={exportToCsv}
+              className="px-4 py-2 rounded-lg bg-white border border-gray-300 hover:border-gray-900 text-xs sm:text-sm font-bold text-gray-800 flex items-center gap-2 shadow-sm transition-all cursor-pointer"
+              title="Скачать отфильтрованный список в формате Excel / CSV"
             >
-              Всё
+              <Download className="w-4 h-4 text-emerald-600" />
+              Скачать ведомость в Excel
             </button>
-            <button
-              onClick={() => { setCat('tile'); setShown(40) }}
-              className={`px-4 py-2 rounded-full border-2 font-medium cursor-pointer ${cat === 'tile' ? 'bg-[#1f2429] text-white border-[#1f2429]' : 'border-[#1f2429] text-[#1f2429]'}`}
-            >
-              Плитка
-            </button>
-            <button
-              onClick={() => { setCat('gres'); setShown(40) }}
-              className={`px-4 py-2 rounded-full border-2 font-medium cursor-pointer ${cat === 'gres' ? 'bg-[#1f2429] text-white border-[#1f2429]' : 'border-[#1f2429] text-[#1f2429]'}`}
-            >
-              Керамогранит
-            </button>
-            <input
-              type="search"
-              value={searchQuery}
-              onChange={(e) => { setSearchQuery(e.target.value); setShown(40) }}
-              placeholder="Название или размер"
-              className="flex-1 min-w-40 px-3 py-2 border-2 rounded-md bg-[#f6f5f2] text-[#1f2429]"
-            />
-            <select
-              value={sortBy}
-              onChange={(e) => { setSortBy(e.target.value); setShown(40) }}
-              className="px-3 py-2 border-2 rounded-md bg-[#f6f5f2] text-[#1f2429]"
-            >
-              <option value="stock">Сначала больше остаток</option>
-              <option value="asc">Сначала дешевле</option>
-              <option value="desc">Сначала дороже</option>
-            </select>
           </div>
-          <div className="flex gap-2 flex-wrap mb-4" role="group" aria-label="Размер">
-            {TOP.map((k) => (
-              <button
-                key={k}
-                onClick={() => toggleSize(k)}
-                className={`px-4 py-1.5 border-2 rounded-md bg-[#f6f5f2] font-medium cursor-pointer text-sm ${selectedSizes.has(k) ? 'bg-[#f4c400] border-[#111] font-bold' : 'border-[#c6c5be] text-[#1f2429]'}`}
-              >
-                {k}
-              </button>
-            ))}
-            {hasOther && (
-              <button
-                onClick={() => toggleSize('other')}
-                className={`px-4 py-1.5 border-2 rounded-md bg-[#f6f5f2] font-medium cursor-pointer text-sm ${selectedSizes.has('other') ? 'bg-[#f4c400] border-[#111] font-bold' : 'border-[#c6c5be] text-[#1f2429]'}`}
-              >
-                Другие размеры
-              </button>
-            )}
-          </div>
-          <p className="text-sm text-[#5d646b] mb-3">
-            Нажмите на позицию, чтобы открыть карточку. Цены за м², с НДС. В списке остатки от 30 м². Обновлено: {CFG.updated}.
-          </p>
-          <p className="text-sm font-bold text-[#1f2429] mb-4">
-            Найдено: {n} {positionWord}
-          </p>
-          <div className="grid gap-2">
-            {displayedItems.map(({ it, i }) => (
-              <button
-                key={i}
-                onClick={() => setSelectedItem(it)}
-                className="grid grid-cols-[76px_1fr_auto] gap-4 items-center w-full text-left bg-[#f6f5f2] border border-[#c6c5be] rounded-lg p-3 hover:border-[#1f2429] transition-colors"
-              >
-                <div className="w-20 h-20 rounded-md border border-black/18 overflow-hidden">
-                  {swatch(it)}
-                </div>
-                <div>
-                  <div className="font-bold">{it.n}</div>
-                  <div className="text-sm text-[#5d646b]">{it.s}</div>
-                  {it.b && <div className="text-sm text-[#5d646b]">{it.b}</div>}
-                  {it.g && <div className="text-sm text-[#5d646b]">{it.g}</div>}
-                  <div className="text-sm text-[#5d646b]">В наличии {formatNumber(it.q)} м²</div>
-                </div>
-                <div
-                  className={`text-xl font-bold px-4 py-1.5 ${it.p ? 'bg-[#f4c400] text-[#111]' : 'bg-transparent text-[#5d646b] border-2 border-dashed border-[#c6c5be] font-semibold text-sm py-1 px-3'}`}
-                  style={it.p ? { clipPath: 'polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%)' } : {}}
+
+          {/* Main Filter Controls Bar */}
+          <div className="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gray-200/90 mb-5 space-y-4">
+            {/* Row 1: Category pills + Search + Sort */}
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Type selector */}
+              <div className="inline-flex rounded-xl bg-gray-100 p-1">
+                <button
+                  onClick={() => { setCat('all'); setShown(40) }}
+                  className={`px-4 py-2 rounded-lg text-sm font-bold transition-all cursor-pointer ${
+                    cat === 'all' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                  }`}
                 >
-                  {it.p ? (
-                    <>
-                      {formatNumber(it.p)} <small className="text-sm font-bold">₽/м²</small>
-                    </>
-                  ) : (
-                    'Цена по запросу'
-                  )}
-                </div>
+                  Всё ({ITEMS.length})
+                </button>
+                <button
+                  onClick={() => { setCat('tile'); setShown(40) }}
+                  className={`px-4 py-2 rounded-lg text-sm font-bold transition-all cursor-pointer ${
+                    cat === 'tile' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  Плитка
+                </button>
+                <button
+                  onClick={() => { setCat('gres'); setShown(40) }}
+                  className={`px-4 py-2 rounded-lg text-sm font-bold transition-all cursor-pointer ${
+                    cat === 'gres' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  Керамогранит
+                </button>
+              </div>
+
+              {/* Search bar */}
+              <div className="relative flex-1 min-w-[220px]">
+                <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(e) => { setSearchQuery(e.target.value); setShown(40) }}
+                  placeholder="Поиск: коллекция, размер (600x600), бренд или сорт..."
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-300 text-sm bg-gray-50 focus:bg-white focus:outline-none focus:border-[#1f2429] text-gray-900"
+                />
+              </div>
+
+              {/* Sorting */}
+              <select
+                value={sortBy}
+                onChange={(e) => { setSortBy(e.target.value); setShown(40) }}
+                className="px-3 py-2.5 rounded-xl border border-gray-300 text-sm bg-white font-medium text-gray-800 focus:outline-none focus:border-[#1f2429] cursor-pointer"
+              >
+                <option value="stock">Сначала больше остаток</option>
+                <option value="asc">Сначала дешевле</option>
+                <option value="desc">Сначала дороже</option>
+              </select>
+            </div>
+
+            {/* Row 2: Brand filter pills */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-gray-100">
+              <span className="text-xs font-bold text-gray-500 mr-1">Завод / Бренд:</span>
+              <button
+                onClick={() => { setBrand('all'); setShown(40) }}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                  brand === 'all'
+                    ? 'bg-[#1f2429] text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                Все
               </button>
+              {allBrands.map((b) => (
+                <button
+                  key={b}
+                  onClick={() => { setBrand(b); setShown(40) }}
+                  className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                    brand === b
+                      ? 'bg-[#1f2429] text-white shadow-xs'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {b}
+                </button>
+              ))}
+            </div>
+
+            {/* Row 3: Size Filters + "Только с ценой" + Reset */}
+            <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-gray-100">
+              <div className="flex flex-wrap items-center gap-1.5" role="group" aria-label="Фильтр по размеру">
+                <span className="text-xs font-bold text-gray-500 mr-1">Формат:</span>
+                {topSizes.map((k) => {
+                  const isSelected = selectedSizes.has(k)
+                  return (
+                    <button
+                      key={k}
+                      onClick={() => toggleSize(k)}
+                      className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                        isSelected
+                          ? 'bg-[#f4c400] text-gray-950 font-bold border border-[#a88700]'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-transparent'
+                      }`}
+                    >
+                      {k}
+                    </button>
+                  )
+                })}
+                {hasOtherSizes && (
+                  <button
+                    onClick={() => toggleSize('other')}
+                    className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                      selectedSizes.has('other')
+                        ? 'bg-[#f4c400] text-gray-950 font-bold border border-[#a88700]'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-transparent'
+                    }`}
+                  >
+                    Другие размеры
+                  </button>
+                )}
+              </div>
+
+              <div className="flex items-center gap-4">
+                <label className="flex items-center gap-2 cursor-pointer select-none text-xs font-bold text-gray-700">
+                  <input
+                    type="checkbox"
+                    checked={onlyWithPrice}
+                    onChange={(e) => { setOnlyWithPrice(e.target.checked); setShown(40) }}
+                    className="w-4 h-4 rounded text-amber-500 focus:ring-amber-400"
+                  />
+                  Только с ценой
+                </label>
+
+                {isAnyFilterActive && (
+                  <button
+                    onClick={resetAllFilters}
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-rose-600 hover:text-rose-800 transition-colors cursor-pointer"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    Сбросить фильтры
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Result Count and Status */}
+          <div className="flex items-center justify-between text-xs sm:text-sm text-gray-600 mb-3 px-1">
+            <div>
+              Найдено: <span className="font-extrabold text-gray-900">{n}</span> {positionWord}
+              {selectedSizes.size > 0 && ` (фильтр по ${selectedSizes.size} форматам)`}
+            </div>
+            <div className="text-gray-500">
+              Склад в Войскорово • Обновлено {CFG.updated}
+            </div>
+          </div>
+
+          {/* Items List */}
+          <div className="grid gap-3">
+            {displayedItems.map((item, idx) => (
+              <div
+                key={`${item.n}-${idx}`}
+                className="group bg-white rounded-xl border border-gray-200 hover:border-gray-900 transition-all shadow-xs hover:shadow-md p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                {/* Left: Thumbnail & Details */}
+                <div
+                  onClick={() => openItemDetails(item)}
+                  className="flex items-center gap-4 cursor-pointer flex-1"
+                >
+                  {/* Photo Container */}
+                  <div
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      openLightbox(item)
+                    }}
+                    className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg bg-gray-50 border border-gray-200 overflow-hidden shrink-0 flex items-center justify-center p-1 group/img"
+                    title="Нажмите для увеличения"
+                  >
+                    <img
+                      src={optimizeImage(item.img, 200)}
+                      alt={item.n}
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = getSafeFallback(item)
+                      }}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover/img:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                      <ZoomIn className="w-5 h-5 text-white drop-shadow" />
+                    </div>
+                  </div>
+
+                  {/* Info */}
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="font-extrabold text-base sm:text-lg text-gray-900 group-hover:text-amber-800 transition-colors">
+                        {item.n}
+                      </span>
+                      {item.isPhoto ? (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                          Фото
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-amber-100 text-amber-800">
+                          Текстура
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="text-xs sm:text-sm text-gray-500 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                      <span className="font-semibold text-gray-700">{item.s}</span>
+                      <span>•</span>
+                      <span>{item.b}</span>
+                      {item.g && (
+                        <>
+                          <span>•</span>
+                          <span className="text-gray-600 font-medium">{item.g}</span>
+                        </>
+                      )}
+                    </div>
+
+                    <div className="text-xs text-gray-600 flex items-center gap-1.5 pt-0.5">
+                      <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
+                      <span>В наличии на складе: </span>
+                      <span className="font-bold text-gray-900">{formatNumber(item.q)} м²</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right: Price & CTA */}
+                <div className="flex sm:flex-col items-center sm:items-end justify-between shrink-0 gap-2 pt-2 sm:pt-0 border-t sm:border-t-0 border-gray-100">
+                  <div className="text-right">
+                    {item.p ? (
+                      <div className="inline-flex items-baseline gap-1 px-3 py-1.5 rounded-lg bg-[#f4c400] text-gray-950 font-black text-lg sm:text-xl">
+                        {formatNumber(item.p)} <span className="text-xs font-bold text-gray-800">₽/м²</span>
+                      </div>
+                    ) : (
+                      <div className="px-3 py-1.5 rounded-lg border border-dashed border-gray-300 text-xs sm:text-sm font-semibold text-gray-600 bg-gray-50">
+                        Цена по объёму
+                      </div>
+                    )}
+                    <span className="block text-[10px] text-gray-500 mt-0.5">с НДС 20%</span>
+                  </div>
+
+                  <button
+                    onClick={() => openItemDetails(item)}
+                    className="px-4 py-2 rounded-lg bg-[#1f2429] text-white text-xs font-bold hover:bg-[#343d46] transition-colors cursor-pointer"
+                  >
+                    Заказать
+                  </button>
+                </div>
+              </div>
             ))}
+
             {displayedItems.length === 0 && (
-              <div className="p-5 text-[#5d646b]">Ничего не найдено. Позвоните, подберём аналог.</div>
+              <div className="p-8 text-center bg-white rounded-2xl border border-gray-200 space-y-3">
+                <HelpCircle className="w-10 h-10 text-gray-400 mx-auto" />
+                <div className="text-base font-bold text-gray-800">
+                  По вашему запросу ничего не найдено
+                </div>
+                <p className="text-sm text-gray-500 max-w-md mx-auto">
+                  Свяжитесь с нами — на складе регулярно появляются новые партии плитки и керамогранита. Подберём аналог под ваш проект.
+                </p>
+                <div className="flex justify-center gap-3 pt-2">
+                  <button
+                    onClick={resetAllFilters}
+                    className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-sm font-bold text-gray-800 cursor-pointer"
+                  >
+                    Сбросить фильтры
+                  </button>
+                  <button
+                    onClick={() => openDialog()}
+                    className="px-4 py-2 rounded-lg bg-[#f4c400] hover:bg-[#ffcf10] text-sm font-bold text-gray-900 cursor-pointer"
+                  >
+                    Оставить заявку на подбор
+                  </button>
+                </div>
+              </div>
             )}
           </div>
-          <div className="text-center mt-4">
+
+          {/* Pagination / Load more */}
+          <div className="text-center mt-6">
             {filteredItems.length > shown && (
               <button
                 onClick={() => setShown(shown + 40)}
-                className="px-5 py-2.5 rounded-md bg-transparent text-[#1f2429] font-semibold border-2 border-[#1f2429] hover:bg-[#1f2429]/5 transition-colors"
+                className="px-6 py-3 rounded-xl bg-white border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-50 transition-colors shadow-sm cursor-pointer"
               >
                 Показать ещё ({Math.min(40, filteredItems.length - shown)})
               </button>
@@ -576,235 +947,512 @@ export default function StroyPageClient() {
             {filteredItems.length > 40 && filteredItems.length <= shown && (
               <button
                 onClick={() => document.getElementById('prices')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-5 py-2.5 rounded-md bg-transparent text-[#1f2429] font-semibold border-2 border-[#1f2429] hover:bg-[#1f2429]/5 transition-colors"
+                className="px-6 py-3 rounded-xl bg-white border border-gray-300 text-gray-700 font-bold hover:bg-gray-50 transition-colors flex items-center gap-2 mx-auto text-sm cursor-pointer"
               >
-                Наверх, к фильтрам
+                <ArrowUp className="w-4 h-4" /> Наверх, к фильтрам
               </button>
             )}
           </div>
         </section>
 
-        {/* How we work */}
-        <section className="py-9">
-          <h2 className="text-2xl font-extrabold mb-4" style={{ fontFamily: 'Arial Narrow, Roboto Condensed, sans-serif' }}>
-            Как мы работаем
+        {/* How We Work Block */}
+        <section className="py-12 mt-8 border-t border-gray-200">
+          <h2 className="text-2xl font-extrabold mb-6 text-gray-900">
+            Условия для строительных организаций и снабжения
           </h2>
-          <dl className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="border-t-4 border-[#1f2429] pt-3">
-              <dt className="font-bold mb-1">Оплата по счёту</dt>
-              <dd className="text-sm text-[#5d646b]">Безналичный расчёт для организаций, цены с НДС.</dd>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-5 rounded-2xl border border-gray-200 space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800">
+                <FileCheck className="w-5 h-5" />
+              </div>
+              <h3 className="font-extrabold text-base text-gray-900">Оплата по счёту с НДС</h3>
+              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Безналичный расчёт для юридических лиц и ИП с НДС 20%. Полный пакет закрывающих документов (УПД).
+              </p>
             </div>
-            <div className="border-t-4 border-[#1f2429] pt-3">
-              <dt className="font-bold mb-1">Самовывоз</dt>
-              <dd className="text-sm text-[#5d646b]">Забираете со склада в Войскорово в рабочие дни.</dd>
-            </div>
-            <div className="border-t-4 border-[#1f2429] pt-3">
-              <dt className="font-bold mb-1">Расчёт количества</dt>
-              <dd className="text-sm text-[#5d646b]">Посчитаем нужный объём под ваш объект бесплатно.</dd>
-            </div>
-            <div className="border-t-4 border-[#1f2429] pt-3">
-              <dt className="font-bold mb-1">Фото и сертификаты</dt>
-              <dd className="text-sm text-[#5d646b]">Пришлём по любой позиции по запросу.</dd>
-            </div>
-          </dl>
-        </section>
 
-        {/* Contact */}
-        <section className="py-9">
-          <h2 className="text-2xl font-extrabold mb-4" style={{ fontFamily: 'Arial Narrow, Roboto Condensed, sans-serif' }}>
-            Нужна плитка на объект?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-[#1f2429] text-[#f2f2ee] rounded-xl p-6">
-            <div>
-              <p>Назовите объём, подберём, зарезервируем и выставим счёт.</p>
-              <p className="mt-4">
-                <button
-                  onClick={() => openDialog()}
-                  className="px-5 py-2.5 rounded-md bg-[#f4c400] text-[#111] font-semibold border-2 border-[#f4c400] hover:opacity-90 transition-opacity"
-                >
-                  Заказать звонок
-                </button>
-              </p>
-              <p className="mt-4">
-                <a href={CFG.tg} target="_blank" rel="noopener" className="px-5 py-2.5 rounded-md bg-transparent text-white font-semibold border-2 border-white hover:bg-white/10 transition-colors inline-block">
-                  Написать в Telegram
-                </a>
+            <div className="bg-white p-5 rounded-2xl border border-gray-200 space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-800">
+                <Truck className="w-5 h-5" />
+              </div>
+              <h3 className="font-extrabold text-base text-gray-900">Самовывоз и Доставка</h3>
+              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Самовывоз со склада в Войскорово (Пн–Пт, 08:00–18:00). Либо организуем доставку манипулятором по СПб и ЛО.
               </p>
             </div>
-            <div>
-              <p className="font-bold">Наш склад</p>
-              <p>Телефон: <a href={`tel:${CFG.phone.replace(/[^+\d]/g, '')}`} className="text-white hover:underline">{CFG.phone}</a></p>
-              <p>{CFG.address}</p>
-              <p>{CFG.hours}</p>
-              <p>
-                <a href={`https://yandex.ru/maps/?text=${encodeURIComponent(CFG.address)}`} target="_blank" rel="noopener" className="text-white hover:underline">
-                  Открыть на карте
-                </a>
+
+            <div className="bg-white p-5 rounded-2xl border border-gray-200 space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-800">
+                <Calculator className="w-5 h-5" />
+              </div>
+              <h3 className="font-extrabold text-base text-gray-900">Бесплатный расчёт</h3>
+              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Пришлите ведомость или проект — посчитаем необходимое количество с учётом подрезки и запаса.
+              </p>
+            </div>
+
+            <div className="bg-white p-5 rounded-2xl border border-gray-200 space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-800">
+                <PackageCheck className="w-5 h-5" />
+              </div>
+              <h3 className="font-extrabold text-base text-gray-900">Сертификаты и ГОСТ</h3>
+              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Паспорта качества, сертификаты пожарной безопасности и протоколы испытаний на каждую партию.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="text-sm text-[#5d646b] py-8">
-          ООО «Керамогранит Опт». Цены и наличие актуальны на дату обновления, остатки по позициям уточняйте у менеджера.
-        </footer>
-      </div>
-
-      {/* Item Dialog */}
-      {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60" onClick={() => setSelectedItem(null)}>
-          <div className="bg-[#f6f5f2] rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => setSelectedItem(null)}
-              className="absolute right-3 top-3 w-10 h-10 rounded-full bg-[#f6f5f2] text-xl font-bold hover:bg-gray-200 transition-colors"
-            >
-              ×
-            </button>
-            <div className="h-48 bg-[#ddd] cursor-pointer" onClick={() => openLightbox(selectedItem)}>
-              {swatch(selectedItem, true)}
-            </div>
-            <div className="p-5">
-              <h3 className="text-2xl font-bold mb-1">{selectedItem.n}</h3>
-              <div className="text-sm text-[#5d646b] mb-4">{selectedItem.b}</div>
-              <dl className="grid grid-cols-[auto_1fr] gap-1 mb-4 text-sm">
-                <dt className="text-[#5d646b]">Размер</dt>
-                <dd className="font-semibold">{selectedItem.s}</dd>
-                {selectedItem.g && (
-                  <>
-                    <dt className="text-[#5d646b]">Сорт</dt>
-                    <dd className="font-semibold">{selectedItem.g}</dd>
-                  </>
-                )}
-                <dt className="text-[#5d646b]">Наличие</dt>
-                <dd className="font-semibold">{formatNumber(selectedItem.q)} м²</dd>
-              </dl>
-              <div className="text-xl font-bold px-4 py-1.5 bg-[#f4c400] text-[#111] inline-block" style={{ clipPath: 'polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%)' }}>
-                {selectedItem.p ? (
-                  <>
-                    {formatNumber(selectedItem.p)} <small className="text-sm font-bold">₽/м² с НДС</small>
-                  </>
-                ) : (
-                  'Цена по запросу'
-                )}
+        {/* Contact Banner */}
+        <section className="py-6">
+          <div className="bg-[#1f2429] text-white rounded-3xl p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center shadow-xl">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f4c400]/20 text-[#f4c400] text-xs font-bold mb-3">
+                Прямая связь со складом
               </div>
-              <label className="block mt-4 font-semibold">
-                Сколько нужно, м² (по желанию)
-                <input
-                  type="number"
-                  value={quantity}
-                  onChange={(e) => setQuantity(e.target.value)}
-                  min="1"
-                  step="any"
-                  placeholder="например, 100"
-                  className="block w-full mt-2 px-3 py-2 border-2 rounded-md bg-white text-[#1f2429]"
-                />
-              </label>
-              <div className="flex gap-2 flex-wrap mt-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold mb-3 leading-tight">
+                Нужна плитка на строительный объект?
+              </h2>
+              <p className="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
+                Назовите объём или скиньте проектную спецификацию. Забронируем нужный метраж, зафиксируем цену и выставим счёт за 20 минут.
+              </p>
+              <div className="flex gap-3 flex-wrap">
                 <button
-                  onClick={() => { setSelectedItem(null); openDialog(selectedItem, parseFloat(quantity) || 0) }}
-                  className="px-5 py-2.5 rounded-md bg-[#1f2429] text-white font-semibold border-2 border-[#1f2429] hover:opacity-90 transition-opacity"
+                  onClick={() => openDialog()}
+                  className="px-6 py-3 rounded-xl bg-[#f4c400] text-gray-950 font-bold hover:bg-[#ffcf10] transition-colors cursor-pointer"
                 >
                   Заказать звонок
+                </button>
+                <a
+                  href={CFG.tg}
+                  target="_blank"
+                  rel="noopener"
+                  className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-colors flex items-center gap-2"
+                >
+                  <Send className="w-4 h-4 text-[#229ED9]" /> Написать в Telegram
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3 text-sm">
+              <div className="font-bold text-lg text-[#f4c400] flex items-center gap-2">
+                <Building2 className="w-5 h-5" /> Склад «Керамогранит Опт»
+              </div>
+              <p className="flex items-start gap-2 text-gray-300">
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5 text-gray-400" />
+                <span>{CFG.address}</span>
+              </p>
+              <p className="flex items-center gap-2 text-gray-300">
+                <Clock className="w-4 h-4 text-gray-400" />
+                <span>{CFG.hours}</span>
+              </p>
+              <p className="flex items-center gap-2 text-gray-300">
+                <Phone className="w-4 h-4 text-gray-400" />
+                <a href={`tel:${CFG.phoneClean}`} className="hover:underline text-white font-semibold">
+                  {CFG.phone}
+                </a>
+              </p>
+              <div className="pt-2">
+                <a
+                  href={`https://yandex.ru/maps/?text=${encodeURIComponent(CFG.address)}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#f4c400] hover:underline font-bold"
+                >
+                  Посмотреть проезд на Яндекс Картах →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer info note */}
+        <div className="text-center text-xs text-gray-500 py-6">
+          ООО «Керамогранит Опт». Вся представленная продукция сертифицирована. Актуальные остатки и бронь уточняйте у менеджеров отдела оптовых продаж.
+        </div>
+      </div>
+
+      {/* DETAIL MODAL: Beautiful Tile Presentation */}
+      {selectedItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/70 backdrop-blur-xs animate-in fade-in duration-200"
+          onClick={() => setSelectedItem(null)}
+        >
+          <div
+            className="relative bg-white rounded-2xl max-w-2xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden border border-gray-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button anchored in corner */}
+            <button
+              onClick={() => setSelectedItem(null)}
+              className="absolute right-4 top-4 z-30 w-10 h-10 rounded-full bg-white/95 hover:bg-gray-100 border border-gray-200 text-gray-700 shadow-md flex items-center justify-center transition-colors cursor-pointer"
+              aria-label="Закрыть окно"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Visual Showcase Stage */}
+            <div className="relative bg-gradient-to-b from-[#fcfbf9] via-[#f4f2ec] to-[#e6e4dc] p-5 sm:p-6 flex flex-col items-center justify-center min-h-[260px] sm:min-h-[310px] select-none border-b border-gray-200 shrink-0">
+              {/* Badges */}
+              <div className="absolute top-4 left-4 flex gap-2 flex-wrap max-w-[70%]">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1f2429]/90 text-white text-xs font-semibold backdrop-blur-sm shadow-sm">
+                  <Layers className="w-3.5 h-3.5 text-[#f4c400]" />
+                  {selectedItem.s}
+                </span>
+                {selectedItem.isPhoto ? (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-600/90 text-white text-xs font-medium backdrop-blur-sm shadow-sm">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    Фото завода
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-600/90 text-white text-xs font-medium backdrop-blur-sm shadow-sm">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    Образец текстуры
+                  </span>
+                )}
+              </div>
+
+              {/* Main Tile Image */}
+              <div
+                onClick={() => openLightbox(selectedItem)}
+                className="relative group cursor-zoom-in max-h-[220px] sm:max-h-[260px] flex items-center justify-center my-2"
+                title="Нажмите для увеличения на весь экран"
+              >
+                <img
+                  src={selectedItem.img}
+                  alt={selectedItem.n}
+                  onError={(e) => {
+                    e.currentTarget.src = getSafeFallback(selectedItem)
+                  }}
+                  className="max-h-[210px] sm:max-h-[250px] max-w-[85%] object-contain rounded-lg drop-shadow-2xl transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 rounded-lg">
+                  <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-gray-900 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                    <Maximize2 className="w-3.5 h-3.5" /> На весь экран
+                  </span>
+                </div>
+              </div>
+
+              {/* Hint */}
+              <div className="text-xs text-gray-500 mt-1 flex items-center gap-1">
+                <ZoomIn className="w-3.5 h-3.5" /> Нажмите на плитку, чтобы открыть в максимальном размере
+              </div>
+            </div>
+
+            {/* Scrollable details and actions */}
+            <div className="p-6 overflow-y-auto space-y-5">
+              {/* Title & Brand */}
+              <div>
+                <div className="text-xs uppercase tracking-wider font-bold text-gray-500 mb-1 flex items-center gap-1.5">
+                  <span>{selectedItem.b}</span>
+                  <span>•</span>
+                  <span>{selectedItem.t === 'gres' ? 'Керамогранит' : 'Керамическая плитка'}</span>
+                  {selectedItem.g && (
+                    <>
+                      <span>•</span>
+                      <span>{selectedItem.g}</span>
+                    </>
+                  )}
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight">
+                  {selectedItem.n}
+                </h3>
+              </div>
+
+              {/* Specs Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 bg-gray-50 p-3.5 rounded-xl border border-gray-200/80 text-sm">
+                <div>
+                  <span className="text-xs text-gray-500 block">Размер</span>
+                  <span className="font-bold text-gray-900">{selectedItem.s}</span>
+                </div>
+                <div>
+                  <span className="text-xs text-gray-500 block">Сорт</span>
+                  <span className="font-bold text-gray-900">{selectedItem.g || 'ГОСТ / 1 сорт'}</span>
+                </div>
+                <div>
+                  <span className="text-xs text-gray-500 block">В наличии</span>
+                  <span className="font-bold text-emerald-700">{formatNumber(selectedItem.q)} м²</span>
+                </div>
+                <div>
+                  <span className="text-xs text-gray-500 block">Склад</span>
+                  <span className="font-bold text-gray-900">Войскорово</span>
+                </div>
+              </div>
+
+              {/* Price & Live Calculator */}
+              <div className="bg-[#fcfaf5] border-2 border-[#f4c400]/70 p-4 rounded-xl">
+                <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+                  <div>
+                    <span className="text-xs font-bold text-gray-500 block uppercase tracking-wide">
+                      Оптовая цена с НДС 20%
+                    </span>
+                    <div className="text-2xl sm:text-3xl font-black text-gray-900">
+                      {selectedItem.p ? (
+                        <>
+                          {formatNumber(selectedItem.p)}{' '}
+                          <span className="text-lg font-bold text-gray-600">₽/м²</span>
+                        </>
+                      ) : (
+                        <span className="text-xl text-gray-800">Цена по запросу (от 400 ₽/м²)</span>
+                      )}
+                    </div>
+                  </div>
+                  <span className="text-xs text-gray-500">Работаем по безналичному расчёту</span>
+                </div>
+
+                {/* Calculator input */}
+                <div className="space-y-2 pt-3 border-t border-gray-200">
+                  <label className="text-xs font-bold text-gray-700 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Calculator className="w-3.5 h-3.5 text-[#1f2429]" />
+                      Рассчитать стоимость на объект:
+                    </span>
+                    {quantity && selectedItem.p && (
+                      <span className="text-emerald-700 font-extrabold text-sm">
+                        Итого: {formatNumber(Math.round((parseFloat(quantity) || 0) * selectedItem.p))} ₽ с НДС
+                      </span>
+                    )}
+                  </label>
+                  <div className="flex gap-2">
+                    <input
+                      type="number"
+                      value={quantity}
+                      onChange={(e) => setQuantity(e.target.value)}
+                      min="1"
+                      step="any"
+                      placeholder="Нужный объём, м² (напр. 150)"
+                      className="flex-1 px-3 py-2 border-2 border-gray-300 rounded-lg text-gray-900 bg-white focus:outline-none focus:border-[#1f2429] text-sm"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setQuantity('100')}
+                      className="px-2.5 py-1 text-xs font-semibold rounded bg-gray-200 hover:bg-gray-300 text-gray-800 cursor-pointer"
+                    >
+                      100 м²
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setQuantity('500')}
+                      className="px-2.5 py-1 text-xs font-semibold rounded bg-gray-200 hover:bg-gray-300 text-gray-800 cursor-pointer"
+                    >
+                      500 м²
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setQuantity(selectedItem.q.toString())}
+                      className="px-2.5 py-1 text-xs font-semibold rounded bg-[#f4c400]/40 hover:bg-[#f4c400] text-gray-900 cursor-pointer"
+                      title="Забрать весь складской остаток"
+                    >
+                      Весь остаток
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
+                <button
+                  onClick={() => {
+                    const qVal = parseFloat(quantity) || 0
+                    setSelectedItem(null)
+                    openDialog(selectedItem, qVal)
+                  }}
+                  className="w-full py-3 px-4 rounded-xl bg-[#1f2429] text-white font-bold text-sm hover:bg-[#2b333a] transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer"
+                >
+                  <Phone className="w-4 h-4 text-[#f4c400]" />
+                  Заказать счёт / звонок
                 </button>
                 <a
                   href={CFG.tg + '?text=' + encodeURIComponent(getMessage(selectedItem, parseFloat(quantity) || 0))}
                   target="_blank"
                   rel="noopener"
-                  className="px-5 py-2.5 rounded-md bg-transparent text-[#1f2429] font-semibold border-2 border-[#1f2429] hover:bg-[#1f2429]/5 transition-colors inline-block"
+                  className="w-full py-3 px-4 rounded-xl bg-[#229ED9] hover:bg-[#1e8ec3] text-white font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-sm"
                 >
-                  Написать в Telegram
+                  <Send className="w-4 h-4" />
+                  В Telegram
                 </a>
                 <button
-                  id="dcopy"
                   onClick={copyRequest}
-                  className="px-5 py-2.5 rounded-md bg-transparent text-[#1f2429] font-semibold border-2 border-[#1f2429] hover:bg-[#1f2429]/5 transition-colors"
+                  className={`w-full py-3 px-4 rounded-xl border-2 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                    copied
+                      ? 'bg-emerald-50 border-emerald-600 text-emerald-700'
+                      : 'bg-white border-gray-300 text-gray-800 hover:bg-gray-50'
+                  }`}
                 >
-                  Скопировать запрос
+                  {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                  {copied ? 'Скопировано!' : 'Скопировать запрос'}
                 </button>
               </div>
-              <p className="text-xs text-[#5d646b] mt-2">
-                В Telegram откроется готовое сообщение с названием, размером и количеством.
-              </p>
+
+              {/* B2B Points */}
+              <div className="pt-2 border-t border-gray-100 flex flex-wrap gap-y-1 gap-x-4 text-xs text-gray-500">
+                <span className="flex items-center gap-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" /> Оплата с НДС 20%
+                </span>
+                <span className="flex items-center gap-1">
+                  <MapPin className="w-3.5 h-3.5 text-gray-600" /> Самовывоз: склад Войскорово
+                </span>
+                <span className="flex items-center gap-1">
+                  <Truck className="w-3.5 h-3.5 text-gray-600" /> Быстрая доставка по СПб и ЛО
+                </span>
+              </div>
             </div>
           </div>
         </div>
       )}
 
-      {/* Call Dialog */}
+      {/* CALLBACK / ORDER DIALOG */}
       {callDialogOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60" onClick={() => setCallDialogOpen(false)}>
-          <div className="bg-[#f6f5f2] rounded-xl max-w-md w-full p-5" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs animate-in fade-in duration-200"
+          onClick={() => setCallDialogOpen(false)}
+        >
+          <div
+            className="relative bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-200"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={() => setCallDialogOpen(false)}
-              className="absolute right-3 top-3 w-10 h-10 rounded-full bg-[#f6f5f2] text-xl font-bold hover:bg-gray-200 transition-colors"
+              className="absolute right-4 top-4 w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center transition-colors cursor-pointer"
+              aria-label="Закрыть"
             >
-              ×
+              <X className="w-5 h-5" />
             </button>
-            <h3 className="text-xl font-bold mb-2">Заказать звонок</h3>
-            <p className="text-sm text-[#5d646b] mb-4">
-              Оставьте номер, перезвоним в рабочее время: Пн–Пт, с 08:00 до 18:00.
-            </p>
-            {selectedItem && (
-              <p className="text-sm text-[#5d646b] mb-4">
-                Позиция: {selectedItem.n}, {selectedItem.s}
-                {quantity && `, ${quantity} м²`}
-              </p>
-            )}
+
             {!callSuccess ? (
-              <form onSubmit={handleCallSubmit}>
-                <label className="block font-semibold mb-1">
-                  Телефон
-                  <input
-                    type="tel"
-                    value={callPhone}
-                    onChange={(e) => setCallPhone(e.target.value)}
-                    placeholder="+7 900 000-00-00"
-                    required
-                    className="block w-full mt-1 px-3 py-2 border-2 rounded-md bg-white text-[#1f2429]"
-                  />
-                </label>
-                <label className="block font-semibold mb-1">
-                  Имя (по желанию)
-                  <input
-                    type="text"
-                    value={callName}
-                    onChange={(e) => setCallName(e.target.value)}
-                    className="block w-full mt-1 px-3 py-2 border-2 rounded-md bg-white text-[#1f2429]"
-                  />
-                </label>
-                <button
-                  type="submit"
-                  className="mt-4 w-full px-5 py-2.5 rounded-md bg-[#1f2429] text-white font-semibold border-2 border-[#1f2429] hover:opacity-90 transition-opacity"
-                >
-                  Перезвоните мне
-                </button>
-                {callStatus && <p className="text-sm mt-2" aria-live="polite">{callStatus}</p>}
-                <p className="text-xs text-[#5d646b] mt-2">
-                  Нажимая кнопку, вы соглашаетесь на обработку персональных данных для связи с вами.
+              <>
+                <h3 className="text-2xl font-black text-gray-900 mb-1">Заказать звонок / расчёт</h3>
+                <p className="text-xs sm:text-sm text-gray-500 mb-4">
+                  Оставьте телефон — перезвоним в течение 15 минут в рабочее время ({CFG.hours}).
                 </p>
-              </form>
+
+                {selectedItem && (
+                  <div className="bg-gray-50 border border-gray-200 p-3 rounded-xl mb-4 text-xs">
+                    <span className="text-gray-500 block">Выбранная позиция:</span>
+                    <span className="font-bold text-gray-900 block text-sm">
+                      {selectedItem.n} ({selectedItem.s})
+                    </span>
+                    {quantity && (
+                      <span className="text-emerald-700 font-bold block mt-0.5">
+                        Объём: {quantity} м²
+                      </span>
+                    )}
+                  </div>
+                )}
+
+                <form onSubmit={handleCallSubmit} className="space-y-3">
+                  <div>
+                    <label className="block text-xs font-bold text-gray-700 mb-1">
+                      Номер телефона <span className="text-rose-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      value={callPhone}
+                      onChange={(e) => setCallPhone(e.target.value)}
+                      placeholder="+7 (900) 000-00-00"
+                      required
+                      className="w-full px-3.5 py-2.5 rounded-xl border-2 border-gray-300 focus:outline-none focus:border-[#1f2429] text-gray-900 text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-gray-700 mb-1">
+                      Ваше имя или организация
+                    </label>
+                    <input
+                      type="text"
+                      value={callName}
+                      onChange={(e) => setCallName(e.target.value)}
+                      placeholder="например, ООО СтройИнвест или Алексей"
+                      className="w-full px-3.5 py-2.5 rounded-xl border-2 border-gray-300 focus:outline-none focus:border-[#1f2429] text-gray-900 text-sm"
+                    />
+                  </div>
+
+                  {callStatus && (
+                    <p className="text-xs text-rose-600 font-semibold">{callStatus}</p>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="w-full py-3 rounded-xl bg-[#1f2429] text-white font-bold text-sm hover:bg-[#343e47] transition-all shadow-md mt-2 cursor-pointer"
+                  >
+                    Перезвоните мне
+                  </button>
+
+                  <p className="text-[11px] text-gray-400 text-center leading-tight">
+                    Нажимая кнопку, вы соглашаетесь на обработку персональных данных для связи с вами.
+                  </p>
+                </form>
+              </>
             ) : (
-              <p className="font-bold">Спасибо! Заявка принята. Перезвоним в рабочее время.</p>
+              <div className="text-center py-4 space-y-3">
+                <div className="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-600">
+                  <CheckCircle2 className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-black text-gray-900">Заявка принята!</h3>
+                <p className="text-sm text-gray-600">
+                  Спасибо! Менеджер свяжется с вами по номеру{' '}
+                  <span className="font-bold text-gray-900">{callPhone}</span> в рабочее время ({CFG.hours}).
+                </p>
+                <div className="pt-2 flex flex-col gap-2">
+                  <a
+                    href={
+                      CFG.tg +
+                      '?text=' +
+                      encodeURIComponent(
+                        `Запрос с сайта от ${callName || 'клиента'}: телефон ${callPhone}. ` +
+                          (selectedItem ? `Позиция: ${selectedItem.n} (${selectedItem.s})` : '')
+                      )
+                    }
+                    target="_blank"
+                    rel="noopener"
+                    className="w-full py-2.5 rounded-xl bg-[#229ED9] text-white text-xs font-bold hover:bg-[#1f8fce] transition-colors flex items-center justify-center gap-1.5"
+                  >
+                    <Send className="w-3.5 h-3.5" />
+                    Написать прямо сейчас в Telegram
+                  </a>
+                  <button
+                    onClick={() => setCallDialogOpen(false)}
+                    className="w-full py-2.5 rounded-xl bg-gray-100 text-gray-700 text-xs font-bold hover:bg-gray-200 transition-colors cursor-pointer"
+                  >
+                    Закрыть
+                  </button>
+                </div>
+              </div>
             )}
           </div>
         </div>
       )}
 
-      {/* Lightbox */}
+      {/* LIGHTBOX: High-Res Fullscreen View */}
       {lightboxOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black" onClick={() => setLightboxOpen(false)}>
-          <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/95 animate-in fade-in duration-200"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setLightboxOpen(false)}
-              className="absolute right-4 top-4 w-10 h-10 rounded-full bg-white text-xl font-bold hover:bg-gray-200 transition-colors z-10"
+              className="absolute -top-12 right-0 sm:-top-12 sm:right-0 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white text-xl font-bold flex items-center justify-center transition-all z-10 cursor-pointer"
+              aria-label="Закрыть фото"
             >
-              ×
+              <X className="w-6 h-6" />
             </button>
-            <img src={lightboxImage} alt="" className="w-full max-h-[78vh] object-contain rounded-xl" />
+            <div className="bg-white rounded-2xl p-2.5 sm:p-4 shadow-2xl overflow-hidden">
+              <img
+                src={optimizeImage(lightboxImage, 800)}
+                alt={lightboxTitle || 'Плитка'}
+                className="w-full max-h-[80vh] object-contain rounded-xl mx-auto"
+              />
+              {lightboxTitle && (
+                <div className="text-center text-xs sm:text-sm font-bold text-gray-800 pt-3">
+                  {lightboxTitle}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
-    </main>
+    </div>
   )
 }

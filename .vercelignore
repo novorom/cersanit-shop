@@ -28,11 +28,3 @@ vendor
 .env*
 .aider*
 .DS_Store
-# Keep Next.js files
-!package.json
-!package-lock.json
-!pnpm-lock.yaml
-!next.config.mjs
-!tsconfig.json
-!postcss.config.mjs
-!vercel.json
