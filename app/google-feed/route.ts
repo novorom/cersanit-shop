@@ -67,7 +67,7 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
       <g:brand>${escapeXml(p.brand || "Lincer")}</g:brand>
       ${(p.sku || p.bsu) ? `<g:mpn>${escapeXml(p.sku || p.bsu || "")}</g:mpn>` : ""}
       <g:google_product_category>${googleCategory}</g:google_product_category>
-      <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection || "")}</g:product_type>
+      <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection)}</g:product_type>
       <g:shipping>
         <g:country>RU</g:country>
         <g:service>Доставка по СПб и ЛО</g:service>
@@ -101,7 +101,7 @@ ${items}
   })
 }
 
-function escapeXml(str: string): string {
+function escapeXml(str: string | undefined): string {
   if (!str) return ""
   return str
     .replace(/&/g, "&amp;")
