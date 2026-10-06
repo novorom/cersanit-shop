@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e5dc"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M178,365 Q229,333 280,291" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M171,25 Q180,356 189,-66" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M539,137 Q451,366 363,86" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M179,95 Q179,227 179,102" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M180,317 Q261,386 343,322" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M472,196 Q424,7 377,288" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M508,89 Q508,5 508,22" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M555,54 Q540,257 525,-19" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M108,346 Q33,355 -41,400" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M527,364 Q448,256 369,374" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Грани Таганая GTF400M ЗИМНИЙ БЕЛЫЙ</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Грани Таганая</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">1200 × 600 мм</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M52,180 Q3,50 -45,178" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M364,335 Q428,362 492,319" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M10,37 Q66,126 123,-48" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M324,296 Q403,183 482,221" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M211,267 Q243,172 276,335" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M173,397 Q187,174 202,348" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M184,351 Q234,301 285,397" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M1,272 Q3,121 5,188" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M119,342 Q120,193 122,262" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M212,164 Q227,231 242,110" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Калакатта Серые</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 10 мм</text>
+</svg>

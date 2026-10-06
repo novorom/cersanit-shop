@@ -3,10 +3,10 @@ import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 export const metadata: Metadata = {
-  title: "Тренды плитки 2025: что выбрать для ванной и кухни | Керамогранит Опт",
+  title: "Тренды плитки 2025: что выбрать для ванной и кухни | Дом Плитки CERSANIT",
   description: "Главные тренды керамической плитки и керамогранита в 2025 году: крупный формат, природные текстуры, нейтральные тона. Что в моде и как применить в интерьере.",
   alternates: { canonical: `${SITE_URL}/blog/trendy-plitki-2025` },
-  openGraph: { title: "Тренды плитки 2025", url: `${SITE_URL}/blog/trendy-plitki-2025`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Тренды плитки 2025", url: `${SITE_URL}/blog/trendy-plitki-2025`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 export default function Article() {
   return (
@@ -15,10 +15,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Тренды плитки 2025: что выбрать для ванной и кухни",
         description: "Обзор главных трендов керамики в 2025 году.",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/trendy-plitki-2025`,
         datePublished: "2025-03-15",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       })}} />
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">

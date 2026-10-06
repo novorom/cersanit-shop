@@ -3,10 +3,10 @@ import Link from "next/link"
 import { ChevronRight, Download, FileText, Shield, Cpu, BookOpen } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 export const metadata: Metadata = {
-  title: "Документы и сертификаты Lincer — скачать бесплатно | Керамогранит Опт",
+  title: "Документы и сертификаты Lincer — скачать бесплатно | Дом Плитки CERSANIT",
   description: "Бесплатные материалы Lincer: сертификаты качества, инструкции по укладке, программа 3D-визуализации Ceramic 3D Web. Официальный дилер в Санкт-Петербурге.",
   alternates: { canonical: `${SITE_URL}/downloads` },
-  openGraph: { title: "Документы и сертификаты Lincer", url: `${SITE_URL}/downloads`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Документы и сертификаты Lincer", url: `${SITE_URL}/downloads`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
 }
 const sections = [
   {

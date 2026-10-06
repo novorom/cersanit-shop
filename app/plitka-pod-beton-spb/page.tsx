@@ -14,14 +14,14 @@ const BETON_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под бетон Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка под бетон Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Керамогранит под бетон и лофт Lincer в СПб. Soft Concrete, Concretehouse, Lofthouse, Effecta — склад Янино, доставка по СПб от 1 дня. Стиль лофт и минимализм для пола и стен.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-beton-spb` },
   openGraph: {
     title: "Плитка под бетон ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит в стиле лофт — Soft Concrete, Concretehouse, Lofthouse. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-beton-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

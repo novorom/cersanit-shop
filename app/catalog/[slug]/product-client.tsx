@@ -136,89 +136,6 @@ export function ProductPageClient({ slug }: { slug: string }) {
   const hasDiscount = product.price_official && product.price_official > product.price_retail
   const priceUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка", "Панно"].includes(product.product_type) ? "₽/шт" : "₽/м²"
 
-  const productJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    image: product.main_image ? [product.main_image] : (product.images?.length ? product.images : ["https://cersanit-spb.ru/logo.png"]),
-    description: (product.description ||
-      `${product.name} — купить в Санкт-Петербурге со склада Янино. ${product.brand} коллекция ${product.collection}. Доставка по СПб и ЛО.`).slice(0, 300),
-    brand: { "@type": "Brand", name: product.brand || "Cersanit" },
-    sku: product.sku || product.id,
-    mpn: product.bsu || product.sku || product.id,
-    category: product.product_type,
-    color: product.color,
-    material: product.material_type,
-    offers: {
-      "@type": "Offer",
-      url: `https://cersanit-spb.ru/catalog/${product.slug}`,
-      priceCurrency: "RUB",
-      price: product.price_retail || 0,
-      availability:
-        totalStock > 0
-          ? "https://schema.org/InStock"
-          : "https://schema.org/OutOfStock",
-      seller: { "@type": "Organization", name: "Керамогранит Опт" },
-      areaServed: { "@type": "City", name: "Санкт-Петербург" },
-      priceValidUntil: "2026-12-31",
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        applicableCountry: "RU",
-        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnPeriod",
-        merchantReturnDays: 14,
-        returnMethod: "https://schema.org/ReturnByMail",
-        returnFees: "https://schema.org/FreeReturn"
-      },
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: {
-          "@type": "MonetaryAmount",
-          value: "0",
-          currency: "RUB",
-        },
-        shippingDestination: {
-          "@type": "DefinedRegion",
-          addressCountry: "RU",
-          addressRegion: ["Санкт-Петербург", "Ленинградская область"],
-        },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
-          transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2, unitCode: "DAY" },
-        },
-      },
-    },
-    additionalProperty: [
-      product.format && { "@type": "PropertyValue", name: "Формат", value: product.format },
-      product.surface && { "@type": "PropertyValue", name: "Поверхность", value: product.surface },
-      product.rectified && { "@type": "PropertyValue", name: "Ректификат", value: "Да" },
-      product.frost_resistant && { "@type": "PropertyValue", name: "Морозостойкость", value: "Да" },
-      product.wear_class && { "@type": "PropertyValue", name: "Класс износостойкости", value: product.wear_class },
-      product.slip_class && { "@type": "PropertyValue", name: "Класс антискольжения", value: product.slip_class },
-    ].filter(Boolean),
-    ...(product.rating && product.rating > 0
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: String(product.rating),
-            reviewCount: String(product.reviews_count || 1),
-            bestRating: "5",
-            worstRating: "1",
-          },
-        }
-      : {}),
-  }
-
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Главная", item: "https://cersanit-spb.ru" },
-      { "@type": "ListItem", position: 2, name: "Каталог", item: "https://cersanit-spb.ru/catalog" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://cersanit-spb.ru/catalog/${product.slug}` },
-    ],
-  }
-
   const tabs: { id: TabId; label: string }[] = [
     { id: "description", label: "Описание" },
     { id: "specs", label: "Характеристики" },
@@ -249,15 +166,6 @@ export function ProductPageClient({ slug }: { slug: string }) {
   return (
     <>
     <div className="bg-muted/30 min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-
       <div className="mx-auto max-w-7xl px-4 py-3 lg:py-6">
         {/* Product top section */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
@@ -339,7 +247,9 @@ export function ProductPageClient({ slug }: { slug: string }) {
             {/* Price */}
             <div className="flex items-baseline gap-3">
               <span className="text-3xl font-bold text-foreground">
-                {product.price_retail.toLocaleString("ru-RU")} {priceUnit}
+                {product.price_retail > 0
+                  ? `${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}`
+                  : "Цена по запросу"}
               </span>
               {hasDiscount && (
                 <span className="text-lg text-muted-foreground line-through">
@@ -429,7 +339,9 @@ export function ProductPageClient({ slug }: { slug: string }) {
                     <ShoppingCart className="h-4 w-4" />
                     В корзину{" "}
                     <span className="font-bold border-l border-primary-foreground/30 pl-2 ml-1">
-                      {(product.price_retail * quantity).toLocaleString("ru-RU")} {"₽"}
+                      {product.price_retail > 0
+                        ? `${(product.price_retail * quantity).toLocaleString("ru-RU")} ₽`
+                        : "Цена по запросу"}
                     </span>
                   </button>
                 </div>
@@ -478,7 +390,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
 
             {/* ── ИКОНКИ ХАРАКТЕРИСТИК ── */}
             <ProductSpecIcons
-              surface={product.surface}
+              surface={product.surface ?? undefined}
               rectified={product.rectified}
               frostResistant={product.frost_resistant}
               wearClass={product.wear_class}

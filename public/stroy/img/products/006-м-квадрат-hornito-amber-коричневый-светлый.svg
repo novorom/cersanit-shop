@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86674d"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M562,390 Q577,312 593,290" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M199,57 Q223,195 247,7" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M129,282 Q195,83 262,240" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M385,303 Q378,349 371,367" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M421,220 Q442,336 464,209" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M598,67 Q541,141 484,80" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M196,136 Q129,66 62,56" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M459,360 Q483,26 507,286" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M98,305 Q116,184 134,304" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M170,174 Q214,336 259,115" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Hornito Amber Коричневый Светлый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">450 × 450 × 8 мм</text>
+</svg>

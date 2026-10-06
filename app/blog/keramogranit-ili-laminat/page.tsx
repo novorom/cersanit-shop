@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Керамогранит под дерево или ламинат — что лучше для пола? | Керамогранит Опт",
+  title: "Керамогранит под дерево или ламинат — что лучше для пола? | Дом Плитки CERSANIT",
   description: "Сравниваем керамогранит под дерево и ламинат: срок службы, влагостойкость, цена, уход. Что выбрать для ванной, кухни, гостиной в 2025 году.",
   alternates: { canonical: `${SITE_URL}/blog/keramogranit-ili-laminat` },
-  openGraph: { title: "Керамогранит под дерево или ламинат — что лучше?", url: `${SITE_URL}/blog/keramogranit-ili-laminat`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Керамогранит под дерево или ламинат — что лучше?", url: `${SITE_URL}/blog/keramogranit-ili-laminat`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Керамогранит под дерево или ламинат — что лучше для пола?",
         description: "Детальное сравнение керамогранита и ламината по 8 параметрам.",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/keramogranit-ili-laminat`,
         datePublished: "2025-02-20",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

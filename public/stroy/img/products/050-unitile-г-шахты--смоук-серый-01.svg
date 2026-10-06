@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M431,192 Q470,345 509,211" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M478,369 Q493,367 508,444" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M255,209 Q311,5 367,239" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M512,219 Q592,357 672,254" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M310,68 Q318,80 327,-12" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M524,27 Q613,206 703,32" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M425,152 Q389,258 353,191" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M356,108 Q363,35 370,100" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M129,324 Q209,377 290,404" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M134,206 Q103,224 72,246" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">СМОУК Серый 01</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">125 × 500 мм</text>
+</svg>

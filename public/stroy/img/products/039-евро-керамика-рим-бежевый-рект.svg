@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M137,173 Q88,107 40,94" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M440,190 Q408,227 377,91" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M498,106 Q440,11 382,38" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M571,374 Q524,252 478,443" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M97,216 Q163,129 230,280" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M195,331 Q273,173 351,277" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M516,146 Q569,50 623,60" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M156,3 Q80,77 5,73" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M48,18 Q2,287 -43,-14" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M87,193 Q44,234 1,123" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">РИМ БЕЖЕВЫЙ Рект</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Евро-Керамика</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 10 мм</text>
+</svg>

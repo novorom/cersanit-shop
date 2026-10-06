@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как выбрать цвет затирки для плитки | Керамогранит Опт",
+  title: "Как выбрать цвет затирки для плитки | Дом Плитки CERSANIT",
   description: "Рекомендации по выбору цвета затирки к плитке. Советы дизайнеров, сочетания цветов, затирка швов в СПб.",
   alternates: { canonical: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu` },
-  openGraph: { title: "Как выбрать цвет затирки для плитки | Керамогранит Опт", url: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как выбрать цвет затирки для плитки | Дом Плитки CERSANIT", url: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -17,10 +17,10 @@ export default function Article() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как выбрать цвет затирки для плитки: советы по подбору",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-vybrat-zatirku-po-cvetu`,
         datePublished: "2026-03-23",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <div className="mb-8">

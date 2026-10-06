@@ -3,10 +3,10 @@ import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 export const metadata: Metadata = {
-  title: "Как укладывать керамическую мозаику — инструкция Lincer | Керамогранит Опт",
+  title: "Как укладывать керамическую мозаику — инструкция Lincer | Дом Плитки CERSANIT",
   description: "Инструкция по укладке мозаики Lincer на сетке. Подготовка поверхности, нанесение клея, затирка швов, важные советы для качественного результата.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-mozaiku` },
-  openGraph: { title: "Как укладывать керамическую мозаику", url: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать керамическую мозаику", url: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 export default function HowToLayMosaic() {
   return (
@@ -14,10 +14,10 @@ export default function HowToLayMosaic() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как укладывать керамическую мозаику — инструкция Lincer",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: "https://cersanit-spb.ru" },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: "https://cersanit-spb.ru" },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-mozaiku`,
         datePublished: "2025-01-25",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       }) }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/blog" className="hover:text-primary transition-colors">Блог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Укладка мозаики</span></nav></div></div>
 

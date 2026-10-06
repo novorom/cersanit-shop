@@ -8,10 +8,10 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 const COLS = ["Slate","Pamir","Sandstone","Limestone","Desert","JackStone","Stonehouse","Lofthouse","Soft Concrete","Royal Stone","Royal stone"]
 export const metadata: Metadata = {
-  title: "Плитка для балкона и лоджии Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка для балкона и лоджии Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Морозостойкий керамогранит для балкона и лоджии Lincer в СПб. Выдерживает -50°C, класс скользкости R11. Склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-balkona-spb` },
-  openGraph: { title: "Плитка для балкона Lincer в СПб", url: `${SITE_URL}/plitka-dlya-balkona-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для балкона Lincer в СПб", url: `${SITE_URL}/plitka-dlya-balkona-spb`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
 }
 const faq = [
   { question: "Какая плитка подходит для открытого балкона в СПб?", answer: "Для открытого балкона нужен морозостойкий керамогранит: класс морозостойкости F100 и выше (выдерживает 100+ циклов замораживания/оттаивания). Это обязательное требование для климата Санкт-Петербурга. Также важен класс скользкости R11 — балкон бывает мокрым и обледеневшим." },

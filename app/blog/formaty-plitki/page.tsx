@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Форматы плитки: как выбрать размер для комнаты | Керамогранит Опт",
+  title: "Форматы плитки: как выбрать размер для комнаты | Дом Плитки CERSANIT",
   description: "30x60, 60x60, 60x120 — чем отличаются форматы и как размер плитки влияет на восприятие пространства. Советы по выбору формата для ванной, кухни и гостиной от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/formaty-plitki` },
-  openGraph: { title: "Форматы плитки: как выбрать размер для комнаты", url: `${SITE_URL}/blog/formaty-plitki`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Форматы плитки: как выбрать размер для комнаты", url: `${SITE_URL}/blog/formaty-plitki`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -16,12 +16,12 @@ export default function Article() {
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
-        headline: "Керамогранит под дерево или ламинат — что лучше для пола?",
-        description: "Детальное сравнение керамогранита и ламината по 8 параметрам.",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
-        mainEntityOfPage: `${SITE_URL}/blog/keramogranit-ili-laminat`,
+        headline: "Форматы плитки: как выбрать размер для комнаты",
+        description: "Как форматы плитки 30×60, 60×60 и 60×120 влияют на восприятие ванной, кухни и гостиной.",
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        mainEntityOfPage: `${SITE_URL}/blog/formaty-plitki`,
         datePublished: "2025-02-20",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

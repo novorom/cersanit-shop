@@ -8,10 +8,10 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 const COLS = ["Lofthouse","Soft Concrete","Concretehouse","Wood Concept Natural","Wood Concept Prime","Woodhouse","Royal Stone","Royal stone","Slate","Pamir","Sandstone","Limestone","Northwood","Bonsai Tree","Stilo","Silvia","Desert","JackStone","Stonehouse"]
 export const metadata: Metadata = {
-  title: "Плитка для прихожей Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка для прихожей Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Износостойкая плитка и керамогранит для прихожей Lincer в СПб. Класс износостойкости PEI IV-V, класс скользкости R10+. Склад Янино, доставка от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-prihozhej-spb` },
-  openGraph: { title: "Плитка для прихожей Lincer в СПб", url: `${SITE_URL}/plitka-dlya-prihozhej-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для прихожей Lincer в СПб", url: `${SITE_URL}/plitka-dlya-prihozhej-spb`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
 }
 const faq = [
   { question: "Что важно при выборе плитки для прихожей?", answer: "Три ключевых параметра: износостойкость (PEI IV или V для прихожих с высокой проходимостью), класс скользкости (R10 и выше — не скользит даже с мокрой обувью), и практичный тёмный или средний цвет — не так заметна грязь." },

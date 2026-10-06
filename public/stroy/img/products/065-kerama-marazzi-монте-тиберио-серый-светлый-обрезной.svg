@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M26,269 Q38,329 50,173" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M145,30 Q191,11 238,-31" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M234,22 Q291,29 349,70" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M235,194 Q215,346 195,292" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M368,274 Q337,40 306,194" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M347,274 Q384,277 422,189" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M124,268 Q81,250 38,271" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M107,203 Q91,266 76,296" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M122,346 Q148,175 174,294" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M583,250 Q586,49 590,263" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Монте Тиберио Серый Светлый Обрезной</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 1200 × 9 мм</text>
+</svg>

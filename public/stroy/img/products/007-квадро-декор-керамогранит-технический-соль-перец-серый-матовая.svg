@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M24,341 Q65,100 106,267" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M368,166 Q352,309 337,142" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M106,162 Q194,256 283,211" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M192,275 Q141,202 91,220" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M249,20 Q314,364 380,59" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M415,127 Q340,88 266,30" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M386,212 Q381,380 376,205" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M402,355 Q319,175 236,424" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M386,9 Q417,343 448,-16" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M46,71 Q86,254 127,94" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Керамогранит технический Соль-Перец Серый Матова</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Квадро Декор</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">300 × 300 × 7 мм</text>
+</svg>

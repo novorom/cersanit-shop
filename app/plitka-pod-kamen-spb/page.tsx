@@ -15,14 +15,14 @@ const STONE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под камень Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка под камень Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Керамогранит под натуральный камень Lincer в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб от 1 дня. Природная фактура без сложного ухода.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-kamen-spb` },
   openGraph: {
     title: "Плитка под камень ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией камня — Royal Stone, Slate, Stonehouse, Sandstone. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-kamen-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

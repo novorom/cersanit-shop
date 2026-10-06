@@ -5,22 +5,22 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич | Керамогранит Опт",
+  title: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич | Дом Плитки CERSANIT",
   description: "Создайте ванную в стиле лофт с плиткой под бетон и кирпич от Lincer. Советы дизайна в Санкт-Петербурге. Официальный дилер в Янино.",
   alternates: { canonical: `${SITE_URL}/blog/kak-sozdat-dizajn-vannoj-v-stile-loft` },
-  openGraph: { 
-    title: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич | Керамогранит Опт",
-    url: `${SITE_URL}/blog/kak-sozdat-dizajn-vannoj-v-stile-loft`, 
-    siteName: "Керамогранит Опт", 
-    locale: "ru_RU", 
-    type: "article" 
+  openGraph: {
+    title: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич | Дом Плитки CERSANIT",
+    url: `${SITE_URL}/blog/kak-sozdat-dizajn-vannoj-v-stile-loft`,
+    siteName: "Дом Плитки CERSANIT",
+    locale: "ru_RU",
+    type: "article"
   },
 }
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич", publisher: { "@type": "Organization", name: "Керамогранит Опт", url: "https://cersanit-spb.ru" }, mainEntityOfPage: "https://cersanit-spb.ru/blog/kak-sozdat-dizajn-vannoj-v-stile-loft", datePublished: "2025-10-15", author: { "@type": "Organization", name: "Керамогранит Опт" } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Дизайн ванной в стиле лофт: плитка под бетон и кирпич", publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: "https://cersanit-spb.ru" }, mainEntityOfPage: "https://cersanit-spb.ru/blog/kak-sozdat-dizajn-vannoj-v-stile-loft", datePublished: "2025-10-15", author: { "@type": "Organization", name: "Дом Плитки CERSANIT" } }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M372,232 Q286,179 200,275" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M73,165 Q-13,342 -98,134" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M62,256 Q56,158 50,352" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M228,391 Q219,24 210,425" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M369,310 Q355,254 341,295" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M481,388 Q490,88 499,430" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M53,25 Q27,20 1,-66" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M353,357 Q413,46 473,370" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M580,319 Q584,267 588,419" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M411,62 Q349,11 288,-7" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Коллиано Бежевый Светлый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">300 × 300 × 8 мм</text>
+</svg>

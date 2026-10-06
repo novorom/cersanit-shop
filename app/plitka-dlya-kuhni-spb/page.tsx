@@ -11,10 +11,10 @@ const PHONE_RAW = "+79052050900"
 const COLLECTIONS = ["Calacatta","Deep Calacatta","Soft Concrete","Lofthouse","Wood Concept Natural","Wood Concept Prime","Woodhouse","Concretehouse","Travertino","Limestone","Sandstone","Sevilla","Siena","Stilo","Silvia","Lina","Marble","Polaris","Cambio"]
 
 export const metadata: Metadata = {
-  title: "Плитка для кухни Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка для кухни Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Керамическая плитка и керамогранит для кухни Lincer в СПб. Влагостойкая, жиростойкая, легко моется. Склад Янино, доставка по СПб от 1 дня. Цены от 472 руб/м2.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-kuhni-spb` },
-  openGraph: { title: "Плитка для кухни Lincer в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для кухни Lincer в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
 }
 
 const faq = [

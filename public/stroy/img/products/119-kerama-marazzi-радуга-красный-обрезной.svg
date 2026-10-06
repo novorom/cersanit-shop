@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b65b55"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M78,271 Q98,320 119,360" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M262,357 Q262,138 263,298" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M267,374 Q315,70 364,394" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M448,381 Q368,249 288,346" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M560,261 Q547,266 535,166" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M587,376 Q510,24 433,305" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M475,8 Q529,14 583,-5" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M453,198 Q485,175 518,265" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M414,311 Q443,351 472,218" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M367,183 Q418,152 470,164" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Радуга Красный Обрезной</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 11 мм</text>
+</svg>

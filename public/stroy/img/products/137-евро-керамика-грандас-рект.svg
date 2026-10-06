@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9c4bb"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M171,400 Q124,180 78,338" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M575,99 Q625,195 676,194" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M385,223 Q434,398 483,225" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M425,249 Q370,168 315,199" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M98,194 Q112,273 127,196" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M282,376 Q212,17 142,451" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M194,291 Q179,306 165,251" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M335,128 Q270,37 206,106" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M424,321 Q382,393 340,355" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M448,43 Q373,359 299,120" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">ГРАНДАС Рект</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Евро-Керамика</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 10 мм</text>
+</svg>

@@ -9,14 +9,14 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка для душевой кабины купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Плитка для душевой кабины купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Плитка для душевой кабины Lincer в СПб — нескользкая, влагостойкая. Mosaic, Calacatta, Lofthouse — склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-dushi-spb` },
   openGraph: {
     title: "Плитка для душевой кабины в Санкт-Петербурге",
     description: "Плитка для душевой кабины Lincer в СПб — нескользкая, влагостойкая. Mosaic, Calacatta, Lofthouse — склад Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-dlya-dushi-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

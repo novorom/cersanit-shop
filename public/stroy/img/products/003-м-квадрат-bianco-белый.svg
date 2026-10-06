@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e5dc"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M485,165 Q542,95 600,264" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M266,233 Q300,358 334,185" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M260,371 Q337,308 415,458" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M564,163 Q503,14 442,128" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M66,32 Q70,53 74,-18" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M384,13 Q425,118 467,70" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M38,20 Q-1,1 -40,100" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M442,105 Q507,397 572,95" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M241,249 Q191,178 141,277" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M116,279 Q45,355 -26,286" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Bianco Белый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">450 × 450 × 8 мм</text>
+</svg>

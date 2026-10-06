@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M351,163 Q401,327 452,64" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M172,17 Q199,305 226,38" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M49,227 Q7,384 -35,257" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M593,173 Q546,305 500,107" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M170,146 Q233,266 296,193" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M222,138 Q144,362 67,48" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M396,398 Q328,345 261,460" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M487,232 Q489,285 492,295" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M159,168 Q181,143 203,171" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M22,257 Q-3,113 -27,166" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Sonata Серый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">450 × 450 × 8 мм</text>
+</svg>

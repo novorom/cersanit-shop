@@ -7,14 +7,14 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Вопросы и ответы о плитке Lincer | Керамогранит Опт",
+  title: "Вопросы и ответы о плитке Lincer | Дом Плитки CERSANIT",
   description: "Ответы на частые вопросы о плитке и керамограните Lincer: доставка, оплата, возврат, расчёт количества, укладка. Официальный дилер в Санкт-Петербурге.",
   alternates: { canonical: `${SITE_URL}/faq` },
   openGraph: {
-    title: "Вопросы и ответы о плитке Lincer | Керамогранит Опт",
+    title: "Вопросы и ответы о плитке Lincer | Дом Плитки CERSANIT",
     description: "Ответы на частые вопросы: доставка, оплата, возврат, расчёт количества плитки. Официальный дилер ведущих брендов в Санкт-Петербурге.",
     url: `${SITE_URL}/faq`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

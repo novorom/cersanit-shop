@@ -5,15 +5,15 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Плитка для частного дома: выбор для каждой комнаты | Керамогранит Опт",
+  title: "Плитка для частного дома: выбор для каждой комнаты | Дом Плитки CERSANIT",
   description: "Как выбрать плитку для частного дома в СПб. Керамогранит для полов и стен в разных комнатах. Советы от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/plitka-dlya-doma-chastnogo` },
-  openGraph: { 
+  openGraph: {
     title: "Плитка для частного дома: выбор для каждой комнаты",
-    url: `${SITE_URL}/blog/plitka-dlya-doma-chastnogo`, 
-    siteName: "Керамогранит Опт", 
-    locale: "ru_RU", 
-    type: "article" 
+    url: `${SITE_URL}/blog/plitka-dlya-doma-chastnogo`,
+    siteName: "Дом Плитки CERSANIT",
+    locale: "ru_RU",
+    type: "article"
   },
 }
 
@@ -24,22 +24,22 @@ export default function Article() {
         "@context": "https://schema.org",
         "@type": "Article",
         headline: "Плитка для частного дома: что выбрать для каждой комнаты",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/plitka-dlya-doma-chastnogo`,
         datePublished: "2026-03-30",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       }) }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Плитка для частного дома: что выбрать для каждой комнаты</h1>
-        
+
         <div className="mb-8 text-sm text-muted-foreground flex items-center gap-2">
-          <span>Керамогранит Опт</span>
+          <span>Дом Плитки CERSANIT</span>
           <ChevronRight size={16} />
           <span>30 марта 2026</span>
         </div>
 
         <div className="prose prose-sm max-w-none space-y-8">
-          
+
           <section>
             <h2 className="text-2xl font-bold mb-4">Основные критерии выбора плитки для дома</h2>
             <p className="text-base leading-relaxed">Выбор плитки для частного дома в Санкт-Петербурге требует внимательного подхода. Нужно учитывать не только эстетику, но и практические характеристики материала. Плитка должна быть прочной, влагостойкой и удобной в уходе. Особенно важно учитывать климат СПб с его влажностью и температурными перепадами.</p>

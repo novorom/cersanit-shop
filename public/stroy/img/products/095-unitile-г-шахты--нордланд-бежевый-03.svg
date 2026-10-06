@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M177,276 Q155,370 134,288" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M549,157 Q481,117 414,246" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M188,118 Q217,163 246,168" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M287,64 Q231,83 176,35" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M270,198 Q300,383 331,280" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M318,61 Q369,13 420,123" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M553,14 Q495,48 437,-37" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M386,271 Q299,152 212,265" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M357,32 Q402,130 447,128" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M394,370 Q388,316 383,398" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">НОРДЛАНД Бежевый 03</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">125 × 500 мм</text>
+</svg>

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб",
   description: "Морозостойкий керамогранит для балконов и террас Lincer. Нескользкая плитка, которая выдерживает любые погодные условия Санкт-Петербурга.",
   alternates: { canonical: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy` },
-  openGraph: { title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб", url: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Керамогранит для балкона и террасы: морозостойкий нескользкий | Lincer СПб", url: `${SITE_URL}/blog/keramogranit-dlya-balkona-i-terraisy`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Керамогранит для балкона и террасы: морозостойкий нескользкий","publisher":{"@type":"Organization","name":"Керамогранит Опт","url":"https://cersanit-spb.ru"},"mainEntityOfPage":"https://cersanit-spb.ru/blog/keramogranit-dlya-balkona-i-terraisy","datePublished":"2025-03-10","author":{"@type":"Organization","name":"Керамогранит Опт"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Керамогранит для балкона и террасы: морозостойкий нескользкий","publisher":{"@type":"Organization","name":"Дом Плитки CERSANIT","url":"https://cersanit-spb.ru"},"mainEntityOfPage":"https://cersanit-spb.ru/blog/keramogranit-dlya-balkona-i-terraisy","datePublished":"2025-03-10","author":{"@type":"Organization","name":"Дом Плитки CERSANIT"}}` }} />
 
                 <div className="mt-6 p-5 rounded-xl bg-muted/30 border border-border">
             <p className="text-sm font-semibold text-muted-foreground mb-3 uppercase tracking-wide">По теме</p>
@@ -37,7 +37,7 @@ export default function Article() {
         <h1 className="text-4xl font-bold mb-4">Керамогранит для балкона и террасы: морозостойкий и нескользкий</h1>
         
         <div className="mb-8 text-sm text-muted-foreground">
-          <p>Опубликовано: декабрь 2024 | Автор: Керамогранит Опт</p>
+          <p>Опубликовано: декабрь 2024 | Автор: Дом Плитки CERSANIT</p>
         </div>
 
         <div className="prose prose-lg max-w-none mb-12">
@@ -82,7 +82,7 @@ export default function Article() {
             Ещё одно преимущество керамогранита — его практичность в уходе. Благодаря низкому водопоглощению и плотной структуре, грязь, мох и листья не въедаются в поверхность плитки. Для уборки балкона или террасы достаточно обычной воды из шланга или влажной тряпки.
           </p>
           <p>
-            Если на поверхности появятся пятна, их легко удалить щёткой и моющим средством, не опасаясь повредить материал. Керамогранит не требует специальной обработки или герметизации, как некоторые натуральные камни. Это значительно экономит время на уход и снижает затраты на содержание. Керамогранит Опт Керамогранит Опт в Санкт-Петербурге поможет вам не только купить плитку, но и дать рекомендации по уходу за ней, чтобы она служила долго и выглядела как новая.
+            Если на поверхности появятся пятна, их легко удалить щёткой и моющим средством, не опасаясь повредить материал. Керамогранит не требует специальной обработки или герметизации, как некоторые натуральные камни. Это значительно экономит время на уход и снижает затраты на содержание. Дом Плитки CERSANIT Дом Плитки CERSANIT в Санкт-Петербурге поможет вам не только купить плитку, но и дать рекомендации по уходу за ней, чтобы она служила долго и выглядела как новая.
           </p>
         </div>
 

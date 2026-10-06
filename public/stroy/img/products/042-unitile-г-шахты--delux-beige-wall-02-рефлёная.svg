@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M82,287 Q137,40 193,266" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M543,196 Q548,108 553,198" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M499,2 Q557,398 615,31" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M26,312 Q52,231 79,228" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M76,261 Q107,343 138,320" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M292,317 Q237,218 183,375" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M277,217 Q363,309 450,185" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M95,330 Q5,209 -84,304" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M227,189 Q275,150 323,282" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M322,377 Q244,121 166,308" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Delux beige wall 02 РЕФЛЁНАЯ</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 250 × 9 мм</text>
+</svg>

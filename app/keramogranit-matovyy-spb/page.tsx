@@ -9,14 +9,14 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Матовый керамогранит купить в Санкт-Петербурге | Керамогранит Опт",
+  title: "Матовый керамогранит купить в Санкт-Петербурге | Дом Плитки CERSANIT",
   description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
   alternates: { canonical: `${SITE_URL}/keramogranit-matovyy-spb` },
   openGraph: {
     title: "Матовый керамогранит в Санкт-Петербурге",
     description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
     url: `${SITE_URL}/keramogranit-matovyy-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

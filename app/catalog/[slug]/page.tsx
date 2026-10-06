@@ -23,12 +23,16 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return { title: "Товар не найден | Керамогранит Опт" }
+    return { title: "Товар не найден | Дом Плитки CERSANIT" }
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
   const priceUnit = isUnit ? "₽/шт" : "₽/м²"
-  const title = `${product.name} купить оптом и в розницу в СПб — цена ${product.price_retail} ${priceUnit}`
+  const hasPrice = product.price_retail > 0
+  const priceText = hasPrice
+    ? `Актуальная цена ${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}.`
+    : "Уточните актуальную цену и наличие у менеджера."
+  const title = `${product.name} купить оптом и в розницу в СПб — ${hasPrice ? `${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}` : "цена по запросу"}`
 
   // Уникальное описание: комбинируем характеристики + SEO текст коллекции
   const collectionSeo = product.collection ? getCollectionSeo(product.collection) : null
@@ -36,12 +40,12 @@ export async function generateMetadata({
     ? ` ${collectionSeo.application.slice(0, 120)}...`
     : ""
   const description =
-    `Купить ${product.name} в Санкт-Петербурге оптом и в розницу. Актуальная цена ${product.price_retail} ${priceUnit}.` +
+    `Купить ${product.name} в Санкт-Петербурге оптом и в розницу. ${priceText}` +
     `${product.surface ? ` Поверхность: ${product.surface}.` : ""}` +
     `${product.color ? ` Цвет: ${product.color}.` : ""}` +
     `${product.format ? ` Формат ${product.format} см.` : ""}` +
     `${appText}` +
-    ` Официальный дилер, склад в Янино, доставка по СПб и ЛО от 1 дня. Артикул: ${product.sku}.`
+    ` Склад в Янино, самовывоз и доставка по СПб и ЛО. Артикул: ${product.sku}.`
 
   return {
     title,
@@ -51,7 +55,7 @@ export async function generateMetadata({
       title,
       description: description.slice(0, 200),
       url: `${SITE_URL}/catalog/${product.slug}`,
-      siteName: "Керамогранит Опт",
+      siteName: "Дом Плитки CERSANIT",
       locale: "ru_RU",
       type: "website",
       images: product.main_image
@@ -98,66 +102,26 @@ export default async function ProductPage({
     name: product.name,
     description: (product.description || (collectionSeo?.about
       ? `${collectionSeo.about} ${collectionSeo.application}`
-      : `${product.name} — качественная керамическая плитка и керамогранит от ${product.brand || "Cersanit"}. В наличии на складе в СПб. Доставка от 1 дня. Купите выгодно в Керамогранит Опт.`)).slice(0, 300),
+      : `${product.name} — керамическая плитка или керамогранит${product.brand ? ` бренда ${product.brand}` : ""}. Склад в Янино, самовывоз и доставка по Санкт-Петербургу и Ленинградской области.`)).slice(0, 300),
     sku: product.sku || product.id,
     mpn: product.bsu || product.sku || product.id,
-    brand: { 
-      "@type": "Brand", 
-      "name": product.brand || "Cersanit" 
-    },
-    image: product.main_image ? [product.main_image] : ["https://cersanit-spb.ru/logo.png"],
+    ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+    image: product.main_image ? [product.main_image] : ["https://cersanit-spb.ru/images/logo-cersanit.png"],
     itemCondition: "https://schema.org/NewCondition",
-    offers: {
+    ...(product.price_retail > 0 ? { offers: {
       "@type": "Offer",
-      "price": product.price_retail || 0,
+      "price": product.price_retail,
       "priceCurrency": "RUB",
       "availability": (product.stock_yanino ?? 0) > 0 || (product.stock_factory ?? 0) > 0
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "Organization",
-        "name": "Керамогранит Опт",
+        "name": "Дом Плитки CERSANIT",
         "url": SITE_URL,
       },
       "url": `${SITE_URL}/catalog/${product.slug}`,
-      "priceValidUntil": "2026-12-31",
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "RU",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
-        "merchantReturnDays": 14,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "RUB",
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "RU",
-          "addressRegion": ["Санкт-Петербург", "Ленинградская область"],
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 1,
-            "unitCode": "DAY",
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 2,
-            "unitCode": "DAY",
-          },
-        },
-      },
-    },
+    } } : {}),
     ...(product.color ? { color: product.color } : {}),
     ...(product.material_type ? { material: product.material_type } : {}),
     ...(product.width && product.length
@@ -191,11 +155,11 @@ export default async function ProductPage({
       {/* Schema.org — SSR, Яндекс видит без JS */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}
       />
 
       {/* Breadcrumb — SSR */}
@@ -262,7 +226,7 @@ export default async function ProductPage({
             </h2>
             <p className="text-sm text-foreground/75 leading-relaxed">
               {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от 
-              производителя {product.brand || "Керамогранит Опт"}.
+              производителя {product.brand || "Дом Плитки CERSANIT"}.
               {product.format ? ` Формат ${product.format} см.` : ""}
               {product.surface ? ` Поверхность ${product.surface.toLowerCase()}.` : ""}
               {product.color ? ` Цвет: ${product.color}.` : ""}

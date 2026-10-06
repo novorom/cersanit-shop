@@ -156,7 +156,7 @@ export function CollectionsClient({ initialCollections = [] }: CollectionsClient
     
     // Generate original selling description for the collection
     const brandNames = [...new Set(collProducts.map(p => p.brand))].join(", ")
-    const description = `Коллекция ${c.name} от ${brandNames} представлена в гипермаркете «Керамогранит Опт». ` +
+    const description = `Коллекция ${c.name} от ${brandNames} представлена в гипермаркете «Дом Плитки CERSANIT». ` +
       `Включает в себя ${types.join(", ").toLowerCase()}. ` +
       (surfaces.length > 0 ? `Доступные поверхности: ${surfaces.join(", ").toLowerCase()}. ` : "") +
       `Данная серия идеально подходит для создания стильного и долговечного интерьера. ` +

@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+import { SiteChrome } from "@/components/site-chrome"
 import { CartProvider } from "@/lib/cart-context"
 import { ProductsProvider } from "@/lib/products-context"
 import GoogleScripts from "@/components/google-scripts"
@@ -13,19 +12,21 @@ const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
   title: {
-    default: "Керамогранит Опт — мультибрендовый гипермаркет плитки, склад в Янино",
-    template: "%s | Керамогранит Опт",
+    default: "Купить плитку и керамогранит в СПб — Дом Плитки Cersanit",
+    template: "%s | Дом Плитки",
   },
   description:
-    "Официальный мультибрендовый дилер (Lincer, Kerama Marazzi, Gracia Ceramica) в Санкт-Петербурге. Керамическая плитка и керамогранит от 750 ₽/м². Более 2000 моделей в наличии на складе в Янино. Доставка по СПб и ЛО от 1 дня.",
+    "Керамическая плитка, керамогранит и мозаика Cersanit и других брендов в Санкт-Петербурге. Актуальные цены и наличие в каталоге. Самовывоз со склада в Янино и доставка по СПб и Ленинградской области.",
   metadataBase: new URL(SITE_URL),
-  applicationName: "Керамогранит Опт",
+  applicationName: "Дом Плитки CERSANIT",
   keywords: [
-    "плитка Керамогранит Опт",
-    "купить керамогранит Санкт-Петербург",
-    "плитка Янино",
-    "мультибрендовый дилер плитки",
-    "керамическая плитка под дерево СПб",
+    "купить плитку СПб",
+    "купить керамогранит СПб",
+    "плитка со склада Янино",
+    "плитка Cersanit Санкт-Петербург",
+    "керамогранит Cersanit СПб",
+    "мозаика Cersanit",
+    "склад плитки Янино",
     "плитка для ванной СПб",
   ],
   robots: { index: true, follow: true },
@@ -40,11 +41,11 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Керамогранит Опт — склад в Янино",
+    title: "Купить плитку и керамогранит в СПб — Дом Плитки Cersanit",
     description:
-      "Керамическая плитка и керамогранит Керамогранит Опт с доставкой по Санкт-Петербургу. Более 2000 моделей в наличии.",
+      "Плитка, керамогранит и мозаика Cersanit и других брендов. Актуальные цены и наличие, самовывоз из Янино и доставка по Санкт-Петербургу и Ленинградской области.",
     url: SITE_URL,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
     images: [
@@ -52,23 +53,18 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Керамогранит Опт Керамогранит Опт — гипермаркет плитки в Санкт-Петербурге",
+        alt: "Дом Плитки CERSANIT — плитка и керамогранит в Санкт-Петербурге",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Керамогранит Опт",
-    description: "Оптовый дилер в СПб. Склад в Янино. 2000+ товаров в наличии.",
+    title: "Дом Плитки CERSANIT",
+    description: "Плитка и керамогранит в Санкт-Петербурге: цены и наличие, склад в Янино.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
   other: {
     "yandex-verification": "1f85757551ab6b60",
-    // Geo-метатеги для Яндекса (определение региона)
-    "geo.region": "RU-SPE",
-    "geo.placename": "Санкт-Петербург",
-    "geo.position": "59.9311;30.3609",
-    "ICBM": "59.9311, 30.3609",
   },
 }
 
@@ -81,15 +77,15 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "HomeGoodsStore",
   "@id": `${SITE_URL}/#business`,
-  name: "Керамогранит Опт",
-  alternateName: "Lincer-SPb",
+  name: "Дом Плитки CERSANIT",
+  alternateName: "Дом Плитки Cersanit СПб",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/images/logo-cersanit.png`,
   image: `${SITE_URL}/og-image.jpg`,
   description:
-    "Мультибрендовый гипермаркет керамической плитки и керамогранита в Санкт-Петербурге. Склад в Янино-1. Доставка по СПб и ЛО от 1 дня.",
+    "Керамическая плитка, керамогранит и мозаика разных брендов. Склад в Янино-1, самовывоз и доставка по Санкт-Петербургу и Ленинградской области.",
   telephone: "+7-905-205-09-00",
-  email: "info@cersanit-spb.ru",
+  email: "novorom@mail.ru",
   priceRange: "₽₽",
   currenciesAccepted: "RUB",
   paymentAccepted: "Наличные, банковская карта, безналичный расчёт",
@@ -98,29 +94,14 @@ const localBusinessJsonLd = {
     streetAddress: "Заводская улица, 37",
     addressLocality: "Янино-1",
     addressRegion: "Ленинградская область",
-    postalCode: "188661",
     addressCountry: "RU",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 59.9311,
-    longitude: 30.3609,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "10:00",
-      closes: "18:00",
-    },
-  ],
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+7-905-205-09-00",
     contactType: "sales",
     areaServed: ["Санкт-Петербург", "Ленинградская область"],
     availableLanguage: "Russian",
-    contactOption: "TollFree",
   },
   sameAs: [
     "https://yandex.ru/maps/-/CDn892w",
@@ -150,9 +131,9 @@ export default function RootLayout({
         <GoogleScripts />
         <ProductsProvider>
           <CartProvider>
-            <SiteHeader />
+          <SiteChrome>
             <main className="min-h-screen">{children}</main>
-            <SiteFooter />
+          </SiteChrome>
           </CartProvider>
         </ProductsProvider>
       </body>

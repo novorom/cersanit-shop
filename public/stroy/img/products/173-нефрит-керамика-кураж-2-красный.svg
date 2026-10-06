@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b65b55"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M19,197 Q-12,25 -42,274" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M6,320 Q16,290 26,377" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M457,216 Q440,79 423,183" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M461,252 Q522,16 583,339" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M443,244 Q381,58 319,281" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M545,23 Q603,77 661,113" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M141,299 Q109,69 78,333" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M4,377 Q2,190 0,292" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M358,141 Q369,211 380,111" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M340,389 Q353,18 366,355" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Кураж 2 КРАСНЫЙ</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Нефрит-Керамика</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">400 × 200 × 8 мм</text>
+</svg>

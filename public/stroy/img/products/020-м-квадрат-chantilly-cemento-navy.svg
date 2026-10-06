@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M106,400 Q45,159 -15,443" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M260,234 Q227,135 195,162" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M80,191 Q-8,286 -95,135" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M217,392 Q129,199 41,465" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M513,195 Q457,161 401,239" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M533,115 Q530,347 528,210" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M129,216 Q59,194 -10,197" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M557,137 Q467,104 377,75" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M353,12 Q379,175 406,-40" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M222,351 Q293,48 364,257" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Chantilly Cemento Navy</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">450 × 450 × 8 мм</text>
+</svg>

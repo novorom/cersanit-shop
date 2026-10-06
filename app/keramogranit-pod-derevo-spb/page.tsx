@@ -17,14 +17,14 @@ const WOOD_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Керамогранит под дерево Lincer купить в СПб | Керамогранит Опт",
+  title: "Керамогранит под дерево Lincer купить в СПб | Дом Плитки CERSANIT",
   description: "Керамогранит под дерево ведущих брендов в Санкт-Петербурге: Woodhouse, Lofthouse, Wood Concept, Northwood. Матовый, рельефный, форматы 18x60, 22x90, 20x120. Склад Янино, доставка от 1 дня.",
   alternates: { canonical: `${SITE_URL}/keramogranit-pod-derevo-spb` },
   openGraph: {
     title: "Керамогранит под дерево ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией дерева — Woodhouse, Lofthouse, Wood Concept. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-derevo-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

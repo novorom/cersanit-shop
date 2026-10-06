@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Плитка для кухни: как выбрать фартук и пол | Керамогранит Опт",
+  title: "Плитка для кухни: как выбрать фартук и пол | Дом Плитки CERSANIT",
   description: "Какую плитку выбрать для кухонного фартука и пола в Санкт-Петербурге. Требования к износостойкости, простоте ухода, сочетанию с интерьером. Коллекции Lincer от официального дилера.",
   alternates: { canonical: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat` },
-  openGraph: { title: "Плитка для кухни: как выбрать фартук и пол", url: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Плитка для кухни: как выбрать фартук и пол", url: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -16,12 +16,12 @@ export default function Article() {
     <div className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
-        headline: "Керамогранит под дерево или ламинат — что лучше для пола?",
-        description: "Детальное сравнение керамогранита и ламината по 8 параметрам.",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
-        mainEntityOfPage: `${SITE_URL}/blog/keramogranit-ili-laminat`,
+        headline: "Плитка для кухни: как выбрать фартук и покрытие для пола",
+        description: "Рекомендации по выбору кухонной плитки с учётом износостойкости, простоты ухода и сочетания с интерьером.",
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        mainEntityOfPage: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`,
         datePublished: "2025-02-20",
-        author: { "@type": "Organization", name: "Керамогранит Опт" },
+        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

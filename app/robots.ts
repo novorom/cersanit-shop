@@ -43,6 +43,5 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Diffbot", allow: "/" },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
   }
 }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e5dc"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M245,184 Q326,184 408,272" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M411,363 Q354,126 298,445" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M429,175 Q484,339 539,85" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M358,11 Q331,24 304,-56" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M253,12 Q276,242 299,-25" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M370,363 Q417,332 465,431" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M22,144 Q91,329 160,45" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M80,149 Q143,326 207,216" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M510,120 Q422,234 335,61" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M575,38 Q598,361 622,6" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">ГЕРМЕС Белый Терраццо 02</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">400 × 400 × 8 мм</text>
+</svg>

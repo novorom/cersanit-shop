@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M258,195 Q330,181 403,285" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M363,140 Q426,228 490,60" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M237,93 Q313,185 389,37" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M310,172 Q362,394 415,84" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M529,100 Q543,145 557,10" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M137,63 Q215,0 294,111" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M156,399 Q233,69 310,326" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M424,104 Q497,37 571,93" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M327,219 Q395,37 463,152" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M237,291 Q321,193 406,219" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">ВАРДИ Бежевый 01</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">125 × 500 мм</text>
+</svg>

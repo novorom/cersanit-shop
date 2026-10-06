@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M103,242 Q165,118 227,227" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M326,393 Q332,326 338,432" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M459,212 Q527,213 595,169" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M123,99 Q183,362 244,95" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M33,247 Q119,36 205,173" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M480,224 Q562,298 645,213" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M285,94 Q221,316 157,181" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M397,123 Q379,360 362,33" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M250,142 Q184,387 119,142" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M385,312 Q387,69 390,354" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">NEO Серый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Unitile (г. Шахты)</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">400 × 400 × 7 мм</text>
+</svg>

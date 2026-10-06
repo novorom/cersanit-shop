@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react"
 const SITE_URL = "https://cersanit-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как укладывать плитку своими руками — инструкция Lincer | Керамогранит Опт",
+  title: "Как укладывать плитку своими руками — инструкция Lincer | Дом Плитки CERSANIT",
   description: "Официальная инструкция по укладке керамической плитки и керамогранита. Подготовка основания, выбор клея, пошаговая укладка, затирка швов.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-plitku` },
-  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
 }
 
 export default function HowToLayTile() {
@@ -18,7 +18,7 @@ export default function HowToLayTile() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как укладывать плитку своими руками — инструкция Lincer",
         description: "Официальная инструкция по укладке керамической плитки и керамогранита.",
-        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-plitku`,
         datePublished: "2025-01-15",
       })}} />

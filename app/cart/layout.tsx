@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Корзина -- Керамогранит Опт",
+  title: "Корзина -- Дом Плитки CERSANIT",
   description: "Ваша корзина покупок. Оформите заказ на керамическую плитку и керамогранит с доставкой по СПб и ЛО.",
 }
 

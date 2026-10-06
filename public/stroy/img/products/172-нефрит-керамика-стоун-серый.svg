@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M47,45 Q9,199 -29,-41" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M98,171 Q93,334 89,105" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M485,95 Q440,225 395,95" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M68,317 Q75,382 83,238" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M149,34 Q207,140 265,78" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M363,173 Q292,300 222,102" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M159,200 Q204,212 250,249" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M62,129 Q150,140 239,203" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M65,160 Q46,114 27,112" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M242,96 Q237,285 233,161" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Стоун Серый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Нефрит-Керамика</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 300 × 9 мм</text>
+</svg>

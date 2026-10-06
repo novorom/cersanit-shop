@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86674d"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M516,87 Q503,28 490,139" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M208,92 Q198,284 189,19" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M435,300 Q429,171 423,391" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M155,3 Q85,287 16,-27" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M506,351 Q577,7 648,298" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M159,236 Q114,80 70,261" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M325,179 Q283,285 241,163" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M153,82 Q237,179 322,65" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M58,372 Q77,224 97,319" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M369,361 Q380,261 392,280" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Мадра Коричневый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Нефрит-Керамика</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 300 × 9 мм</text>
+</svg>

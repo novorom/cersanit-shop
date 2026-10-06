@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ad624b"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M361,382 Q335,10 310,368" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M205,21 Q199,10 194,4" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M158,140 Q93,229 29,173" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M251,132 Q195,222 139,163" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M261,232 Q227,56 194,275" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M439,232 Q457,311 475,317" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M105,43 Q113,202 122,-32" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M466,74 Q399,234 333,-21" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M88,280 Q176,353 265,287" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M74,131 Q153,267 233,162" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Грани Таганая GTF422M РЖАВЧИНА</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Грани Таганая</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">1200 × 600 мм</text>
+</svg>

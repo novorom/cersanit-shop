@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#50545a"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M65,179 Q21,373 -23,89" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M450,8 Q368,134 286,43" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M274,142 Q261,135 248,235" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M229,291 Q259,256 290,221" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M163,120 Q231,123 299,195" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M490,147 Q450,143 411,206" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M269,391 Q299,267 330,454" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M377,220 Q412,62 448,124" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M82,34 Q31,116 -19,66" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M446,165 Q395,252 345,114" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Astaria Graphite Графит</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">450 × 450 × 8 мм</text>
+</svg>

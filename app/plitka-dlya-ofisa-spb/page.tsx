@@ -9,14 +9,14 @@ const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Плитка для офиса и коммерческих помещений в СПб | Керамогранит Опт Lincer",
+  title: "Плитка для офиса и коммерческих помещений в СПб | Дом Плитки CERSANIT Lincer",
   description: "Плитка для офиса и коммерческих помещений Lincer в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-ofisa-spb` },
   openGraph: {
     title: "Плитка для офиса и коммерческих помещений в Санкт-Петербурге",
     description: "Плитка для офиса и коммерческих помещений Lincer в СПб. Высокий класс износостойкости 4-5, морозостойкая. Склад Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-dlya-ofisa-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

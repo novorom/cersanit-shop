@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M507,215 Q548,271 589,123" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M551,108 Q514,230 478,28" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M176,209 Q237,152 299,125" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M246,198 Q209,391 173,103" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M530,233 Q513,70 497,320" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M187,270 Q172,353 158,248" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M569,309 Q505,71 441,387" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M530,276 Q462,277 394,366" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M332,86 Q325,318 318,80" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M435,253 Q471,75 508,332" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Ривьера Серый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">М-Квадрат</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 10 мм</text>
+</svg>

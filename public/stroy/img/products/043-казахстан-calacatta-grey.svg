@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M517,273 Q506,254 496,300" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M152,134 Q140,150 128,157" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M4,110 Q-70,30 -143,166" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M5,123 Q54,212 104,210" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M67,373 Q15,90 -36,407" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M196,327 Q147,47 98,369" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M287,256 Q343,287 400,210" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M244,203 Q292,304 340,118" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M456,254 Q425,143 395,339" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M452,306 Q376,365 301,401" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">CALACATTA GREY</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Казахстан</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 9,5 мм</text>
+</svg>

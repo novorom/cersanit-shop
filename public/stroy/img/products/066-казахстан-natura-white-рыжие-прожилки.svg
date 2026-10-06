@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e5dc"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M377,163 Q358,173 340,153" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M106,373 Q98,196 90,427" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M265,121 Q225,149 185,36" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M555,94 Q486,380 418,122" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M141,233 Q175,204 209,191" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M591,80 Q575,273 560,157" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M178,22 Q194,107 210,67" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M79,361 Q31,291 -17,307" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M108,210 Q109,125 110,264" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M5,309 Q28,96 52,293" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">NATURA WHITE РЫЖИЕ ПРОЖИЛКИ</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Казахстан</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 9,5 мм</text>
+</svg>

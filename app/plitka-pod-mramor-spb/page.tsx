@@ -15,14 +15,14 @@ const MARBLE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под мрамор для стен Lincer в СПб — цены со склада | Керамогранит Опт",
+  title: "Плитка под мрамор для стен Lincer в СПб — цены со склада | Дом Плитки CERSANIT",
   description: "Керамогранит под мрамор Lincer в СПб. Calacatta, Deep Calacatta, Lumina Onyx, Travertino — в наличии на складе Янино. Доставка по СПб от 1 дня. Роскошный вид без хлопот.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-mramor-spb` },
   openGraph: {
     title: "Плитка под мрамор ведущих брендов в Санкт-Петербурге",
     description: "Керамогранит с имитацией мрамора — Calacatta, Deep Calacatta, Lumina Onyx. Склад в Янино, доставка по СПб от 1 дня.",
     url: `${SITE_URL}/plitka-pod-mramor-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

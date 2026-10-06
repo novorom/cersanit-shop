@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9c4bb"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M274,289 Q344,259 415,268" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M258,54 Q172,233 86,143" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M145,237 Q206,86 268,169" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M546,126 Q486,201 426,43" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M574,205 Q534,156 495,188" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M279,325 Q342,131 406,310" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M591,331 Q617,81 644,384" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M130,250 Q48,354 -33,201" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M465,158 Q500,338 536,168" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M456,374 Q496,391 536,283" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Калейдоскоп Персиковый</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">200 × 200 мм</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9c4bb"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M48,300 Q138,249 228,266" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M157,174 Q163,263 170,151" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M350,65 Q413,150 477,27" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M544,353 Q476,315 409,262" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M535,26 Q513,106 491,72" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M224,53 Q228,63 232,-25" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M431,316 Q422,345 414,304" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M400,135 Q376,313 353,201" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M566,30 Q572,261 578,-14" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M304,391 Q311,67 318,364" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Грани Таганая GT202M КРИСТАЛЬНО-МОЛОЧНЫЙ</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Грани Таганая</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 мм</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8c5a4"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M44,375 Q13,362 -17,382" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M346,171 Q369,163 392,177" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M304,166 Q338,380 373,146" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M83,92 Q58,18 33,138" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M4,96 Q80,71 157,30" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M148,105 Q167,115 187,37" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M89,113 Q118,188 147,189" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M112,185 Q103,301 95,166" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M188,287 Q111,287 35,276" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M269,141 Q304,107 340,164" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Фрегат Бежевый Обрезной</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">200 × 800 × 9 мм</text>
+</svg>

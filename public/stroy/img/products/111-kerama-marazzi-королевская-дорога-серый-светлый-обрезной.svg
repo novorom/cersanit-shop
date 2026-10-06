@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ba0a3"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M208,297 Q216,10 225,247" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M379,218 Q343,98 308,179" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M224,60 Q227,400 230,-6" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M3,64 Q-17,374 -37,163" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M294,39 Q275,337 256,90" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M359,77 Q274,222 190,61" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M334,333 Q382,154 431,343" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M119,379 Q186,91 253,458" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M572,129 Q544,251 517,113" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M308,187 Q227,372 146,178" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Королевская Дорога Серый Светлый Обрезной</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Kerama Marazzi</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 1200 × 9 мм</text>
+</svg>

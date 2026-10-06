@@ -7,24 +7,24 @@ export const metadata: Metadata = {
   title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
   description: "Узнайте как создать люксовый интерьер с плиткой под мрамор. Керамогранит Calacatta в Санкт-Петербурге от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/plitka-pod-mramor-v-interere` },
-  openGraph: { 
+  openGraph: {
     title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
-    url: `${SITE_URL}/blog/plitka-pod-mramor-v-interere`, 
-    siteName: "Керамогранит Опт", 
-    locale: "ru_RU", 
-    type: "article" 
+    url: `${SITE_URL}/blog/plitka-pod-mramor-v-interere`,
+    siteName: "Дом Плитки CERSANIT",
+    locale: "ru_RU",
+    type: "article"
   },
 }
 
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"Керамогранит Опт","url":"https://cersanit-spb.ru"},"mainEntityOfPage":"https://cersanit-spb.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"Керамогранит Опт"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"Дом Плитки CERSANIT","url":"https://cersanit-spb.ru"},"mainEntityOfPage":"https://cersanit-spb.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"Дом Плитки CERSANIT"}}` }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Плитка под мрамор в интерьере: как создать роскошь без бюджета</h1>
-        
+
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
-          
+
           <section>
             <h2 className="text-2xl font-semibold mt-10 mb-4">Почему плитка под мрамор остаётся трендом</h2>
             <p>Мраморная облицовка всегда ассоциировалась с роскошью и аристократизмом, но её стоимость остаётся недоступной для большинства. Современная керамогранитная плитка под мрамор решает эту проблему, предоставляя безупречную имитацию натурального камня по доступной цене. В Санкт-Петербурге растёт спрос на такие материалы среди владельцев квартир и частных домов.</p>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: data.title,
     description: data.description,
     url: `${SITE_URL}/keramogranit-spb`,
-    siteName: "Керамогранит Опт",
+    siteName: "Дом Плитки CERSANIT",
     locale: "ru_RU",
     type: "website",
   },

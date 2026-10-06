@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e5dc"/><stop offset="1" stop-color="#ffffff" stop-opacity=".22"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="700" fill="#eeeae3"/>
+<rect x="95" y="55" width="710" height="590" rx="10" fill="url(#g)" filter="url(#shadow)"/>
+<path d="M516,171 Q519,211 522,83" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M383,153 Q368,246 354,90" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M281,314 Q326,117 371,345" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M185,73 Q193,164 202,120" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M183,354 Q171,193 160,318" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M173,57 Q238,188 303,49" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M108,64 Q51,351 -6,110" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M239,126 Q229,145 220,131" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M81,263 Q56,248 31,345" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><path d="M193,131 Q191,169 190,231" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
+<rect x="95" y="520" width="710" height="125" fill="#111" opacity=".76"/>
+<text x="125" y="558" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">AUTUNNO BASE LIGHT BEIGE</text>
+<text x="125" y="592" font-family="Arial,sans-serif" font-size="19" fill="#fff" opacity=".92">Казахстан</text>
+<text x="125" y="621" font-family="Arial,sans-serif" font-size="17" fill="#fff" opacity=".82">600 × 600 × 9,5 мм</text>
+</svg>

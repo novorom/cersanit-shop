@@ -22,33 +22,29 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return [
-      // без www → www
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "opt-plitki-spb.ru" }],
-        destination: "https://www.opt-plitki-spb.ru/:path*",
-        permanent: true,
-      },
-      // Vercel-домен → основной домен (предотвращает дубли в индексе Яндекса)
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "cersanit-shop.vercel.app" }],
-        destination: "https://www.opt-plitki-spb.ru/:path*",
-        permanent: true,
-      },
+    const vercelHosts = [
+      "v0-cersanit-shop.vercel.app",
+      "cersanit-shop-eosin.vercel.app",
+      "cersanit-shop-novorom-6051s-projects.vercel.app",
+      "cersanit-shop.vercel.app",
     ]
-  },
-  async headers() {
+
     return [
-      // Запрещаем индексацию с Vercel-домена на случай если боты обходят редиректы
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "cersanit-shop.vercel.app" }],
-        headers: [
-          { key: "X-Robots-Tag", value: "noindex, nofollow" },
-        ],
-      },
+      // Keep the old Vercel homepage from competing with the canonical domain.
+      ...vercelHosts.flatMap((host) => [
+        {
+          source: "/",
+          has: [{ type: "host", value: host }],
+          destination: "https://cersanit-spb.ru/",
+          permanent: true,
+        },
+        {
+          source: "/:path*",
+          has: [{ type: "host", value: host }],
+          destination: "https://cersanit-spb.ru/:path*",
+          permanent: true,
+        },
+      ]),
     ]
   },
 }
