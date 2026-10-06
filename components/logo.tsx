@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Гипермаркет Плитки Lincer"
+      aria-label="Керамогранит Опт"
     >
       {/* House with tiles icon */}
       <g>

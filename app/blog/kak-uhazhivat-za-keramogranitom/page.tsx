@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как ухаживать за керамогранитом: уборка и защита | Дом Плитки CERSANIT",
+  title: "Как ухаживать за керамогранитом: уборка и защита | Керамогранит Опт",
   description: "Как правильно мыть и ухаживать за керамогранитом Lincer. Какие средства подходят, чем нельзя чистить, как защитить швы от грязи. Советы от официального дилера.",
   alternates: { canonical: `${SITE_URL}/blog/kak-uhazhivat-za-keramogranitom` },
-  openGraph: { title: "Уход за керамогранитом: как правильно мыть и чистить", url: `${SITE_URL}/blog/kak-uhazhivat-za-keramogranitom`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Уход за керамогранитом: как правильно мыть и чистить", url: `${SITE_URL}/blog/kak-uhazhivat-za-keramogranitom`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как ухаживать за керамогранитом: уборка и защита",
         description: "Правила ухода за керамогранитом — какие средства использовать, чего избегать.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-uhazhivat-za-keramogranitom`,
         datePublished: "2025-03-10",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

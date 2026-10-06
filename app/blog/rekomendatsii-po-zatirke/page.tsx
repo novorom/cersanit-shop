@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 export const metadata: Metadata = {
-  title: "Рекомендации по затирке швов плитки — инструкция Lincer | Дом Плитки CERSANIT",
+  title: "Рекомендации по затирке швов плитки — инструкция Lincer | Керамогранит Опт",
   description: "Как выбрать затирку для плитки, подготовить швы и нанести состав. Как удалить остатки затирки и цветные ореолы с поверхности плитки.",
   alternates: { canonical: `${SITE_URL}/blog/rekomendatsii-po-zatirke` },
-  openGraph: { title: "Рекомендации по затирке швов плитки", url: `${SITE_URL}/blog/rekomendatsii-po-zatirke`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Рекомендации по затирке швов плитки", url: `${SITE_URL}/blog/rekomendatsii-po-zatirke`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function GroutingAdvice() {
   return (
@@ -14,10 +14,10 @@ export default function GroutingAdvice() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "Article",
         headline: "Рекомендации по затирке швов плитки — инструкция Lincer",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: "https://cersanit-spb.ru" },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: "https://www.opt-plitki-spb.ru" },
         mainEntityOfPage: `${SITE_URL}/blog/rekomendatsii-po-zatirke`,
         datePublished: "2025-02-15",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       }) }} />
       <div className="bg-muted/50 border-b border-border"><div className="mx-auto max-w-7xl px-4 py-3"><nav className="flex items-center gap-1.5 text-sm text-muted-foreground"><Link href="/" className="hover:text-primary transition-colors">Главная</Link><ChevronRight className="h-3.5 w-3.5" /><Link href="/blog" className="hover:text-primary transition-colors">Блог</Link><ChevronRight className="h-3.5 w-3.5" /><span className="text-foreground font-medium">Затирка швов</span></nav></div></div>
 

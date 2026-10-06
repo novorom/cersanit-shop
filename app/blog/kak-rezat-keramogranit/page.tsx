@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 export const metadata: Metadata = {
-  title: "Как резать керамогранит: инструменты и правила | Дом Плитки CERSANIT",
+  title: "Как резать керамогранит: инструменты и правила | Керамогранит Опт",
   description: "Как правильно резать керамогранит: какой инструмент выбрать, как сделать прямой и фигурный рез, как избежать сколов. Советы от официального дилера Lincer.",
   alternates: { canonical: `${SITE_URL}/blog/kak-rezat-keramogranit` },
-  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как резать керамогранит: инструменты и советы", url: `${SITE_URL}/blog/kak-rezat-keramogranit`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 export default function Article() {
   return (
@@ -15,10 +15,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как резать керамогранит: инструменты и правила",
         description: "Руководство по резке керамогранита: выбор инструмента, прямой и фигурный рез, советы.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-rezat-keramogranit`,
         datePublished: "2025-03-12",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
       <div className="bg-muted/50 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-3">

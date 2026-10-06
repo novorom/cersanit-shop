@@ -29,7 +29,7 @@ const iconMap: Record<string, typeof MapPin> = {
   "От 890 руб/м2": Award,
   "100+ позиций": Package,
   "Износостойкость PEI IV-V": ShieldCheck,
-  "Доставка от 1 дня": Truck,
+  "Доставка по СПб и ЛО": Truck,
   "Полные коллекции": Package,
   "Расчёт бесплатно": Calculator,
   "Влагостойкость": ShieldCheck,
@@ -40,8 +40,7 @@ const iconMap: Record<string, typeof MapPin> = {
   "Универсальная": Award,
   "По всей России": Truck,
   "С заносом": Truck,
-  "С 2011 года": Award,
-  "750+ позиций": Package,
+  "Каталог товаров": Award,
   "Шоурум в Янино": MapPin,
   "Отзывы на Avito": ShieldCheck,
 }

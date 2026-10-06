@@ -3,7 +3,7 @@ import { join } from "node:path"
 import type { Metadata } from "next"
 import Script from "next/script"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const source = readFileSync(join(process.cwd(), "data/tf-keramika-landing-v4.html"), "utf8")
 const body = source.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? ""
 const landingMarkup = body.replace(/<script>[\s\S]*?<\/script>/i, "")

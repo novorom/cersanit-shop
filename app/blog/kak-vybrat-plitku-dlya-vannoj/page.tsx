@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как выбрать плитку для ванной комнаты — полный гид 2025 | Дом Плитки CERSANIT",
+  title: "Как выбрать плитку для ванной комнаты — полный гид 2025 | Керамогранит Опт",
   description: "Как правильно выбрать плитку для ванной: размер, цвет, фактура, скользкость. Советы по подбору коллекции Lincer для маленькой и большой ванной. Примеры и рекомендации.",
   alternates: { canonical: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj` },
-  openGraph: { title: "Как выбрать плитку для ванной — полный гид", url: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как выбрать плитку для ванной — полный гид", url: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как выбрать плитку для ванной комнаты — полный гид 2025",
         description: "Полное руководство по выбору плитки для ванной: размер, цвет, фактура, бюджет.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-vybrat-plitku-dlya-vannoj`,
         datePublished: "2025-02-01",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

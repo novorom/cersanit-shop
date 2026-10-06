@@ -3,8 +3,8 @@ import { products } from "@/lib/products-data"
 import { seoPages } from "@/lib/seo-data"
 
 export const metadata = {
-  title: "Карта сайта | Дом Плитки CERSANIT",
-  description: "Полный список страниц, категорий и товаров магазина Дом Плитки CERSANIT.",
+  title: "Карта сайта | Керамогранит Опт",
+  description: "Полный список страниц, категорий и товаров магазина Керамогранит Опт.",
 }
 
 export default function SitemapPage() {

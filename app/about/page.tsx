@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ExternalLink, Award, MapPin, Package } from 'lucide-react'
 
-const SITE_URL = 'https://cersanit-spb.ru'
+const SITE_URL = 'https://www.opt-plitki-spb.ru'
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -13,14 +13,14 @@ const breadcrumbSchema = {
 }
 
 export const metadata = {
-  title: 'О компании Дом Плитки CERSANIT — мультибрендовый гипермаркет плитки в СПб с 2011 года',
-  description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Официальный дилер Lincer, Kerama Marazzi, Lincer. Склад в Янино-1. Телефон: +7 (905) 205-09-00.',
-  alternates: { canonical: 'https://cersanit-spb.ru/about' },
+  title: 'О магазине плитки и керамогранита в Санкт-Петербурге | Керамогранит Опт',
+  description: 'Керамогранит Опт: каталог плитки и керамогранита, склад и шоурум в Янино-1. Контакты, адрес, самовывоз и доставка по Санкт-Петербургу и области.',
+  alternates: { canonical: 'https://www.opt-plitki-spb.ru/about' },
   openGraph: {
-    title: 'О компании Дом Плитки CERSANIT — мультибрендовый гипермаркет плитки в СПб',
-    description: 'С 2011 года на рынке керамической плитки в Санкт-Петербурге. Склад и шоурум в Янино.',
-    url: 'https://cersanit-spb.ru/about',
-    siteName: 'Дом Плитки CERSANIT',
+    title: 'О магазине Керамогранит Опт в Санкт-Петербурге',
+    description: 'Каталог плитки и керамогранита, склад и шоурум в Янино-1, контакты и условия получения заказа.',
+    url: 'https://www.opt-plitki-spb.ru/about',
+    siteName: 'Керамогранит Опт',
     locale: 'ru_RU',
     type: 'website',
   },
@@ -63,7 +63,7 @@ export default function AboutPage() {
               О нашей компании
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              С 2011 года на рынке керамической плитки и керамогранита. Мы помогаем тысячам клиентов найти идеальное решение для их проектов. Являясь мультибрендовым гипермаркетом Дом Плитки CERSANIT в Санкт-Петербурге, мы обеспечиваем прямые поставки продукции с ведущих заводов (Lincer, Kerama Marazzi, Lincer, Idalgo), гарантируя оригинальное качество и конкурентные цены.
+              Керамогранит Опт — магазин плитки и керамогранита в Санкт-Петербурге. В каталоге собраны товары разных производителей; параметры, цена и остаток указаны в карточке каждой позиции или уточняются у менеджера.
             </p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 Наша история
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                С 2011 года мы занимаемся розничной продажей высококачественной керамической плитки и керамогранита от ведущих производителей. За эти годы мы завоевали доверие тысяч клиентов благодаря профессионализму, качеству товара и отличному сервису.
+                Магазин помогает подобрать керамическую плитку и керамогранит для ремонта и строительных объектов. В каталоге доступны параметры и артикулы товаров, а менеджер поможет проверить остаток, уточнить условия и рассчитать объём.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Наша миссия — сделать процесс выбора плитки простым и приятным, предоставляя широкий ассортимент продукции, справедливые цены и компетентную консультацию.
@@ -89,15 +89,15 @@ export default function AboutPage() {
                 <div className="flex items-start gap-4">
                   <Award className="w-8 h-8 text-primary shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">С 2011 года (15 лет)</h3>
-                    <p className="text-sm text-muted-foreground">На рынке керамической плитки и керамогранита</p>
+                <h3 className="font-semibold text-foreground mb-2">Самовывоз в Янино-1</h3>
+                <p className="text-sm text-muted-foreground">Склад и шоурум в Ленинградской области</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Package className="w-8 h-8 text-primary shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Множество производителей</h3>
-                    <p className="text-sm text-muted-foreground">Партнерство с 10+ ведущими заводами</p>
+                <h3 className="font-semibold text-foreground mb-2">Разные производители</h3>
+                <p className="text-sm text-muted-foreground">Бренд и характеристики указаны в карточке товара</p>
                   </div>
                 </div>
               </div>
@@ -162,16 +162,16 @@ export default function AboutPage() {
         <div className="container max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">2000+</div>
-              <p className="text-sm text-muted-foreground">Моделей плитки в наличии на складе</p>
+              <div className="text-2xl font-bold text-primary mb-2">Каталог</div>
+              <p className="text-sm text-muted-foreground">Остатки проверяйте в карточках товаров</p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">15 лет</div>
-              <p className="text-sm text-muted-foreground">Опыта работы на рынке СПб и ЛО</p>
+              <div className="text-2xl font-bold text-primary mb-2">Самовывоз</div>
+              <p className="text-sm text-muted-foreground">Получение заказа со склада в Янино</p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">24 часа</div>
-              <p className="text-sm text-muted-foreground">Среднее время доставки по городу</p>
+              <div className="text-2xl font-bold text-primary mb-2">СПб и ЛО</div>
+              <p className="text-sm text-muted-foreground">Стоимость и срок доставки рассчитаем по адресу</p>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-primary mb-2">0 руб</div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
       {/* Detail Content Section */}
       <section className="py-16 lg:py-24 bg-muted/20">
         <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают гипермаркет Дом Плитки CERSANIT?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center italic">Почему выбирают гипермаркет Керамогранит Опт?</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p>
               В нашем интернет-магазине представлен полный каталог продукции ведущих брендов: от классической керамической плитки Lincer и Kerama Marazzi до современных коллекций Lincer и Idalgo. Мы тщательно отбираем коллекции, ориентируясь на актуальные тренды дизайна интерьеров 2025-2026 годов.
@@ -234,7 +234,7 @@ export default function AboutPage() {
                 width="100%"
                 height="400"
                 frameBorder="0"
-                title="Склад гипермаркета Дом Плитки CERSANIT в Янино — Яндекс Карты"
+                title="Склад гипермаркета Керамогранит Опт в Янино — Яндекс Карты"
                 allowFullScreen
                 loading="lazy"
               />

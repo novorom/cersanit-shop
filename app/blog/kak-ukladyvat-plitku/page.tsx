@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как укладывать плитку своими руками — инструкция Lincer | Дом Плитки CERSANIT",
+  title: "Как укладывать плитку своими руками — инструкция Lincer | Керамогранит Опт",
   description: "Официальная инструкция по укладке керамической плитки и керамогранита. Подготовка основания, выбор клея, пошаговая укладка, затирка швов.",
   alternates: { canonical: `${SITE_URL}/blog/kak-ukladyvat-plitku` },
-  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как укладывать плитку своими руками", url: `${SITE_URL}/blog/kak-ukladyvat-plitku`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function HowToLayTile() {
@@ -18,7 +18,7 @@ export default function HowToLayTile() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как укладывать плитку своими руками — инструкция Lincer",
         description: "Официальная инструкция по укладке керамической плитки и керамогранита.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/kak-ukladyvat-plitku`,
         datePublished: "2025-01-15",
       })}} />
@@ -52,7 +52,7 @@ export default function HowToLayTile() {
               <p><strong>Запас материала:</strong> приобретайте плитку с запасом 5–15% к рассчитанному количеству — на подрезку, бой и возможный ремонт в будущем.</p>
               <p><strong>Партия:</strong> проверьте маркировку на каждой коробке — вся плитка должна быть из одной партии. Разные партии могут отличаться по тону.</p>
               <p><strong>Защитный воск:</strong> если на поверхности плитки есть защитный воск — удалите его резиновым или пластиковым шпателем до укладки.</p>
-              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Используйте бесплатную программу CERAMIC 3D WEB — ссылка доступна в разделе «Файлы для скачивания» на сайте cersanit-spb.ru.</p>
+              <p><strong>Визуализация:</strong> смоделируйте раскладку плитки. Если используете CERAMIC 3D WEB, проверьте условия и доступность программы на странице «Файлы для скачивания».</p>
             </div>
           </section>
 

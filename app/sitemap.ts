@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages have no lastModified until the source provides a reliable date.

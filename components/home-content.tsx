@@ -11,17 +11,17 @@ const homeFaq = [
   {
     question: "Вы продаете плитку разных брендов?",
     answer:
-      "Да, мы являемся мультибрендовым дилером (Lincer, Kerama Marazzi, Lincer, Gracia Ceramica, Idalgo и др.). Все товары поставляются напрямую с заводов, имеют сертификаты качества и гарантию производителя.",
+      "В каталоге собраны товары разных производителей, включая Kerama Marazzi, Gracia Ceramica, Idalgo и другие бренды. Бренд, характеристики и документы указаны в карточке конкретного товара или уточняются у менеджера.",
   },
   {
     question: "Где находится ваш склад?",
     answer:
-      "Наш склад расположен в п. Янино-1, Ленинградская область (15-20 минут от КАД). Здесь хранится весь ассортимент -- более 750 наименований. Режим работы: Пн-Пт 10:00-16:45. Приезжайте, чтобы увидеть плитку вживую.",
+      "Склад и шоурум расположены в п. Янино-1, Ленинградская область. Перед поездкой свяжитесь с нами, чтобы подтвердить наличие нужной позиции и время посещения.",
   },
   {
     question: "Как быстро доставляете по Санкт-Петербургу?",
     answer:
-      "Доставка по СПб и Ленинградской области -- от 1-2 рабочих дней. Самовывоз со склада Янино бесплатный в день оплаты. Мы сами загружаем плитку в ваш транспорт.",
+      "Доставляем по Санкт-Петербургу и Ленинградской области. Стоимость и срок зависят от адреса и объёма заказа — менеджер рассчитает их при оформлении. Самовывоз согласуйте заранее.",
   },
   {
     question: "Помогаете рассчитать количество плитки?",
@@ -36,18 +36,18 @@ const homeFaq = [
 ]
 
 const TOP_COLLECTIONS = [
-  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
-  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
-  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
-  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
-  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
-  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
-  { id: 7, name: "Dako", slug: "dako", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
-  { id: 8, name: "A17914", slug: "a17914", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
-  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
-  { id: 10, name: "Лейла", slug: "лейла", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
-  { id: 11, name: "Armani", slug: "armani", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
-  { id: 12, name: "Camelot", slug: "camelot", image: "https://cersanit-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
+  { id: 1, name: "Scarlett", slug: "scarlett", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/463/400_400_1/46351b2a080c05738c5bb5478cf5a888.webp" },
+  { id: 2, name: "ML4A093", slug: "ml4a093", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/52a/400_400_1/hgdawantgiuobgrcedhpcdzxuw9c74vg.webp" },
+  { id: 3, name: "KM6060G0432R", slug: "km6060g0432r", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/a23/400_400_1/qaogznk3rafoy1cxgitbnhky1qmd32ix.webp" },
+  { id: 4, name: "FS4R452", slug: "fs4r452", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/693/400_400_1/sutzkomzee6v5vlro7abqmta8c1xe0hm.webp" },
+  { id: 5, name: "SG701590R", slug: "sg701590r", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/iblock/598/8vx15hmo786thu21kktqxhxg7j6firyu.webp" },
+  { id: 6, name: "SG526520R", slug: "sg526520r", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c06/400_400_1/2icltbmwudr3p35wuoammfu10ltoiko8.webp" },
+  { id: 7, name: "Dako", slug: "dako", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c10/400_400_1/608m1icvhds3rbw6ykn5p9di4g2x4f78.webp" },
+  { id: 8, name: "A17914", slug: "a17914", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/09d/400_400_1/z38ajz4tn8ijg0ftrlvjvu6n0oz0jvuu.webp" },
+  { id: 9, name: "DD200620R", slug: "dd200620r", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/ec3/400_400_1/4ule6tpom5do2c6jq3mpc3uwmkznncuu.webp" },
+  { id: 10, name: "Лейла", slug: "лейла", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/49f/400_400_1/49f16f29896a552fde9366a2401c2e80.webp" },
+  { id: 11, name: "Armani", slug: "armani", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/58b/400_400_1/lgrm6gv4ntazjgykj4dmob7bylt7zum0.webp" },
+  { id: 12, name: "Camelot", slug: "camelot", image: "https://www.opt-plitki-spb.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/91d/400_400_1/91df86fbe33980a6272cac31af9d41ad.webp" }
 ]
 
 export function HomeContent() {
@@ -71,14 +71,14 @@ export function HomeContent() {
             <div className="flex items-center gap-2">
               <span className="h-px w-8 bg-primary" />
               <span className="text-sm font-medium text-background/80 tracking-wide uppercase">
-                Официальный дилер
+                Каталог плитки и керамогранита
               </span>
             </div>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-background leading-tight text-balance">
               Керамическая плитка и керамогранит в Санкт-Петербурге
             </h1>
             <p className="text-lg text-background/70 leading-relaxed max-w-md">
-              Оптовый гипермаркет Керамогранит Опт. Более 2000 наименований в наличии на складе. Доставка по СПб и ЛО от 1 дня.
+              Керамическая плитка, керамогранит и мозаика разных брендов. Цены и складские остатки указаны в каталоге; доставку по СПб и области рассчитаем по адресу.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link
@@ -243,7 +243,7 @@ export function HomeContent() {
               {
                 icon: Truck,
                 title: "Доставка по СПб и ЛО",
-                description: "Собственный склад в Янино. Доставка по Санкт-Петербургу от 1 дня. Самовывоз бесплатно.",
+                description: "Собственный склад в Янино. Доставка по согласованию. Самовывоз бесплатно.",
               },
               {
                 icon: ShieldCheck,

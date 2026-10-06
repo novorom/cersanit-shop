@@ -1,16 +1,14 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const SHOP_NAME = "Керамогранит Опт"
 
 export const dynamic = "force-dynamic"
 export const revalidate = 86400
 
 export async function GET(request: Request) {
-  const host = request.headers.get("host") || "cersanit-spb.ru"
-  const protocol = host.includes("localhost") ? "http" : "https"
-  const dynamicSiteUrl = `${protocol}://${host}`
+  const dynamicSiteUrl = SITE_URL
 
   const activeProducts = products.filter(
     (p) => p.slug && p.price_retail && p.price_retail > 0 && p.main_image
@@ -33,7 +31,7 @@ export async function GET(request: Request) {
         p.color ? `Цвет: ${p.color}.` : "",
         p.material_type ? `Материал: ${p.material_type}.` : "",
         p.frost_resistant ? "Морозостойкая." : "",
-        "Доставка по Санкт-Петербургу и Ленинградской области от 1 дня.",
+        "Доставка по Санкт-Петербургу и Ленинградской области по согласованию.",
       ]
         .filter(Boolean)
         .join(" ")
@@ -68,11 +66,6 @@ ${additionalImages ? additionalImages + "\n" : ""}      <g:price>${p.price_retai
       ${(p.sku || p.bsu) ? `<g:mpn>${escapeXml(p.sku || p.bsu || "")}</g:mpn>` : ""}
       <g:google_product_category>${googleCategory}</g:google_product_category>
       <g:product_type>${escapeXml(p.product_type || "Керамогранит")} &gt; ${escapeXml(p.collection)}</g:product_type>
-      <g:shipping>
-        <g:country>RU</g:country>
-        <g:service>Доставка по СПб и ЛО</g:service>
-        <g:price>0 RUB</g:price>
-      </g:shipping>
       <g:identifier_exists>${(p.sku || p.bsu) ? "yes" : "no"}</g:identifier_exists>
       ${p.material_type ? `<g:material>${escapeXml(p.material_type)}</g:material>` : ""}
       ${p.color ? `<g:color>${escapeXml(p.color)}</g:color>` : ""}

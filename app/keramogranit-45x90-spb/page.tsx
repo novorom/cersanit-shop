@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Керамогранит 45x90 Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
+  title: "Керамогранит 45x90 Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб по согласованию.",
   alternates: { canonical: `${SITE_URL}/keramogranit-45x90-spb` },
   openGraph: {
     title: "Керамогранит 45x90 ведущих брендов в Санкт-Петербурге",
-    description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб от 1 дня.",
+    description: "Керамогранит формата 45x90 Lincer в СПб — 12 позиций в наличии. Популярный формат для пола и стен — склад Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/keramogranit-45x90-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -103,7 +103,7 @@ export default function LandingPage() {
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить керамогранит 45x90 в СПб</h2>
-            <p className="text-foreground/80 leading-relaxed">12 позиций формата 45x90 в наличии на складе в Янино. Самовывоз бесплатный, доставка по СПб и ЛО от 1-2 рабочих дней. Бесплатный расчёт количества плитки по вашим размерам.</p>
+            <p className="text-foreground/80 leading-relaxed">Формат 45×90 представлен в каталоге; наличие проверяйте в карточках товаров. Самовывоз бесплатный, доставка по согласованию. Бесплатный расчёт количества плитки по вашим размерам.</p>
           </div>
         </div>
       </section>

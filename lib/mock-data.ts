@@ -1213,7 +1213,7 @@ export const mockProducts: MockProduct[] = [
     currency: "RUB",
     stock_yanino: 200,
     stock_factory: 700,
-    description: "Стеклянный спецэлемент из коллекции Effecta. Тонкая бежева�� полоска для создания изящных линий на стене.",
+    description: "Стеклянный спецэлемент из коллекции Effecta. Тонкая бежевая полоска для создания изящных линий на стене.",
     images: [
       "https://pvi.cersanit.ru/upload/uf/c45/Effecta_2.5x60_O-EFF-WGA011_decor_jpg.jpg",
       "https://pvi.cersanit.ru/upload/uf/8b9/INT_Effecta_2_1.jpg",
@@ -1428,7 +1428,7 @@ export const mockProducts: MockProduct[] = [
     format: "29.7x59.8",
     surface: "Рельефная",
     color: "Бежевый",
-    material_type: "Керамогран��т",
+    material_type: "Керамогранит",
     application: "Пол",
     rooms: ["Гостиная", "Спальня", "Кухня", "Коридор"],
     thickness: "10 мм",

@@ -19,7 +19,7 @@ const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
   "DECO": "https://pvi.cersanit.ru/upload/uf/b22/DEL232.jpg",
 }
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -43,17 +43,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CollectionPageProps): Promise<Metadata> {
   const { collection } = await params
   const collectionName = findCollectionName(collection)
-  if (!collectionName) return { title: "Коллекция не найдена | Дом Плитки CERSANIT" }
+  if (!collectionName) return { title: "Коллекция не найдена | Керамогранит Опт", robots: { index: false, follow: true } }
 
   const seo = getCollectionSeo(collectionName)
   const collectionProducts = getCollectionProducts(collectionName)
   const prices = collectionProducts.map(p => p.price_retail).filter(Boolean)
   const priceFrom = prices.length ? Math.min(...prices) : null
 
-  const brand = collectionProducts[0]?.brand || "Дом Плитки CERSANIT"
-  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Дом Плитки CERSANIT`
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
+  const title = seo?.title || `Плитка ${collectionName} ${brand} купить в Санкт-Петербурге | Керамогранит Опт`
   const description = seo?.description ||
-    `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в наличии на складе.${priceFrom ? ` От ${priceFrom} ₽/м².` : ""} Доставка по СПб и ЛО от 1 дня.`
+    `Коллекция ${collectionName} ${brand} — ${collectionProducts.length} товаров в подборке.${priceFrom ? ` Цены от ${priceFrom} ₽/м².` : ""} Проверяйте актуальный остаток в карточке. Доставка по СПб и ЛО по согласованию.`
 
   const firstImage = collectionProducts[0]?.main_image || collectionProducts[0]?.collection_image
 
@@ -64,12 +64,12 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
     title,
     description,
     alternates: { canonical: `${SITE_URL}/collections/${collection}` },
-    robots: { index: true, follow: true },
+    robots: { index: !isThinCollection, follow: true },
     openGraph: {
       title,
       description,
       url: `${SITE_URL}/collections/${collection}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: firstImage ? [{ url: firstImage, alt: collectionName }] : [],
@@ -165,7 +165,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const formats = [...new Set(collectionProducts.map(p => p.format).filter(Boolean))]
   const designs = [...new Set(collectionProducts.map(p => p.design).filter(Boolean))]
 
-  const brand = collectionProducts[0]?.brand || "Дом Плитки CERSANIT"
+  const brand = collectionProducts[0]?.brand || "Керамогранит Опт"
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -179,38 +179,22 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       item: {
         "@type": "Product",
         name: p.name,
-        description: `${p.name} — купить в Санкт-Петербурге в магазине Дом Плитки CERSANIT.`,
-        image: p.main_image ? [p.main_image] : ["https://cersanit-spb.ru/logo.png"],
-        brand: { "@type": "Brand", "name": p.brand || "Cersanit" },
+        description: `${p.name} — купить в Санкт-Петербурге в магазине Керамогранит Опт.`,
+        ...(p.main_image ? { image: [p.main_image] } : {}),
+        ...(p.brand ? { brand: { "@type": "Brand", "name": p.brand } } : {}),
         sku: p.sku || p.id,
         url: `${SITE_URL}/catalog/${p.slug}`,
-        offers: {
+        ...(p.price_retail > 0 ? { offers: {
           "@type": "Offer",
           price: p.price_retail || 0,
           priceCurrency: "RUB",
-          availability: (p.stock_yanino ?? 0) > 0 || (p.stock_factory ?? 0) > 0
+          availability: (p.stock_yanino ?? 0) > 0
             ? "https://schema.org/InStock"
-            : "https://schema.org/OutOfStock",
+            : (p.stock_factory ?? 0) > 0
+              ? "https://schema.org/PreOrder"
+              : "https://schema.org/OutOfStock",
           url: `${SITE_URL}/catalog/${p.slug}`,
-          hasMerchantReturnPolicy: {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "RU",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
-            "merchantReturnDays": 14,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/FreeReturn"
-          },
-          shippingDetails: {
-            "@type": "OfferShippingDetails",
-            "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "RUB" },
-            "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "RU", "addressRegion": "Санкт-Петербург" },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
-              "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY" },
-            },
-          },
-        },
+        } } : {}),
       },
     })),
   }
@@ -234,7 +218,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       {
         "@type": "Question",
         name: `Плитка коллекции ${collectionName} есть в наличии?`,
-        acceptedAnswer: { "@type": "Answer", text: `Да, коллекция ${collectionName} от ${brand} есть в наличии на складе. Актуальные остатки уточняйте по телефону +7 (905) 205-09-00.` },
+        acceptedAnswer: { "@type": "Answer", text: `Наличие зависит от конкретного товара и текущего остатка. Проверьте карточку нужной позиции или уточните у менеджера по телефону +7 (905) 205-09-00.` },
       },
       {
         "@type": "Question",
@@ -321,7 +305,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           <h2 className="text-2xl font-bold text-foreground mb-2">
             {collectionName} — {collectionProducts.length} позиций
           </h2>
-          <p className="text-muted-foreground mb-8">Все товары в наличии на складе в Санкт-Петербурге.</p>
+          <p className="text-muted-foreground mb-8">Актуальный остаток и цену смотрите в карточке каждого товара.</p>
           {collectionProducts.length > 0 ? (
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {collectionProducts.map((product, i) => (
@@ -352,7 +336,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
               {priceFrom && (
                 <p>
                   <strong>Цена</strong> коллекции {collectionName} в нашем магазине — от {priceFrom.toLocaleString("ru-RU")} до {priceTo?.toLocaleString("ru-RU")} ₽/м².
-                  Все товары в наличии на складе в Янино-1. Бесплатный самовывоз на следующий рабочий день.
+                  Склад в Янино-1. Наличие и время самовывоза подтвердите у менеджера перед поездкой.
                   Доставка по Санкт-Петербургу и Ленинградской области 1–2 рабочих дня.
                 </p>
               )}
@@ -370,16 +354,16 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
             </h2>
             <div className="flex flex-col gap-4 text-foreground/80 leading-relaxed">
               <p>
-                Коллекция {collectionName} от известного производителя {brand} — это сочетание современного дизайна и безупречного качества.
+                Коллекция {collectionName} производителя {brand} представлена товарами с разными дизайнами и характеристиками.
                 В серии представлено {collectionProducts.length} позиций, включая {designs.length > 0 ? `дизайны «${designs.join("», «")}»` : "различные декоративные решения"}.
               </p>
               <p>
                 Плитка и керамогранит {collectionName} доступны в форматах {formats.join(", ")} см, что позволяет подобрать идеальный вариант для любого помещения — от уютной ванной до просторной гостиной.
-                Вся продукция сертифицирована, отличается высокой износостойкостью и долговечностью.
+                Сверьте назначение, поверхность и характеристики конкретной позиции перед заказом.
               </p>
               <p>
-                В гипермаркете «Дом Плитки CERSANIT» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}.
-                Товары в наличии на нашем собственном складе в Янино-1. Мы обеспечиваем быструю отгрузку и доставку по Санкт-Петербургу и Ленинградской области в течение 1–2 рабочих дней.
+                В гипермаркете «Керамогранит Опт» вы можете купить коллекцию {collectionName} по выгодной цене {priceFrom ? `(от ${priceFrom.toLocaleString("ru-RU")} ₽/м²)` : ""}.
+                Остаток в карточке может изменяться, поэтому подтвердите наличие перед оплатой. Самовывоз и доставка по Санкт-Петербургу и Ленинградской области согласуются по адресу и составу заказа.
               </p>
               <p>
                 Нужна помощь в расчете или консультация? Звоните нам по телефону {PHONE} или пишите в Telegram. Мы поможем создать интерьер вашей мечты!

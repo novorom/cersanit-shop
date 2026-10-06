@@ -5,8 +5,9 @@ import { products } from "@/lib/products-data"
 import { getCollectionSeo } from "@/lib/collection-seo"
 import { ProductPageClient } from "./product-client"
 import { ProductCard } from "@/components/product-card"
+import { notFound } from "next/navigation"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export async function generateStaticParams() {
   return products
@@ -23,7 +24,7 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return { title: "Товар не найден | Дом Плитки CERSANIT" }
+    return { title: "Товар не найден | Керамогранит Опт", robots: { index: false, follow: true } }
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
@@ -32,7 +33,10 @@ export async function generateMetadata({
   const priceText = hasPrice
     ? `Актуальная цена ${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}.`
     : "Уточните актуальную цену и наличие у менеджера."
-  const title = `${product.name} купить оптом и в розницу в СПб — ${hasPrice ? `${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}` : "цена по запросу"}`
+  const productType = product.product_type || "Плитка"
+  const productFormat = product.format ? ` ${product.format}` : ""
+  const productBrand = product.brand ? ` — ${product.brand}` : ""
+  const title = `${productType} ${product.name}${productFormat}${productBrand} — купить в СПб${hasPrice ? ` от ${product.price_retail.toLocaleString("ru-RU")} ${priceUnit}` : ", цена по запросу"}`
 
   // Уникальное описание: комбинируем характеристики + SEO текст коллекции
   const collectionSeo = product.collection ? getCollectionSeo(product.collection) : null
@@ -53,9 +57,9 @@ export async function generateMetadata({
     alternates: { canonical: `${SITE_URL}/catalog/${product.slug}` },
     openGraph: {
       title,
-      description: description.slice(0, 200),
+      description: description.slice(0, 300),
       url: `${SITE_URL}/catalog/${product.slug}`,
-      siteName: "Дом Плитки CERSANIT",
+      siteName: "Керамогранит Опт",
       locale: "ru_RU",
       type: "website",
       images: product.main_image
@@ -74,12 +78,7 @@ export default async function ProductPage({
   const product = products.find((p) => p.slug === slug)
 
   if (!product) {
-    return (
-      <div className="min-h-screen bg-background py-12 px-4 text-center">
-        <h1 className="text-2xl font-bold text-foreground mb-4">Товар не найден</h1>
-        <Link href="/catalog" className="text-primary hover:underline">Вернуться в каталог</Link>
-      </div>
-    )
+    notFound()
   }
 
   const isUnit = ["Мозаика", "Ступень", "Плинтус", "Вставка"].includes(product.product_type ?? "")
@@ -106,18 +105,20 @@ export default async function ProductPage({
     sku: product.sku || product.id,
     mpn: product.bsu || product.sku || product.id,
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
-    image: product.main_image ? [product.main_image] : ["https://cersanit-spb.ru/images/logo-cersanit.png"],
+    ...(product.main_image ? { image: [product.main_image] } : {}),
     itemCondition: "https://schema.org/NewCondition",
     ...(product.price_retail > 0 ? { offers: {
       "@type": "Offer",
       "price": product.price_retail,
       "priceCurrency": "RUB",
-      "availability": (product.stock_yanino ?? 0) > 0 || (product.stock_factory ?? 0) > 0
+      "availability": (product.stock_yanino ?? 0) > 0
         ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
+        : (product.stock_factory ?? 0) > 0
+          ? "https://schema.org/PreOrder"
+          : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "Organization",
-        "name": "Дом Плитки CERSANIT",
+        "name": "Керамогранит Опт",
         "url": SITE_URL,
       },
       "url": `${SITE_URL}/catalog/${product.slug}`,
@@ -226,7 +227,7 @@ export default async function ProductPage({
             </h2>
             <p className="text-sm text-foreground/75 leading-relaxed">
               {product.name} — {product.product_type?.toLowerCase() || "керамическая плитка"} от 
-              производителя {product.brand || "Дом Плитки CERSANIT"}.
+              производителя {product.brand || "Керамогранит Опт"}.
               {product.format ? ` Формат ${product.format} см.` : ""}
               {product.surface ? ` Поверхность ${product.surface.toLowerCase()}.` : ""}
               {product.color ? ` Цвет: ${product.color}.` : ""}

@@ -51,7 +51,7 @@ const CFG = {
   phone: '+7 905 205-09-00',
   phoneClean: '+79052050900',
   tg: 'https://t.me/flyroman',
-  email: 'info@cersanit-spb.ru',
+  email: 'novorom@mail.ru',
   updated: '1 октября 2026',
   address: 'Ленинградская область, Тосненский район, Тельмановское городское поселение, посёлок Войскорово, 14В',
   hours: 'Пн–Пт, с 08:00 до 18:00',

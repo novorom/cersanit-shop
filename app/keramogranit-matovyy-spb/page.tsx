@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Матовый керамогранит купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
+  title: "Матовый керамогранит купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Матовый керамогранит в СПб — подборка товаров в каталоге. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка по согласованию.",
   alternates: { canonical: `${SITE_URL}/keramogranit-matovyy-spb` },
   openGraph: {
     title: "Матовый керамогранит в Санкт-Петербурге",
-    description: "Матовый керамогранит в СПб — 150 позиций в наличии. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка от 1 дня.",
+    description: "Матовый керамогранит в СПб — подборка товаров в каталоге. Soft Concrete, Wood Concept, Northwood — склад Янино, доставка по согласованию.",
     url: `${SITE_URL}/keramogranit-matovyy-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -103,7 +103,7 @@ export default function LandingPage() {
           </div>
           <div>
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить матовый керамогранит в СПб</h2>
-            <p className="text-foreground/80 leading-relaxed">Весь ассортимент матового керамогранита на складе в Янино-1. Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней. Официальный дилер ведущих брендов.</p>
+            <p className="text-foreground/80 leading-relaxed">Весь ассортимент матового керамогранита на складе в Янино-1. Самовывоз бесплатный. Срок и стоимость доставки рассчитываются по адресу и объёму заказа. Официальный дилер ведущих брендов.</p>
           </div>
         </div>
       </section>

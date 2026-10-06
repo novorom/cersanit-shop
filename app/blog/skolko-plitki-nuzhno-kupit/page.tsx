@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Как рассчитать количество плитки — калькулятор и формулы | Дом Плитки CERSANIT",
+  title: "Как рассчитать количество плитки — калькулятор и формулы | Керамогранит Опт",
   description: "Как посчитать сколько плитки нужно для ванной, кухни, пола. Формула расчёта, запас на подрезку, учёт декоров и бордюров. Бесплатный расчёт от специалиста.",
   alternates: { canonical: `${SITE_URL}/blog/skolko-plitki-nuzhno-kupit` },
-  openGraph: { title: "Как рассчитать количество плитки", url: `${SITE_URL}/blog/skolko-plitki-nuzhno-kupit`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Как рассчитать количество плитки", url: `${SITE_URL}/blog/skolko-plitki-nuzhno-kupit`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Как рассчитать количество плитки — калькулятор и формулы",
         description: "Расчёт плитки для ванной, кухни и пола. Формулы, запас, советы.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/skolko-plitki-nuzhno-kupit`,
         datePublished: "2025-02-10",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Настенная плитка купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Настенная керамическая плитка в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+  title: "Настенная плитка купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Настенная керамическая плитка в СПб — товары для стен представлены в каталоге. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб по согласованию. Цены от 665 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-nastennaya-spb` },
   openGraph: {
     title: "Настенная плитка в Санкт-Петербурге",
-    description: "Настенная керамическая плитка в СПб — 24 позиции для стен. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+    description: "Настенная керамическая плитка в СПб — товары для стен представлены в каталоге. Calacatta, Silvia, Effecta — склад Янино, доставка по СПб по согласованию. Цены от 665 ₽/м².",
     url: `${SITE_URL}/plitka-nastennaya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },

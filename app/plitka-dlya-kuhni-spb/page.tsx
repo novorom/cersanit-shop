@@ -4,17 +4,17 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 const COLLECTIONS = ["Calacatta","Deep Calacatta","Soft Concrete","Lofthouse","Wood Concept Natural","Wood Concept Prime","Woodhouse","Concretehouse","Travertino","Limestone","Sandstone","Sevilla","Siena","Stilo","Silvia","Lina","Marble","Polaris","Cambio"]
 
 export const metadata: Metadata = {
-  title: "Плитка для кухни Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Керамическая плитка и керамогранит для кухни Lincer в СПб. Влагостойкая, жиростойкая, легко моется. Склад Янино, доставка по СПб от 1 дня. Цены от 472 руб/м2.",
+  title: "Плитка для кухни Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамическая плитка и керамогранит для кухни Lincer в СПб. Влагостойкая, жиростойкая, легко моется. Склад Янино, доставка по СПб по согласованию. Цены от 472 руб/м2.",
   alternates: { canonical: `${SITE_URL}/plitka-dlya-kuhni-spb` },
-  openGraph: { title: "Плитка для кухни Lincer в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "website" },
+  openGraph: { title: "Плитка для кухни Lincer в СПб", url: `${SITE_URL}/plitka-dlya-kuhni-spb`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "website" },
 }
 
 const faq = [
@@ -22,7 +22,7 @@ const faq = [
   { question: "Можно ли класть керамогранит на кухонный пол?", answer: "Да, керамогранит — лучший выбор для кухонного пола. Прочный, устойчив к царапинам, не боится воды и жира. Для безопасности выбирайте матовые поверхности с классом скользкости R10 и выше." },
   { question: "Какой формат плитки для маленькой кухни?", answer: "Для маленькой кухни (до 9 м²) — форматы 30x60 или 42x42 в светлых тонах: визуально увеличивают пространство. Избегайте мелких форматов с большим количеством швов." },
   { question: "Как ухаживать за кухонной плиткой?", answer: "Керамогранит легко моется обычными средствами. Глазурованная поверхность не впитывает жир. Швы лучше обработать водоотталкивающей затиркой — тогда уход минимальный." },
-  { question: "Как быстро доставите в СПб?", answer: "Доставка по СПб и ЛО — 1-2 рабочих дня. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45." },
+  { question: "Как быстро доставите в СПб?", answer: "Срок и стоимость доставки зависят от адреса и объёма заказа. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45." },
 ]
 
 const BLOG_ARTICLES_PLITKA_DLYA_KUHNI_SPB = [
@@ -41,7 +41,7 @@ export default function PlitkaKuhnya() {
       <section className="py-12 lg:py-16 bg-muted/30"><div className="mx-auto max-w-4xl px-4 flex flex-col gap-8">
         <div><h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Как выбрать плитку для кухни?</h2><p className="text-foreground/80 leading-relaxed">Кухня — зона повышенной влажности и жировых загрязнений. Для пола выбирайте керамогранит с матовой поверхностью (класс скользкости R10+) — он прочнее и не скользит. Для стен и фартука — глазурованная плитка, легко моется от жира. Водопоглощение: не выше 3% для стен, не выше 0,5% для пола.</p></div>
         <div><h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Популярные решения для кухни</h2><p className="text-foreground/80 leading-relaxed"><strong>Фартук:</strong> Calacatta (под мрамор), Soft Concrete (лофт), Woodhouse (под дерево) — форматы 30x60 и 60x60 см. <strong>Пол:</strong> Wood Concept Natural (ректификат), Lofthouse (серый бетон), Concretehouse 60x120 см. <strong>Маленькая кухня:</strong> светлые тона Calacatta, Travertino, Limestone визуально расширяют пространство.</p></div>
-        <div><h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить плитку для кухни в СПб</h2><p className="text-foreground/80 leading-relaxed">Склад в Янино-1 (15-20 мин от КАД). Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней. Бесплатный расчёт количества плитки.</p></div>
+        <div><h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить плитку для кухни в СПб</h2><p className="text-foreground/80 leading-relaxed">Склад в Янино-1 (15-20 мин от КАД). Самовывоз бесплатный. Срок и стоимость доставки рассчитываются по адресу и объёму заказа. Бесплатный расчёт количества плитки.</p></div>
       </div></section>
       <section className="py-12 lg:py-16"><div className="mx-auto max-w-7xl px-4"><h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-8">Частые вопросы</h2><div className="max-w-3xl flex flex-col gap-4">{faq.map((item,i) => (<details key={i} className="group rounded-xl border border-border bg-card overflow-hidden"><summary className="flex items-center justify-between cursor-pointer px-6 py-4 text-foreground font-medium hover:bg-muted/50 transition-colors"><span className="pr-4">{item.question}</span><ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 transition-transform group-open:rotate-90" /></summary><div className="px-6 pb-4"><p className="text-foreground/80 leading-relaxed">{item.answer}</p></div></details>))}</div></div></section>
             <section className="py-12 lg:py-16 bg-muted/30">

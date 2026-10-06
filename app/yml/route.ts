@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server"
 import { products } from "@/lib/products-data"
 
-const SITE_URL = "https://cersanit-spb.ru"
-const SHOP_NAME = "Lincer-SPb"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
+const SHOP_NAME = "Керамогранит Опт"
 const SHOP_COMPANY = "Магазин керамической плитки в Санкт-Петербурге"
 
 export const dynamic = "force-dynamic"
@@ -26,7 +26,7 @@ export async function GET() {
         p.surface ? `Поверхность: ${p.surface}.` : "",
         p.color ? `Цвет: ${p.color}.` : "",
         p.material_type ? `Материал: ${p.material_type}.` : "",
-        "Доставка по Санкт-Петербургу и Ленинградской области от 1 дня.",
+        "Доставка по Санкт-Петербургу и Ленинградской области по согласованию.",
       ]
         .filter(Boolean)
         .join(" ")
@@ -68,7 +68,7 @@ export async function GET() {
       <vendor>${escapeXml(p.brand || "Lincer")}</vendor>
       ${p.sku ? `<vendorCode>${escapeXml(p.sku)}</vendorCode>` : ""}
       <description>${escapeXml(description)}</description>
-      <sales_notes>Доставка от 1 дня. Склад в Янино (СПб).</sales_notes>
+      <sales_notes>Склад в Янино (Ленинградская область). Срок доставки согласуется по адресу и объёму заказа.</sales_notes>
       <pickup>true</pickup>
       <delivery>true</delivery>
 ${picturesTags}

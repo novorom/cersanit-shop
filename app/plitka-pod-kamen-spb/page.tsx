@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -15,14 +15,14 @@ const STONE_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под камень Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Керамогранит под натуральный камень Lincer в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб от 1 дня. Природная фактура без сложного ухода.",
+  title: "Плитка под камень Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамогранит под натуральный камень Lincer в СПб. Royal Stone, Slate, Stonehouse, Sandstone — склад Янино, доставка по СПб по согласованию. Природная фактура без сложного ухода.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-kamen-spb` },
   openGraph: {
     title: "Плитка под камень ведущих брендов в Санкт-Петербурге",
-    description: "Керамогранит с имитацией камня — Royal Stone, Slate, Stonehouse, Sandstone. Склад в Янино, доставка по СПб от 1 дня.",
+    description: "Керамогранит с имитацией камня — Royal Stone, Slate, Stonehouse, Sandstone. Склад в Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/plitka-pod-kamen-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -47,7 +47,7 @@ const faq = [
   },
   {
     question: "Как быстро доставите плитку в Санкт-Петербурге?",
-    answer: "Доставка по СПб и ЛО — 1-2 рабочих дня. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45.",
+    answer: "Срок и стоимость доставки зависят от адреса и объёма заказа. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45.",
   },
 ]
 
@@ -153,7 +153,7 @@ export default function PlitkaПодКамень() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">
               Весь ассортимент в наличии на складе в Янино-1. Самовывоз бесплатный.
-              Доставка по СПб и ЛО от 1-2 рабочих дней. Бесплатный расчёт количества,
+              Срок и стоимость доставки рассчитываются по адресу и объёму заказа. Бесплатный расчёт количества,
               помощь с подбором коллекции под ваш проект.
             </p>
           </div>

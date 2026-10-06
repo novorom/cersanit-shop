@@ -2,7 +2,7 @@ import Link from "next/link"
 import { COMPANY_NAME, SITE_URL } from "@/lib/seo-data"
 
 export const metadata = {
-  title: `Дом Плитки CERSANIT — ваш надежный поставщик плитки в Санкт-Петербурге`,
+  title: `Керамогранит Опт — ваш надежный поставщик плитки в Санкт-Петербурге`,
   description: `Почему выгодно покупать плитку и керамогранит в магазине ${COMPANY_NAME}. Склад в Янино, оптовые цены и быстрая доставка.`,
 }
 

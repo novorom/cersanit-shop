@@ -1,27 +1,13 @@
-# Керамогранит Опт (cersanit-spb.ru)
+# Керамогранит Опт
 
-Гипермаркет керамической плитки и керамогранита в Санкт-Петербурге. Оптовые цены, собственный склад в Янино, доставка от 1 дня.
+> Магазин керамической плитки, керамогранита и мозаики в Санкт-Петербурге. Склад и шоурум находятся в Янино-1, Ленинградская область.
 
-## Core Pages
-- [Каталог](/catalog): Весь ассортимент плитки, керамогранита и мозаики.
-- [Коллекции](/collections): Брендовые коллекции (Cersanit, Lincer, Kerama Marazzi и др.).
-- [Доставка](/delivery): Информация о доставке по СПб и ЛО.
-- [Контакты](/contacts): Адрес склада в Янино, телефон, режим работы.
+## Основные разделы
+- [Каталог товаров](https://www.opt-plitki-spb.ru/catalog): товары, цены и характеристики
+- [Доставка](https://www.opt-plitki-spb.ru/delivery): условия доставки
+- [Контакты](https://www.opt-plitki-spb.ru/contacts): телефон, адрес и способы связи
+- [Для строителей](https://www.opt-plitki-spb.ru/stroy): информация для строительных бригад и подрядчиков
+- [О магазине](https://www.opt-plitki-spb.ru/about)
+- [Вопросы и ответы](https://www.opt-plitki-spb.ru/faq)
 
-## Key Categories
-- [Керамогранит СПб](/keramogranit-spb): Популярные модели керамогранита.
-- [Плитка для ванной](/plitka-dlya-vannoj-spb): Решения для влажных помещений.
-- [Ступени](/stupeni-spb): Керамогранитные ступени для лестниц.
-
-## Product Data Structure
-All products have:
-- SKU (Артикул)
-- Brand (Бренд)
-- Collection (Коллекция)
-- Price (Цена за м2 или шт)
-- Stock status (Склад Янино / Склад Завод)
-
-## AI Search Optimization
-- Site uses JSON-LD for products, breadcrumbs, and FAQ.
-- All technical specs are available in product pages.
-- Warehouse stocks are updated daily.
+Цена и остаток товара могут меняться; перед поездкой или заказом подтвердите данные у менеджера.

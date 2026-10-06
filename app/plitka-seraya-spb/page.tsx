@@ -4,21 +4,21 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 const GRAY_COLORS = ["серый", "светло-серый", "темно-серый"]
 
 export const metadata: Metadata = {
-  title: "Серая плитка купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Серая плитка и керамогранит в СПб — 64 позиции в наличии. Soft Concrete, Lofthouse, Northwood — склад Янино, доставка по СПб от 1 дня. Цены от 665 ₽/м².",
+  title: "Серая плитка купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Серая плитка и керамогранит в СПб — 64 позиции в наличии. Soft Concrete, Lofthouse, Northwood — склад Янино, доставка по СПб по согласованию. Цены от 665 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-seraya-spb` },
   openGraph: {
     title: "Серая плитка в Санкт-Петербурге",
-    description: "Серая плитка и керамогранит — Soft Concrete, Lofthouse, Northwood. Склад в Янино, доставка по СПб от 1 дня.",
+    description: "Серая плитка и керамогранит — Soft Concrete, Lofthouse, Northwood. Склад в Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/plitka-seraya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -43,7 +43,7 @@ const faq = [
   },
   {
     question: "Как быстро доставите серую плитку в СПб?",
-    answer: "Доставка по Санкт-Петербургу и ЛО — 1-2 рабочих дня. Самовывоз из склада в Янино-1 бесплатный в день оплаты. Режим работы склада: Пн-Пт 10:00-16:45.",
+    answer: "Срок и стоимость доставки зависят от адреса и объёма заказа. Самовывоз из склада в Янино-1 бесплатный в день оплаты. Режим работы склада: Пн-Пт 10:00-16:45.",
   },
 ]
 
@@ -140,7 +140,7 @@ export default function PlitkaSeraya() {
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить серую плитку в СПб</h2>
             <p className="text-foreground/80 leading-relaxed">
               Весь ассортимент серой плитки в наличии на складе в Янино-1.
-              Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней.
+              Самовывоз бесплатный. Срок и стоимость доставки рассчитываются по адресу и объёму заказа.
               Бесплатный расчёт количества плитки и помощь в подборе коллекции.
             </p>
           </div>

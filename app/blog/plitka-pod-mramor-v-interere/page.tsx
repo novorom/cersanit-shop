@@ -1,7 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
   title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Плитка под мрамор в интерьере: роскошь без больших затрат | Lincer",
     url: `${SITE_URL}/blog/plitka-pod-mramor-v-interere`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "article"
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Article() {
   return (
     <div className="min-h-screen bg-background">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"Дом Плитки CERSANIT","url":"https://cersanit-spb.ru"},"mainEntityOfPage":"https://cersanit-spb.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"Дом Плитки CERSANIT"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"Article","headline":"Плитка под мрамор в интерьере: роскошь без больших затрат","publisher":{"@type":"Organization","name":"Керамогранит Опт","url":"https://www.opt-plitki-spb.ru"},"mainEntityOfPage":"https://www.opt-plitki-spb.ru/blog/plitka-pod-mramor-v-interere","datePublished":"2025-02-05","author":{"@type":"Organization","name":"Керамогранит Опт"}}` }} />
       <article className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Плитка под мрамор в интерьере: как создать роскошь без бюджета</h1>
 

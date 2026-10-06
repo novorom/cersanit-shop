@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -17,14 +17,14 @@ const WOOD_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Керамогранит под дерево Lincer купить в СПб | Дом Плитки CERSANIT",
-  description: "Керамогранит под дерево ведущих брендов в Санкт-Петербурге: Woodhouse, Lofthouse, Wood Concept, Northwood. Матовый, рельефный, форматы 18x60, 22x90, 20x120. Склад Янино, доставка от 1 дня.",
+  title: "Керамогранит под дерево Lincer купить в СПб | Керамогранит Опт",
+  description: "Керамогранит под дерево ведущих брендов в Санкт-Петербурге: Woodhouse, Lofthouse, Wood Concept, Northwood. Матовый, рельефный, форматы 18x60, 22x90, 20x120. Склад Янино, доставка по согласованию.",
   alternates: { canonical: `${SITE_URL}/keramogranit-pod-derevo-spb` },
   openGraph: {
     title: "Керамогранит под дерево ведущих брендов в Санкт-Петербурге",
-    description: "Керамогранит с имитацией дерева — Woodhouse, Lofthouse, Wood Concept. Склад в Янино, доставка по СПб от 1 дня.",
+    description: "Керамогранит с имитацией дерева — Woodhouse, Lofthouse, Wood Concept. Склад в Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/plitka-pod-derevo-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -49,7 +49,7 @@ const faq = [
   },
   {
     question: "Как быстро доставите плитку в Санкт-Петербурге?",
-    answer: "Доставка по СПб и ЛО — 1-2 рабочих дня. Самовывоз из Янино бесплатный в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
+    answer: "Срок и стоимость доставки зависят от адреса и объёма заказа. Самовывоз из Янино бесплатный в день оплаты. Режим работы: Пн-Пт 10:00-16:45.",
   },
 ]
 
@@ -95,7 +95,7 @@ export default function PlitkaПодДерево() {
           </h1>
           <p className="mt-4 text-primary-foreground/80 text-lg leading-relaxed max-w-3xl">
             Керамогранит с фотореалистичной текстурой дерева — тепло и уют без забот о влаге и царапинах.
-            {" "}{woodProducts.length} позиций в наличии на складе в Янино. Доставка по СПб от 1 дня.
+            {" "}{woodProducts.length} позиций в наличии на складе в Янино. Доставка по СПб по согласованию.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="#products" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-background text-foreground font-medium text-sm hover:bg-background/90 transition-colors">
@@ -155,7 +155,7 @@ export default function PlitkaПодДерево() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">
               Весь ассортимент в наличии на складе в посёлке Янино-1 (15-20 минут от КАД). Самовывоз бесплатный.
-              Доставка по СПб и ЛО от 1-2 рабочих дней. Работаем с частными клиентами и строительными организациями.
+              Срок и стоимость доставки рассчитываются по адресу и объёму заказа. Работаем с частными клиентами и строительными организациями.
               Бесплатный расчёт количества плитки по размерам помещения.
             </p>
           </div>

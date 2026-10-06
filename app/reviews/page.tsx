@@ -1,102 +1,34 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { Star, MapPin, Calendar, ExternalLink } from "lucide-react"
+import { MapPin, Calendar, ExternalLink } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Отзывы о нас | Дом Плитки CERSANIT",
+  title: "Отзывы о нас | Керамогранит Опт",
   description:
-    "Магазин плитки с 2011 года в Санкт-Петербурге. Отзывы реальных покупателей. Более 15 лет на рынке керамической плитки и керамогранита. Склад и шоурум в Янино.",
+    "Отзывы о магазине плитки и керамогранита в Санкт-Петербурге. Перейдите в профиль продавца на Avito, чтобы посмотреть актуальные оценки и комментарии покупателей.",
   alternates: {
-    canonical: "https://cersanit-spb.ru/reviews",
+    canonical: "https://www.opt-plitki-spb.ru/reviews",
   },
   openGraph: {
-    title: "Отзывы покупателей | Дом Плитки CERSANIT в СПб",
-    description: "Реальные отзывы о магазине плитки ведущих брендов в Санкт-Петербурге. Более 15 лет на рынке, склад в Янино.",
-    url: "https://cersanit-spb.ru/reviews",
-    siteName: "Дом Плитки CERSANIT",
+    title: "Отзывы покупателей | Керамогранит Опт в СПб",
+    description: "Оценки и комментарии покупателей доступны в профиле магазина на Avito.",
+    url: "https://www.opt-plitki-spb.ru/reviews",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
 }
 
 export default function ReviewsPage() {
-  const reviewsSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Дом Плитки CERSANIT",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "87",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Андрей К." },
-        datePublished: "2025-01",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Брали плитку для ванной комнаты. Огромный выбор на складе, можно пощупать вживую. Цены ниже чем в обычных магазинах. Доставили на следующий день.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Марина С." },
-        datePublished: "2024-11",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Помогли рассчитать количество плитки, ничего лишнего не навязывали. Качество товара отличное — всё Lincer, польское производство.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Дмитрий В." },
-        datePublished: "2024-10",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Заказывал оптом для ремонта в загородном доме. Всё было в наличии, Роман оперативно ответил на все вопросы в Telegram.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Светлана М." },
-        datePublished: "2025-03",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Покупали керамогранит Wood Concept для спальни. Привезли быстро, упакован хорошо, ни одной сколотой плитки. Менеджер помог рассчитать количество с учётом раскладки. Очень довольны результатом.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Дмитрий Л." },
-        datePublished: "2025-04",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Брал плитку Lincer Lofthouse для прихожей и кухни. Цены ниже чем в строительных гипермаркетах, а качество сертифицированное. Самовывоз из Янино удобный — за 20 минут всё погрузили.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Наталья В." },
-        datePublished: "2025-06",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Заказывала плитку под мрамор Calacatta для ванной. Очень красивая коллекция, точно как на фото. Доставка пришла на следующий день. Буду рекомендовать всем знакомым.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Игорь Т." },
-        datePublished: "2025-08",
-        reviewRating: { "@type": "Rating", ratingValue: "4" },
-        reviewBody: "Хорошая компания, мультибрендовый гипермаркет. Взял керамогранит 60x60 для ремонта офиса. Плитка качественная, укладчики остались довольны. Единственное — склад работает до 16:45, пришлось подстраиваться.",
-      },
-    ],
-  }
-
   return (
     <div className="min-h-screen bg-background py-12 px-4">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
-      />
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4">Отзывы наших клиентов</h1>
           <p className="text-lg text-foreground/70">
-            С 2011 года мы занимаемся розничными продажами керамической плитки и керамогранита в Санкт-Петербурге — уже 15 лет помогаем клиентам с выбором.
+            Актуальные оценки и комментарии покупателей опубликованы в профиле магазина на Avito.
           </p>
         </div>
 
@@ -118,22 +50,17 @@ export default function ReviewsPage() {
 
           <div className="space-y-4 mb-8">
             <div className="flex items-center gap-2 text-sm text-foreground/70">
-              <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-              <span className="font-semibold">Высокий рейтинг от множества покупателей</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-foreground/70">
               <MapPin className="h-4 w-4" />
-              <span>Наш магазин работает в Санкт-Петербурге с 2011 года</span>
+              <span>Магазин плитки и керамогранита в Санкт-Петербурге</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-foreground/70">
               <Calendar className="h-4 w-4" />
-              <span>Ежедневные доставки и самовывоз из шоурума в Янино-1</span>
+              <span>Перед визитом в Янино подтвердите наличие и время выдачи</span>
             </div>
           </div>
 
           <p className="text-foreground/70 mb-6">
-            На Avito вы найдёте подробные отзывы о качестве нашей керамической плитки, керамогранита и обслуживании. 
-            Посмотрите оценки, прочитайте комментарии реальных покупателей и убедитесь в надёжности нашего магазина.
+            Оценки и комментарии покупателей доступны в профиле магазина на Avito.
           </p>
 
           <a
@@ -147,54 +74,6 @@ export default function ReviewsPage() {
           </a>
         </div>
 
-        {/* Real Reviews Section */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-6">Отзывы покупателей</h2>
-          <div className="space-y-4">
-            {[
-              {
-                name: "Андрей К.",
-                date: "Январь 2025",
-                rating: 5,
-                text: "Брали плитку для ванной комнаты. Огромный выбор на складе, можно пощупать вживую. Цены ниже чем в обычных магазинах. Доставили на следующий день. Очень доволен.",
-              },
-              {
-                name: "Марина С.",
-                date: "Ноябрь 2024",
-                rating: 5,
-                text: "Помогли рассчитать количество плитки для кухни и ванной, ничего лишнего не навязывали. Качество товара отличное — всё Lincer, польское производство. Самовывоз бесплатный.",
-              },
-              {
-                name: "Дмитрий В.",
-                date: "Октябрь 2024",
-                rating: 5,
-                text: "Заказывал оптом для ремонта в загородном доме. Всё было в наличии, упаковали аккуратно. Роман оперативно ответил на все вопросы в Telegram. Рекомендую.",
-              },
-              {
-                name: "Ольга П.",
-                date: "Сентябрь 2024",
-                rating: 5,
-                text: "Искала плитку под мрамор для ванной — нашла именно то что хотела. Менеджер показал несколько вариантов, помог с выбором цвета. Шоурум в Янино удобно расположен.",
-              },
-            ].map((review, i) => (
-              <div key={i} className="bg-white rounded-lg border border-foreground/10 p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <div>
-                    <span className="font-semibold text-foreground">{review.name}</span>
-                    <span className="text-foreground/50 text-sm ml-3">{review.date}</span>
-                  </div>
-                  <div className="flex gap-0.5">
-                    {Array.from({ length: review.rating }).map((_, j) => (
-                      <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-foreground/70 text-sm leading-relaxed">{review.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Why Choose Us */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-foreground/5 rounded-lg p-6 border border-foreground/10">
@@ -202,19 +81,19 @@ export default function ReviewsPage() {
             <ul className="space-y-2 text-sm text-foreground/70">
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Более 750 позиций в наличии на складе</span>
+                <span>Каталог с характеристиками и артикулами товаров</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Доставка по СПб и ЛО от 1 дня</span>
+                <span>Доставка по СПб и Ленинградской области по согласованию</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Бесплатный самовывоз из шоурума</span>
+                <span>Самовывоз со склада в Янино по предварительному согласованию</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Честные цены и качество товара</span>
+                <span>Помощь менеджера с проверкой остатка и расчётом заказа</span>
               </li>
             </ul>
           </div>
@@ -224,11 +103,11 @@ export default function ReviewsPage() {
             <ul className="space-y-2 text-sm text-foreground/70">
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>С 2011 года — более 15 лет на рынке</span>
+                <span>Контакты и адрес склада опубликованы на сайте</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Тысячи довольных клиентов</span>
+                <span>Профиль магазина на Avito с отзывами покупателей</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
@@ -236,7 +115,7 @@ export default function ReviewsPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-foreground font-bold">✓</span>
-                <span>Гарантия на всю продукцию</span>
+                <span>Данные о производителе и товаре — в карточке позиции</span>
               </li>
             </ul>
           </div>

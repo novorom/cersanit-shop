@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 
 export const metadata: Metadata = {
-  title: "Плитка для кухни: как выбрать фартук и пол | Дом Плитки CERSANIT",
+  title: "Плитка для кухни: как выбрать фартук и пол | Керамогранит Опт",
   description: "Какую плитку выбрать для кухонного фартука и пола в Санкт-Петербурге. Требования к износостойкости, простоте ухода, сочетанию с интерьером. Коллекции Lincer от официального дилера.",
   alternates: { canonical: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat` },
-  openGraph: { title: "Плитка для кухни: как выбрать фартук и пол", url: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`, siteName: "Дом Плитки CERSANIT", locale: "ru_RU", type: "article" },
+  openGraph: { title: "Плитка для кухни: как выбрать фартук и пол", url: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`, siteName: "Керамогранит Опт", locale: "ru_RU", type: "article" },
 }
 
 export default function Article() {
@@ -18,10 +18,10 @@ export default function Article() {
         "@context": "https://schema.org", "@type": "Article",
         headline: "Плитка для кухни: как выбрать фартук и покрытие для пола",
         description: "Рекомендации по выбору кухонной плитки с учётом износостойкости, простоты ухода и сочетания с интерьером.",
-        publisher: { "@type": "Organization", name: "Дом Плитки CERSANIT", url: SITE_URL },
+        publisher: { "@type": "Organization", name: "Керамогранит Опт", url: SITE_URL },
         mainEntityOfPage: `${SITE_URL}/blog/plitka-dlya-kuhni-kak-vybrat`,
         datePublished: "2025-02-20",
-        author: { "@type": "Organization", name: "Дом Плитки CERSANIT" },
+        author: { "@type": "Organization", name: "Керамогранит Опт" },
       })}} />
 
       <div className="bg-muted/50 border-b border-border">

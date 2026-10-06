@@ -4,19 +4,19 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
 export const metadata: Metadata = {
-  title: "Белая плитка купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Белая плитка и керамогранит в СПб — 32 позиции в наличии. Calacatta, Tiffany, Silvia — склад Янино, доставка по СПб от 1 дня. Цены от 780 ₽/м².",
+  title: "Белая плитка купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Белая плитка и керамогранит в СПб — товары представлены в каталоге. Calacatta, Tiffany, Silvia — склад Янино, доставка по СПб по согласованию. Цены от 780 ₽/м².",
   alternates: { canonical: `${SITE_URL}/plitka-belaya-spb` },
   openGraph: {
     title: "Белая плитка в Санкт-Петербурге",
-    description: "Белая плитка — Calacatta, Tiffany, Silvia. Склад в Янино, доставка по СПб от 1 дня.",
+    description: "Белая плитка — Calacatta, Tiffany, Silvia. Склад в Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/plitka-belaya-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -41,7 +41,7 @@ const faq = [
   },
   {
     question: "Есть ли белая плитка в наличии?",
-    answer: "Да, более 30 позиций белой плитки и керамогранита на складе в Янино. Самовывоз в день оплаты, доставка по СПб и ЛО 1-2 рабочих дня.",
+    answer: "Да, более 30 позиций белой плитки и керамогранита на складе в Янино. Самовывоз в день оплаты, срок и стоимость доставки рассчитываются по адресу и объёму заказа.",
   },
 ]
 
@@ -135,7 +135,7 @@ export default function PlitkaBelay() {
             <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Купить белую плитку в Санкт-Петербурге</h2>
             <p className="text-foreground/80 leading-relaxed">
               Весь ассортимент белой плитки в наличии на складе в Янино-1.
-              Самовывоз бесплатный. Доставка по СПб и ЛО от 1-2 рабочих дней.
+              Самовывоз бесплатный. Срок и стоимость доставки рассчитываются по адресу и объёму заказа.
               Мы — мультибрендовый гипермаркет, все товары с сертификатами качества.
             </p>
           </div>

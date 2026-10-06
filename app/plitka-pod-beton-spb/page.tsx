@@ -4,7 +4,7 @@ import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
 import { ProductCard } from "@/components/product-card"
 
-const SITE_URL = "https://cersanit-spb.ru"
+const SITE_URL = "https://www.opt-plitki-spb.ru"
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -14,14 +14,14 @@ const BETON_COLLECTIONS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Плитка под бетон Lincer купить в Санкт-Петербурге | Дом Плитки CERSANIT",
-  description: "Керамогранит под бетон и лофт Lincer в СПб. Soft Concrete, Concretehouse, Lofthouse, Effecta — склад Янино, доставка по СПб от 1 дня. Стиль лофт и минимализм для пола и стен.",
+  title: "Плитка под бетон Lincer купить в Санкт-Петербурге | Керамогранит Опт",
+  description: "Керамогранит под бетон и лофт Lincer в СПб. Soft Concrete, Concretehouse, Lofthouse, Effecta — склад Янино, доставка по СПб по согласованию. Стиль лофт и минимализм для пола и стен.",
   alternates: { canonical: `${SITE_URL}/plitka-pod-beton-spb` },
   openGraph: {
     title: "Плитка под бетон ведущих брендов в Санкт-Петербурге",
-    description: "Керамогранит в стиле лофт — Soft Concrete, Concretehouse, Lofthouse. Склад в Янино, доставка по СПб от 1 дня.",
+    description: "Керамогранит в стиле лофт — Soft Concrete, Concretehouse, Lofthouse. Склад в Янино, доставка по СПб по согласованию.",
     url: `${SITE_URL}/plitka-pod-beton-spb`,
-    siteName: "Дом Плитки CERSANIT",
+    siteName: "Керамогранит Опт",
     locale: "ru_RU",
     type: "website",
   },
@@ -46,7 +46,7 @@ const faq = [
   },
   {
     question: "Как быстро доставите в Санкт-Петербурге?",
-    answer: "Доставка по СПб и ЛО — 1-2 рабочих дня. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45.",
+    answer: "Срок и стоимость доставки зависят от адреса и объёма заказа. Самовывоз из Янино бесплатный в день оплаты. Пн-Пт 10:00-16:45.",
   },
 ]
 
@@ -151,7 +151,7 @@ export default function PlitkaПодБетон() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">
               Весь ассортимент в наличии на складе в Янино-1. Самовывоз бесплатный.
-              Доставка по СПб и ЛО от 1-2 рабочих дней. Помогаем с подбором и расчётом количества.
+              Срок и стоимость доставки рассчитываются по адресу и объёму заказа. Помогаем с подбором и расчётом количества.
             </p>
           </div>
         </div>

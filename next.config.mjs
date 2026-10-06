@@ -35,13 +35,13 @@ const nextConfig = {
         {
           source: "/",
           has: [{ type: "host", value: host }],
-          destination: "https://cersanit-spb.ru/",
+          destination: "https://www.opt-plitki-spb.ru/",
           permanent: true,
         },
         {
           source: "/:path*",
           has: [{ type: "host", value: host }],
-          destination: "https://cersanit-spb.ru/:path*",
+          destination: "https://www.opt-plitki-spb.ru/:path*",
           permanent: true,
         },
       ]),

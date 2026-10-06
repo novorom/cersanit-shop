@@ -210,7 +210,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
                 {product.brand} / {product.collection}
               </p>
               <h1 className="text-2xl lg:text-3xl font-bold text-foreground text-balance">
-                {product.name}
+                {product.product_type || "Плитка"} {product.name}{product.format ? ` ${product.format}` : ""}
               </h1>
               <p className="text-sm text-muted-foreground mt-1">Арт. {product.sku}</p>
             </div>
@@ -469,7 +469,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {`${product.name} из коллекции ${product.collection} доступна к заказу в нашем магазине в Санкт-Петербурге. `}
                     {totalStock > 0
-                      ? `В наличии на складе Янино${(product.stock_yanino ?? 0) > 0 ? ` — ${product.stock_yanino} м²` : ""}. Самовывоз бесплатно, доставка по СПб и ЛО от 1 дня. `
+                      ? `В наличии на складе Янино${(product.stock_yanino ?? 0) > 0 ? ` — ${product.stock_yanino} м²` : ""}. Самовывоз бесплатно, доставка по согласованию. `
                       : `Доступно под заказ с завода ${product.brand || 'производителя'}. `}
                     {"Бесплатный расчёт необходимого количества плитки. Оплата наличным и безналичным расчётом. Для юридических лиц — работа по счёту с НДС."}
                   </p>
@@ -502,7 +502,7 @@ export function ProductPageClient({ slug }: { slug: string }) {
                   <div className="flex flex-col gap-3">
                     {[
                       { title: "Самовывоз со склада", desc: "Бесплатно. Склад в п. Янино-1 (Ленинградская обл.)", time: "Следующий рабочий день" },
-                      { title: "Доставка по СПб и ЛО", desc: "Стоимость зависит от объёма заказа", time: "1-2 рабочих дня" },
+                      { title: "Доставка по СПб и ЛО", desc: "Стоимость зависит от объёма заказа", time: "Срок по согласованию" },
                       { title: "Доставка по России", desc: "Транспортной компанией (СДЭК, Деловые линии)", time: "3-7 рабочих дней" },
                     ].map((item) => (
                       <div key={item.title} className="flex items-start gap-3 p-4 rounded-xl bg-background border border-border">
