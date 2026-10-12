@@ -9,6 +9,10 @@ import { notFound } from "next/navigation"
 
 const SITE_URL = "https://www.opt-plitki-spb.ru"
 
+function schemaIdentifier(value?: string, maxLength = 70) {
+  return value && value.length <= maxLength && !/\s/.test(value) ? value : undefined
+}
+
 export async function generateStaticParams() {
   return products
     .filter((p) => p.slug)
@@ -95,15 +99,15 @@ export default async function ProductPage({
     : null
 
   // Schema.org Product — SSR для Яндекса
-  const productSchema = {
+  const productSchema = product.price_retail > 0 ? {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: (product.description || (collectionSeo?.about
       ? `${collectionSeo.about} ${collectionSeo.application}`
       : `${product.name} — керамическая плитка или керамогранит${product.brand ? ` бренда ${product.brand}` : ""}. Склад в Янино, самовывоз и доставка по Санкт-Петербургу и Ленинградской области.`)).slice(0, 300),
-    sku: product.sku || product.id,
-    mpn: product.bsu || product.sku || product.id,
+    ...(schemaIdentifier(product.sku || product.id, 50) ? { sku: schemaIdentifier(product.sku || product.id, 50) } : {}),
+    ...(schemaIdentifier(product.bsu) ? { mpn: schemaIdentifier(product.bsu) } : {}),
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
     ...(product.main_image ? { image: [product.main_image] } : {}),
     itemCondition: "https://schema.org/NewCondition",
@@ -122,6 +126,12 @@ export default async function ProductPage({
         "url": SITE_URL,
       },
       "url": `${SITE_URL}/catalog/${product.slug}`,
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "RU",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 14,
+      },
     } } : {}),
     ...(product.color ? { color: product.color } : {}),
     ...(product.material_type ? { material: product.material_type } : {}),
@@ -131,7 +141,7 @@ export default async function ProductPage({
           height: { "@type": "QuantitativeValue", value: parseFloat(product.length), unitCode: "CMT" }
         }
       : {}),
-  }
+  } : null
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -154,10 +164,10 @@ export default async function ProductPage({
       )}
 
       {/* Schema.org — SSR, Яндекс видит без JS */}
-      <script
+      {productSchema && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema).replace(/</g, "\\u003c") }}
-      />
+      />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}

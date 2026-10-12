@@ -20,6 +20,10 @@ const COLLECTION_IMAGE_OVERRIDES: Record<string, string> = {
 }
 
 const SITE_URL = "https://www.opt-plitki-spb.ru"
+
+function schemaIdentifier(value?: string, maxLength = 70) {
+  return value && value.length <= maxLength && !/\s/.test(value) ? value : undefined
+}
 const PHONE = "+7 (905) 205-09-00"
 const PHONE_RAW = "+79052050900"
 
@@ -172,8 +176,8 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
     name: `Коллекция ${collectionName} ${brand}`,
     description: seo?.about || `Коллекция ${collectionName} от ${brand} в наличии в Санкт-Петербурге`,
     url: `${SITE_URL}/collections/${collection}`,
-    numberOfItems: collectionProducts.length,
-    itemListElement: collectionProducts.slice(0, 20).map((p, i) => ({
+    numberOfItems: collectionProducts.filter((p) => p.price_retail > 0).length,
+    itemListElement: collectionProducts.filter((p) => p.price_retail > 0).slice(0, 20).map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
       item: {
@@ -182,7 +186,8 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
         description: `${p.name} — купить в Санкт-Петербурге в магазине Керамогранит Опт.`,
         ...(p.main_image ? { image: [p.main_image] } : {}),
         ...(p.brand ? { brand: { "@type": "Brand", "name": p.brand } } : {}),
-        sku: p.sku || p.id,
+        ...(schemaIdentifier(p.sku || p.id, 50) ? { sku: schemaIdentifier(p.sku || p.id, 50) } : {}),
+        ...(schemaIdentifier(p.bsu) ? { mpn: schemaIdentifier(p.bsu) } : {}),
         url: `${SITE_URL}/catalog/${p.slug}`,
         ...(p.price_retail > 0 ? { offers: {
           "@type": "Offer",
@@ -194,6 +199,12 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
               ? "https://schema.org/PreOrder"
               : "https://schema.org/OutOfStock",
           url: `${SITE_URL}/catalog/${p.slug}`,
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "RU",
+            returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+            merchantReturnDays: 14,
+          },
         } } : {}),
       },
     })),
