@@ -84,10 +84,15 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
 
 function findCollectionName(slug: string): string | undefined {
   let decodedSlug = slug
-  try {
-    decodedSlug = decodeURIComponent(slug)
-  } catch {
-    // Keep the original value; malformed URL encoding will fail the exact match below.
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const nextSlug = decodeURIComponent(decodedSlug)
+      if (nextSlug === decodedSlug) break
+      decodedSlug = nextSlug
+    } catch {
+      // Keep the last decoded value; malformed encoding will fail the exact match below.
+      break
+    }
   }
 
   return [

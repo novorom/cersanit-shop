@@ -98,7 +98,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const collectionPages: MetadataRoute.Sitemap = collectionSlugs
     .filter((slug) => collectionProductCount[slug] >= 3)
     .map((slug) => ({
-      url: `${SITE_URL}/collections/${slug}`,
+      // Keep XML URLs in the same percent-encoded form as collection canonicals.
+      url: new URL(`${SITE_URL}/collections/${slug}`).href,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))
