@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ChevronRight, Phone } from "lucide-react"
 import { products } from "@/lib/products-data"
@@ -82,6 +83,13 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
 }
 
 function findCollectionName(slug: string): string | undefined {
+  let decodedSlug = slug
+  try {
+    decodedSlug = decodeURIComponent(slug)
+  } catch {
+    // Keep the original value; malformed URL encoding will fail the exact match below.
+  }
+
   return [
     ...new Set(
       products
@@ -89,7 +97,7 @@ function findCollectionName(slug: string): string | undefined {
         .map((p) => p.collection as string)
     ),
   ].find(
-    (name) => name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-zа-яё0-9-]/gi, "") === slug.toLowerCase()
+    (name) => name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-zа-яё0-9-]/gi, "") === decodedSlug.toLowerCase()
   )
 }
 
@@ -142,16 +150,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   const collectionName = findCollectionName(collection)
 
   if (!collectionName) {
-    return (
-      <div className="min-h-screen bg-background py-12 px-4">
-        <div className="mx-auto max-w-7xl text-center">
-          <h1 className="text-3xl font-bold text-foreground mb-4">Коллекция не найдена</h1>
-          <Link href="/collections" className="text-primary hover:text-primary/80 transition-colors">
-            Вернуться к коллекциям
-          </Link>
-        </div>
-      </div>
-    )
+    notFound()
   }
 
   const collectionProducts = getCollectionProducts(collectionName)

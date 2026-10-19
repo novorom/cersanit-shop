@@ -77,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Счётчик товаров по коллекциям
   const collectionProductCount: Record<string, number> = {}
   for (const p of products) {
-    if (p.collection && p.collection.trim()) {
+    if (p.collection && p.collection.trim() && p.collection.toLowerCase() !== "other" && p.slug && p.name?.trim()) {
       const slug = p.collection.toLowerCase().replace(/\s+/g, "-").replace(/[^a-zа-яё0-9-]/gi, "")
       collectionProductCount[slug] = (collectionProductCount[slug] || 0) + 1
     }
@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const collectionSlugs = [
     ...new Set(
       products
-        .filter((p) => p.collection && p.collection.trim())
+        .filter((p) => p.collection && p.collection.trim() && p.collection.toLowerCase() !== "other" && p.slug && p.name?.trim())
         .map((p) =>
           p.collection!
             .toLowerCase()
